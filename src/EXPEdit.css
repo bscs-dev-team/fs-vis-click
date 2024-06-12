@@ -1,0 +1,75 @@
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.EXPEdit {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  bottom: 50px;
+  right: 50px;
+  background-color: white; 
+  
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.EXPEdit .content {
+  display: flex;
+}
+
+.EXPEdit .sidebar {
+  width: 25%;
+}
+.EXPEdit .sidebar h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+.EXPEdit .sidebar input {
+  border: 1px solid #0003;
+  margin: 0;
+  padding: 3px 5px;
+}
+
+
+.EXPEdit .visualization {
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-start;;
+  display: flex;
+}
+.EXPEdit .visualization img {
+  width: 100%;
+}
+
+.EXPEdit .minicontrolbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.EXPEdit .typeselector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  border: 1px solid #0003;
+}
+.EXPEdit .typeselector img {
+  width: 75px;
+}
+
+.EXPEdit .controlbar {
+  display: flex;
+  justify-content: right;
+  margin-top: 0.5rem;
+  padding: 5px 10px;
+  background-color: #fcddcc;
+}
+.EXPEdit .controlbar button {
+  margin-left: 1rem;
+}

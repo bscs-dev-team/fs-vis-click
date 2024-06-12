@@ -1,0 +1,75 @@
+.App {}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  height: 64px;
+  padding: 20px;
+}
+
+.main-page {
+  padding: 20px;
+}
+
+button { 
+  outline: 0;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  height: 32px;
+  padding: 4px 15px;
+  line-height: 25px;
+  font-size: 14px;
+  border-radius: 4px;
+  color: #27323d;
+  border: 1px solid #d9d9d9;
+}
+button.primary {
+  color: #fff;
+  border-color: #5a7201;
+  background: #f2732e;
+}
+button.secondary {
+  color: #fff;
+  border-color: #5a7201;
+  background: #5a7201;
+}
+button.outline {
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+}
+button.transparent {
+  color: #27323d;
+  background: transparent;
+  border: none;
+}
+button.transparent-light {
+  color: white;
+  background: transparent;
+  border: none;
+}
+button.small {
+  height: 24px;
+  padding: 4px 10px;
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.tableOrMap {
+  display: flex;
+  align-items: center;
+}
+.tableOrMap label {
+  font-size: 12px;
+  line-height: 12px;
+}
+.tableOrMap input[type="range"] {
+  width: 30px;
+}
+
+.help {
+  color: #0006;
+  font-style: italic;
+}

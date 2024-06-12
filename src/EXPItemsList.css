@@ -1,0 +1,31 @@
+.EXPItems {
+  display: flex;
+  flex-direction: column;
+}
+
+.EXPItemsList {
+  flex-grow: 1;
+  border: 1px inset #0003;
+  padding: 10px;
+  background-color: #fff3;
+  overflow-y: scroll;
+}
+
+.EXPItemsList .item {
+  display: flex;
+}
+.EXPItemsList .item .description {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+.EXPItemsList img {
+  height: 50px;
+}
+
+.EXPItems .controlbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
