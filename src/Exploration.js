@@ -1,6 +1,7 @@
 import './Exploration.css';
 import Login from './Login';
 import EXPItemsList from './EXPItemsList';
+import { title } from 'process';
 
 export default function Exploration({ fs, setFs }) {
 
@@ -21,12 +22,36 @@ export default function Exploration({ fs, setFs }) {
     });
   }
 
+  function evt_OnTitleChange(event) {
+    setFs(draft => {
+      draft.explorations.find(e => e.id === draft.selectedExploration).name = event.target.value;
+    });
+  }
+  function evt_OnDescriptionChange(event) {
+    setFs(draft => {
+      draft.explorations.find(e => e.id === draft.selectedExploration).description = event.target.value;
+    });
+  }
+
+  const { selectedExploration, selectedVisual } = fs;
+  console.log('Selected exploration', selectedExploration, selectedVisual)
+  const exploration = fs.explorations.find(e => e.id === selectedExploration) || {
+    name: 'Untitled', description: '', modifed: new Date(), privacy: 'Private', visuals: []
+  };
+  console.log('Loaded explroation', exploration)
+  const visuals = exploration && exploration.visuals ? exploration.visuals : [];
+  const visual = visuals.find(v => v.id === selectedVisual) || {
+    title: 'Untitled', description: '', image: null
+  };
+  console.log('Loaded visual', visual)
+
+
   const NAVBAR = (
     <div className="navbar">
       <div>
         <span onClick={() => setRoute('home')}>Frogwatch</span> &gt;{' '}
         <span onClick={deselectExploration}>My Data Exploration</span> &gt;{' '}
-        39
+        {selectedExploration}
       </div>
       <Login fs={fs} setFs={setFs} />
     </div>
@@ -38,11 +63,11 @@ export default function Exploration({ fs, setFs }) {
       {fs.user.isLoggedIn
         ? (
           <>
-        <input type="text" value="Untitled" />
-        <button className='transparent-light'>EDIT</button>
+            <input type="text" value={exploration.name} onChange={evt_OnTitleChange} />
+            <button className='transparent-light'>EDIT</button>
           </>
         )
-        : <>Untitled</>
+        : <>{exploration.name}</>
       }
     </div>
   );
@@ -53,8 +78,12 @@ export default function Exploration({ fs, setFs }) {
       <div className="notes">
         <h4>YOUR IDEAS & QUESTIONS</h4>
         {fs.user.isLoggedIn
-          ? <textarea placeholder="You can use this space to describe the idea or question you would like to explore.  Add any ideas and questions as you make new maps and graphs"></textarea>
-          : <div>My ideas which are mine</div>
+          ? <textarea
+            value={exploration.description}
+            placeholder="You can use this space to describe the idea or question you would like to explore.  Add any ideas and questions as you make new maps and graphs"
+            onChange={evt_OnDescriptionChange}
+          />
+          : <div className="description">{exploration.description}</div>
         }
       </div>
     </div>

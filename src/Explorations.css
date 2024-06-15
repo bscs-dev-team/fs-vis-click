@@ -1,3 +1,4 @@
+/* Featured */
 .Explorations .featured {
   display: flex;
   justify-content: space-evenly;
@@ -18,7 +19,14 @@
   flex-direction: column;
   margin-left: 2rem;
 }
-
+/* Empty Table */
+.Explorations .empty-table {
+  border: 1px solid #0003;
+  margin-top: 1rem;
+  padding: 20px;
+  width: 100%;
+}
+/* Table */
 .Explorations table {
   width: 100%;
   margin-top: 1rem;
@@ -31,7 +39,6 @@
 .Explorations th, .Explorations td {
   padding: 16px;
 }
-
 .Explorations th {
   color: #27323d;
   font-weight: 500;
@@ -39,7 +46,9 @@
   background: #fafafa;
   border-bottom: 1px solid #f0f0f0;
 }
-
+.Explorations tr:hover {
+  background-color: #f1f1f1;
+}
 .Explorations td {
   line-height: 1.5715;
   font-size: 14px;

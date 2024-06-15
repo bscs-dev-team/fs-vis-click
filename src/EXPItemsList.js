@@ -14,7 +14,16 @@ export default function EXPItemsList({ fs, setFs }) {
     setShowEditor(false);
   }
 
-  const ITEMS = fs.explorations;
+  const { selectedExploration, selectedVisual } = fs;
+  console.log('Selected exploration', selectedExploration, selectedVisual)
+  const exploration = fs.explorations.find(e => e.id === selectedExploration);
+  const visuals = exploration && exploration.visuals ? exploration.visuals : [];
+  const visual = visuals.find(v => v.id === selectedVisual) || {
+    title: 'Untitled', description: '', image: null
+  };
+  console.log('Loaded visual', visual)
+
+  const ITEMS = visuals;
 
   const EDITOR = (
     <EXPEdit fs={fs} setFs={setFs} onExit={evt_CloseEditor} />
@@ -28,9 +37,9 @@ export default function EXPItemsList({ fs, setFs }) {
           ? <div className="help">Your saved displays will appear here</div>
           : ITEMS.map((item, i) => (
             <div className='item' key={i}>
-              <img src={item.image} alt={item.name} />
+              <img src={item.image} alt={item.title} />
               <div className='description'>
-                <div>{item.name}</div>
+                <div>{item.title}</div>
                 <div>{item.description}</div>
               </div>
             </div>

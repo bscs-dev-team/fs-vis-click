@@ -14,20 +14,17 @@ export default function Explorations() {
     { name: 'Species Map', description: 'A map showing where species have been found', image: threespecies_histo },
   ];
 
-  const EXPLORATIONS_DATA = [
-    { name: 'Histogram Frog vs Toad', description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public' },
-    { name: 'Histogram American Bullfrogs', description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public' },
-    { name: 'Map American Bullfrogs', description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public' },
-    { name: 'Copy of Histogram Frog vs Toad', description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public' },
-  ]
+  const EXPLORATIONS_DATA = fs.explorations;
+  const NEXTINDEX = EXPLORATIONS_DATA.length + 2;
+
 
 
   /// UI HANDLERS /////////////////////////////////////////////////////////////
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  function evt_ShowExploration(event) {
-    console.log('Show Exploration', event.target);
-    setRoute('exploration');
+  function evt_NewExploration(event) {
+    console.log('New Exploration', event.target);
+    evt_SelectExploration(NEXTINDEX);
   }
 
   function evt_SelectExploration(id) {
@@ -84,7 +81,7 @@ export default function Explorations() {
         {FEATURED}
       </div>
       <h3>My Data Explorations</h3>
-      <button className='secondary' onClick={evt_ShowExploration}>+ Create New Exploration</button>
+      <button className='secondary' onClick={evt_NewExploration}>+ Create New Exploration</button>
       {fs.user.isLoggedIn
         ? BROWSER_TABLE
         : <div className="empty-table help">Login to save and share your explorations</div>
