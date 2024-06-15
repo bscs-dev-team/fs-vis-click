@@ -12,13 +12,18 @@
 
 .Exploration .navbar {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   height: 32px;
+  padding: 5px;
 }
 
 .Exploration .title {
+  display: flex;
+  align-items: center;
   color: white;
   background-color: #5a7202;
+  height: 32px;
   padding: 0 10px;
 }
 

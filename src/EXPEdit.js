@@ -7,7 +7,47 @@ import scatterplot from './img/vis-widget-card-scatterplot.png';
 import timeseries from './img/vis-widget-card-timeseries.png';
 import map_gray from './img/map_gray.png';
 
-export default function EXPEdit({ onExit }) {
+export default function EXPEdit({ fs, setFs, onExit }) {
+
+  const TYPES = (<>
+    <div className="card">
+      <img src={map} />
+      <label>Map</label>
+      <p><i>Geographic</i></p>
+      <p>Display observations on a map with a configurable base layer and additional data layers</p>
+    </div>
+    <div className="card">
+      <img src={histo} />
+      <label>Histogram</label>
+      <p><i>Categorical</i></p>
+      <p>Display observations in a bar chart grouped by the value of a selected field</p>
+    </div>
+    <div className="card">
+      <img src={numeric} />
+      <label>Numeric Summary</label>
+      <p><i>Summary</i></p>
+      <p>Display a single aggregate value representing all the observations</p>
+    </div>
+    <div className="card">
+      <img src={range} />
+      <label>Time Series</label>
+      <p><i>Line graph</i></p>
+      <p>Display values over time for each station</p>
+    </div>
+    <div className="card">
+      <img src={scatterplot} />
+      <label>Scatter Plot</label>
+      <p><i>Dispersion</i></p>
+      <p>Compare 2 numeric values from each observation simultaneously</p>
+    </div>
+    <div className="card">
+      <img src={timeseries} />
+      <label>Range Plot</label>
+      <p><i>Range</i></p>
+      <p>Compare relative numeric ranges</p>
+    </div>
+  </>);
+
   return (
     <div>
       <div className="screen"></div>
@@ -35,12 +75,7 @@ export default function EXPEdit({ onExit }) {
             </div>
             <label>2. Select a map/graph type</label>
             <div className="typeselector">
-              <img src={histo} />
-              <img src={map} />
-              <img src={numeric} />
-              <img src={range} />
-              <img src={scatterplot} />
-              <img src={timeseries} />
+              {TYPES}
             </div>
           </div>
 

@@ -13,6 +13,11 @@
 
 .EXPItemsList .item {
   display: flex;
+  margin-bottom: 5px;
+  padding: 3px;
+}
+.EXPItemsList .item:hover {
+  background-color: #0003;
 }
 .EXPItemsList .item .description {
   display: flex;

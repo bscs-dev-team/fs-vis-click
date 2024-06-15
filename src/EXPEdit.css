@@ -32,10 +32,12 @@
 }
 .EXPEdit .sidebar input {
   border: 1px solid #0003;
-  margin: 0;
   padding: 3px 5px;
+  margin: 10px 0 20px 0;
 }
-
+.EXPEdit .sidebar select {
+  margin: 10px 0 3px 0;
+}
 
 .EXPEdit .visualization {
   flex-grow: 1;
@@ -56,11 +58,23 @@
 .EXPEdit .typeselector {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
   padding: 10px;
+  border: 1px solid #0003;
+}
+.EXPEdit .typeselector .card {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
   border: 1px solid #0003;
 }
 .EXPEdit .typeselector img {
   width: 75px;
+}
+.EXPEdit .typeselector p {
+  color: #0009;
+  font-size: 12px; 
+  margin-block: 0.25rem;
 }
 
 .EXPEdit .controlbar {

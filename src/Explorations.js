@@ -29,8 +29,13 @@ export default function Explorations() {
     console.log('Show Exploration', event.target);
     setRoute('exploration');
   }
-  function evt_CloseExploration(event) { console.log('Close Exploration', event.target); setRoute('browser'); }
 
+  function evt_SelectExploration(id) {
+    console.log('Select Exploration', id);
+    setFs(draft => {
+      draft.selectedExploration = id;
+    });
+  }
 
   /// COMPONENT RENDER ////////////////////////////////////////////////////////
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -61,7 +66,7 @@ export default function Explorations() {
       </thead>
       <tbody>
         {EXPLORATIONS_DATA.map((exploration, i) => (
-          <tr key={i}>
+          <tr key={i} onClick={() => evt_SelectExploration(exploration.id)}>
             <td>{exploration.name}</td>
             <td>{exploration.description}</td>
             <td>{exploration.modified.toDateString()}</td>
@@ -80,18 +85,18 @@ export default function Explorations() {
       </div>
       <h3>My Data Explorations</h3>
       <button className='secondary' onClick={evt_ShowExploration}>+ Create New Exploration</button>
-      {BROWSER_TABLE}
+      {fs.user.isLoggedIn
+        ? BROWSER_TABLE
+        : <div className="empty-table help">Login to save and share your explorations</div>
+      }
     </>
   );
 
   const EXPLORATION = (
-    <Exploration onExit={evt_CloseExploration} />
+    <Exploration fs={fs} setFs={setFs} />
   );
 
-  let VIEW;
-  if (route === 'browser') VIEW = BROWSER;
-  if (route === 'exploration') VIEW = EXPLORATION;
-
+  const VIEW = fs.selectedExploration === null ? BROWSER : EXPLORATION;
   return (
     <div className="Explorations">
       {VIEW}
