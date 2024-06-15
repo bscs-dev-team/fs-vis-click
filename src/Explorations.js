@@ -5,8 +5,7 @@ import allspecies_map from './img/allspecies_map.png';
 import allspecies_histo from './img/allspecies_histo.png';
 import threespecies_histo from './img/threespecies_histo.png';
 
-export default function Explorations() {
-  const [route, setRoute] = useState('browser');
+export default function Explorations({ fs, setFs }) {
 
   const FEATURED_DATA = [
     { name: 'All 2021 Data', description: 'All data collected in 2021', image: allspecies_map },
@@ -17,14 +16,22 @@ export default function Explorations() {
   const EXPLORATIONS_DATA = fs.explorations;
   const NEXTINDEX = EXPLORATIONS_DATA.length + 2;
 
-
-
   /// UI HANDLERS /////////////////////////////////////////////////////////////
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
   function evt_NewExploration(event) {
     console.log('New Exploration', event.target);
-    evt_SelectExploration(NEXTINDEX);
+    setFs(draft => {
+      draft.explorations.push({
+        id: NEXTINDEX,
+        name: 'Untitled',
+        description: '',
+        modified: new Date(),
+        privacy: 'Private',
+        visuals: []
+      });
+      draft.selectedExploration = NEXTINDEX;
+    });
   }
 
   function evt_SelectExploration(id) {

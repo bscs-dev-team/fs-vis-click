@@ -26,9 +26,16 @@ export default function EXPItemsList({ fs, setFs }) {
     });
   }
 
-  function evt_NewDisplay(event) {
+  function evt_NewVisual(event) {
     console.log('New Display', event.target);
     setFs(draft => {
+      draft.explorations.find(e => e.id === draft.selectedExploration)
+        .visuals.push({
+          id: NEXTINDEX,
+          title: 'Untitled',
+          description: '',
+          image: null
+        });
       draft.selectedVisual = NEXTINDEX;
     });
   }
@@ -70,7 +77,7 @@ export default function EXPItemsList({ fs, setFs }) {
       </div>
       {fs.user.isLoggedIn && <div className="controlbar">
         <button disabled>EDIT</button>
-        <button className="primary" onClick={evt_NewDisplay}>NEW DISPLAY</button>
+        <button className="primary" onClick={evt_NewVisual}>NEW DISPLAY</button>
       </div>}
       {selectedVisual !== null && EDITOR}
     </div>
