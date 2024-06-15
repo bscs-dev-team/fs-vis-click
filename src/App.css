@@ -19,9 +19,12 @@ h3 {
 }
 .navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 64px;
   padding: 20px;
+}
+.navbar button {
+  padding: 0 40px;
 }
 
 .main-page {

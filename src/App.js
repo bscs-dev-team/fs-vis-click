@@ -20,7 +20,8 @@ const initialFSState = {
   explorations: [
     {
       id: 1,
-      name: 'Histogram Frog vs Toad', description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public',
+      name: 'Histogram Frog vs Toad',
+      description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public',
       visuals: [
         { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', image: allspecies_map },
         { id: 2, title: 'Species Histogram', description: 'A histogram showing all species observed', image: allspecies_histo },
@@ -29,15 +30,21 @@ const initialFSState = {
     },
     {
       id: 2,
-      name: 'Histogram American Bullfrogs', description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public'
+      name: 'Histogram American Bullfrogs',
+      description: 'A histogram of American Bullfrogs', modified: new Date(), privacy: 'Public',
+      visuals: [
+        { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', image: allspecies_map },
+      ]
     },
     {
       id: 3,
-      name: 'Map American Bullfrogs', description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public'
+      name: 'Map American Bullfrogs',
+      description: 'A map of American Bullfrogs', modified: new Date(), privacy: 'Public'
     },
     {
       id: 4,
-      name: 'Copy of Histogram Frog vs Toad', description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public'
+      name: 'Copy of Histogram Frog vs Toad',
+      description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public'
     },
   ]
 };
@@ -54,12 +61,15 @@ export function App() {
 
   const NAVBAR = (
     <div className="navbar">
-      <button
-        className={fs.route === 'home' ? 'outline' : 'transparent'}
-        onClick={() => setRoute('home')}>Home</button>
-      <button
-        className={fs.route === 'explorations' ? 'outline' : 'transparent'}
-        onClick={() => setRoute('explorations')}>Explorations</button>
+      <div></div>
+      <div className="center">
+        <button
+          className={fs.route === 'home' ? 'outline' : 'transparent'}
+          onClick={() => setRoute('home')}>Home</button>
+        <button
+          className={fs.route === 'explorations' ? 'outline' : 'transparent'}
+          onClick={() => setRoute('explorations')}>Explorations</button>
+      </div>
       <Login fs={fs} setFs={setFs} />
     </div>
   );
