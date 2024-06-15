@@ -5,6 +5,22 @@ import { title } from 'process';
 
 export default function Exploration({ fs, setFs }) {
 
+
+  /// LOAD DATA ///////////////////////////////////////////////////////////////
+  /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  const { selectedExploration, selectedVisual } = fs;
+  const exploration = fs.explorations.find(e => e.id === selectedExploration) || {
+    name: 'Untitled', description: '', modifed: new Date(), privacy: 'Private', visuals: []
+  };
+  const visuals = exploration && exploration.visuals ? exploration.visuals : [];
+  const visual = visuals.find(v => v.id === selectedVisual) || {
+    title: 'Untitled', description: '', image: null
+  };
+
+
+  /// UI HANDLERS /////////////////////////////////////////////////////////////
+  /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
   function evt_SetPublic(event) { alert('set privacy to public') }
   function evt_CopyLink(event) { alert('Copy URL to clipboard') }
   function evt_Embed(event) { alert('Embed URL') }
@@ -33,17 +49,9 @@ export default function Exploration({ fs, setFs }) {
     });
   }
 
-  const { selectedExploration, selectedVisual } = fs;
-  console.log('Selected exploration', selectedExploration, selectedVisual)
-  const exploration = fs.explorations.find(e => e.id === selectedExploration) || {
-    name: 'Untitled', description: '', modifed: new Date(), privacy: 'Private', visuals: []
-  };
-  console.log('Loaded explroation', exploration)
-  const visuals = exploration && exploration.visuals ? exploration.visuals : [];
-  const visual = visuals.find(v => v.id === selectedVisual) || {
-    title: 'Untitled', description: '', image: null
-  };
-  console.log('Loaded visual', visual)
+
+  /// COMPONENT RENDER ////////////////////////////////////////////////////////
+  /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
   const NAVBAR = (

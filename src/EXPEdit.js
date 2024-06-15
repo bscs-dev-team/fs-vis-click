@@ -48,6 +48,35 @@ export default function EXPEdit({ fs, setFs, onExit }) {
     </div>
   </>);
 
+  /// LOAD DATA ///////////////////////////////////////////////////////////////
+  /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  const { selectedExploration, selectedVisual } = fs;
+  const exploration = fs.explorations.find(e => e.id === selectedExploration);
+  const visuals = exploration && exploration.visuals ? exploration.visuals : [];
+  const visual = visuals.find(v => v.id === selectedVisual) || {
+    title: 'Untitled', description: '', image: null
+  };
+
+
+  /// UI HANDLERS /////////////////////////////////////////////////////////////
+  /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  function evt_OnTitleChange(event) {
+    setFs(draft => {
+      draft.explorations.find(e => e.id === draft.selectedExploration)
+        .visuals.find(v => v.id === draft.selectedVisual).title = event.target.value;
+    });
+  }
+  function evt_OnDescriptionChange(event) {
+    setFs(draft => {
+      draft.explorations.find(e => e.id === draft.selectedExploration)
+        .visuals.find(v => v.id === draft.selectedVisual).description = event.target.value;
+    });
+  }
+
+  /// COMPONENT RENDER ////////////////////////////////////////////////////////
+  /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
   return (
     <div>
       <div className="screen"></div>
@@ -59,9 +88,9 @@ export default function EXPEdit({ fs, setFs, onExit }) {
             <br />
             <br />
             <label>TITLE</label>
-            <input type="text" placeholder="MAP or GRAPH Title" />
+            <input type="text" value={visual.title} placeholder="MAP or GRAPH Title" onChange={evt_OnTitleChange} />
             <label>DESCRIBE THIS MAP/GRAPH</label>
-            <input type="text" placeholder="Summarize what this map/graph shows" />
+            <input type="text" value={visual.description} placeholder="Summarize what this map/graph shows" onChange={evt_OnDescriptionChange} />
             <br />
             <br />
             <label>1. Select Your Data</label>
@@ -96,7 +125,7 @@ export default function EXPEdit({ fs, setFs, onExit }) {
         <div className="controlbar">
           <button disabled>Duplicate</button>
           <div style={{ flexGrow: 1 }}></div>
-          <button disabled>Cancel</button>
+          <button disabled onClick={onExit}>Cancel</button>
           <button className="primary" onClick={onExit}>Save</button>
         </div>
       </div>

@@ -24,6 +24,15 @@
   flex-direction: column;
   padding-left: 1rem;
 }
+.EXPItemsList .item .description h3 {
+  font-size: 12px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.EXPItemsList .item .description div {
+  font-size: 10px;
+  color: #0009;
+}
 
 .EXPItemsList img {
   height: 50px;
