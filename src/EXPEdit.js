@@ -80,6 +80,12 @@ export default function EXPEdit({ fs, setFs, onExit }) {
         .visuals.find(v => v.id === draft.selectedVisual).type = type;
     });
   }
+  function evt_DeselectType() {
+    setFs(draft => {
+      draft.explorations.find(e => e.id === draft.selectedExploration)
+        .visuals.find(v => v.id === draft.editingVisual).type = null;
+    });
+  }
   function evt_ToggleMap(event) {
     setFs(draft => {
       const vis = draft.explorations.find(e => e.id === draft.selectedExploration)
@@ -106,7 +112,7 @@ export default function EXPEdit({ fs, setFs, onExit }) {
       <div className="configure">
         <label className="help">Determine how the data is displayed</label>
 
-        <label>Selected Graph Type: {visual.type} <button>Change Map/Graph Type</button></label>
+        <label>Selected Graph Type: {visual.type} <button onClick={evt_DeselectType}>Change Map/Graph Type</button></label>
 
 
         <label>X Axis:
