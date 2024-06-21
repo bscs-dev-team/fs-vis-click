@@ -16,6 +16,9 @@
   margin-bottom: 5px;
   padding: 3px;
 }
+.EXPItemsList .item.selected {
+  background-color: #0003;
+}
 .EXPItemsList .item:hover {
   background-color: #0003;
 }

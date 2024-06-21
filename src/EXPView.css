@@ -1,0 +1,30 @@
+.EXPView {
+  display: flex;
+  padding: 10px;
+  background-color: white;
+}
+
+.EXPView .sidebar {
+  width: 25%;
+}
+.EXPView .sidebar h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.EXPView .visualization {
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  display: flex;
+}
+.EXPView .visualization img {
+  width: 750px;
+  height: 750px;
+}
+
+.EXPView .minicontrolbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

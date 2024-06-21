@@ -5,7 +5,7 @@
   width: 100%;
   height: 100%;
   background-color: #d0d7b6;
-  
+
   display: flex;
   flex-direction: column;
 }
@@ -38,6 +38,7 @@
 .Exploration .content {
   flex-grow: 1;
   display: flex;
+  overflow: hidden;
 }
 
 .Exploration .sidebar {
@@ -46,7 +47,7 @@
   align-items: stretch;
   padding: 10px;
 }
-.Exploration .sidebar > div {
+.Exploration > .content > .sidebar > div {
   height: 50%;
 }
 .Exploration .sidebar h4 {
@@ -65,7 +66,7 @@
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-  padding: 0.5rem;  
+  padding: 0.5rem;
 }
 .Exploration .sidebar .notes .description {
   border: 1px solid #0003;
@@ -77,18 +78,24 @@
 .Exploration .sidebar label {
   margin: 1rem 0 0.25rem 0;
 } */
-  
+
 .Exploration .visualization {
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: center;
-  align-items: center;
+  /* align-items: center; keep vis-list from scrolling too far */
   background-color: #f8f9fa;
+  overflow: scroll;
+}
+.Exploration .visualization .vis-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  background-color: #d9dfc5;
 }
 .Exploration .visualization .help {
   width: 100%;
-  text-align: center; 
+  text-align: center;
 }
 
 .Exploration .footer {

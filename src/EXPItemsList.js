@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import './EXPItemsList.css';
 import EXPEdit from './EXPEdit';
+import map_gray from './img/map_gray.png';
 
 export default function EXPItemsList({ fs, setFs }) {
 
 
   /// LOAD DATA ///////////////////////////////////////////////////////////////
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  const { selectedExploration, selectedVisual } = fs;
+  const { selectedExploration, selectedVisual, editingVisual } = fs;
   const exploration = fs.explorations.find(e => e.id === selectedExploration);
   const visuals = exploration && exploration.visuals ? exploration.visuals : [];
   const visual = visuals.find(v => v.id === selectedVisual) || {
@@ -26,6 +27,13 @@ export default function EXPItemsList({ fs, setFs }) {
     });
   }
 
+  function evt_EditVisual(id) {
+    console.log('Editing Visual', id);
+    setFs(draft => {
+      draft.editingVisual = draft.selectedVisual;
+    });
+  }
+
   function evt_NewVisual(event) {
     console.log('New Display', event.target);
     setFs(draft => {
@@ -34,15 +42,16 @@ export default function EXPItemsList({ fs, setFs }) {
           id: NEXTINDEX,
           title: 'Untitled',
           description: '',
-          image: null
+          image: map_gray
         });
       draft.selectedVisual = NEXTINDEX;
+      draft.editingVisual = NEXTINDEX;
     });
   }
 
   function evt_CloseEditor(event) {
     setFs(draft => {
-      draft.selectedVisual = null;
+      draft.editingVisual = null;
     });
   }
 
@@ -65,7 +74,7 @@ export default function EXPItemsList({ fs, setFs }) {
         {ITEMS.length < 1
           ? <div className="help">Your saved displays will appear here</div>
           : ITEMS.map((item, i) => (
-            <div className='item' key={i} onClick={() => evt_SelectVisual(item.id)}>
+            <div className={`item ${selectedVisual === item.id ? 'selected' : ''}`} key={i} onClick={() => evt_SelectVisual(item.id)}>
               <img src={item.image} alt={item.title} />
               <div className='description'>
                 <h3>{item.title}</h3>
@@ -76,10 +85,10 @@ export default function EXPItemsList({ fs, setFs }) {
         }
       </div>
       {fs.user.isLoggedIn && <div className="controlbar">
-        <button disabled>EDIT</button>
+        <button disabled={!selectedVisual} onClick={evt_EditVisual}>EDIT</button>
         <button className="primary" onClick={evt_NewVisual}>NEW DISPLAY</button>
       </div>}
-      {selectedVisual !== null && EDITOR}
+      {editingVisual !== null && EDITOR}
     </div>
   );
 }

@@ -17,15 +17,17 @@ const initialFSState = {
   route: 'home', // 'home' or 'explorations'
   selectedExploration: null,
   selectedVisual: null,
+  selectedDataset: null,
+  editingVisual: null,
   explorations: [
     {
       id: 1,
       name: 'Histogram Frog vs Toad',
       description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public',
       visuals: [
-        { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', image: allspecies_map },
-        { id: 2, title: 'Species Histogram', description: 'A histogram showing all species observed', image: allspecies_histo },
-        { id: 3, title: 'Species Map', description: 'A map showing where species have been found', image: threespecies_histo }
+        { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', filter: 'all', type: 'map', image: allspecies_map, showTable: false },
+        { id: 2, title: 'Species Histogram', description: 'A histogram showing all species observed', filter: 'recent', type: 'histo', image: allspecies_histo, showTable: false },
+        { id: 3, title: 'CA Species Histogram', description: 'A histogram showing CA frogs', filter: 'ca', type: 'map', image: threespecies_histo, showTable: false }
       ]
     },
     {
@@ -33,7 +35,7 @@ const initialFSState = {
       name: 'Histogram American Bullfrogs',
       description: 'A histogram of American Bullfrogs', modified: new Date(), privacy: 'Public',
       visuals: [
-        { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', image: allspecies_map },
+        { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', filter: 'all', type: 'map', image: allspecies_map, showTable: false },
       ]
     },
     {
@@ -49,15 +51,21 @@ const initialFSState = {
   ]
 };
 
+/// APP ///////////////////////////////////////////////////////////////////////
+/// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 export function App() {
   // fs = fieldscope state
   const [fs, setFs] = useImmer(initialFSState);
+  const [tableData, updateTableData] = useImmer({ count: 0, headers: [], data: [] });
 
-  function setRoute(route) {
+  function evt_SetRoute(route) {
     setFs(draft => {
       draft.route = route;
     });
   }
+
+  /// COMPONENT RENDER ////////////////////////////////////////////////////////
+  /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
   const NAVBAR = (
     <div className="navbar">
@@ -65,10 +73,10 @@ export function App() {
       <div className="center">
         <button
           className={fs.route === 'home' ? 'outline' : 'transparent'}
-          onClick={() => setRoute('home')}>Home</button>
+          onClick={() => evt_SetRoute('home')}>Home</button>
         <button
           className={fs.route === 'explorations' ? 'outline' : 'transparent'}
-          onClick={() => setRoute('explorations')}>Explorations</button>
+          onClick={() => evt_SetRoute('explorations')}>Explorations</button>
       </div>
       <Login fs={fs} setFs={setFs} />
     </div>

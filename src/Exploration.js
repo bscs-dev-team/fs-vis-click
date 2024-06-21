@@ -1,6 +1,7 @@
 import './Exploration.css';
 import Login from './Login';
 import EXPItemsList from './EXPItemsList';
+import EXPView from './EXPView';
 import { title } from 'process';
 
 export default function Exploration({ fs, setFs }) {
@@ -8,8 +9,8 @@ export default function Exploration({ fs, setFs }) {
 
   /// LOAD DATA ///////////////////////////////////////////////////////////////
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  const { selectedExploration, selectedVisual } = fs;
-  const exploration = fs.explorations.find(e => e.id === selectedExploration) || {
+  const { selectedExploration, selectedVisual, explorations } = fs;
+  const exploration = explorations.find(e => e.id === selectedExploration) || {
     name: 'Untitled', description: '', modifed: new Date(), privacy: 'Private', visuals: []
   };
   const visuals = exploration && exploration.visuals ? exploration.visuals : [];
@@ -23,8 +24,8 @@ export default function Exploration({ fs, setFs }) {
 
   function evt_SetPublic(event) { alert('set privacy to public') }
   function evt_CopyLink(event) { alert('Copy URL to clipboard') }
-  function evt_Embed(event) { alert('Embed URL') }
-  function evt_SaveAs(event) { alert('Save As...') }
+  function evt_Embed(event) { alert('Show and copy Embed URL') }
+  function evt_SaveAs(event) { alert('Show "Save As..." dialog') }
 
   function setRoute(route) {
     setFs(draft => {
@@ -99,9 +100,13 @@ export default function Exploration({ fs, setFs }) {
 
   const VISUALIZATION = (
     <div className="visualization">
-      <div className="help">
-        To start, click "NEW DISPLAY" to create a new way of looking at the data in a display (e.g., graph, map).
+      {selectedVisual
+        ? <div className="vis-list">
+          {visuals.map(v => <EXPView key={v.id} id={v.id} fs={fs} setFs={setFs} />)}
       </div>
+        : <div className="help">
+          To start, click "NEW DISPLAY" to create a new way of looking at the data in a display (e.g., graph, map).
+        </div>}
     </div>
   );
 
