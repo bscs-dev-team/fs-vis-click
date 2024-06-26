@@ -29,6 +29,8 @@ export default function Exploration({ fs, setFs }) {
 
   function setRoute(route) {
     setFs(draft => {
+      draft.selectedExploration = null;
+      draft.selectedVisual = null;
       draft.route = route;
     });
   }
