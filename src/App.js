@@ -9,6 +9,22 @@ import allspecies_map from './img/allspecies_map.png';
 import allspecies_histo from './img/allspecies_histo.png';
 import threespecies_histo from './img/threespecies_histo.png';
 
+/// CONSTANTS ////////////////////////////////////////////////////////////////
+/// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+const MAP_TYPES = ['map', 'histo', 'numeric', 'range', 'scatterplot', 'timeseries'];
+
+
+
+
+/// INIT STATE ////////////////////////////////////////////////////////////////
+/// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+const DEFAULT_FILTERS = [
+  { id: 1, label: 'All Observations' },
+  { id: 2, label: 'Recent Observations' },
+  { id: 3, label: 'My Observations' }
+];
+
 const initialFSState = {
   user: {
     isLoggedIn: false,
@@ -19,36 +35,42 @@ const initialFSState = {
   selectedVisual: null,
   selectedDataset: null,
   editingVisual: null,
+  editingFilter: null,
   explorations: [
     {
       id: 1,
       name: 'Histogram Frog vs Toad',
       description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public',
       visuals: [
-        { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', filter: 'all', type: 'map', image: allspecies_map, showTable: false },
-        { id: 2, title: 'Species Histogram', description: 'A histogram showing all species observed', filter: 'recent', type: 'histo', image: allspecies_histo, showTable: false },
-        { id: 3, title: 'CA Species Histogram', description: 'A histogram showing CA frogs', filter: 'ca', type: 'map', image: threespecies_histo, showTable: false }
-      ]
+        { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', filter: 1, type: 'map', image: allspecies_map, showTable: false },
+        { id: 2, title: 'Species Histogram', description: 'A histogram showing all species observed', filter: 2, type: 'histo', image: allspecies_histo, showTable: false },
+        { id: 3, title: 'CA Species Histogram', description: 'A histogram showing CA frogs', filter: 3, type: 'map', image: threespecies_histo, showTable: false }
+      ],
+      filters: [{ id: 4, label: 'CA Frogs' }, ...DEFAULT_FILTERS]
     },
     {
       id: 2,
       name: 'Histogram American Bullfrogs',
       description: 'A histogram of American Bullfrogs', modified: new Date(), privacy: 'Public',
       visuals: [
-        { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', filter: 'all', type: 'map', image: allspecies_map, showTable: false },
-      ]
+        { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', filter: 1, type: 'map', image: allspecies_map, showTable: false },
+      ],
+      filters: [...DEFAULT_FILTERS]
     },
     {
       id: 3,
       name: 'Map American Bullfrogs',
-      description: 'A map of American Bullfrogs', modified: new Date(), privacy: 'Public'
+      description: 'A map of American Bullfrogs', modified: new Date(), privacy: 'Public',
+      filters: [...DEFAULT_FILTERS]
     },
     {
       id: 4,
       name: 'Copy of Histogram Frog vs Toad',
-      description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public'
+      description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public',
+      filters: [...DEFAULT_FILTERS]
     },
-  ]
+  ],
+  datasets: DATASETS
 };
 
 /// APP ///////////////////////////////////////////////////////////////////////

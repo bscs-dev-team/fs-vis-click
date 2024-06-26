@@ -1,4 +1,5 @@
 import './EXPEdit.css';
+import FilterEdit from './FilterEdit';
 import histo from './img/vis-widget-card-histogram.png';
 import map from './img/vis-widget-card-map.png';
 import numeric from './img/vis-widget-card-numeric.png';
@@ -11,37 +12,37 @@ import table from './img/table.png';
 export default function EXPEdit({ fs, setFs, onExit }) {
 
   const TYPES = (<>
-    <div className="card" onClick={() => evt_OnSelectType('map')}>
+    <div className="card" onClick={() => evt_OnSelectType('map', map)}>
       <img src={map} />
       <label>Map</label>
       <p><i>Geographic</i></p>
       <p>Display observations on a map with a configurable base layer and additional data layers</p>
     </div>
-    <div className="card" onClick={() => evt_OnSelectType('histo')}>
+    <div className="card" onClick={() => evt_OnSelectType('histo', histo)}>
       <img src={histo} />
       <label>Histogram</label>
       <p><i>Categorical</i></p>
       <p>Display observations in a bar chart grouped by the value of a selected field</p>
     </div>
-    <div className="card" onClick={() => evt_OnSelectType('numeric')}>
+    <div className="card" onClick={() => evt_OnSelectType('numeric', numeric)}>
       <img src={numeric} />
       <label>Numeric Summary</label>
       <p><i>Summary</i></p>
       <p>Display a single aggregate value representing all the observations</p>
     </div>
-    <div className="card" onClick={() => evt_OnSelectType('timeseries')}>
+    <div className="card" onClick={() => evt_OnSelectType('timeseries', timeseries)}>
       <img src={timeseries} />
       <label>Time Series</label>
       <p><i>Line graph</i></p>
       <p>Display values over time for each station</p>
     </div>
-    <div className="card" onClick={() => evt_OnSelectType('scatterplot')}>
+    <div className="card" onClick={() => evt_OnSelectType('scatterplot', scatterplot)}>
       <img src={scatterplot} />
       <label>Scatter Plot</label>
       <p><i>Dispersion</i></p>
       <p>Compare 2 numeric values from each observation simultaneously</p>
     </div>
-    <div className="card" onClick={() => evt_OnSelectType('range')}>
+    <div className="card" onClick={() => evt_OnSelectType('range', range)}>
       <img src={range} />
       <label>Range Plot</label>
       <p><i>Range</i></p>
@@ -51,7 +52,7 @@ export default function EXPEdit({ fs, setFs, onExit }) {
 
   /// LOAD DATA ///////////////////////////////////////////////////////////////
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  const { selectedExploration, editingVisual } = fs;
+  const { selectedExploration, editingVisual, editingFilter } = fs;
   const exploration = fs.explorations.find(e => e.id === selectedExploration);
   const visuals = exploration && exploration.visuals ? exploration.visuals : [];
   const visual = visuals.find(v => v.id === editingVisual) || {
@@ -74,10 +75,12 @@ export default function EXPEdit({ fs, setFs, onExit }) {
         .visuals.find(v => v.id === draft.selectedVisual).description = event.target.value;
     });
   }
-  function evt_OnSelectType(type) {
+  function evt_OnSelectType(type, image) {
     setFs(draft => {
-      draft.explorations.find(e => e.id === draft.selectedExploration)
-        .visuals.find(v => v.id === draft.selectedVisual).type = type;
+      const vis = draft.explorations.find(e => e.id === draft.selectedExploration)
+        .visuals.find(v => v.id === draft.selectedVisual);
+      vis.type = type;
+      vis.image = image;
     });
   }
   function evt_DeselectType() {
@@ -90,6 +93,28 @@ export default function EXPEdit({ fs, setFs, onExit }) {
     setFs(draft => {
       const vis = draft.explorations.find(e => e.id === draft.selectedExploration)
         .visuals.find(v => v.id === draft.editingVisual).showTable = event.target.value === "0" ? false : true;
+    });
+  }
+  function evt_OnSelectFilter(event) {
+    setFs(draft => {
+      draft.explorations.find(e => e.id === draft.selectedExploration)
+        .visuals.find(v => v.id === draft.editingVisual).filter = event.target.value
+    });
+  }
+  function evt_EditFilter(event) {
+    setFs(draft => {
+      draft.editingFilter = visual.filter;
+    });
+  }
+  function evt_NewFilter(event) {
+    setFs(draft => {
+      const newId = Math.random();
+      const newFilter = { id: newId, label: "Untitled" };
+      const exploration = draft.explorations.find(e => e.id === draft.selectedExploration);
+      const visual = exploration.visuals.find(v => v.id === draft.editingVisual);
+      exploration.filters = [newFilter, ...exploration.filters];
+      visual.filter = newId;
+      draft.editingFilter = newId;
     });
   }
 
@@ -160,17 +185,17 @@ export default function EXPEdit({ fs, setFs, onExit }) {
             <input type="text" value={visual.title} placeholder="MAP or GRAPH Title" onChange={evt_OnTitleChange} />
             <label>DESCRIBE THIS MAP/GRAPH</label>
             <input type="text" value={visual.description} placeholder="Summarize what this map/graph shows" onChange={evt_OnDescriptionChange} />
-            <br />
-            <br />
+            <div className="filter step">
             <label>1. Select Your Data</label>
-            <select value={visual.filter}>
-              <option value="all">All Observations</option>
-              <option value="recent">Recent Observations</option>
-              <option value="ca">California Observations</option>
+              <div>
+                <select value={visual.filter} onChange={evt_OnSelectFilter}>
+                  {exploration.filters.map(f => <option key={f.id} value={f.id}>{f.label}</option>)}
             </select>
             <div className="minicontrolbar">
-              <button className="small">EDIT</button>
-              <button className="small">NEW DATA SELECTION</button>
+                  <button className="small" onClick={evt_EditFilter}>EDIT</button>
+                  <button className="small" onClick={evt_NewFilter}>NEW DATA SELECTION</button>
+                </div>
+              </div>
             </div>
             <br />
             {visual.type ? CONFIGURE : SELECT_TYPE}
@@ -199,6 +224,7 @@ export default function EXPEdit({ fs, setFs, onExit }) {
           <button onClick={onExit}>Cancel</button>
           <button className="primary" onClick={onExit}>Save</button>
         </div>
+        {editingFilter && <FilterEdit fs={fs} setFs={setFs} />}
       </div>
     </div >
   )
