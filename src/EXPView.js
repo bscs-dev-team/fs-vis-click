@@ -112,7 +112,7 @@ export default function EXPView({ id, fs, setFs }) {
           <div><b>{visual.title}</b>: {visual.description}</div>
           <div className="tableOrMap">
             <label>Table</label>
-            <input value={visual.showTable ? "0" : "1"} onClick={evt_ToggleMap} type="range" min="0" max="1" step="1" />
+            <input value={visual.showTable ? "0" : "1"} onClick={evt_ToggleMap} readOnly type="range" min="0" max="1" step="1" />
             <label>Map</label>
           </div>
         </div>

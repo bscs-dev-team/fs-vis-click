@@ -129,7 +129,7 @@ export default function EXPEdit({ fs, setFs, onExit }) {
           </select>
         </label>
 
-        <label><input type="checkbox" />&nbsp;Round bucket values</label>
+        <label><input type="checkbox" readOnly />&nbsp;Round bucket values</label>
 
         <label>Y Axis summary method
           <select>
@@ -181,7 +181,7 @@ export default function EXPEdit({ fs, setFs, onExit }) {
               <label>DATA SELECTION PREVIEW: All Observations</label>
               <div className="tableOrMap">
                 <label>Table</label>
-                <input value={visual.showTable ? "0" : "1"} onClick={evt_ToggleMap} type="range" min="0" max="1" step="1" />
+                <input value={visual.showTable ? "0" : "1"} onClick={evt_ToggleMap} readOnly type="range" min="0" max="1" step="1" />
                 <label>Map</label>
               </div>
             </div>
