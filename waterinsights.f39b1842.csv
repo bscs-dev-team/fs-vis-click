@@ -1,0 +1,935 @@
+﻿Status,Station Name,Observation Date,Latitude,Longitude,Water Type,pH,Nitrate,Nitrite,Hardness,Chlorine,Alkalinity,Other Observations
+,Gokarna,2023-03-14,14.54887,74.32324,Well,6.2,10,0,75,0,50,
+,Gokarna,2023-03-14,14.54887,74.32324,Tap Water,7.2,20,2,150,0,300,"not sure if the strip worked well, cause there is a smell of chlorine in the water but the test showed almost none. Refer to the photo for more accurate results. "
+,"Green River Natural Resources Area, Kent, WA ",2023-02-11,47.40995,-122.26629,,7.2,0,0,0,0.5,150,
+,Hope Research Base,2023-02-07,38.30124,-77.71291,Tap Water,6.8,0,1,75,0.3,120,Poor Water Pressure
+,Bingaman Pond Natural Area,2023-01-27,47.34627,-122.28726,Pond,6.8,10,0.25,,0,,
+,Residential,2023-01-27,47.3479,-122.26735,Tap Water,7.2,1.5,0,169,0.5,156,
+,Great Kids Farms,2023-01-21,41.808007,-85.127233,Stream,6.2,20,0,300,0,120,
+,Great Kids Farm,2023-01-21,39.347979,-76.63696,,8.4,15,0,75,0,150,
+,Great Kids Farm,2023-01-21,39.347979,-76.63696,Stream,8,10,0,200,0.5,150,
+,Great Kids Farm,2023-01-21,39.347979,-76.63696,Stream,7.8,5,0,300,0,80,
+,Great Kids Farm,2023-01-21,39.347979,-76.63696,Stream,6.2,0,0,200,0,100,
+,Great Kids Farm,2023-01-21,39.347979,-76.63696,Stream,6.8,5,0,150,0,150,
+,Great Kids Farm,2023-01-21,39.347979,-76.63696,Stream,6.5,5,0,300,0,180,
+,clark park,2023-01-11,41.94476,-87.69428,Pond,7,,,,,,test observations
+,House tap water,2022-12-12,36.99144,-121.95352,Tap Water,,,,,,,
+,House tap water,2022-12-12,36.99144,-121.95352,Tap Water,5,0.08,,,,,
+,Klug Hill ,2022-12-12,41.821014,-73.172185,Well,6.7,2,0.1,26,0,115,
+,Nepaug,2022-12-12,41.79789,-73.008905,Well,6.2,10,0,0,0,80,Water is well water.
+,Northfield Pond,2022-12-12,41.699846,-73.103913,Pond,6.2,0,0,0,0,0,
+,Connecticut,2022-12-11,35.395548,-80.921663,Tap Water,6.2,0,0.5,0,0,40,
+,unionville,2022-12-09,41.761391,-72.88538,Rainwater,6.5,0,0,0,0.5,80,pooled rainwater that collects in a bucket outside my house
+,LaBagh Woods ,2022-11-11,41.977777,-87.74013,River,7.8,25,0,300,0,180,
+,Eugene Field Park,2022-11-07,23.555614,-87.72208,River,6.8,20,0,230,0,155,
+,North Branch Chicago River and North Shore Channel Confluence.,2022-11-07,41.973274,-87.704499,River,7.5,30,0,100,0,170,
+,Lake and Wacker Chicago River,2022-11-06,41.886124,-87.63716,River,7.5,40,0,300,1,120,
+,Columbus and Wacker Chicago River,2022-11-06,41.889059,-87.620586,River,8,20,0.5,150,1,180,
+,Loyola Beach - N Sheridan and W Pratt Blvd,2022-11-06,42.005498,-87.657157,Lake,6.2,0,0,150,0,120,
+,Lake and Wacker Chicago river location,2022-11-06,41.9707,-87.6993,River,7.5,40,0,300,1,120,
+,Chicago River Canoe and Kayak ,2022-11-05,41.94335,-87.69511,River,6.8,60,2,300,0.5,120,
+,Caldwell Woods (sight 4*) ,2022-11-05,41.99722,-87.77654,River,8.4,20,0.5,300,0.5,300,muddy and wet (golf balls covered river bottom) (58 degrees and windy)
+,Bunker Hill (sight 2*) ,2022-11-05,42.00896,-87.79355,,7,0,10,170,0,100,"under a bridge (Cold, Windy, Right after rain) "
+,River Park (sight 3*) ,2022-11-04,41.97577,-87.70476,River,8.4,40,1,300,0,180,"crowded with people and vegetation (58 degrees, windy) "
+,Tom Ping Memorial Park,2022-11-04,41.85726,-87.63491,River,8.4,20,1,225,0.5,180,
+,Bunker Hill (sight 1*) ,2022-11-04,42.00397,-87.78925,River,7.5,0,10,180,0,150,slightly muddy 
+,Dihydrogen Monoxide,2022-11-04,42.10169,-87.75923,River,8.5,20,2,250,0.2,275,"murky water, pollution in water and on shore, logs in water, tall grass"
+,Dihydrogen Monoxide,2022-11-04,42.10169,-87.75923,River,8.5,20,2,250,0.2,275,"Murky water, swampy, pollution in water such as plastic bottles, large logs in and out of shoreline, and tall grass and trees were present."
+,clark park,2022-11-02,41.94476,-87.69428,River,7.2,20,0,300,0,180,"there was a dock around the area there was ducks, water seemed to have algea "
+,West River Park,2022-11-02,41.97213,-87.70367,River,7.5,30,0,200,0,150,Many boats were in the river. Calm flow under a bridge.
+,Eugene Field (Pond),2022-11-01,41.973728,-87.722127,Pond,7.8,20,3,300,0.3,0.26,Water turbidity was very foggy & contaminated with outside nearby debris from Eugene Park
+,Gompers Lagoon and Wetland (sight 5*) ,2022-11-01,41.97479,-87.72853,River,7.2,40,0,300,1,7.2,Meadow/ Marshland
+,Forest Glen Woods ,2022-11-01,41.98568,-87.75753,River,7.2,20,0,300,0,120,Basketball in the river. River is flowing at a moderate pace. A few leaves in the water. 
+,Backyard Pond,2022-10-27,41.854285,-73.072974,Pond,6.2,2,0,25,0.6,0,"Usually dry, but just had rainfall. A lot of debris."
+,West Granby,2022-10-26,41.956505,-72.84036,River,6.2,0,0,0,0,40,
+,Torrington water data,2022-10-26,41.810075,-73.088722,Tap Water,6.8,20,0,75,0,80,
+,"Torrington, CT water data",2022-10-26,41.810046,-73.088781,Tap Water,6.8,20,0,75,0,80,
+,soquel creek,2022-10-24,15.941007,-2.650577,Stream,7.8,0,1,300,0,300,
+,under trestle,2022-10-24,13.293461,8.988487,Stormwater,7.2,0,0.5,150,0,180,
+,blue ball park,2022-10-24,36.9944,-121.95992,Tap Water,8.4,20,0,25,0.5,300,
+,My house,2022-10-24,36.994667,-121.956706,River,7.8,0,0,300,0,300,A lot of leaves and plants around the water. 
+,House tap water,2022-10-23,36.99144,-121.95352,Tap Water,8.4,0,0,75,0,180,the water was clear.
+,drinking fountain at soquel high school,2022-10-23,16.957158,-5.292446,Tap Water,7.2,0,0,300,0,180,
+,Neary Lagoon,2022-10-23,36.96146,-122.03209,Lake,7.8,0,0,300,1,300,
+,Antonelli Pond,2022-10-23,36.96272,-122.031919,Lake,7.8,0,0,300,1,300,
+,house,2022-10-23,36.98173,-121.94086,Tap Water,6.8,0,0,300,0.5,80,
+,Antonelli Pond,2022-10-23,36.95481,-122.06043,Pond,8.4,0,0,75,1,180,
+,Nearly Lagoon ,2022-10-23,36.96315,-122.03209,Lake,7.8,0,0,300,1,300,
+,Soquel creek mouth ,2022-10-23,36.97521,-121.95519,River,8.4,0,0,300,0.2,120,"Currently closed off from the ocean, is currently freshwater"
+,Soquel Creek,2022-10-23,36.98905,-121.95519,River,8,0,0,150,0,180,"Surrounding area was very foresty, lots of tree cover."
+,creek under bridge ,2022-10-23,36.99134,-121.95587,Stream,7.8,5,0.5,25,0.5,300,
+,Antonelli Pond,2022-10-23,36.95481,-122.06093,Pond,8.4,0,0,75,1,180,
+,Antonelli Pond,2022-10-23,36.95481,-122.06043,Pond,8.4,0,0,75,1,180,
+,Westlake Park,2022-10-23,36.97637,-122.04554,Pond,8.4,0,0,75,0.5,180,
+,House :),2022-10-23,36.99226,-121.93791,Tap Water,8.4,0,0,150,0,180,"Very clear, has some bubbles, nothing unusual."
+,westslake park ,2022-10-23,36.97637,-122.04554,Pond,8.4,0,0,75,1,180,
+,West Lake Park,2022-10-23,36.97637,-122.04554,Pond,8.4,0,0,300,0.5,300,
+,my house,2022-10-23,36.99053,-121.95413,Tap Water,7.2,0,0,75,0,120,
+,home ,2022-10-23,36.982,-121.98641,Well,6.8,0,0.5,300,0,40,
+,my well water,2022-10-23,36.96909,-121.85129,Well,6.8,20,0,75,0,80,
+,mi casa ,2022-10-23,36.98571,121.96187,Runoff,6.2,0,0.5,75,0,180,
+,home,2022-10-23,36.7376,-121.64099,Rainwater,6.2,0,0,75,0,120,
+,Soquel Creek Little Tampico,2022-10-23,36.98558,-121.9554,Stream,8.4,0,0,300,0.5,300,
+,Soquel Creek ,2022-10-23,36.98558,-121.9554,Stream,8.4,0,0,300,0.5,300,
+,friends pond,2022-10-23,36.9905,-121.91934,Pond,7.2,0,0,100,0,250,
+,home,2022-10-23,53.2734,-7.77832,Rainwater,6.2,0,0,75,0,40,
+,Home,2022-10-23,36.98206,-121.94042,Tap Water,7.8,0,0,300,0,7.8,
+,home ,2022-10-23,36.98193,-121.98647,Pond,6.2,0,0.5,150,0,40,
+,friends house,2022-10-23,36.9905,-121.9934,Tap Water,7.5,5,0,0,0,200,
+,Aptos Creek,2022-10-23,36.98423,-121.90621,River,7.2,40,1,150,1,7.2,
+,home.,2022-10-23,53.2734,-7.77832,Runoff,7.8,20,0.5,150,0,180,
+,land of medicine buddah,2022-10-23,37.00519,-121.93918,Stream,8,5,0,300,0,300,none
+,Soquel creek under bridge,2022-10-23,36.98905,-121.95519,River,8,0,0,150,0,180,
+,Home,2022-10-23,53.2734,-7.77832,Tap Water,7.8,0,0,150,0,180,
+,Soquel Creek,2022-10-23,36.99124,-121.95592,River,7.8,20,0,150,0.5,300,
+,Westlake,2022-10-23,36.97637,-122.04554,,8.4,0,0,75,1,180,Ducks and geese in the water murky.
+,house,2022-10-23,36.99932,-121.94261,Tap Water,8.4,10,0,150,0,180,
+,Neary Lagoon,2022-10-23,36.96315,-122.03209,Lake,7.8,0,0,300,1,300,Ducks swimming in clean water.
+,Well water,2022-10-23,37.05308,-121.93147,Well,8.3,0,0,300,0,260,
+,Watsonville creek,2022-10-23,36.9349,-121.74286,,8.4,30,0.5,75,0,120,
+,Soquel creek,2022-10-23,36.988818,-121.955772,Stream,8.4,0,0,300,0.5,300,
+,Soquel Creek,2022-10-23,36.99133,-121.95585,Stream,8.4,15,0,150,0.5,300,The water wasn't clear it had a little tint of color to it
+,Well water,2022-10-23,37.05046,-121.9287,Tap Water,8.1,0,0,0,0,240,
+,Pinto Lake,2022-10-23,36.95079,-121.76798,,8.4,20,0.5,150,0,180,
+,Soquel Creek,2022-10-23,36.98558,-121.9554,Stream,8.4,0,0,300,0.5,300,Low clear water.
+,Soquel creek ,2022-10-23,36.98669,-121.95561,Stream,7.8,0,0,300,0,300,
+,Home,2022-10-23,36.91841,-121.74528,,7.8,0,0,150,0,100,
+,nisene river,2022-10-23,36.98189,-121.90514,River,7,60,3,200,1,180,
+,olive springs,2022-10-23,37.05489,-121.93161,Stream,6.9,0,0,60,0,90,its a spring
+,Land Of Medicine BUddha,2022-10-23,36.942802,-121.773147,,8,5,0,300,0,300,
+,house,2022-10-23,36.9905,-121.91934,Pond,7.2,0,0,100,0,250,
+,creek water,2022-10-23,36.98827,-121.93829,,6.2,80,3.5,150,0,80,pretty stagnant
+,Watsonville creek,2022-10-23,35.011495,-130.96548,,8.4,30,0.5,75,0,100,
+,LMB,2022-10-23,37.00897,-121.93684,Stream,8,5,0,300,0,300,
+,House,2022-10-23,36.98596,-121.93235,Tap Water,6.8,0,0,0,0,40,
+,Pinto Lake,2022-10-23,36.95079,-121.76798,,8.4,20,0.5,150,0,180,
+,Rain Water On Property,2022-10-22,37.04573,-121.93775,Rainwater,8.4,0,10,75,0,300,
+,Well water,2022-10-22,37.04573,-121.97758,Well,7.8,0,10,75,0,300,
+,Pinto Lake,2022-10-22,36.96009,-121.77064,Lake,7.6,0,0,150,0,180,"There were animals such as cranes and ducks in the water. The water was extremely murky, and there was signs of eutrophication. "
+,My House,2022-10-22,37.04569,-121.93788,Tap Water,7.8,0,0,75,0,300,
+,Starbucks Water,2022-10-21,36.9156,-121.77499,Tap Water,8.4,0,0,75,0,80,This Starbucks is around a lot of other businesses and is in the middle of town.
+,My House,2022-10-21,36.82534,-121.70778,Tap Water,7.2,0,0,75,0,120,My house is near trees and is on a hill.
+,Soquel Creek,2022-10-21,36.97162,-121.9519,Pond,7.8,0,0,300,0,300,"There were a lot of leaves, rocks and dirt around the creek."
+,aptos creek,2022-10-21,36.99425,-121.90643,Stream,6.8,20,0.5,25,0,180,
+,My house,2022-10-21,36.994667,-121.956706,Tap Water,7.8,0,0,0,0,300,
+,fridge water,2022-10-20,36.9748,-121.98737,Tap Water,6.8,0,0,75,0,180,none.
+,my house,2022-10-20,36.97483,-121.98749,Tap Water,6.8,0,0,75,0,180,
+,tap water,2022-10-20,36.99649,-121.91372,Tap Water,7.2,0,0,0,0,120,
+,hot tub ,2022-10-20,36.99647,-121.91385,Tap Water,7.8,20,0,0,0,120,
+,Tap Water form my House ,2022-10-19,36.92713,-121.7809,Tap Water,7.2,0,0,150,0,300,
+,Upstream Soquel CreeK,2022-10-19,36.99073,-121.956,,7.8,0,0,300,0,300,
+,Soquel Creek ,2022-10-19,36.99129,-121.95569,Stream,8.4,0,0,300,0,300,
+,backhouse sink,2022-10-06,36.97486,-121.98749,Tap Water,6.2,0,0,150,0,180,
+,"Tezpur, Parvati Nagar",2022-10-02,26.627562,92.771499,Tap Water,6.2,20,0,150,0,80,
+,Ben Franklin HS TURTLE TANK ,2022-09-29,39.232389,-76.594145,Pond,6.2,200,1,300,0,0,Turtle tank at Ben Franklin @ Masonville Cove. Water has mild turbidity. pH pad on test strip was yellow. Water is likely more acidic than test parameters were able to measure. 
+,Ben Franklin HS tap water ,2022-09-29,39.232389,-76.594145,Tap Water,6.2,0,0,25,0,80,
+,Patterson Park boat lake,2022-09-26,39.29215,-76.57793,Pond,8.4,0,1,75,0,80,lots of small aquatic plant growth
+,Gilmor and Pratt Street ,2022-09-21,39.285178,-76.642034,Tap Water,7.2,0,0,75,0,7.2,
+,Sky High Ranch Upper Pond,2022-08-27,39.08368,-105.09752,Pond,6.7,1.57,0.04,69.92,0.5,60.48,
+,Snoqualmie River,2022-08-04,47.526275,-121.815644,River,6.2,0,0,75,0,0,
+,Lake Sammamish,2022-08-04,47.60235,-122.08868,Lake,6.2,0,0,75,1,80,
+,Issaquah,2022-08-04,47.5301,-122.03439,Pond,6.2,0,10,300,0,120,
+,Mjeidel,2022-07-04,33.521742,35.438748,Stream,,,,,,,
+,Lake Sammamish,2022-06-12,47.60235,-122.08868,Lake,6.2,0,0,25,0,80,
+,Cedar River,2022-06-12,47.50066,-122.21623,River,6.2,0,0,0,0,0,
+,lake washington,2022-06-11,47.566002,-122.189891,Lake,6.8,0,0,75,0,40,
+,station Bellevue,2022-06-11,47.571703,-122.171813,Tap Water,6.2,0,0,25,0,40,
+,"Lake Holly North, VA, USA",2022-06-02,36.840037,-75.977546,Lake,6.8,0,0,300,0,80,
+,Soquel Creek,2022-05-30,36.97261,-121.95334,River,8.1,0,0,300,0.5,220,
+,Danbury. ct,2022-05-28,41.385274,-73.459232,Tap Water,7.2,10,0,75,0,120,
+,"Mapusa-Moira Rd, Moira, Goa",2022-05-27,15.59439,73.83427,Pond,7.8,0,0,150,0,300,
+,"Mapusa-Moira Rd, Moira, Goa",2022-05-26,15.59439,73.83427,River,6.8,0,0.5,300,0,40,
+,"Casa Frangipani, Quitula, Aldona, Goa",2022-05-26,15.60514,73.87503,Tap Water,6.2,20,0,0,0,40,Alkalinity 6.2
+,"Guirim,Goa",2022-05-26,15.57492,73.79762,Runoff,6.2,20,0,75,0.5,40,
+,casa frangipani quitula,2022-05-26,15.60141,73.87574,Well,6.2,0,0,0,0,0,
+,"Naicavaddo, Aldona, goa  ",2022-05-26,15.58494,73.86588,Well,6.2,0,0,0,0,40,
+,Masters School,2022-05-25,41.010856,-73.869812,River,7.8,10,0,300,0.5,180,
+,Masters School,2022-05-25,41.010856,-73.869812,Stream,6.8,10,0,300,0,100,
+,Masters School,2022-05-25,41.010856,-73.869812,Stream,8.4,0,0,300,0,120,wooded area; water coming out of pipes
+,Masters School,2022-05-24,41.010856,-73.869812,Tap Water,6.2,0,0,25,0,75,clear tap water
+,"Scarsdale, NY",2022-05-24,40.98823,-73.79681,Tap Water,4,0,0,25,0.1,0,
+,"Somers, NY",2022-05-24,41.327559,-73.687263,Tap Water,6.8,15,0,0,0,120,
+,"Tenafly, NJ",2022-05-24,40.92768,-74.113113,Tap Water,7.2,0,0.5,150,0,80,
+,"Maple Valley, WA",2022-05-23,47.39393,-122.04526,Tap Water,8.4,0,0,75,0,80,
+,Bastora ,2022-05-19,27.055,76.1594,Tap Water,6.2,0,0,0,0,0,
+,Bastora,2022-05-19,27.055,76.1594,Tap Water,6.2,0,0,0,0,0,
+,house ,2022-05-18,36.96274,-121.99294,Tap Water,6.8,0,0.5,15,0,18,
+,Shwan Lagoon ,2022-05-18,36.96233,-121.99702,Lake,7.8,0,0.5,150,0,180,
+,Corcoran Lagoon,2022-05-18,36.960849,-121.982142,Pond,8.4,0,0,300,0,180,
+,Corcoran Lagoon ,2022-05-18,36.96233,-121.97885,Lake,8.4,0,0,300,0,180,
+,Newport RI - Home,2022-05-08,41.4948,-71.308069,Tap Water,6.8,0,0,75,0.5,40,Tap water from my kitchen sink.
+,Newport RI - Home,2022-05-08,41.4948,-71.308069,Pond,1,0,10,100,6,100,Test Observation
+,ceramics faucet,2022-05-05,36.9889,-121.95952,Tap Water,7.2,0,0,150,0,40,
+,Soquel Creek under bridge,2022-05-05,36.99115,-121.95578,Stream,8.4,0,0,300,0.5,300,
+,Well water in Soquel,2022-05-05,37.00821,-121.97179,Well,6.8,0,0,75,0,120,
+,room 223,2022-05-05,36.98961,-121.95916,Tap Water,8,0,0,300,0,300,
+,my house,2022-05-05,36.96785,-121.98057,Tap Water,7.2,0,0,75,0,180,
+,my house,2022-05-05,36.96785,-121.98057,Tap Water,7.8,0,0,50,0,180,this was from a water filter
+,house near soquel high school ,2022-05-05,36.98533,-121.96144,Tap Water,7.2,0,0,75,0,240,
+,residential house,2022-05-05,36.89312,-121.98147,Tap Water,7.4,20,0,150,0,180,
+,ceramics class faucet ,2022-05-04,36.98903,-121.95949,,6.8,0,0,0,0,8.4,
+,Tap,2022-05-04,36.96996,-121.89625,Tap Water,7.2,0,20,150,0,180,
+,womp womp,2022-05-04,36.98834,-121.94497,Tap Water,6.2,0,0,0,0,0,distilled water 
+,womp womp,2022-05-04,36.98834,-121.94497,Stream,7.8,0.5,0,300,0,300,
+,water,2022-05-04,36.98545,-121.9596,Tap Water,7.2,0,0,0,0,180,
+,Aptos Creek,2022-05-04,36.98469,-121.90647,Stream,7.8,0,0,150,0,180,
+,residential tap water ,2022-05-04,36.96525,-121.96808,Tap Water,6.8,0,0,75,,180,clean water 
+,Monterey Vista Dr,2022-05-04,36.91336,-121.77503,Tap Water,8.4,20,0,0,0,180,Bathroom sink
+,Soquel creek ,2022-05-04,36.982938,-121.959406,River,8.4,0,0,300,0,300,water was dirty 
+,Creek by play it again sports,2022-05-04,36.98784,-121.45561,Stream,8.4,0,0,300,0,180,
+,capitola by new brighton,2022-05-04,36.98118,-121.94191,Tap Water,7.8,0,0,150,0,180,
+,soquel creek,2022-05-04,36.9864,-121.9557,Stream,7.8,0,0.5,300,0,300,not running very much. waters somewhat clear.
+,soquel creek,2022-05-04,36.9864,-121.9557,Stream,8.4,0,0.5,75,0.5,300,
+,Corcoran Lagoon,2022-05-04,36.961,-121.9825,Lake,7.8,20,1,300,0.5,300,
+,Tap Water,2022-05-04,36.9893,-121.94662,Tap Water,7.2,0,0,75,0,180,
+,Soquel Creek,2022-05-04,36.979888,-121.957778,Stream,7.8,0,0,150,0,300,Slow moving part of the river
+,Tap Water,2022-05-04,36.96541,-121.9685,Tap Water,6.8,0,0,0,0,0,
+,Site 244,2022-05-04,36.99491,-121.960623,Tap Water,6.8,0,0,75,0,180,Scaling
+,Plant Rain Water,2022-05-04,36.97908,-121.94505,,8.4,0,0,150,0.5,300,This water had plant water and fertilizer in it.
+,Capitola,2022-05-04,36.973705,-121.968515,River,8.4,0,0,300,0,235,"Very slight brown tint, a few specs. "
+,Residential Area,2022-05-04,36.97751,-121.95877,Tap Water,7.2,0,0,75,0,120,
+,Corcoran Lagoon,2022-05-04,36.962109,-121.981579,Lake,8.4,20,1,300,0.5,300,brownish water with little bugs floating around in it
+,House,2022-05-04,36.97063,-121.96587,Tap Water,7.2,0,0,300,0.25,235,"Water is very clear, slight scent of chlorine, no specs. "
+,House,2022-05-04,36.97063,-121.96587,Rainwater,6.2,0,0,75,0.25,95,"Water is dark in color, many little specs. "
+,house,2022-05-04,36.98991,-121.99012,Tap Water,6.2,0,0,75,0.5,300,
+,Capitola Lagoon,2022-05-04,36.971436,-121.951544,Stream,8.4,0,0.5,300,0.5,300,This is the time where the lagoon flows into the ocean
+,house,2022-05-04,36.98991,-121.99012,Tap Water,6.8,0,0,75,0,0,
+,home,2022-05-04,36.9731,-121.89866,Tap Water,8.4,0,0,75,0,300,
+,Soquel High School,2022-05-04,36.99085,-121.95945,Lake,6.2,10,1,150,0.5,180,
+,Soquel High School,2022-05-04,36.99085,-121.95945,Tap Water,8.4,0,0,300,1,180,
+,Aptos Creek ,2022-05-04,36.97698,-121.90436,Stream,7.6,0,0,300,0.5,350,
+,a house,2022-05-04,36.9855,-121.95024,Tap Water,7.8,20,0,75,0,180,very delicious well enjoyed while playing MLB the show and watching YouTube by users
+,Aptos Creek ,2022-05-04,36.9779,-121.90501,Stream,7.8,0,0,300,0,180,
+,Corcoran Lagoon,2022-05-03,36.960849,-121.982142,River,7.8,0,0,300,0,120,"Some areas covered with a brown/green layer on top of water, directly in sunlightlight "
+,room 223,2022-05-03,36.98961,-121.95916,Tap Water,7.2,20,0,75,0,120,
+,room 223,2022-05-03,36.98961,-121.95916,Lake,7.8,0,0,300,0.5,180,
+,house near soquel high school ,2022-05-03,36.98533,-121.96144,Tap Water,7.2,0,0,0,0,180,
+,Soquel Creek,2022-05-03,37.09024,-95.71289,River,7.2,0,0,75,0,120,creek
+,Soquel Creek,2022-05-03,37.09024,-95.71289,Stream,7.8,0,0,300,0,300,sediment particles in the water
+,Soquel Creek,2022-05-03,36.98678,-121.95571,River,6.8,20,1,150,4,120,
+,my house,2022-05-03,37.00091,-121.85,Tap Water,7.2,0,0,150,0,180,
+,Water from Soquel creek ,2022-05-03,36.98648,-121.95513,River,7.8,0,0,300,0,180,The water came from Soquel creek where the water flows behid the Discovery Preschool 
+,some barrel full of old ass rain water ,2022-05-03,37.05405,-121.95689,Tap Water,6.2,0,0,150,0,40,it was just some barrel with a hose in it it had like sawdust and other tree debris in it
+,aptos tap water,2022-05-03,36.98273,-121.92117,Tap Water,8.4,0,0,0,0,300,
+,moore creek,2022-05-03,37.053539,-121.955373,Stream,6.8,0,0,75,0,120,slow moving creek with man made tunnel bringing water from the creek on the other side
+,my house,2022-05-03,37.00091,-121.85,Tap Water,8.4,20,0,300,0.5,300,
+,Capitola Tap Water,2022-05-03,36.97908,-121.94505,Tap Water,7.2,20,0,75,0,120,
+,Soquel Creek,2022-05-03,36.98667,-121.95542,Stream,7.8,0,0,300,0.5,180,
+,Neary Lagoon Park,2022-05-03,36.96371,-122.03532,Stream,8.3,0,0,300,0.5,180,
+,Water Store,2022-05-03,37.09024,-95.71289,Tap Water,6.2,0,0,0,0,0,purified water
+,Soquel Creek,2022-05-03,36.95701,-121.97722,Stream,7.9,0,0,300,0.5,180,
+,Soquel Creek,2022-05-03,36.986771,-121.955891,Stream,7.8,0,0,75,0,180,"A lot of trees near on sides of creek, sunlight in some areas, other areas covered by trees"
+,soquel creek,2022-05-03,36.96412,-121.97057,Stream,6.2,0,0,15,0,80,
+,dont go to my house please,2022-05-03,36.984695,-121.960421,Tap Water,7.2,0,0,0,0,180,tasted yum
+,Neary Lagoon,2022-05-03,36.963879,-122.030811,Pond,7.8,0,0,300,0.5,300,murky
+,room 223,2022-05-02,36.98961,-121.95916,Stream,6.8,0,0,0,0,8.4,
+,House,2022-05-02,36.97063,-121.96587,Tap Water,7.8,0,0,0,0,300,
+,Soquel Creek,2022-05-02,36.98678,-121.95571,River,7.2,0,0.5,150,1,300,
+,Soquel Creek,2022-05-02,36.98678,-121.95571,Stream,7.2,50,1,75,0,200,"cloudy weather, clear water"
+,Soquel Creek,2022-05-02,36.98678,-121.95571,River,7.2,0,0.5,150,1,300,
+,Capitola Tap Water,2022-05-02,36.97908,-121.94505,Tap Water,8.4,40,0.5,150,1,180,
+,room 223,2022-05-02,36.98,-121.95,,6.8,0,0,0,0,8.4,
+,soquel creek behind quick stop,2022-05-02,36.99079,-121.94191,Stream,8.4,0,0,300,0.5,180,
+,River water,2022-05-02,36.97164,-121.95263,,7.8,0,0,150,0,120,The water was brown and looked dirty.
+,aptos creek,2022-05-02,36.97788,-121.90478,River,7.8,0,0,300,0,180,
+,soquel creek,2022-05-02,36.98679,-121.95601,River,7.8,0,0,300,0,180,
+,go to her house,2022-05-02,36.98498,-121.90478,Tap Water,7.8,0,0,180,0,180,
+,Soquel Creek,2022-05-02,33.06256,-104.21401,Stream,7.8,0,0,300,0,300,took the sample near pipe going into the water
+,Parra,2022-05-01,15.57208,73.79175,Tap Water,7.2,0,0,0,0,0,
+,Parra,2022-05-01,15.57208,73.79175,Tap Water,6.8,0,0,0,0,0,
+,Rainy rusty spit bucket,2022-05-01,36.97908,-121.94505,,8.4,50,0.5,150,1,180,This water was clear but very dirty
+,Rainwater in soquel,2022-05-01,36.99875,-121.94811,Rainwater,6.2,0,0,0,0,0,
+,Soquel ,2022-05-01,36.992576,-121.94815,Tap Water,7.8,0,0,150,0,180,The water came from my tap at home. I live in Soquel
+,blue ball park water fountian,2022-05-01,36.9951,-121.96192,Tap Water,7.2,0,0.5,150,1,300,tatses fine. not too cold
+,hot tub,2022-05-01,36.99795,-121.960112,Tap Water,8.4,0,0,150,1,300,"88 degrees, waters clear"
+,Branciforte Creek,2022-05-01,37.0127,121.99984,Stream,6.8,28,0.3,18,0.2,225,
+,Tap Water,2022-05-01,36.9783,-121.98465,Tap Water,6.8,0,0,75,0,120,This was Tap Water.
+,Soquel Creek,2022-05-01,36.98678,-121.95571,Stream,6.5,20,0.1,20,0,200,
+,San Lorenzo River,2022-05-01,36.96588,-122.01302,River,7.2,0,0,300,1,180,There was algae/moss in the San Lorenzo River
+,Moran lake ,2022-04-30,36.95694,-121.97672,Lake,8.3,0,0,200,0,80,
+,Corcoran Lagoon,2022-04-30,36.96107,-121.98226,Rainwater,7.5,0,0,300,0,80,
+,San Lorenzo River,2022-04-30,36.9865,-121.95516,River,7,35,0.6,22,0.4,240,
+,womp womp,2022-04-28,36.98834,-121.94497,Tap Water,8.4,0,0,0,0,180,filtered
+,Soquel Creek,2022-04-28,36.98678,-121.95571,Stream,6.8,0,0,75,0,180,
+,Soquel Creek,2022-04-28,36.98678,-121.95571,River,7.8,0,0,150,0,300,"River moving pretty slowly, a little algae"
+,Twin Lakes ,2022-04-28,36.9675,-121.998,Lake,6.8,0,0.5,75,0.5,80,smelled terrible 
+,Creek near Lynda's house ,2022-04-28,36.96412,-121.97057,Stream,6.2,0,0,15,0,80,near sewers 
+,Schwan Lake,2022-04-28,36.96639,-121.99437,Lake,6.2,0,0,75,0,100,"Smelled very bad, and it had very tall grass all around"
+,Schwan Lake,2022-04-28,36.96639,-121.99437,Lake,6.2,0,0,75,0.5,40,
+,Residential Stream,2022-04-28,36.96412,-121.97057,Stream,6.2,0,0,75,0,40,
+,Tiny stream,2022-04-28,36.96412,-121.97057,Stream,6.8,0,0,75,0,80,Looked very dirty
+,Soquel Creek ,2022-04-28,36.98678,-121.95571,Stream,6.2,0,0,150,0,300,a little bit of algae in the water 
+,"Lake Holly North, VA, USA",2022-04-27,36.840037,-75.977546,Lake,6.8,0,0,300,0,40,
+,room 223,2022-04-27,36.98,-121.95,Tap Water,7.8,0,0,150,0,180,water is considered hard water
+,Tap Water,2022-04-26,36.96541,-121.9685,Tap Water,7.2,0,0,150,0,80,
+,Creek,2022-04-26,36.98626,-121.96531,Stream,7.1,0.08,0.09,12,4,210,
+,Puddle,2022-04-26,36.98727,-121.96293,Rainwater,5.3,4.5,0.12,4,0.3,150,
+,Hose Water,2022-04-26,36.98727,-121.96293,Tap Water,7.2,10,1,65,3,130,
+,"house
+",2022-04-26,36.98727,-121.96293,Tap Water,7.5,10,1,68,4,110,
+,Foxs Pond,2022-04-18,40.907113,-74.516358,Pond,6.2,0,0,75,0.5,80,"Animals live in pond (fish, geese, swans)"
+,Rockaway River,2022-04-18,40.920546,-74.491411,River,6.2,0,0,75,0,80,Trash in the river
+,43 Woodside,2022-04-18,40.908392,-74.515164,Tap Water,7.2,0,0,300,0,120,
+,Sogo,2022-04-17,40.88951,-74.469477,Tap Water,6.8,20,0,300,0,120,
+,Torrington,2022-04-16,41.812675,-73.118759,Stream,6,10,2,0,0,100,
+,"Windsor, CT",2022-04-13,40.435533,-63.837183,Tap Water,6.2,0,0,0,0,40,
+,Morris Hills High School,2022-04-12,40.88986,-74.52899,Tap Water,6.8,20,0,300,0,120,
+,Amber ,2022-04-10,41.927697,-73.054537,Tap Water,6.2,0,0,0,0,0,
+,Connecticut,2022-04-09,35.395548,-80.921663,Tap Water,6.2,0,0,25,0,120,
+,Connecticut,2022-04-09,35.395548,-80.921663,Tap Water,6.2,0,0,25,0,120,
+,Connecticut,2022-04-09,35.395548,-80.921663,Tap Water,6.2,0,0,25,0,120,
+,"Southington, Connecticut",2022-04-09,41.597869,-72.867421,Well,6.8,20,0.5,75,0,120,
+,Falls Village,2022-04-09,41.981603,-73.366365,Tap Water,6.2,0,0,0,0,40,
+,Site 608,2022-04-09,41.841318,-73.146386,Well,6.8,0,0,75,0,120,
+,Site 608,2022-04-08,41.841318,-73.146386,Well,6.8,0,0,75,0,120,
+,House,2022-04-07,36.97063,-121.96587,Tap Water,7.2,0,0,150,0,80,
+,Home,2022-04-07,41.87945,-72.98023,Well,6.2,20,1,75,0,80,
+,Site 391,2022-04-07,41.808703,-73.068241,Tap Water,6.8,10,0,0,5,20,
+,Site 391,2022-04-07,41.808703,-73.068241,Tap Water,,,,,0,0,
+,Residential water supply in Carona,2022-04-07,15.57843,73.877292,Tap Water,6.8,0,0.5,0,0,20,
+,Connecticut,2022-04-06,35.395548,-80.921663,Tap Water,6.2,0,0,0,0,40,
+,Home,2022-04-05,41.599817,-72.988762,Well,6.8,20,0,75,0,120,
+,Canterbury Court,2022-04-05,41.86573,-73.078821,Tap Water,6.2,0,0,0,0,180,
+,Boise River Monitoring Site 1,2022-03-22,43.594214,-116.173874,River,6.5,20,1,25,1,40,The river looked very muddy this day after recent rains
+,Site 643,2022-03-09,39.425876,-77.444778,Pond,1,1,1,1,1,1,Test
+,Site 674,2022-03-08,41.78552,-73.075945,Tap Water,6.2,0,0,25,0,40,
+,0,2022-03-04,41.585236,-72.758291,Tap Water,7.8,20,0,75,0,120,
+,Site 451,2022-03-03,41.823969,-73.081317,Lake,6,0,0.5,75,0,40,
+,Mjeidel,2022-02-20,33.521742,35.438748,Stream,,,,,,,
+,Site 445,2022-02-04,41.756262,-73.030042,Tap Water,6.2,20,0,0,0,40,
+,Site 444,2022-02-04,41.941416,-72.957868,Tap Water,6.2,0,0,0,0,0,
+,Site 443,2022-02-04,41.941416,-72.957868,Tap Water,6.2,0,0,0,0,0,
+,Site 442,2022-02-04,41.542626,-73.00273,Tap Water,6.2,0,0,0,0,40,
+,Site 441,2022-02-04,41.892493,-73.322165,Tap Water,6.2,0,0,0,0,40,
+,Site 440,2022-02-04,41.646155,-72.370892,Tap Water,6.2,0,0,0,0.5,0,
+,Site 439,2022-02-04,41.756473,-73.217626,Well,7.8,20,1,25,0,180,
+,Site 438,2022-02-04,41.393799,-73.470539,Tap Water,6.8,0,0,75,0,80,
+,Site 437,2022-02-04,41.811459,-73.115759,Tap Water,6.8,0,0,25,0.5,40,
+,Site 436,2022-02-04,41.811459,-73.115759,Tap Water,6.8,0,0,25,0.5,40,
+,Site 435,2022-02-04,41.710536,-72.207535,Stormwater,6.8,0,1,150,0,80,It is mostly clear water collected during the rain storm today on 2/4/2022.
+,Site 434,2022-02-04,41.805159,-73.132904,Tap Water,6.2,0,0,25,0,40,
+,Site 433,2022-02-04,41.464832,-72.81681,Tap Water,6.2,20,0,25,0,40,
+,Site 448,2022-02-03,41.805396,-73.095046,Well,7.2,20,0,150,0,120,
+,Site 447,2022-02-03,41.810737,-73.004409,Tap Water,7.8,20,0,75,0,80,
+,Site 446,2022-02-03,41.80382,-73.147292,Tap Water,6.2,0,0,0,0,40,
+,Site 450,2022-02-02,41.809659,-72.927142,Tap Water,6.2,0,0,0,0,0,
+,Site 449,2022-02-02,41.866036,-73.06799,Tap Water,6.2,0,0,0,0.5,40,
+,Site 451,2022-02-01,41.823969,-73.081317,Tap Water,8.4,0,0,0,0,40,
+,Site 452,2022-02-01,41.64548,-72.792254,Tap Water,6.2,0,0,25,0,80,
+,Site 453,2022-01-29,47.539787,-122.162352,Tap Water,6.2,0,0,0,0,0,Streams in the area are frequently labeled with caution signs stating not to drink the water as it contains metals from and off-site source.
+,Site 469,2022-01-26,39.659105,-79.990954,River,7.8,20,0.5,75,2,0,
+,Site 468,2022-01-26,39.659105,-79.990954,River,7.8,20,0.5,75,2,0,
+,Site 467,2022-01-26,39.666748,-79.956924,Tap Water,6.8,0,0,300,4,0,
+,Site 466,2022-01-26,40.698648,-89.626342,Tap Water,7.2,200,0,25,4,40,
+,Site 465,2022-01-26,39.573664,-78.061084,Tap Water,6.2,0,1,300,0,0,
+,Site 464,2022-01-26,47.733833,-121.972455,Stream,7.8,0,10,75,6,0,standing water from a mostly dried up steam
+,Site 463,2022-01-26,47.734129,-121.972895,Tap Water,6.8,0,0,75,4,0,
+,Site 462,2022-01-26,33.224783,-86.836744,Tap Water,7.8,20,3,75,6,0,
+,Site 461,2022-01-26,33.224669,-86.836748,Tap Water,7.8,0,5,25,4,40,
+,Site 460,2022-01-26,39.452627,-82.92508,Tap Water,7.2,0,0,0,4,300,
+,Site 459,2022-01-26,39.563041,-82.781693,Stream,7.8,0,0,300,4,120,
+,Site 458,2022-01-26,33.230394,-86.821964,Stream,8.4,0,0,300,4,300,buck creek trail alabaster AL 35007
+,Site 457,2022-01-26,33.189138,-86.837328,Pond,7.8,0,0,75,4,40,
+,Site 456,2022-01-26,33.104072,-86.87536,Lake,6.8,0,0,300,4,0,
+,Site 455,2022-01-26,33.483206,-86.707209,River,7.2,0,0,0,6,0,
+,Site 454,2022-01-26,32.353583,-90.202482,Tap Water,7.8,0,0,75,4,0,Powell middle  school
+,Site 471,2022-01-24,10.31347,77.52014,River,6.8,0,0,75,0.5,80,This test was taken in a river that runs through a rich patch of forest (a planted forest with some indigenous species in the mix). Elephants in the area have been known to pass through often. The river passes through Kodaikanal (a popular hill-station in the South of India) before it reaches the spot where we took this particular test.
+,Site 470,2022-01-24,10.32218,77.52441,River,7.8,0,0,25,0.5,120,
+,Site 476,2022-01-21,32.353454,-90.202488,Runoff,7.8,0,0,75,4,0,
+,Site 475,2022-01-21,32.344905,-89.818643,Runoff,7.8,0,0,75,4,0,Water was dried up almost
+,Site 474,2022-01-21,32.353742,-90.202639,Tap Water,7.2,0,0,75,0.5,80,
+,Site 473,2022-01-21,32.353394,-90.202384,Tap Water,7.2,20,0.5,75,0.5,80,
+,Site 472,2022-01-21,32.353742,-90.202639,Runoff,8.4,0,0.5,150,0.5,300,
+,Site 478,2021-11-25,47.45211,-121.7088,Tap Water,6.8,0,0,25,0,80,
+,Site 480,2021-11-23,47.33,-122.58,Tap Water,7.2,0,0,25,0,80,
+,Site 479,2021-11-23,47.3378,-122.5935,Stream,6.8,0,0,25,0,40,
+,Site 483,2021-11-05,44.868903,-93.139772,Pond,7.2,0,0,75,0,80,
+,Site 482,2021-11-05,44.867572,-93.13282,Pond,6.8,0,0,75,0,40,
+,Site 481,2021-11-05,44.868614,-93.132845,Tap Water,6.2,0,0,25,0,40,Filitered city water within a school drinking fountain
+,Site 484,2021-10-26,41.684385,-72.772955,Tap Water,7.2,0,0.5,150,2,120,
+,Site 490,2021-10-14,41.81628,-73.12143,Tap Water,6.2,40,1,0,0,180,
+,Site 489,2021-10-14,41.81628,-73.12143,Tap Water,6.2,40,1,0,0,180,
+,Site 488,2021-10-14,41.882177,-73.475166,Tap Water,7.2,40,3,150,0,120,
+,Site 486,2021-10-14,41.290011,-72.93511,Tap Water,6.2,0,0,0,0,0,
+,Site 499,2021-10-13,41.766093,-73.030042,Well,6.2,40,3,25,0,120,
+,Site 498,2021-10-13,41.995256,-73.191161,Tap Water,6.2,0,0,0,0,0,
+,Site 497,2021-10-13,41.612863,-72.885955,Well,7.2,0,0,0,0,180,
+,Site 494,2021-10-13,41.799915,-73.085871,Well,6.2,20,0,25,0,0,
+,Site 493,2021-10-13,41.797438,-73.161121,Tap Water,6.2,0,0,0,0,40,
+,Site 492,2021-10-13,41.797438,-73.161121,Tap Water,6.2,0,0,0,0,40,
+,Site 491,2021-10-13,41.932286,-73.052855,Tap Water,7.2,40,1,75,0.5,80,
+,Site 505,2021-10-12,41.759539,-73.148006,Tap Water,6.8,20,0,75,0,180,
+,Site 503,2021-10-12,41.816056,-73.155115,Tap Water,6.8,40,1,25,0,180,
+,Site 502,2021-10-12,41.753669,-72.876953,Tap Water,6.8,20,0,25,0,80,
+,Site 501,2021-10-12,41.753915,-72.877186,Tap Water,6.8,20,0,25,0,80,
+,Site 500,2021-10-12,41.980726,-73.159672,Well,6.8,0,0,25,0,40,"Well Water, Norfolk CT"
+,Site 511,2021-10-11,41.876663,-72.981419,Tap Water,6.2,40,0.5,0,0,40,
+,Site 510,2021-10-11,41.778156,-72.949529,Well,6.2,0,0,25,0,40,
+,Site 509,2021-10-11,41.778156,-72.949529,Well,6.2,0,0,25,0,40,
+,Site 508,2021-10-11,41.852203,-73.619259,Stream,8.4,20,0,300,0,300,
+,Site 507,2021-10-11,42.002123,-73.222096,Well,6.2,0,0,25,0,0,
+,Site 506,2021-10-11,41.759539,-73.148006,Well,6.8,20,0,75,0,180,
+,Site 516,2021-10-08,41.795227,-73.124104,Tap Water,6.2,160,10,0,0,120,
+,Site 515,2021-10-08,41.985377,-73.424766,Tap Water,6.2,0,0,0,0,40,
+,Site 514,2021-10-08,41.984099,-73.42268,Tap Water,6.2,0,0,0,0,40,
+,Site 513,2021-10-08,41.815498,-73.128022,Tap Water,6.2,0,0,25,0,0,"one edge of Total alkalinity mark was turning green 
+one edge of pH mark was becoming higher in pH 6.8"
+,Site 518,2021-10-07,41.948587,-72.862584,Well,6.8,0,0,25,0,120,
+,Site 521,2021-09-29,41.818505,-73.122249,Tap Water,6.2,0,0,0,0,0,
+,Site 520,2021-09-29,41.804903,-73.115397,Tap Water,6.2,0,0,0,0,0,N/A
+,Site 519,2021-09-29,17.922719,73.763902,Rainwater,6.8,0,0,75,0,80,
+,Site 522,2021-09-28,41.652092,-73.178636,Tap Water,7.2,0,0,0,0,120,
+,Site 523,2021-09-25,42.011609,-73.350341,Tap Water,6.8,0,0,75,0,120,
+,Site 526,2021-09-24,41.93241,-73.051024,Tap Water,6.2,0,1,0,0,80,
+,Site 525,2021-09-24,38.801605,-76.930424,Tap Water,6.2,0,0,0,0,0,
+,Site 531,2021-09-22,42.02259,-72.843084,Pond,6.8,0,0,25,0,40,
+,Site 530,2021-09-22,41.856601,-73.617818,Stream,8.4,20,0,300,0,300,"The water stream passes under the bridge near the zoo.
+It was also a gloomy day around 70 degrees out. Alec E. "
+,Site 529,2021-09-22,41.567108,-73.462884,Well,7.2,0,0,75,0,120,
+,Site 528,2021-09-22,41.818359,-73.106169,Tap Water,7.2,20,0,150,0,120,
+,Site 527,2021-09-22,41.340554,-73.301899,Tap Water,6.2,20,0,150,0,80,Its from my tap water.
+,Site 536,2021-09-21,41.920928,-73.05934,Tap Water,6.8,0,0,150,0,120,
+,Site 535,2021-09-21,41.863073,-73.075092,Tap Water,6.2,0,0,0,0,0,
+,Site 534,2021-09-21,41.874289,-73.030589,Tap Water,7.2,0,0,0,0,180,
+,Site 533,2021-09-21,41.687793,-73.051787,Tap Water,6.2,0,0,0,0,0,
+,Site 532,2021-09-21,41.797841,-73.107368,Well,7.8,20,0,300,0,180,
+,Site 541,2021-09-20,41.848033,-73.12509,River,6.2,0,0,0,0,0,We have had a lot of rain this summer so water levels were high.  Also the water was really clear throughout the area.
+,Site 540,2021-09-20,41.808762,-73.099391,Tap Water,6.2,0,0,0,0,40,"Water from our refrigerator, that gets water from our home (tap water)"
+,Site 539,2021-09-20,41.855453,-73.618184,Stream,8.4,20,0,300,1,300,
+,Site 538,2021-09-20,41.858708,-73.081493,Tap Water,6.2,0,0,75,0.5,80,I gather the water from my weld water through the faucet
+,Site 537,2021-09-20,41.810183,-73.106423,Tap Water,6.8,0,0,0,0,0,
+,Site 543,2021-09-19,41.989266,-73.362416,Tap Water,7.2,0,0,150,0,180,
+,Site 544,2021-09-18,42.038469,-73.336851,Tap Water,8.4,0,0,150,0,300,no other than we have town water. We have hard water which does leave a residue on our appliances and stuff
+,Site 547,2021-09-17,41.854699,-73.617969,Stream,8.4,20,0,150,0,120,Stream came downstream of a zoo
+,Site 546,2021-09-17,41.753682,-72.744352,Tap Water,6.2,20,0.5,0,0,0,
+,Site 545,2021-09-17,41.753681,-72.74435,Tap Water,6.2,20,1,0,0.5,80,
+,Site 558,2021-09-14,38.697529,-87.513832,Tap Water,6.2,20,0,300,0,180,
+,Site 557,2021-09-14,38.667071,-87.522211,Tap Water,7.8,20,0,300,0,180,
+,Site 556,2021-09-14,38.676842,-87.51899,Tap Water,7.2,20,0,300,0,180,
+,Site 555,2021-09-14,38.728379,-87.501663,Stream,8.4,20,0,300,0,300,
+,Site 554,2021-09-14,38.730937,-87.501166,Stream,8.4,20,0,300,0,180,
+,Site 553,2021-09-14,38.729084,-87.506417,River,8.4,0,0,300,1,180,
+,Site 552,2021-09-14,38.66463,-87.521057,Pond,8.4,0,0,150,0.5,180,
+,Site 551,2021-09-14,38.679241,-87.535683,River,7.8,0,0,300,1,180,
+,Site 550,2021-09-14,38.689061,-87.503061,Stream,7.8,20,0,150,0.5,300,
+,Site 549,2021-09-14,38.685185,-87.504242,Tap Water,7.8,20,0,150,0,180,
+,Site 548,2021-09-14,38.697355,-87.475526,Pond,7.8,0,0,150,1,80,
+,Site 567,2021-09-13,38.685852,-87.47686,Tap Water,7.2,20,0,150,0,180,
+,Site 566,2021-09-13,38.717121,-87.505547,Well,7.2,20,0,300,0,300,
+,Site 565,2021-09-13,38.644657,-87.508074,Tap Water,7.2,20,0.5,150,0,180,
+,Site 564,2021-09-13,38.691215,-87.48633,Tap Water,7.2,20,0,300,0,120,
+,Site 563,2021-09-13,38.691235,-87.465197,Tap Water,6.8,0,0,0,0,120,
+,Site 562,2021-09-13,38.680252,-87.535394,River,7.2,0,0.5,75,0.5,80,
+,Site 561,2021-09-13,38.669179,-87.415978,Tap Water,8.4,20,0,75,0,300,
+,Site 560,2021-09-13,38.670694,-87.531024,Tap Water,6.8,20,0,150,0.5,180,
+,Site 559,2021-09-13,38.617747,-87.353948,Tap Water,6.8,20,0,75,0,120,
+,Site 574,2021-09-12,38.670595,-87.510892,Stream,8.4,0,0,300,0,180,
+,Site 573,2021-09-12,38.668563,-87.510004,Pond,8.4,0,0,0,1,0,
+,Site 572,2021-09-12,38.662875,-87.47963,Tap Water,6.2,20,0,25,0,40,
+,Site 571,2021-09-12,38.688736,-87.513561,Tap Water,7.8,20,0,300,0,180,
+,Site 570,2021-09-12,38.67361,-87.523584,Tap Water,8.4,20,0,150,0,180,
+,Site 569,2021-09-12,38.693431,-87.519614,River,7.8,20,0.5,150,0.5,180,
+,Site 568,2021-09-12,38.682186,-87.501448,Tap Water,7.8,20,0,75,0,180,
+,Site 579,2021-09-11,41.792433,-73.125118,Tap Water,6.2,0,0,0,0,0,
+,Site 578,2021-09-11,38.655937,-87.554744,Pond,8.4,0,0,25,0,40,
+,Site 577,2021-09-11,38.656547,-87.554302,Tap Water,8.4,0,0,0,0,180,
+,Site 576,2021-09-11,38.676249,-87.644565,Tap Water,6.2,40,0,75,0,0,
+,Site 575,2021-09-11,38.650126,-87.4916,Tap Water,7.8,0,0,150,0.5,300,
+,Site 580,2021-08-30,38.672345,-87.499148,Tap Water,7.8,20,0,150,0,180,
+,Site 581,2021-08-21,48.081977,-122.833764,Tap Water,7.8,0,0,300,0,300,
+,Site 582,2021-07-27,26.461059,-81.962927,River,7.8,0,0,300,0,180,Bay Area off Estero Island
+,Site 583,2021-07-26,25.870813,-81.38372,River,8.4,0,0,300,0,300,
+,Site 131,2021-07-01,32.944995,-80.107852,Pond,6.8,0,0,25,0,40,"Neighborhood, Geese and frogs in pond"
+,Site 584,2021-07-01,32.944995,-80.107852,Pond,6.8,0,0,25,0,40,"Neighborhood, Geese and frogs in pond"
+,Site 122,2021-06-30,32.508668,-80.319413,Pond,7.2,0,0,75,1,80,
+,Site 132,2021-06-30,32.983433,-80.257564,Runoff,8.4,0,0,150,0,120,
+,Site 586,2021-06-30,32.508668,-80.319413,Pond,7.2,0,0,75,1,80,
+,Site 585,2021-06-30,32.983433,-80.257564,Runoff,8.4,0,0,150,0,120,
+,Site 123,2021-06-29,32.717586,-79.971014,Pond,8.4,0,0,25,0.5,0,
+,Site 124,2021-06-29,32.720784,-79.974937,Pond,6.2,0,0,25,0.5,40,
+,Site 125,2021-06-29,32.727718,-79.93887,Pond,6.8,0,0,25,0,40,Man-made pond in a residential area off of a main road.
+,Site 128,2021-06-29,32.733059,-79.988934,Pond,7.2,0,0,150,0,120,"Flat area with only grass cover nearby, there were some fish jumping and dogs were playing nearby."
+,Site 129,2021-06-29,32.73486,-79.945046,Pond,6.8,0,0,300,0,120,Man-made pond with a small fountain. The entire area was surrounded by trees.
+,Site 130,2021-06-29,32.799631,-79.956114,Pond,7.8,0,0,25,1,40,
+,Site 592,2021-06-29,32.799631,-79.956114,Pond,7.8,0,0,25,1,40,
+,Site 591,2021-06-29,32.720784,-79.974937,Pond,6.2,0,0,25,0.5,40,
+,Site 590,2021-06-29,32.717586,-79.971014,Pond,8.4,0,0,25,0.5,0,
+,Site 589,2021-06-29,32.727718,-79.93887,Pond,6.8,0,0,25,0,40,Man-made pond in a residential area off of a main road.
+,Site 588,2021-06-29,32.73486,-79.945046,Pond,6.8,0,0,300,0,120,Man-made pond with a small fountain. The entire area was surrounded by trees.
+,Site 587,2021-06-29,32.733059,-79.988934,Pond,7.2,0,0,150,0,120,"Flat area with only grass cover nearby, there were some fish jumping and dogs were playing nearby."
+,Site 133,2021-06-28,33.835375,-78.89664,Pond,6.2,0,0,25,0,40,"Collected on 6/26 at 19:15
+Drainage pond in residential development"
+,Site 593,2021-06-28,33.835375,-78.89664,Pond,6.2,0,0,25,0,40,Collected on 6/26 at 19:15. Drainage pond in residential development
+,Site 155,2021-06-25,34.434444,-80.862114,Lake,6.2,0,0,25,0,0,
+,Site 594,2021-06-25,34.434444,-80.862114,Lake,6.2,0,0,25,0,0,
+,Site 416,2021-06-14,47.537172,-121.868393,Tap Water,6.8,0,0,25,0,80,
+,Site 595,2021-06-14,47.537172,-121.868393,Tap Water,6.8,0,0,25,0,80,
+,Site 102,2021-05-22,28.046385,-82.482996,Pond,6.2,0,0.5,75,0,0,
+,Site 103,2021-05-22,28.250813,-82.282647,Tap Water,6.8,20,0,300,0,120,
+,Site 597,2021-05-22,28.046385,-82.482996,Pond,6.2,0,0.5,75,0,0,
+,Site 596,2021-05-22,28.250813,-82.282647,Tap Water,6.8,20,0,300,0,120,
+,Site 370,2021-05-18,41.353726,-73.007333,Pond,6.2,0,0,75,0,80,
+,Site 598,2021-05-18,41.353726,-73.007333,Pond,6.2,0,0,75,0,80,
+,Site 368,2021-05-11,41.202463,-90.120037,Tap Water,8.4,0,0.5,75,0,180,
+,Site 599,2021-05-11,41.202463,-90.120037,Tap Water,8.4,0,0.5,75,0,180,
+,Site 273,2021-05-09,37.060075,-94.529248,Pond,7.2,0,0.5,75,1,180,"Had tadpoles, plants and some trash."
+,Site 600,2021-05-09,37.060075,-94.529248,Pond,7.2,0,0.5,75,1,180,"Had tadpoles, plants and some trash."
+,Site 257,2021-05-07,37.025688,-94.488663,Rainwater,7.8,0,0,300,0.5,180,"brown, leaf filled water 
+sprinkling when test taken"
+,Site 267,2021-05-07,37.034586,-94.526982,Stream,7.2,20,0,75,0,80,high running water
+,Site 283,2021-05-07,37.122529,-94.580715,River,7.8,0,0.5,150,0,180,"Several different plant species, some algae, and surprisingly clear water for its location under a low bridge."
+,Site 603,2021-05-07,37.034586,-94.526982,Stream,7.2,20,0,75,0,80,high running water
+,Site 602,2021-05-07,37.122529,-94.580715,River,7.8,0,0.5,150,0,180,"Several different plant species, some algae, and surprisingly clear water for its location under a low bridge."
+,Site 601,2021-05-07,37.025688,-94.488663,Rainwater,7.8,0,0,300,0.5,180,"brown, leaf filled water. sprinkling when test taken"
+,Site 253,2021-05-06,37.016198,-94.530549,River,7.8,20,0,300,1,180,
+,Site 263,2021-05-06,37.032545,-94.54153,River,7.8,0,0,150,1,120,It is a water fall. It rained two days ago.
+,Site 266,2021-05-06,37.034546,-94.527621,Stream,6.8,20,0,25,0.5,80,the current was pretty strong on the water
+,Site 269,2021-05-06,37.037211,-94.530479,River,7.8,20,0,300,0.5,180,
+,Site 272,2021-05-06,37.048516,-94.554746,Pond,6.8,0,0,25,0.5,40,in a residential neighborhood
+,Site 274,2021-05-06,37.063174,-94.530833,Pond,7.8,0,0,300,1,80,
+,Site 275,2021-05-06,37.0632,-94.5308,Pond,6.8,0,0,75,0,80,
+,Site 277,2021-05-06,37.067963,-94.50947,Pond,6.2,0,0,75,0,80,
+,Site 279,2021-05-06,37.091968,-94.465229,Stream,7.8,0,0,300,1,120,It was a super clean stream. There was no trash but there was a lot build up of branches because of the rain the last couple of weeks
+,Site 280,2021-05-06,37.095422,-94.46546,Pond,7.2,0,0,300,0.5,180,
+,Site 281,2021-05-06,37.104696,-94.498151,River,6.8,0,0,300,0,180,"Water is moving, it is fairly clean, and water has a hint of green tint."
+,Site 282,2021-05-06,37.11084,-94.505995,Pond,6.2,0,0,0,0.5,40,The Pond was covered with lily pads and overgrown plants. It also had an abundance of tadpoles and other animals surrounding the water.
+,Site 284,2021-05-06,37.134662,-94.463765,Pond,7.8,0,0,300,0,180,
+,Site 617,2021-05-06,37.067963,-94.50947,Pond,6.2,0,0,75,0,80,
+,Site 616,2021-05-06,37.0632,-94.5308,Pond,6.8,0,0,75,0,80,
+,Site 614,2021-05-06,37.091968,-94.465229,Stream,7.8,0,0,300,1,120,It was a super clean stream. There was no trash but there was a lot build up of branches because of the rain the last couple of weeks
+,Site 613,2021-05-06,37.034546,-94.527621,Stream,6.8,20,0,25,0.5,80,the current was pretty strong on the water
+,Site 612,2021-05-06,37.037211,-94.530479,River,7.8,20,0,300,0.5,180,
+,Site 611,2021-05-06,37.134662,-94.463765,Pond,7.8,0,0,300,0,180,
+,Site 610,2021-05-06,37.063174,-94.530833,Pond,7.8,0,0,300,1,80,
+,Site 609,2021-05-06,37.095422,-94.46546,Pond,7.2,0,0,300,0.5,180,
+,Site 608,2021-05-06,37.11084,-94.505995,Pond,6.2,0,0,0,0.5,40,The Pond was covered with lily pads and overgrown plants. It also had an abundance of tadpoles and other animals surrounding the water.
+,Site 607,2021-05-06,37.016198,-94.530549,River,7.8,20,0,300,1,180,
+,Site 606,2021-05-06,37.048516,-94.554746,Pond,6.8,0,0,25,0.5,40,in a residential neighborhood
+,Site 605,2021-05-06,37.032545,-94.54153,River,7.8,0,0,150,1,120,It is a water fall. It rained two days ago.
+,Site 604,2021-05-06,37.104696,-94.498151,River,6.8,0,0,300,0,180,"Water is moving, it is fairly clean, and water has a hint of green tint."
+,Site 264,2021-05-05,37.03395,-94.52758,Stream,6.8,20,0,150,0,120,
+,Site 268,2021-05-05,37.036945,-94.532093,River,7.8,0,0.5,75,0,180,
+,Site 271,2021-05-05,37.04815,-94.555266,Pond,6.8,0,0,25,0,40,Looks like a healthy ecosystem
+,Site 620,2021-05-05,37.04815,-94.555266,Pond,6.8,0,0,25,0,40,Looks like a healthy ecosystem
+,Site 619,2021-05-05,37.03395,-94.52758,Stream,6.8,20,0,150,0,120,
+,Site 618,2021-05-05,37.036945,-94.532093,River,7.8,0,0.5,75,0,180,
+,Site 258,2021-05-04,37.027644,-94.550521,Stream,6.8,0,0,150,0,180,
+,Site 262,2021-05-04,37.031283,-94.520432,Stream,6.8,0,0,75,0,80,Running water
+,Site 270,2021-05-04,37.045345,-94.532841,Stream,8.4,0,0,300,0.5,180,"Creek somewhat in the proximity of water treatment facility. Little to no trash, definitely not an excessive amount."
+,Site 276,2021-05-04,37.066821,-94.508933,Stream,7.8,0,0,150,0,80,"There were lots of fallen trees around the creek and a little bit of debris and litter. I didn't notice any fish in the water, but the creek was flowing."
+,Site 285,2021-05-04,37.192091,-94.404305,Pond,8.4,0,0,150,0,300,
+,Site 626,2021-05-04,37.031283,-94.520432,Stream,6.8,0,0,75,0,80,Running water
+,Site 625,2021-05-04,37.066821,-94.508933,Stream,7.8,0,0,150,0,80,"There were lots of fallen trees around the creek and a little bit of debris and litter. I didn't notice any fish in the water, but the creek was flowing."
+,Site 624,2021-05-04,37.045345,-94.532841,Stream,8.4,0,0,300,0.5,180,"Creek somewhat in the proximity of water treatment facility. Little to no trash, definitely not an excessive amount."
+,Site 623,2021-05-04,37.027644,-94.550521,Stream,6.8,0,0,150,0,180,
+,Site 622,2021-05-04,37.192091,-94.404305,Pond,8.4,0,0,150,0,300,
+,Site 365,2021-04-20,40.698637,-89.62636,Tap Water,7.8,20,0.5,300,0,300,
+,Site 627,2021-04-20,40.698637,-89.62636,Tap Water,7.8,20,0.5,300,0,300,
+,Site 393,2021-04-16,41.809889,-72.928434,Rainwater,6.2,20,0.5,0,0,40,
+,Site 628,2021-04-16,41.809889,-72.928434,Rainwater,6.2,20,0.5,0,0,40,
+,Site 190,2021-04-14,36.972476,-121.851085,Pond,6.2,80,5,150,1,180,the pond at my house
+,Site 191,2021-04-14,36.972878,-121.85252,Stream,7.2,80,5,150,2,120,this is a stream by my house
+,Site 256,2021-04-14,37.023945,-122.057983,River,6.2,160,1,150,2,120,this is at garden of eden
+,Site 260,2021-04-14,37.02968,-121.957096,Stream,7.2,80,0,150,4,0,my grandma's stream( Love Creek)
+,Site 632,2021-04-14,37.023945,-122.057983,River,6.2,160,1,150,2,120,this is at garden of eden
+,Site 631,2021-04-14,36.972878,-121.85252,Stream,7.2,80,5,150,2,120,this is a stream by my house
+,Site 630,2021-04-14,36.972476,-121.851085,Pond,6.2,80,5,150,1,180,the pond at my house
+,Site 629,2021-04-14,37.02968,-121.957096,Stream,7.2,80,0,150,4,0,my grandma's stream( Love Creek)
+,Site 353,2021-04-09,40.638829,-73.943182,Tap Water,6.2,20,0,25,0,40,"This water had no particles and was clear. In contrast to the water found outside of the building, they were really similar to each other. The test strips almost mirror each other which is okay for outside water found on the streets however is problematic for tap water since that's the water in homes and being used and consumed by people."
+,Site 354,2021-04-09,40.638856,-73.942618,Runoff,6.2,0,0.5,150,0,80,"This sample contained a lot of dirt and debris build-up which proved to be extremely difficult in reading and analyzing the values because the dirt blocks and darkens the color. In order to get an accurate reading, I had to wait for the completely dry so I can gently rub off the dirt from the test strip and properly see the color for each value. The only issue seen in the water sample is the pH value and the total hardness of the water which is on bad values on the scales."
+,Site 355,2021-04-09,40.644344,-73.959606,Runoff,8.4,0,10,150,6,40,"This water is a combination of snow, rainfall, and runoff water. The area the water was collected contained heaps of debris and garbage. The water itself was a transparent mucky brown color and as the water settled into the container the sediment, mud, and dirt settled at the bottom. When testing this water sample there were some difficulties in reading and comprehending the test strip and matching it with the correct ppm quantity. Also, in further research, there was a realization that some of the values exceeded the scale, for instance, the nitrite value surpasses the scale because the color is a deeper purple than the 10.0ppm it seems that the color matches more with 25.0ppm or 50.0ppm. The pH value also tips the scale to be a pH value of 12-14 meaning that the sample demonstrates a super alkaline solution, similar to bleach."
+,Site 356,2021-04-09,40.644701,-73.959692,Tap Water,6.2,0,0,25,0,40,"This location occasionally had issues with brown or milky water from time to time that also results in the water being completely shut down for the whole building or would only cold. When the sample was collected the water was actually a bit milky and cloudy, after about 30 sec the water cleared up the become translucent again. Properly positioning the sample in the light you can see some particles moving around. Compared to the runoff water outside of the building the tap water was exponentially better and safer for human consumption. However, the pH value is still at an unsafe level for human consumption it is deemed to be acidic."
+,Site 357,2021-04-09,40.6583,-73.960385,Runoff,6.2,0,0.5,150,0,80,"This sample was taken from snowfall from the streets that were on the streets. It was surrounded by and filled with garbage and debris; the snow was almost completely black and dark. Once the snow melted the large pieces of trash were removed and a small sample was removed from it, however, the water was still extremely dark brown and full of mud soo much that light had difficulty shining through. This also meant that the test strips also had a problem displaying the color thus the values for each test. This issue was combatted by allowing the drying of the test strips them gently rubbing the excess dirt off."
+,Site 358,2021-04-09,40.658394,-73.960299,Tap Water,6.2,0,0,25,0,40,During the time the water was gathered the home had no hot water. The water for a brief moment wasn't clear as it settled it cleared up with a layer of bubbles formed at the top layer.
+,Site 638,2021-04-09,40.644344,-73.959606,Runoff,8.4,0,10,150,6,40,"This water is a combination of snow, rainfall, and runoff water. The area the water was collected contained heaps of debris and garbage. The water itself was a transparent mucky brown color and as the water settled into the container the sediment, mud, and dirt settled at the bottom. When testing this water sample there were some difficulties in reading and comprehending the test strip and matching it with the correct ppm quantity. Also, in further research, there was a realization that some of the values exceeded the scale, for instance, the nitrite value surpasses the scale because the color is a deeper purple than the 10.0ppm it seems that the color matches more with 25.0ppm or 50.0ppm. The pH value also tips the scale to be a pH value of 12-14 meaning that the sample demonstrates a super alkaline solution, similar to bleach."
+,Site 637,2021-04-09,40.644701,-73.959692,Tap Water,6.2,0,0,25,0,40,"This location occasionally had issues with brown or milky water from time to time that also results in the water being completely shut down for the whole building or would only cold. When the sample was collected the water was actually a bit milky and cloudy, after about 30 sec the water cleared up the become translucent again. Properly positioning the sample in the light you can see some particles moving around. Compared to the runoff water outside of the building the tap water was exponentially better and safer for human consumption. However, the pH value is still at an unsafe level for human consumption it is deemed to be acidic."
+,Site 636,2021-04-09,40.638856,-73.942618,Runoff,6.2,0,0.5,150,0,80,"This sample contained a lot of dirt and debris build-up which proved to be extremely difficult in reading and analyzing the values because the dirt blocks and darkens the color. In order to get an accurate reading, I had to wait for the completely dry so I can gently rub off the dirt from the test strip and properly see the color for each value. The only issue seen in the water sample is the pH value and the total hardness of the water which is on bad values on the scales."
+,Site 635,2021-04-09,40.638829,-73.943182,Tap Water,6.2,20,0,25,0,40,"This water had no particles and was clear. In contrast to the water found outside of the building, they were really similar to each other. The test strips almost mirror each other which is okay for outside water found on the streets however is problematic for tap water since that's the water in homes and being used and consumed by people."
+,Site 634,2021-04-09,40.6583,-73.960385,Runoff,6.2,0,0.5,150,0,80,"This sample was taken from snowfall from the streets that were on the streets. It was surrounded by and filled with garbage and debris; the snow was almost completely black and dark. Once the snow melted the large pieces of trash were removed and a small sample was removed from it, however, the water was still extremely dark brown and full of mud soo much that light had difficulty shining through. This also meant that the test strips also had a problem displaying the color thus the values for each test. This issue was combatted by allowing the drying of the test strips them gently rubbing the excess dirt off."
+,Site 633,2021-04-09,40.658394,-73.960299,Tap Water,6.2,0,0,25,0,40,During the time the water was gathered the home had no hot water. The water for a brief moment wasn't clear as it settled it cleared up with a layer of bubbles formed at the top layer.
+,Site 413,2021-04-08,42.602164,-83.006237,Tap Water,7.2,20,0,300,0,40,Looks clear
+,Site 639,2021-04-08,42.602164,-83.006237,Tap Water,7.2,20,0,300,0,40,Looks clear
+,Site 374,2021-03-29,41.575605,-73.045027,Tap Water,6.2,0,0,25,0.5,40,
+,Site 640,2021-03-29,41.575605,-73.045027,Tap Water,6.2,0,0,25,0.5,40,
+,Site 643,2021-03-20,39.425876,-77.444778,Tap Water,7.2,20,0,150,0,40,Tap water from sink Day 1. Week 1
+,Site 320,2021-03-20,39.422713,-77.441527,Stream,7.8,20,0,150,0,80,Stream water
+,Site 321,2021-03-20,39.425876,-77.444778,Tap Water,7.2,20,0,150,0,40,Tap water from sink Day 1. Week 1
+,Site 322,2021-03-20,39.431248,-77.46951,Well,6.2,0,0,0,0,0,Spring water
+,Site 642,2021-03-20,39.422713,-77.441527,Stream,7.8,20,0,150,0,80,Stream water
+,Site 641,2021-03-20,39.431248,-77.46951,Well,6.2,0,0,0,0,0,Spring water
+,Site 376,2021-02-28,41.613019,-73.401561,Well,8.4,20,0,300,0,300,
+,Site 644,2021-02-28,41.613019,-73.401561,Well,8.4,20,0,300,0,300,
+,Site 410,2021-02-26,42.017064,-72.496665,Tap Water,7.8,20,0,300,0,80,"clear no odor 
+Well sourced water 
+history of contaminated ground water affecting surrounding wells and storm drains 
+multiple lawsuits against tap water"
+,Site 645,2021-02-26,42.017064,-72.496665,Tap Water,7.8,20,0,300,0,80,clear no odor ; Well sourced water ; history of contaminated ground water affecting surrounding wells and storm drains; multiple lawsuits against tap water
+,Site 172,2021-02-24,36.956597,-121.978031,Lake,7.8,0,0,300,0.5,180,
+,Site 174,2021-02-24,36.960144,-121.970736,Tap Water,7.2,0,0,150,0,120,
+,Site 181,2021-02-24,36.964943,-121.995723,Lake,6.8,0,0,75,1,0,
+,Site 196,2021-02-24,36.97408,-121.954263,River,8.4,0,0,300,1,300,
+,Site 649,2021-02-24,36.960144,-121.970736,Tap Water,7.2,0,0,150,0,120,
+,Site 648,2021-02-24,36.956597,-121.978031,Lake,7.8,0,0,300,0.5,180,
+,Site 647,2021-02-24,36.964943,-121.995723,Lake,6.8,0,0,75,1,0,
+,Site 646,2021-02-24,36.97408,-121.954263,River,8.4,0,0,300,1,300,
+,Site 409,2021-02-22,41.979611,-73.103264,Tap Water,6.2,0,1,0,1,80,
+,Site 650,2021-02-22,41.979611,-73.103264,Tap Water,6.2,0,1,0,1,80,
+,Site 170,2021-02-21,36.9563,-121.9781,Runoff,8.4,0,0.5,300,0,0,murky smelly polluted
+,Site 182,2021-02-21,36.965313,-121.994897,Runoff,7.8,,0,300,1,80,"near ocean, murky"
+,Site 186,2021-02-21,36.972086,-121.905484,Stream,8.4,0,0,300,0,300,
+,Site 193,2021-02-21,36.973025,-121.982568,Tap Water,7.2,0,0,300,0,120,
+,Site 198,2021-02-21,36.975083,-121.946262,Tap Water,7.2,0,0,150,0,300,
+,Site 201,2021-02-21,36.976771,-121.950347,Tap Water,8.4,0,0,150,0,300,
+,Site 206,2021-02-21,36.978355,-121.946679,Tap Water,7.8,0,0,150,0,300,
+,Site 278,2021-02-21,37.089,-121.9738,Lake,8.4,20,0.5,150,2,300,"murky, smelly water, with sticky mud around area"
+,Site 375,2021-02-21,41.596488,-73.017813,Tap Water,6.8,0,0,25,0,0,
+,Site 388,2021-02-21,41.8,-73.1,Tap Water,6.8,20,0,300,0,180,
+,Site 396,2021-02-21,41.859817,-73.065426,Stormwater,6.2,0,0,0,0,40,"The nitrate level in my sample may have been slightly more than 0, roughly 5 PPM, however the pH level in my sample was certainly below 6.2, approximately 5.6 in relation to progression of other colors on the scale.
+
+The sample was identified as stormwater, more specifically a recent snowstorm."
+,Site 661,2021-02-21,41.859817,-73.065426,Stormwater,6.2,0,0,0,0,40,"The nitrate level in my sample may have been slightly more than 0, roughly 5 PPM, however the pH level in my sample was certainly below 6.2, approximately 5.6 in relation to progression of other colors on the scale. The sample was identified as stormwater, more specifically a recent snowstorm."
+,Site 660,2021-02-21,36.973025,-121.982568,Tap Water,7.2,0,0,300,0,120,
+,Site 659,2021-02-21,37.089,-121.9738,Lake,8.4,20,0.5,150,2,300,"murky, smelly water, with sticky mud around area"
+,Site 658,2021-02-21,36.9563,-121.9781,Runoff,8.4,0,0.5,300,0,0,murky smelly polluted
+,Site 657,2021-02-21,36.965313,-121.994897,Runoff,7.8,,0,300,1,80,"near ocean, murky"
+,Site 656,2021-02-21,36.972086,-121.905484,Stream,8.4,0,0,300,0,300,
+,Site 655,2021-02-21,36.976771,-121.950347,Tap Water,8.4,0,0,150,0,300,
+,Site 654,2021-02-21,36.978355,-121.946679,Tap Water,7.8,0,0,150,0,300,
+,Site 653,2021-02-21,36.975083,-121.946262,Tap Water,7.2,0,0,150,0,300,
+,Site 652,2021-02-21,41.596488,-73.017813,Tap Water,6.8,0,0,25,0,0,
+,Site 651,2021-02-21,41.8,-73.1,Tap Water,6.8,20,0,300,0,180,
+,Site 400,2021-02-19,41.918011,-73.052554,Rainwater,6.2,0,0,0,0,40,Water was clean and from freshly fallen snow.
+,Site 663,2021-02-19,41.918011,-73.052554,Rainwater,6.2,0,0,0,0,40,Water was clean and from freshly fallen snow.
+,Site 674,2021-02-18,41.78552,-73.075945,Tap Water,6.8,0,0,0,0,120,
+,Site 175,2021-02-18,36.960151,-121.970783,Tap Water,7.2,0,0,150,0,120,
+,Site 366,2021-02-18,41.039739,-73.548791,Tap Water,6.8,0,0,75,0,80,
+,Site 380,2021-02-18,41.747142,-72.696688,Stormwater,7.2,0,1,150,0,80,I noticed the water was very dirty and had dark particle spots in it.
+,Site 382,2021-02-18,41.752733,-72.711452,Tap Water,6.2,0,0.5,25,0,80,
+,Site 383,2021-02-18,41.78552,-73.075945,Tap Water,6.8,0,0,0,0,120,
+,Site 395,2021-02-18,41.813985,-73.111981,Tap Water,6.2,0,0,75,1,40,I was surprised at how acidic the water I drink is but in reality its really no big deal.
+,Site 398,2021-02-18,41.899114,-72.979225,Rainwater,6.2,0,0,0,0,40,The nitrite and nitrate both changed color but are not the same colors as the freshwater comparison chart.
+,Site 399,2021-02-18,41.913906,-72.842047,Tap Water,6.8,20,0,300,0,80,tap water from a well.
+,Site 401,2021-02-18,41.919282,-73.069596,Tap Water,6.2,0,0,0,0,0,
+,Site 402,2021-02-18,41.925623,-73.054134,River,6.2,0,0.5,75,0,0,I took this sample from a river down the street called the Still River and this water source has been known to be dirty with an old factory that used to work right next to it.
+,Site 406,2021-02-18,41.956201,-73.361337,Tap Water,7.8,0,0,150,0,180,"I'm testing the water from my well because I've done work on the house and seen pipes and it seems the water is very hard. It also tastes bad and requires the use of a filter. I'm interested to see how the water in my home is because I often fish in the closest freshwater and read available data on the quality of that river frequently, so I already have a fairly good idea of that."
+,Site 407,2021-02-18,41.959147,-73.366516,Tap Water,7.2,20,0,0,0,300,
+,Site 675,2021-02-18,41.959147,-73.366516,Tap Water,7.2,20,0,0,0,300,
+,Site 673,2021-02-18,41.747142,-72.696688,Stormwater,7.2,0,1,150,0,80,I noticed the water was very dirty and had dark particle spots in it.
+,Site 672,2021-02-18,41.925623,-73.054134,River,6.2,0,0.5,75,0,0,I took this sample from a river down the street called the Still River and this water source has been known to be dirty with an old factory that used to work right next to it.
+,Site 671,2021-02-18,41.752733,-72.711452,Tap Water,6.2,0,0.5,25,0,80,
+,Site 670,2021-02-18,41.039739,-73.548791,Tap Water,6.8,0,0,75,0,80,
+,Site 669,2021-02-18,36.960151,-121.970783,Tap Water,7.2,0,0,150,0,120,
+,Site 668,2021-02-18,41.913906,-72.842047,Tap Water,6.8,20,0,300,0,80,tap water from a well.
+,Site 667,2021-02-18,41.956201,-73.361337,Tap Water,7.8,0,0,150,0,180,"I'm testing the water from my well because I've done work on the house and seen pipes and it seems the water is very hard. It also tastes bad and requires the use of a filter. I'm interested to see how the water in my home is because I often fish in the closest freshwater and read available data on the quality of that river frequently, so I already have a fairly good idea of that."
+,Site 666,2021-02-18,41.899114,-72.979225,Rainwater,6.2,0,0,0,0,40,The nitrite and nitrate both changed color but are not the same colors as the freshwater comparison chart.
+,Site 665,2021-02-18,41.919282,-73.069596,Tap Water,6.2,0,0,0,0,0,
+,Site 664,2021-02-18,41.813985,-73.111981,Tap Water,6.2,0,0,75,1,40,I was surprised at how acidic the water I drink is but in reality its really no big deal.
+,Site 177,2021-02-17,36.961139,-121.98391,Pond,8.4,0,0,300,0,120,
+,Site 179,2021-02-17,36.962622,-121.996775,Pond,6.2,0,0,75,0,80,
+,Site 242,2021-02-17,36.993891,-121.959039,Stream,7.8,0,0,300,0,180,
+,Site 250,2021-02-17,36.999595,-121.957638,Runoff,7.8,0,0,300,0,180,
+,Site 372,2021-02-17,41.432206,-73.225938,Tap Water,6.8,0,0,150,0.5,80,
+,Site 379,2021-02-17,41.72872,-73.248898,Tap Water,6.8,0,0,300,0,80,N/A
+,Site 381,2021-02-17,41.751634,-73.511073,Tap Water,6.2,0,0,0,0,0,pH is lighter than 6.2
+,Site 384,2021-02-17,41.787251,-72.942559,Well,7.2,0,0,0,0,120,
+,Site 386,2021-02-17,41.793331,-73.124356,Rainwater,6.2,0,0,0,0,0,
+,Site 387,2021-02-17,41.793336,-73.124334,Rainwater,6.2,0,0,0,0,0,
+,Site 394,2021-02-17,41.810088,-72.928413,Tap Water,6.2,0,0,0,0,40,
+,Site 403,2021-02-17,41.930909,-73.38328,Tap Water,8.4,0,0,300,0,180,
+,Site 388,2021-02-16,41.8,-73.1,Tap Water,6.8,20,0,300,0,180,
+,Site 166,2021-02-16,36.93,-121.816,Pond,6.8,0,0,75,0,80,
+,Site 166,2021-02-16,36.93,-121.816,Pond,6.8,20,0,300,2,80,Pool Water
+,Site 166,2021-02-16,36.93,-121.816,Pond,7.8,0,0,25,0,120,
+,Site 166,2021-02-16,36.93,-121.816,Tap Water,6.2,0,0,0,0,0,
+,Site 199,2021-02-16,36.97601,-121.982579,Stream,7.8,0,0,300,0,180,
+,Site 202,2021-02-16,36.977242,-122.045494,Pond,6.2,160,5,75,0,300,
+,Site 204,2021-02-16,36.97763,-121.9618,Pond,7.2,0,0.5,150,1,120,
+,Site 245,2021-02-16,36.9957,-121.962703,Pond,7.8,0,0,75,0,180,This water source is my home fish pond which has four fish in it and is fully sustainable. On a sunny and clear day you can see the dim outline of rocks at the bottom of the pond which is 4 feet deep.
+,Site 246,2021-02-16,36.995725,-121.962509,Tap Water,7.8,0,0,150,0,120,This water source is my home tap. The water seems clear but has micro particles reflecting the light in the water.
+,Site 247,2021-02-16,36.995734,-121.962648,Pond,7.2,20,0,300,1,120,"The pool water has a turquoise, clear look. In the winter time my family doesn’t chlorinate the water as heavily because it is not in heavy use."
+,Site 248,2021-02-16,36.995771,-121.962508,Tap Water,7.2,0,0,150,0,120,The toilet at my house always seems to have clear water.
+,Site 251,2021-02-16,37.005396,-121.975281,Tap Water,6.8,0,0,300,0,120,
+,Site 371,2021-02-16,41.406438,-73.110977,Tap Water,6.2,0,0,0,0,0,
+,Site 378,2021-02-16,41.71371,-72.979062,Rainwater,6.2,0,0,0,0,80,"The snow took much longer to melt than I expected, which was about an hour. When it finally did, there were particles in the water that were previously trapped in the snow, and those other substances affected what appeared on the test strip."
+,Site 385,2021-02-16,41.790108,-72.890664,Rainwater,6.2,0,0,0,0,0,"A few speckles of dirt, but mostly pure, white snow"
+,Site 405,2021-02-16,41.942437,-72.900443,Well,6.2,0,0,25,0,40,well water also has a radon filtration system connected. the pH level looks more between 6.2 and 6.8 and alkaline value betwen 0 to 40.
+,Site 244,2021-02-15,36.99491,-121.960623,Rainwater,6.8,0,0,0,0,80,N/A
+,Site 391,2021-02-15,41.808703,-73.068241,Well,6.2,0,0,75,0,80,water was crystal clear and had no odor
+,Site 156,2021-02-15,34.927288,-120.454224,Tap Water,6.2,20,0,75,0,80,
+,Site 171,2021-02-15,36.956524,-121.977641,Lake,6.8,0,0,300,0,40,
+,Site 176,2021-02-15,36.960359,-121.98429,Lake,7.2,0,0,300,0,80,
+,Site 178,2021-02-15,36.96166,-122.03168,Pond,8.4,20,0.5,300,0.5,180,
+,Site 180,2021-02-15,36.96406,-121.973791,Tap Water,7.2,0,0,300,0,120,
+,Site 183,2021-02-15,36.967905,-121.816836,Lake,6.2,0,0,75,0,80,Freedom lake California
+,Site 184,2021-02-15,36.97,-121.95,Stream,6.2,0,1,75,0,40,Soquel Creek Water
+,Site 185,2021-02-15,36.97141,-121.97069,Runoff,6.2,0,1,25,0,40,
+,Site 185,2021-02-15,36.97141,-121.97069,Tap Water,7.2,0,0.5,300,0,120,
+,Site 188,2021-02-15,36.972146,-121.952791,River,8.4,20,0.5,300,0,300,
+,Site 192,2021-02-15,36.972895,-121.904687,Stream,8.4,0,0,150,0,300,Very moist with a lot of trees protecting the creek. A brown color due to all of the mud and dirt mixed with the water. A lot of greenery and water flows very slowly.
+,Site 195,2021-02-15,36.973702,-121.900015,Rainwater,6.2,40,1,75,0,0,"The puddle looked dark gray, dark"
+,Site 200,2021-02-15,36.976025,-122.045623,Lake,7.8,20,0,300,0.5,180,
+,Site 205,2021-02-15,36.977951,-121.951499,Stream,7.8,20,1,300,0,180,
+,Site 207,2021-02-15,36.978663,-121.938345,Runoff,7.8,0,0,150,0,40,
+,Site 208,2021-02-15,36.98,-121.927,Rainwater,6.8,0,0.5,150,0,80,"When it rained, the track of Cabrillo college had many puddles on it."
+,Site 209,2021-02-15,36.98014,-121.943287,Tap Water,6.8,0,0,0,0,180,My  sinks tapwater
+,Site 210,2021-02-15,36.98042,-121.756452,Pond,7.8,0,0,300,0,180,
+,Site 213,2021-02-15,36.982539,-121.901338,Stream,6.8,0,0,150,0,80,Mangles creek Nisene Marks state park California
+,Site 214,2021-02-15,36.983133,-121.949246,Rainwater,6.2,0,1,150,0,40,
+,Site 218,2021-02-15,36.98354,-121.98048,Tap Water,6.8,0,0,150,0,180,
+,Site 219,2021-02-15,36.984,-121.98341,Stream,6.8,20,0.5,75,0,80,
+,Site 220,2021-02-15,36.98534,-121.954733,Stream,8.4,0,0,300,0,180,Very mossy and full of vegetation and animals such as ducks and crows. Water is full of rocks and the creek moves flows fast.
+,Site 222,2021-02-15,36.986474,-121.955394,Stream,7.8,20,0,300,0.5,180,
+,Site 223,2021-02-15,36.986486,-121.955302,Stream,8.4,0,0,300,0,300,
+,Site 228,2021-02-15,36.98779,-121.974825,Tap Water,6.8,0,0,150,0,120,
+,Site 229,2021-02-15,36.987856,-121.932607,Tap Water,7.8,0,0,300,0,180,"Water tastes like metal and thick. The fountain it comes out of is very rusty, dirty, and clogged so not much comes out."
+,Site 231,2021-02-15,36.98814,-121.975395,Rainwater,7.2,0,0,150,0,80,in between the sidewalk and street
+,Site 232,2021-02-15,36.988155,-121.934289,Tap Water,8.4,0,0,300,0,180,The water is clear and tastes thick and bitter. Cleans the dishes very well :)
+,Site 234,2021-02-15,36.99,-121.97,River,6.2,0,0.5,75,0,80,A small river flows through a forest near my house on North Rodeo Gulch Rd
+,Site 234,2021-02-15,36.99,-121.97,Tap Water,6.8,80,1,150,0,120,Just Tap Water in a glass
+,Site 240,2021-02-15,36.992788,-121.952474,Tap Water,6.8,0,0,75,0,300,None
+,Site 243,2021-02-15,36.994696,-121.952088,Tap Water,6.8,0,0,0,0,80,None
+,Site 243,2021-02-15,36.994696,-121.952088,Tap Water,6.8,200,10,150,0,120,Water from my hottub
+,Site 243,2021-02-15,36.994696,-121.952088,Tap Water,6.2,0,0,0,0,0,no
+,Site 252,2021-02-15,37.007655,-121.936935,Stream,8.4,0,0.5,300,0,0,
+,Site 259,2021-02-15,37.028296,-121.947965,Well,6.2,20,0,150,0,80,
+,Site 259,2021-02-15,37.028296,-121.947965,River,7.2,20,0,300,0.5,180,
+,Site 377,2021-02-15,41.69709,-72.910551,Tap Water,6.2,20,3,25,0,80,
+,Site 397,2021-02-15,41.871516,-73.002969,Tap Water,6.2,0,0,0,0,40,
+,Site 197,2021-02-14,36.97409,-121.997851,River,7.2,0,0,300,0.5,120,
+,Site 212,2021-02-14,36.982113,-121.943067,Tap Water,8.4,0,0,300,0,180,
+,Site 235,2021-02-14,36.990613,-121.933385,Tap Water,8.4,0,0,300,0,300,
+,Site 265,2021-02-14,37.034222,-121.93509,Rainwater,7.8,20,0.5,0,0,80,my cat drank out of this. (bird fountain)
+,Site 167,2021-02-13,36.93496,-121.842784,Tap Water,7.2,0,0,150,0,180,
+,Site 168,2021-02-13,36.94161,-121.812761,Stream,7.8,20,0,300,1,180,
+,Site 169,2021-02-13,36.948524,-121.850145,Tap Water,8.4,0,0,0,0,300,
+,Site 211,2021-02-13,36.982068,-121.949733,Tap Water,6.8,0,0,300,0,180,
+,Site 221,2021-02-13,36.98631,-121.936951,Rainwater,6.8,0,0,75,0,80,The water was yellow and had some dirt floating around in it.
+,Site 224,2021-02-13,36.986587,-121.955282,River,7.8,20,0,300,0,300,
+,Site 237,2021-02-13,36.990987,-121.955903,Stream,6.8,0,0,300,0,120,
+,Site 254,2021-02-13,37.018292,-121.935512,Rainwater,6.8,0,0,75,0,80,
+,Site 261,2021-02-13,37.031054,-121.934267,Tap Water,8.4,0,0,0,0,300,
+,Site 369,2021-02-13,41.328897,-73.902495,Tap Water,6.8,0,0,75,0,40,
+,Site 390,2021-02-13,41.806625,-73.116651,Tap Water,6.8,0,0,25,0.5,0,
+,Site 221,2021-02-12,36.98631,-121.936951,Stream,6.2,0,0,0,0,0,This is from a large water bottle in my house. The brand is Arrow Head and the water comes from a fresh spring so I think that is a stream.
+,Site 221,2021-02-12,36.98631,-121.936951,Tap Water,7.2,0,0,300,0,180,"Filtered tap water, it has hard white stuff around it."
+,Site 221,2021-02-12,36.98631,-121.936951,Tap Water,7.8,0,0,300,0,180,water from my sink; has hard white stuff around the sink.
+,Site 165,2021-02-12,36.920441,-121.777407,Lake,6.8,0,0,150,0,80,The Watsonville slough
+,Site 203,2021-02-12,36.977278,-121.950888,Tap Water,7.2,0,0,300,1,120,
+,Site 215,2021-02-12,36.983144,-121.949237,Tap Water,8.4,0,0,25,0,40,
+,Site 216,2021-02-12,36.983215,-121.949228,Tap Water,6.2,0,0,0,0,0,The type of water I tested was drinking water filtered by filters
+,Site 217,2021-02-12,36.98322,-121.949255,Stormwater,6.2,0,0,25,0,0,The type of water I tested was  puddle water.
+,Site 225,2021-02-12,36.98671,-121.954966,Tap Water,7.8,0,0,300,1,300,
+,Site 389,2021-02-12,41.80501,-73.078023,Rainwater,6.2,20,0,300,0,40,No observations but just wanted to note that the sample I took was actually snow that I had allowed to melt inside.
+,Site 389,2021-02-12,41.80501,-73.078023,Rainwater,6.2,20,0,300,0,40,No observations but just wanted to note that the sample I took was actually snow that I had allowed to melt inside.
+,Site 173,2021-02-11,36.959609,-121.770597,Lake,7.2,0,0.5,150,0,120,Water taken near a doc that went out into the water. Pinto lake is surrounded by agriculture. The sample was taken on 2/11/2021.
+,Site 187,2021-02-11,36.972139,-121.959901,Stormwater,6.2,20,0.5,25,0,0,
+,Site 189,2021-02-11,36.972278,-121.960405,Tap Water,7.8,0,0,300,0,180,
+,Site 194,2021-02-11,36.973695,-121.959697,Well,6.2,0,0,0,0,0,
+,Site 236,2021-02-10,36.990886,-121.92868,Runoff,6.8,0,0,150,0,120,
+,Site 238,2021-02-10,36.991164,-121.955806,Stream,7.2,0,0,300,0,180,
+,Site 239,2021-02-10,36.991603,-121.907463,Stream,7.8,0,0,300,0,180,
+,Site 392,2021-02-10,41.809885,-73.137711,Rainwater,6.2,0,0,0,0,0,When looking at the hardness and pH they were both lighter than the first color option provided (below zero and below 6.2)
+,Site 404,2021-02-10,41.932814,-73.055322,Stormwater,6.2,0,0,300,0,40,Most of them stayed the same; at first the hardness was very soft 25ppm but then drastically changed to very hard 300ppm.
+,Site 236,2021-02-09,36.990886,-121.92868,Runoff,6.8,0,0,150,0,120,
+,Site 238,2021-02-09,36.991164,-121.955806,Stream,7.2,0,0,300,0,180,
+,Site 239,2021-02-09,36.991603,-121.907463,Stream,7.2,0,0,300,0,180,
+,Site 233,2021-02-09,36.989827,-121.944621,Tap Water,7.8,0,0,300,0,300,
+,Site 261,2021-02-08,37.031054,-121.934267,Tap Water,8.4,0,0,0,0,300,
+,Site 241,2021-02-08,36.993228,-121.95209,Tap Water,7.2,0,0,0,0,180,"It is tap water from a house, it is very filtered and the water comes from Soquel Creek"
+,Site 249,2021-02-08,36.996547,-121.925751,Tap Water,7.8,0,0,150,0,180,
+,Site 373,2021-02-08,41.495505,-72.118125,Tap Water,6.8,0,0,75,0,80,not filtered externally
+,Site 373,2021-02-08,41.495505,-72.118125,Tap Water,6.2,0,0,75,0,80,"no outside filter used, small white specs in water"
+,Site 226,2021-02-06,36.986834,-121.932039,Rainwater,6.2,0,0,25,0,0,it was dirty and had a yellow/green color to it... could have been the bucket that collected it however.
+,Site 227,2021-02-06,36.986876,-121.932016,Well,8.4,0,0,0,0,0,
+,Site 230,2021-02-06,36.988014,-121.946747,Stream,7.2,0,0,300,0,300,Clear with specs
+,Site 230,2021-02-06,36.988014,-121.946747,Tap Water,6.8,0,0,0,0,180,Clear
+,Site 230,2021-02-06,36.988014,-121.946747,Tap Water,6.8,0,0,0,0,180,Clear
+,Site 255,2021-02-06,37.01931,-121.884829,Stream,8.4,0,0,300,0,180,the water was cold and clear... it was also shallow.
+,Site 164,2021-02-04,36.91366,-121.774513,Tap Water,8.4,20,0,300,0,300,
+,Site 101,2021-01-29,12.921114,77.693422,Pond,6.8,0,0,25,4,0,
+,Site 119,2021-01-29,31.505477,-97.31532,Well,7.8,0,0,75,6,40,
+,Site 120,2021-01-29,32.324029,-81.581578,Well,7.8,0,0,300,4,40,
+,Site 121,2021-01-29,32.362925,-81.538405,Well,7.8,0,0,300,4,40,"""this is well water
+"""
+,Site 126,2021-01-29,32.732545,-96.450189,Pond,7.8,40,10,75,4,0,
+,Site 127,2021-01-29,32.732548,-96.4502,Pond,7.8,0,5,150,4,40,
+,Site 134,2021-01-29,34.048997,-118.463744,Tap Water,6.8,0,0,25,4,0,
+,Site 286,2021-01-29,37.425936,-122.163699,Well,7.8,20,0.5,75,0,120,
+,Site 287,2021-01-29,37.425943,-122.163706,Stream,7.2,0,10,75,6,0,
+,Site 302,2021-01-29,39.000003,-77.07875,Tap Water,7.8,0,10,25,4,0,hhmi
+,Site 302,2021-01-29,39.000003,-77.07875,Tap Water,7.8,0,10,25,4,0,hhmi
+,Site 302,2021-01-29,39.000003,-77.07875,Tap Water,7.2,0,0,300,4,0,
+,Site 302,2021-01-29,39.000003,-77.07875,Tap Water,7.8,0,0,300,4,0,
+,Site 303,2021-01-29,39.297663,-76.640088,Tap Water,7.2,0,0,75,4,0,School faucet
+,Site 304,2021-01-29,39.297684,-76.640085,Tap Water,7.8,0,0,300,4,40,school faucet sci lab
+,Site 323,2021-01-29,39.660668,-78.187016,Tap Water,7.8,0,3,75,4,40,
+,Site 324,2021-01-29,39.980573,-83.06761,Lake,7.2,0,0,300,6,40,Water was collected from a quarry.
+,Site 367,2021-01-29,41.05343,-73.538734,Well,7.8,0,0,75,1,40,
+,Site 408,2021-01-29,41.979073,-71.324529,Tap Water,6.2,0,0,300,4,0,
+,Site 432,2021-01-29,61.19212,-149.931438,Stream,7.8,20,1,0,0.5,40,
+,Site 159,2021-01-03,35.4897,-85.0135,Stream,6.2,0,0,25,1,40,"Water collected from Richland Creek beneath the suspension bridge at Swinging Bridge Park, Dayton. Water was high and choppy."
+,Site 157,2020-12-21,35.01088,-85.23169,Tap Water,7.8,0,0,150,0,40,
+,Site 158,2020-12-21,35.01254,-85.22966,Pond,6.2,0,0,25,0,40,"This is a rain garden on school grounds, adjacent to a major city road and several medical buildings."
+,Site 301,2020-12-16,38.925148,-104.817819,Tap Water,6.2,0,0,25,0,40,
+,Site 136,2020-12-04,34.091673,-81.326823,Well,6.2,0,0,0,0,0,
+,Site 137,2020-12-04,34.10628,-81.367127,Well,6.8,0,0,300,0,300,
+,Site 138,2020-12-04,34.11885,-81.399704,Lake,7.8,20,3,75,4,300,murky
+,Site 140,2020-12-04,34.167375,-81.339944,Tap Water,7.2,0,0,300,4,0,"yellow with black specks, came from sink that is not used frequently"
+,Site 140,2020-12-04,34.167375,-81.339944,Tap Water,6.2,0,0,300,4,0,"yellow, has specks in it, came from sink that is not used frequently"
+,Site 140,2020-12-04,34.167375,-81.339944,Tap Water,7.8,0,0,75,0,40,"it's yellow and translucent, this water is from a sink that is not used frequently"
+,Site 140,2020-12-04,34.167375,-81.339944,Tap Water,7.8,0,0,75,0,40,smells bad
+,Site 140,2020-12-04,34.167375,-81.339944,Tap Water,7.8,20,0,25,4,0,
+,Site 140,2020-12-04,34.167375,-81.339944,Tap Water,7.2,0,10,25,0,0,clear
+,Site 163,2020-12-04,36.868955,-94.367996,Tap Water,6.2,80,0,300,4,80,Misha SciStarter
+,Site 163,2020-12-04,36.868955,-94.367996,Tap Water,6.8,40,0,300,6,120,Misha SciStarter
+,Site 163,2020-12-04,36.868955,-94.367996,Tap Water,7.8,0,0,25,4,0,misha SciStarter
+,Site 163,2020-12-04,36.868955,-94.367996,Tap Water,6.2,80,0,300,4,80,misha SciStarter
+,Site 163,2020-12-04,36.868955,-94.367996,Tap Water,6.2,80,0,300,4,80,Misha SciStarter
+,Site 163,2020-12-04,36.868955,-94.367996,Tap Water,7.8,40,0,300,4,40,Misha SciStarter
+,Site 290,2020-12-04,38.622178,-77.266696,Tap Water,6.8,0,0,300,4,0,
+,Site 291,2020-12-04,38.622247,-77.266729,Tap Water,7.8,0,0.5,25,4,0,
+,Site 291,2020-12-04,38.622247,-77.266729,Tap Water,6.8,0,0,25,4,0,
+,Site 292,2020-12-04,38.622255,-77.266712,Tap Water,6.8,0,0,300,4,0,
+,Site 293,2020-12-04,38.62226,-77.266704,Tap Water,7.8,0,0.5,25,4,40,
+,Site 294,2020-12-04,38.62226,-77.266704,Tap Water,7.8,0,0,75,4,40,
+,Site 295,2020-12-04,38.62226,-77.266704,Tap Water,6.2,0,0,300,4,0,
+,Site 296,2020-12-04,38.622262,-77.266702,Tap Water,7.8,0,0,75,4,40,
+,Site 297,2020-12-04,38.622262,-77.266701,Tap Water,7.8,0,0,25,4,120,
+,Site 298,2020-12-04,38.622262,-77.266701,Tap Water,7.8,0,0,25,4,120,
+,Site 299,2020-12-04,38.622263,-77.266649,Tap Water,7.8,0,0,25,4,0,
+,Site 300,2020-12-04,38.622851,-77.267314,Tap Water,7.8,0,0,25,0,0,
+,Site 300,2020-12-04,38.622851,-77.267314,Tap Water,7.8,0,0,25,4,40,
+,Site 300,2020-12-04,38.622851,-77.267314,Tap Water,7.8,20,1,25,4,0,
+,Site 300,2020-12-04,38.622851,-77.267314,Tap Water,7.8,0,0,25,4,40,
+,Site 300,2020-12-04,38.622851,-77.267314,Tap Water,7.8,0,0,25,4,40,
+,Site 319,2020-12-04,39.370859,-76.670148,Stream,6.8,0,0,25,0,0,high turbidity
+,Site 326,2020-12-04,40.127888,-90.5646,Tap Water,7.8,20,0,0,6,40,
+,Site 327,2020-12-04,40.128324,-90.564488,Tap Water,7.8,0,0,25,4,40,
+,Site 328,2020-12-04,40.128355,-90.5644,Tap Water,7.8,0,0.5,75,1,40,
+,Site 329,2020-12-04,40.128392,-90.564406,Tap Water,7.8,0,5,25,4,40,
+,Site 330,2020-12-04,40.128396,-90.564485,Tap Water,7.8,0,3,75,2,0,
+,Site 331,2020-12-04,40.128404,-90.564397,Tap Water,6.8,0,0,25,4,0,
+,Site 332,2020-12-04,40.128412,-90.564488,Tap Water,7.8,40,0,25,4,40,
+,Site 333,2020-12-04,40.12842,-90.564498,Tap Water,7.8,80,0,0,6,0,
+,Site 334,2020-12-04,40.12842,-90.564443,Tap Water,7.8,20,5,25,4,40,
+,Site 335,2020-12-04,40.128424,-90.564475,Tap Water,7.8,0,0,25,0,0,
+,Site 336,2020-12-04,40.128434,-90.5644,Tap Water,7.8,40,5,75,4,120,
+,Site 337,2020-12-04,40.128435,-90.564333,Tap Water,7.2,20,0.5,75,0,0,
+,Site 338,2020-12-04,40.128441,-90.564405,Tap Water,7.8,0,5,75,4,120,
+,Site 339,2020-12-04,40.128441,-90.564453,Tap Water,7.8,0,0,25,4,0,
+,Site 340,2020-12-04,40.128442,-90.564458,Tap Water,7.2,0,3,25,1,0,
+,Site 341,2020-12-04,40.128443,-90.564439,Tap Water,7.2,0,0,25,4,0,
+,Site 342,2020-12-04,40.128443,-90.564409,Tap Water,7.2,0,5,25,4,0,
+,Site 343,2020-12-04,40.128452,-90.564408,Tap Water,7.8,0,0,75,4,0,
+,Site 344,2020-12-04,40.128466,-90.564371,Tap Water,7.2,0,3,25,1,0,
+,Site 345,2020-12-04,40.128537,-90.564532,Tap Water,7.2,0,0,150,4,120,
+,Site 346,2020-12-04,40.128541,-90.564499,Tap Water,7.8,0,0,25,4,40,
+,Site 347,2020-12-04,40.1291,-90.374698,Tap Water,7.2,0,1,75,0,0,
+,Site 412,2020-12-04,42.565742,-73.507869,Tap Water,7.8,0,0,25,4,40,
+,Site 105,2020-12-02,29.806776,-95.694814,Tap Water,7.8,0,5,0,4,120,
+,Site 106,2020-12-02,29.806781,-95.694817,Tap Water,7.8,20,3,300,4,180,
+,Site 135,2020-12-02,34.090981,-81.334921,Well,6.2,0,0,25,4,0,
+,Site 139,2020-12-02,34.123053,-81.400236,Pond,7.8,40,0.5,150,6,40,Kind of yellow for the water.
+,Site 431,2020-12-02,61.17373,-147.133526,Tap Water,7.2,0,0,300,4,0,
+,Site 104,2020-12-01,29.806465,-95.695424,Tap Water,7.8,0,0,25,4,0,
+,Site 104,2020-12-01,29.806465,-95.695424,Tap Water,8.4,0,0,300,4,180,
+,Site 107,2020-12-01,29.806784,-95.694821,Tap Water,7.8,0,0,75,4,120,
+,Site 412,2020-11-30,42.565742,-73.507869,Tap Water,7.8,0,0,25,4,40,
+,Site 104,2020-11-30,29.806465,-95.695424,Tap Water,7.8,0,0,75,4,40,
+,Site 107,2020-11-30,29.806784,-95.694821,Tap Water,7.8,0,0,25,4,40,
+,Site 108,2020-11-30,29.806791,-95.694812,Tap Water,7.2,0,0,300,4,0,
+,Site 109,2020-11-30,29.806792,-95.694813,Tap Water,7.8,0,0,25,0,40,
+,Site 110,2020-11-30,29.806858,-95.694758,Tap Water,7.8,0,0,25,4,40,
+,Site 111,2020-11-30,29.806866,-95.694706,Tap Water,7.8,0,0,150,4,80,
+,Site 112,2020-11-30,29.806876,-95.69475,Tap Water,7.8,0,0,300,4,80,
+,Site 113,2020-11-30,29.806886,-95.694742,Tap Water,7.8,0,0,300,4,80,
+,Site 114,2020-11-30,29.806888,-95.694715,Tap Water,7.8,0,1,25,4,0,
+,Site 115,2020-11-30,29.806901,-95.694711,Tap Water,7.8,0,0,300,4,80,
+,Site 116,2020-11-30,29.806906,-95.694655,Tap Water,7.8,0,0,300,4,180,
+,Site 117,2020-11-30,29.807813,-95.692642,Tap Water,7.8,0,0,300,4,120,
+,Site 118,2020-11-30,29.826018,-95.751048,Tap Water,7.2,0,0,300,4,180,
+,Site 160,2020-11-30,36.856108,-94.417717,Tap Water,6.8,0,0,300,4,80,
+,Site 161,2020-11-30,36.856115,-94.417691,Tap Water,7.8,0,0,25,0,40,
+,Site 162,2020-11-30,36.856116,-94.417691,Tap Water,7.8,0,0,0,4,40,
+,Site 305,2020-11-30,39.319805,-88.442054,Pond,7.8,0,0,25,4,40,minnows
+,Site 305,2020-11-30,39.319805,-88.442054,Pond,7.8,0,0,75,4,0,
+,Site 306,2020-11-30,39.32015,-88.441754,Pond,7.8,0,0,25,4,0,
+,Site 309,2020-11-30,39.320182,-88.441771,Pond,7.8,0,0,300,4,40,minnow and frog in pond
+,Site 318,2020-11-30,39.320245,-88.441792,Pond,7.2,0,0,300,4,0,saw minnows
+,Site 349,2020-11-30,40.617772,-73.988439,Tap Water,7.2,0,10,300,6,40,
+,Site 351,2020-11-30,40.622736,-74.017207,Tap Water,7.8,0,0,25,4,40,
+,Site 414,2020-11-30,45.526726,-122.869431,Tap Water,7.8,0,0,75,4,0,High school science lab
+,Site 417,2020-11-30,47.575653,-122.242004,Tap Water,7.2,0,0,25,6,40,Misha SciStarter
+,Site 418,2020-11-30,47.575683,-122.242007,Tap Water,6.2,80,0,300,4,180,Misha SciStarter
+,Site 419,2020-11-30,47.575767,-122.242008,Tap Water,7.8,0,10,300,6,0,
+,Site 420,2020-11-30,47.575775,-122.241943,Tap Water,6.2,80,0,300,4,80,Misha SciStarter
+,Site 420,2020-11-30,47.575775,-122.241943,Tap Water,6.8,0,5,150,4,0,
+,Site 422,2020-11-30,47.575781,-122.241931,Tap Water,7.8,80,0,300,4,40,misha SciStarter
+,Site 423,2020-11-30,47.575808,-122.241967,Tap Water,7.2,0,0,25,6,40,misha SciStarter
+,Site 425,2020-11-30,47.575876,-122.242058,Tap Water,7.8,0,0,25,4,40,
+,Site 427,2020-11-30,47.575993,-122.241819,Tap Water,7.8,0,5,25,4,40,Misha SciStarter
+,Site 305,2020-11-25,39.319805,-88.442054,Tap Water,6.2,0,0,300,4,0,
+,Site 305,2020-11-25,39.319805,-88.442054,Tap Water,6.8,0,0,300,4,0,
+,Site 305,2020-11-25,39.319805,-88.442054,Tap Water,7.8,0,0,25,4,40,
+,Site 305,2020-11-25,39.319805,-88.442054,Tap Water,7.2,0,0,300,4,0,
+,Site 305,2020-11-25,39.319805,-88.442054,Tap Water,7.8,0,0,25,4,40,
+,Site 349,2020-11-25,40.617772,-73.988439,River,7.8,0,0,0,0,40,
+,Site 141,2020-11-25,34.218068,-84.13769,Tap Water,6.2,0,0,75,4,0,
+,Site 142,2020-11-25,34.218146,-84.137703,Tap Water,6.8,0,0,300,4,0,white clear
+,Site 143,2020-11-25,34.218152,-84.137688,Tap Water,6.2,0,0,300,4,0,
+,Site 144,2020-11-25,34.218153,-84.13769,Tap Water,7.8,20,3,75,2,120,the water was find but close to it was water that was a little bit more sweeter our water now looks kind of dirty 6th hallway
+,Site 145,2020-11-25,34.218154,-84.13771,Tap Water,7.8,0,10,25,4,40,water mountain
+,Site 146,2020-11-25,34.218155,-84.13771,Tap Water,6.8,0,0,25,4,0,
+,Site 147,2020-11-25,34.218155,-84.137709,Tap Water,6.2,0,0,25,4,0,
+,Site 148,2020-11-25,34.218158,-84.137662,Tap Water,6.2,0,0,300,4,0,
+,Site 149,2020-11-25,34.21816,-84.137704,Tap Water,7.8,0,0,75,4,0,
+,Site 150,2020-11-25,34.218161,-84.137685,Tap Water,7.8,20,3,75,4,120,there two piece of gum on the water
+,Site 151,2020-11-25,34.218214,-84.136855,Tap Water,6.8,0,0,75,4,0,Smells like dirt Clear white.Cold
+,Site 152,2020-11-25,34.218507,-84.137306,Tap Water,7.8,0,0,25,4,40,
+,Site 152,2020-11-25,34.218507,-84.137306,Tap Water,7.8,0,0,25,0,40,
+,Site 152,2020-11-25,34.218507,-84.137306,Tap Water,7.8,0,0,25,4,0,
+,Site 152,2020-11-25,34.218507,-84.137306,Tap Water,6.2,0,0,300,4,0,
+,Site 152,2020-11-25,34.218507,-84.137306,Tap Water,7.8,0,0,25,4,40,water fountain
+,Site 152,2020-11-25,34.218507,-84.137306,Tap Water,7.8,0,0,25,4,0,6th grade hallway tasted like metal
+,Site 153,2020-11-25,34.218598,-84.137388,Tap Water,6.8,0,0,25,4,0,
+,Site 154,2020-11-25,34.2193,-84.136803,Tap Water,6.8,0,0,25,4,0,
+,Site 289,2020-11-25,38.004932,-87.499254,Tap Water,7.2,0,0,300,4,80,
+,Site 307,2020-11-25,39.32017,-88.441716,Tap Water,7.2,0,0,300,4,0,Water Fountain
+,Site 308,2020-11-25,39.320179,-88.441737,Tap Water,6.8,0,0,300,4,0,Bathroom
+,Site 310,2020-11-25,39.320187,-88.441765,Tap Water,7.8,0,5,25,4,40,Ag Sink
+,Site 311,2020-11-25,39.320194,-88.441828,Tap Water,7.8,0,0,25,4,40,Mrs Eddinger
+,Site 312,2020-11-25,39.320194,-88.441827,Tap Water,7.8,0,0,75,4,40,
+,Site 313,2020-11-25,39.320194,-88.441827,Tap Water,7.8,0,0,25,4,0,
+,Site 314,2020-11-25,39.320195,-88.441827,Tap Water,7.2,0,0,75,4,0,water fountain
+,Site 315,2020-11-25,39.320202,-88.441806,Tap Water,7.8,0,0,300,4,0,Kitchen
+,Site 316,2020-11-25,39.320215,-88.441794,Tap Water,7.2,0,0,25,4,40,kitchen
+,Site 317,2020-11-25,39.32022,-88.441774,Tap Water,7.8,0,0,25,0,40,baffroom
+,Site 325,2020-11-25,40.014447,-105.250113,Tap Water,6.8,0,5,150,4,0,
+,Site 348,2020-11-25,40.57858,-73.853454,River,7.8,0,0,0,0,40,
+,Site 348,2020-11-25,40.57858,-73.853454,River,7.8,0,0,0,0,40,
+,Site 348,2020-11-25,40.57858,-73.853454,River,7.8,0,0,0,0,40,
+,Site 348,2020-11-25,40.57858,-73.853454,River,7.8,0,0,25,4,40,
+,Site 350,2020-11-25,40.622605,-74.017696,Tap Water,7.8,0,0,0,0,40,
+,Site 352,2020-11-25,40.623839,-74.016914,Tap Water,7.2,0,0,75,6,0,
+,Site 352,2020-11-25,40.623839,-74.016914,Tap Water,7.2,0,0,75,6,0,
+,Site 352,2020-11-25,40.623839,-74.016914,Tap Water,7.2,0,0,75,6,0,
+,Site 352,2020-11-25,40.623839,-74.016914,Tap Water,7.2,0,0,75,6,0,
+,Site 415,2020-11-25,47.512281,-122.261873,Tap Water,7.2,20,1,75,1,0,the sample is cold tap water
+,Site 424,2020-11-25,47.575861,-122.242148,Tap Water,6.2,200,10,0,6,300,
+,Site 426,2020-11-25,47.575889,-122.242092,Tap Water,7.8,160,5,300,4,120,
+,Site 428,2020-11-25,47.605671,-122.318386,Tap Water,7.8,0,0,25,4,40,413 11th Ave
+,Site 429,2020-11-25,47.715325,-122.29491,Tap Water,7.8,0,1,25,0,0,
+,Site 430,2020-11-25,47.739303,-122.343534,Tap Water,7.2,0,0,300,6,0,
+,Site 352,2020-11-24,40.623839,-74.016914,Tap Water,7.2,0,0,75,6,0,
+,Site 352,2020-11-24,40.623839,-74.016914,Tap Water,6.8,0,10,300,6,0,
+,Site 415,2020-11-24,47.512281,-122.261873,Tap Water,7.2,20,1,75,1,0,the sample is cold tap water
+,Site 415,2020-11-24,47.512281,-122.261873,Tap Water,7.2,20,1,75,1,0,the sample is cold tap water
+,Site 288,2020-11-24,37.430056,-122.173424,Pond,7.8,0,0,25,4,0,
+,Site 359,2020-11-24,40.66793,-74.509135,Tap Water,7.8,20,5,75,4,40,
+,Site 360,2020-11-24,40.670602,-74.519639,Tap Water,7.8,0,0,150,4,40,
+,Site 361,2020-11-24,40.672876,-74.499749,Pond,7.2,0,0,75,4,40,
+,Site 362,2020-11-24,40.675848,-74.52003,Tap Water,7.2,20,0,150,4,40,
+,Site 363,2020-11-24,40.686971,-74.520461,Tap Water,7.8,0,0,150,4,40,
+,Site 364,2020-11-24,40.687638,-74.453992,Pond,7.8,0,0,75,4,0,
+,Site 411,2020-11-23,42.405587,-92.468089,Tap Water,7.2,20,1,300,0,300,The town treats it's water with chlorine.
+,Site 421,2020-11-23,47.575776,-122.241941,Tap Water,6.2,200,10,0,6,300,
