@@ -1,0 +1,61 @@
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.FilterEdit {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  bottom: 150px;
+  right: 150px;
+  background-color: var(--clr-filter-bg);
+
+  display: flex;
+  flex-direction: column;
+}
+.FilterEdit > h3 {
+  margin: 0;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.FilterEdit > .content > .sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.FilterEdit > .content > .sidebar > .step {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.FilterEdit > .content > .sidebar > .step > div {
+  padding-left: 1rem;
+}
+
+.FilterEdit > .content > .sidebar input {
+  color: var(--clr-txt);
+  border: 1px solid #0003;
+  width: min-content;
+  margin: 0;
+}
+.FilterEdit > .content > .sidebar .form {
+  display: grid;
+  grid-template-columns: 60px auto;
+  align-items: center;
+  overflow: auto;
+}
+.FilterEdit > .content > .sidebar > .controlbar {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--clr-filter-bg);
+  display: flex;
+  justify-content: right;
+  margin-top: 0.5rem;
+  padding: 10px;
+}

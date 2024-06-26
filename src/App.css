@@ -1,17 +1,19 @@
 :root {
   --clr-txt: #333;
-  
+
+  --clr-filter-bg: #b7ddca;
 }
 
-.App {}
+.App {
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 h3 {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   color: #27323d;
   font-weight: 400;
   font-size: 24px;
@@ -35,7 +37,7 @@ label {
   color: #0009;
 }
 
-button { 
+button {
   outline: 0;
   font-weight: 400;
   white-space: nowrap;
@@ -49,10 +51,15 @@ button {
   color: #27323d;
   border: 1px solid #d9d9d9;
 }
-button:hover, button.outline:hover, 
-button.outline-reverse:hover, button.transparent:hover, 
-button.transparent-light:hover{
+button:hover,
+button.outline:hover,
+button.outline-reverse:hover,
+button.transparent:hover,
+button.transparent-light:hover {
   background-color: #0003;
+}
+button:disabled:hover {
+  background-color: initial;
 }
 button.primary {
   color: #fff;
@@ -65,7 +72,7 @@ button.secondary {
   background: #5a7201;
 }
 button.outline {
-  color:var(--clr-txt);
+  color: var(--clr-txt);
   background: transparent;
   border: 1px solid var(--clr-txt);
 }
