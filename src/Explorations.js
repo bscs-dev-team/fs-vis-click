@@ -83,6 +83,9 @@ export default function Explorations({ fs, setFs }) {
 
   const BROWSER = (
     <>
+      <h1>Explorations</h1>
+      <p>FrogWatch Volunteer Data.
+        See observations from FrogWatch USA volunteers in maps and graphs, or create your own visualization of data.</p>
       <h3>Featured Explorations</h3>
       <div className='featured'>
         {FEATURED}

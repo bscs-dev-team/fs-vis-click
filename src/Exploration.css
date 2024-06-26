@@ -27,7 +27,7 @@
   padding: 0 10px;
 }
 
-.Exploration input {
+.Exploration .title input {
   border: none;
   color: white;
   background-color: #fff2;

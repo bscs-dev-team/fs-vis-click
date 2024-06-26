@@ -18,26 +18,42 @@
   flex-direction: column;
 }
 
+.EXPEdit > h3 {
+  margin: 0;
+  padding: 10px;
+  font-size: 1rem;
+}
+
 .EXPEdit .content {
   display: flex;
   padding: 10px;
 }
 
-.EXPEdit .sidebar {
+.EXPEdit > .content > .sidebar {
   width: 25%;
+  overflow: auto;
 }
-.EXPEdit .sidebar h3 {
-  margin: 0;
-  font-size: 1rem;
-}
-.EXPEdit .sidebar input {
+.EXPEdit > .content > .sidebar input {
   color: var(--clr-txt);
   border: 1px solid #0003;
   padding: 3px 5px;
   margin: 10px 0 20px 0;
 }
-.EXPEdit .sidebar select {
+.EXPEdit > .content > .sidebar > .step {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.EXPEdit > .content > .sidebar > .step > div {
+  padding-left: 1rem;
+}
+
+.EXPEdit > .content > .sidebar select {
   margin: 10px 0 3px 0;
+}
+.EXPEdit > .content > .sidebar .filter {
+  padding: 10px;
+  background-color: var(--clr-filter-bg);
 }
 
 .EXPEdit .visualization {
@@ -90,7 +106,7 @@
   display: block;
 }
 
-.EXPEdit .controlbar {
+.EXPEdit > .controlbar {
   display: flex;
   justify-content: right;
   margin-top: 0.5rem;

@@ -98,17 +98,17 @@ export default function EXPEdit({ fs, setFs, onExit }) {
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
   const SELECT_TYPE = (
-    <>
-      <label>2. Select a map/graph type</label>
+    <div className="step">
+      <h4>2. Select a map/graph type</h4>
       <div className="typeselector">
         {TYPES}
       </div>
-    </>
+    </div>
   )
 
   const CONFIGURE = (
-    <>
-      <label>2. Configure Map/Grap</label>
+    <div className="step">
+      <h4>2. Configure Map/Grap</h4>
       <div className="configure">
         <label className="help">Determine how the data is displayed</label>
 
@@ -145,19 +145,17 @@ export default function EXPEdit({ fs, setFs, onExit }) {
           </select>
         </label>
       </div>
-    </>
+    </div>
   );
 
   return (
     <div>
       <div className="screen"></div>
       <div className="EXPEdit">
+        <h3>DISPLAY</h3>
         <div className="content">
 
           <div className="sidebar">
-            <h3>DISPLAY</h3>
-            <br />
-            <br />
             <label>TITLE</label>
             <input type="text" value={visual.title} placeholder="MAP or GRAPH Title" onChange={evt_OnTitleChange} />
             <label>DESCRIBE THIS MAP/GRAPH</label>
@@ -194,6 +192,7 @@ export default function EXPEdit({ fs, setFs, onExit }) {
           </div>
 
         </div>
+
         <div className="controlbar">
           <button disabled>Duplicate</button>
           <div style={{ flexGrow: 1 }}></div>
