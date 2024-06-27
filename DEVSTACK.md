@@ -41,8 +41,20 @@ Notes on setting up the dev stack for `fs-vis-click`
 5. Start the dev server
     `npm start`
 
+6. Set up personal access token
+    1. Go to account (upper right) and select "settings"
+    2. Go to "Developer SEttings" -- https://github.com/settings/tokens
+    3. Go to Personal access tokens
+    4. Go to "Tokens (classic)
+    5. Go to "Generate a new Token (classic)
+        --  Set expiration to 6/30/2025
+        --  Check all "repo" permissions
+    6. Copy the PAT
+        `git remote set-url origin https://bscs-dev-team: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@github.com/bscs-dev-team/fs-vis-click.git`
+    7. Update deployment script
+        `"deploy": "gh-pages -d dist -r https://bscs-dev-team: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@github.com/bscs-dev-team/fs-vis-click.git"`
 
-6. Set up github pages
+7. Set up github pages
     `npm i -S gh-pages`
 
     Make repo public if it isn't already -- needs to be public for gh-pages to work.
@@ -53,15 +65,11 @@ Notes on setting up the dev stack for `fs-vis-click`
     "scripts": {
         ...
         "predeploy" : "parcel build --public-url .",
-        "deploy" : "gh-pages -d dist",
+        "deploy": "gh-pages -d dist -r https://bscs-dev-team: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@github.com/bscs-dev-team/fs-vis-click.git,
     },
     ```
 
 
-### REVIEW THIS DOES NOT WORK!!    
-    Set up git user:
-    git config user.name 'bscs-dev-team'
-    git config user.email 'devops@bscs.org'
 
 ### set origin
 https://bscs-dev-team@github.com/bscs-dev-team/fs-vis-click.git
@@ -74,9 +82,9 @@ https://bscs-dev-team@github.com/bscs-dev-team/fs-vis-click.git
 
 
 #### `fatal: a branch named 'gh-pages' already exists`
-Message dispalyed during `npm run deploy`.
+Message displayed during `npm run deploy`.
 Remove the `node_modules/.cache/gh-pages` folder.
-
+e.g. `rm -rf node_modules/.cache/gh-pages `
 
 #### `remote: Permission to git denied to...`
 On Windows, issue might be git credentials maanger.
@@ -84,3 +92,38 @@ On Windows, issue might be git credentials maanger.
 2. Start "Credentials Manager"
 3. Search for `github` entries.
 4. Remove old entries.
+
+####
+Invalid username or password.
+fatal: Authentication failed for 'https://github.com/bscs-dev-team/fs-vis-click.git/'
+
+####
+`NODE_DEBUG=gh-pages npm run deploy` = > doesnt' work
+
+#### npm run deploy errors
+`libc++abi: terminating due to uncaught exception of type` `std::__1::system_error: mutex lock failed: Invalid argument`
+`zsh: abort      npm run predeploy`
+* do a good scrubbing:
+    `rm -rf node_modules`
+    `nvm use`
+    `npm ci`
+    `npm run build`
+    `npm run predploy`
+* generate a new Personal Access Token
+    1. Go to account (upper right) and select "settings"
+    2. Go to "Developer SEttings" -- https://github.com/settings/tokens
+    3. Go to Personal access tokens
+    4. Go to "Tokens (classic)
+    5. Go to "Generate a new Token (classic)
+        --  Set expiration to 6/30/2025
+        --  Check all "repo" permissions
+    6. Copy the PAT
+        `git remote set-url origin https://bscs-dev-team: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@github.com/bscs-dev-team/fs-vis-click.git`
+    7. Update deployment script
+        `"deploy": "gh-pages -d dist -r https://bscs-dev-team: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@github.com/bscs-dev-team/fs-vis-click.git"`
+    
+
+
+    
+    
+    

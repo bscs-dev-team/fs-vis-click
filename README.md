@@ -37,9 +37,10 @@ Point your browser at `localhost:1234`
 
 ## Deploy
 
-This will deploy to GitHub Pages at `https://bscs-dev-team.github.io/fs-vis-click/`
-
-
 ```bash
 npm run deploy
 ```
+
+This will deploy to GitHub Pages at `https://bscs-dev-team.github.io/fs-vis-click/`
+
+(For the first time deploying you might have to run `npm run predeploy` first?)
