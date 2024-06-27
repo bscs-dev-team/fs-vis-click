@@ -70,6 +70,7 @@ export default function EXPItemsList({ fs, setFs }) {
   return (
     <div className="EXPItems">
       <h4>SAVED VISUALS</h4>
+      <div className="help">Drag to change the sort order</div>
       <div className='EXPItemsList'>
         {ITEMS.length < 1
           ? <div className="help">Your saved displays will appear here</div>

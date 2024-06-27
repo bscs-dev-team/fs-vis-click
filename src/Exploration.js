@@ -114,11 +114,11 @@ export default function Exploration({ fs, setFs }) {
 
   const FOOTER = (
     <div className="footer">
-      <button className="transparent" onClick={evt_SetPublic}>PRIVATE: Only you can view this exploration</button>
       <button className="transparent" onClick={evt_CopyLink}>Copy Link</button>
       <button className="transparent" onClick={evt_Embed}>Embed Exploration</button>
-      {fs.user.isLoggedIn && <button className="transparent" onClick={evt_SaveAs}>Save Exploration As...</button>}
-      <button className="outline" onClick={deselectExploration}>Back to Explorations</button>
+      <button className="transparent" onClick={evt_SetPublic}>PRIVATE: Only you can view this exploration</button>
+      {fs.user.isLoggedIn && <button className="transparent" onClick={evt_SaveAs}>Edit a Copy</button>}
+      <button className="secondary" onClick={deselectExploration}>Back to Explorations</button>
     </div>
   );
 
