@@ -60,8 +60,8 @@ export default function Exploration({ fs, setFs }) {
   const NAVBAR = (
     <div className="navbar">
       <div>
-        <span onClick={() => setRoute('home')}>Frogwatch</span> &gt;{' '}
-        <span onClick={deselectExploration}>My Data Explorations</span> &gt;{' '}
+        <span onClick={() => setRoute('home')}>Home</span> &gt;{' '}
+        <span onClick={deselectExploration}>Explorations</span> &gt;{' '}
         {selectedExploration}: {exploration.name}
       </div>
       <Login fs={fs} setFs={setFs} />

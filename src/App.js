@@ -83,6 +83,9 @@ export function App() {
   function evt_SetRoute(route) {
     setFs(draft => {
       draft.route = route;
+      // if clicking "Explorations" again, clear the selected exploration 
+      // so we'll go back to the main Exploration screen
+      if (route === 'explorations') draft.selectedExploration = null;
     });
   }
 
