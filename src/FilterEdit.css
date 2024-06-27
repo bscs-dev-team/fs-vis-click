@@ -8,9 +8,9 @@
 }
 .FilterEdit {
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 150px;
-  bottom: 150px;
+  bottom: 100px;
   right: 150px;
   background-color: var(--clr-filter-bg);
   border: 4px double var(--clr-filter-border);
@@ -25,17 +25,20 @@
 }
 
 .FilterEdit > .content > .sidebar {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
+  display: grid;
+  grid-template-rows: 50px auto 40px;
+  width: 50%;
 }
 
-.FilterEdit > .content > .sidebar > .step {
+.FilterEdit > .content > .sidebar > .steps {
+  overflow: auto;
+}
+.FilterEdit > .content > .sidebar > .steps > .step {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
 }
-.FilterEdit > .content > .sidebar > .step > div {
+.FilterEdit > .content > .sidebar > .steps > .step > div {
   padding-left: 1rem;
 }
 
@@ -58,5 +61,5 @@
   display: flex;
   justify-content: right;
   margin-top: 0.5rem;
-  padding: 10px;
+  padding: 10px 0;
 }

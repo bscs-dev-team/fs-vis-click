@@ -186,12 +186,12 @@ export default function EXPEdit({ fs, setFs, onExit }) {
             <label>DESCRIBE THIS MAP/GRAPH</label>
             <input type="text" value={visual.description} placeholder="Summarize what this map/graph shows" onChange={evt_OnDescriptionChange} />
             <div className="filter step">
-            <label>1. Select Your Data</label>
+              <label>1. Select Your Data</label>
               <div>
                 <select value={visual.filter} onChange={evt_OnSelectFilter}>
                   {exploration.filters.map(f => <option key={f.id} value={f.id}>{f.label}</option>)}
-            </select>
-            <div className="minicontrolbar">
+                </select>
+                <div className="minicontrolbar">
                   <button className="small" onClick={evt_EditFilter}>EDIT</button>
                   <button className="small" onClick={evt_NewFilter}>NEW DATA SELECTION</button>
                 </div>
