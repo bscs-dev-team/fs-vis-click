@@ -52,78 +52,82 @@ export default function FilterEdit({ fs, setFs }) {
         <div className="content">
 
           <div className="sidebar">
-            <label>SELECTED DATA NAME</label>
-            <input type="text" value={selectedFilter.label} placeholder="Data Source and Filter" onChange={evt_OnTitleChange} />
-            <div className="step">
-              <label>1. Select Data Source</label>
-              <div>
-                <div className="help">Select the source from which to fetch data.</div>
-                <select>
-                  <option value="frog">FrogWatch USA</option>
-                  <option value="chesapeake">Chesapeake</option>
-                </select>
+            <div>
+              <label>SELECTED DATA NAME</label>
+              <input type="text" value={selectedFilter.label} placeholder="Data Source and Filter" onChange={evt_OnTitleChange} />
+            </div>
+            <div className="steps">
+              <div className="step">
+                <label>1. Select Data Source</label>
                 <div>
-                  <input type="checkbox" /> Limit to 5,000 results
+                  <div className="help">Select the source from which to fetch data.</div>
+                  <select>
+                    <option value="frog">FrogWatch USA</option>
+                    <option value="chesapeake">Chesapeake</option>
+                  </select>
+                  <div>
+                    <input type="checkbox" /> Limit to 5,000 results
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="step">
-              <label>2. Filters</label>
-              <div>
-                <div className="help">Add filters to show only items that match your criteria.</div>
+              <div className="step">
+                <label>2. Filters</label>
                 <div>
-                  <button>+ Add filter</button> 1 filter
-                </div>
+                  <div className="help">Add filters to show only items that match your criteria.</div>
+                  <div>
+                    <button>+ Add filter</button> 1 filter
+                  </div>
 
-                <label>Value</label>
-                <div className="help">Add filters to show only items that match your criteria.</div>
-                <div className="form">
+                  <label>Value</label>
+                  <div className="help">Add filters to show only items that match your criteria.</div>
+                  <div className="form">
 
-                  <label>Field:</label>
-                  <select>
-                    <option>Wind</option>
-                    <option>Species</option>
-                  </select>
-                  <label>Match:</label>
-                  <select>
-                    <option>Any of these values</option>
-                    <option>Any value except</option>
-                  </select>
-                  <label>Values:</label>
-                  <input type="text" value={visual.filterSource} />
-                  <hr /><br />
+                    <label>Field:</label>
+                    <select>
+                      <option>Wind</option>
+                      <option>Species</option>
+                    </select>
+                    <label>Match:</label>
+                    <select>
+                      <option>Any of these values</option>
+                      <option>Any value except</option>
+                    </select>
+                    <label>Values:</label>
+                    <input type="text" value={visual.filterSource} />
+                    <hr /><br />
 
-                  <label>Field:</label>
-                  <select>
-                    <option>Wind</option>
-                    <option>Species</option>
-                  </select>
-                  <label>Match:</label>
-                  <select>
-                    <option>Any of these values</option>
-                    <option>Any value except</option>
-                  </select>
-                  <label>Values:</label>
-                  <input type="text" value={visual.filterSource} />
-                  <hr /><br />
+                    <label>Field:</label>
+                    <select>
+                      <option>Wind</option>
+                      <option>Species</option>
+                    </select>
+                    <label>Match:</label>
+                    <select>
+                      <option>Any of these values</option>
+                      <option>Any value except</option>
+                    </select>
+                    <label>Values:</label>
+                    <input type="text" value={visual.filterSource} />
+                    <hr /><br />
 
-                  <label>Field:</label>
-                  <select>
-                    <option>Wind</option>
-                    <option>Species</option>
-                  </select>
-                  <label>Match:</label>
-                  <select>
-                    <option>Any of these values</option>
-                    <option>Any value except</option>
-                  </select>
-                  <label>Values:</label>
-                  <input type="text" value={visual.filterSource} />
+                    <label>Field:</label>
+                    <select>
+                      <option>Wind</option>
+                      <option>Species</option>
+                    </select>
+                    <label>Match:</label>
+                    <select>
+                      <option>Any of these values</option>
+                      <option>Any value except</option>
+                    </select>
+                    <label>Values:</label>
+                    <input type="text" value={visual.filterSource} />
 
+                  </div>
                 </div>
               </div>
+              <br />
             </div>
-
             <div className="controlbar">
               <button disabled>Duplicate</button>
               <div style={{ flexGrow: 1 }}></div>

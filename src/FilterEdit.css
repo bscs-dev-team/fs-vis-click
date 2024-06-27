@@ -13,6 +13,7 @@
   bottom: 150px;
   right: 150px;
   background-color: var(--clr-filter-bg);
+  border: 4px double var(--clr-filter-border);
 
   display: flex;
   flex-direction: column;

@@ -54,6 +54,7 @@
 .EXPEdit > .content > .sidebar .filter {
   padding: 10px;
   background-color: var(--clr-filter-bg);
+  border: 4px double var(--clr-filter-border);
 }
 
 .EXPEdit .visualization {
