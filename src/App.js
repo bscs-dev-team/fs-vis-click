@@ -97,6 +97,9 @@ export function App() {
           className={fs.route === 'home' ? 'outline' : 'transparent'}
           onClick={() => evt_SetRoute('home')}>Home</button>
         <button
+          className={fs.route === 'data' ? 'outline' : 'transparent'}
+          onClick={() => evt_SetRoute('data')}>Data</button>
+        <button
           className={fs.route === 'explorations' ? 'outline' : 'transparent'}
           onClick={() => evt_SetRoute('explorations')}>Explorations</button>
       </div>
@@ -108,6 +111,16 @@ export function App() {
     {NAVBAR}
     <Home />
   </>;
+  const DATA = <>
+    {NAVBAR}
+    <div>Data</div>
+    <button>+ Add Data</button>
+    <div style={{ display: 'flex', flexDirection: 'row' }}>
+      <div>My Observations</div>
+      <div>Recent Observations</div>
+      <div>All Observations</div>
+    </div>
+  </>
   const EXPLORATIONS = <>
     {NAVBAR}
     <Explorations fs={fs} setFs={setFs} />
@@ -116,6 +129,7 @@ export function App() {
 
   let VIEW;
   if (fs.route === 'home') VIEW = HOME;
+  if (fs.route === 'data') VIEW = DATA;
   if (fs.route === 'explorations') VIEW = EXPLORATIONS;
 
   return (
