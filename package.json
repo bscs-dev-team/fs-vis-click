@@ -1,7 +1,7 @@
 {
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel src/index.html",
     "build": "parcel build",
     "predeploy": "parcel build --public-url .",
     "deploy": "gh-pages -d dist -r https://bscs-dev-team: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@github.com/bscs-dev-team/fs-vis-click.git"
