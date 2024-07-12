@@ -1,10 +1,16 @@
+import React, { useState } from "react";
 import './Exploration.css';
 import Login from './Login';
 import EXPItemsList from './EXPItemsList';
 import EXPView from './EXPView';
 import { title } from 'process';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPencil } from '@fortawesome/free-solid-svg-icons';
+const IcnPencil = <FontAwesomeIcon icon={faPencil} />;
+
 export default function Exploration({ fs, setFs }) {
+  const [titleIsEditable, setTitleIsEditable] = useState(false);
 
 
   /// LOAD DATA ///////////////////////////////////////////////////////////////
@@ -41,6 +47,10 @@ export default function Exploration({ fs, setFs }) {
     });
   }
 
+  function evt_ToggleTitleEdit(event) {
+    setTitleIsEditable(!titleIsEditable);
+  }
+
   function evt_OnTitleChange(event) {
     setFs(draft => {
       draft.explorations.find(e => e.id === draft.selectedExploration).name = event.target.value;
@@ -72,10 +82,17 @@ export default function Exploration({ fs, setFs }) {
     <div className="title">
       EXPLORATION:{' '}
       {fs.user.isLoggedIn
+        ? titleIsEditable
         ? (
           <>
             <input type="text" value={exploration.name} onChange={evt_OnTitleChange} />
-            <button className='transparent-light'>EDIT</button>
+              <button className='transparent-light' onClick={evt_ToggleTitleEdit}>Save</button>
+            </>
+          )
+          : (
+            <>
+              {exploration.name}
+              <button className='transparent-light' onClick={evt_ToggleTitleEdit}>{IcnPencil}</button>
           </>
         )
         : <>{exploration.name}</>

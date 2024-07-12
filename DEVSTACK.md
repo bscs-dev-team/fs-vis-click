@@ -33,6 +33,11 @@ Notes on setting up the dev stack for `fs-vis-click`
     `npm i -S immer`
     `npm i -S use-immer`
     `npm i -S csvtojson`
+    `npm i -S @fortawesome/react-fontawesome`
+    `npm i -S @fortawesome/fontawesome-svg-core`
+    `npm i -S @fortawesome/free-solid-svg-icons`
+    `npm i -S @fortawesome/free-regular-svg-icons`
+    `npm i -S @fortawesome/free-brands-svg-icons`
 
 4. Create basic structure
     Add `src/` folder

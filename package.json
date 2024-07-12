@@ -7,6 +7,11 @@
     "deploy": "gh-pages -d dist -r https://bscs-dev-team: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@github.com/bscs-dev-team/fs-vis-click.git"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "csvtojson": "^2.0.10",
     "gh-pages": "^6.1.1",
     "immer": "^10.1.1",
