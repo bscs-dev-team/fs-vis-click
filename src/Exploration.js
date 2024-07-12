@@ -74,7 +74,6 @@ export default function Exploration({ fs, setFs }) {
         <span onClick={deselectExploration}>Explorations</span> &gt;{' '}
         {selectedExploration}: {exploration.name}
       </div>
-      <Login fs={fs} setFs={setFs} />
     </div>
   );
 
