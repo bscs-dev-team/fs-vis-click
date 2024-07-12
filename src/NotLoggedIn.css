@@ -1,0 +1,28 @@
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.NotLoggedIn {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  bottom: 25%;
+  right: 25%;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.NotLoggedIn > .controlbar {
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  padding: 10px 0;
+}

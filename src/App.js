@@ -36,6 +36,7 @@ const initialFSState = {
   selectedDataset: null,
   editingVisual: null,
   editingFilter: null,
+  editWithoutSaving: null, // Allow non-logged in user to edit visualizations
   explorations: [
     {
       id: 1,

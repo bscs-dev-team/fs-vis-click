@@ -31,6 +31,7 @@ export default function Explorations({ fs, setFs }) {
         visuals: []
       });
       draft.selectedExploration = NEXTINDEX;
+      draft.editWithoutSaving = null;
     });
   }
 

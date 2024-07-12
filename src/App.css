@@ -24,7 +24,6 @@ h3 {
   display: flex;
   justify-content: space-between;
   height: 64px;
-  padding: 20px;
 }
 .navbar button {
   padding: 0 40px;

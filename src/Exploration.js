@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './Exploration.css';
-import Login from './Login';
+import NotLoggedIn from "./NotLoggedIn";
 import EXPItemsList from './EXPItemsList';
 import EXPView from './EXPView';
 import { title } from 'process';
@@ -80,7 +80,7 @@ export default function Exploration({ fs, setFs }) {
   const TITLE = (
     <div className="title">
       EXPLORATION:{' '}
-      {fs.user.isLoggedIn
+      {fs.user.isLoggedIn || fs.editWithoutSaving
         ? titleIsEditable
         ? (
           <>
@@ -104,7 +104,7 @@ export default function Exploration({ fs, setFs }) {
       <EXPItemsList fs={fs} setFs={setFs} />
       <div className="notes">
         <h4>YOUR IDEAS & QUESTIONS</h4>
-        {fs.user.isLoggedIn
+        {fs.user.isLoggedIn || fs.editWithoutSaving
           ? <textarea
             value={exploration.description}
             placeholder="You can use this space to describe the idea or question you would like to explore.  Add any ideas and questions as you make new maps and graphs"
@@ -147,6 +147,7 @@ export default function Exploration({ fs, setFs }) {
         {VISUALIZATION}
       </div>
       {FOOTER}
+      {!fs.user.isLoggedIn && !fs.editWithoutSaving && <NotLoggedIn fs={fs} setFs={setFs} />}
     </div >
   )
 }
