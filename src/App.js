@@ -72,7 +72,6 @@ const initialFSState = {
       filters: [...DEFAULT_FILTERS]
     },
   ],
-  datasets: DATASETS
 };
 
 /// APP ///////////////////////////////////////////////////////////////////////
