@@ -10,7 +10,7 @@ export default function NotLoggedIn({ fs, setFs }) {
     });
   };
 
-  evt_OnExit = (event) => {
+  function evt_OnExit(event) {
     setFs(draft => {
       draft.editWithoutSaving = true;
     });
