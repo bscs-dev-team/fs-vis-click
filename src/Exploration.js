@@ -133,7 +133,7 @@ export default function Exploration({ fs, setFs }) {
       <button className="transparent" onClick={evt_CopyLink}>Copy Link</button>
       <button className="transparent" onClick={evt_Embed}>Embed Exploration</button>
       <button className="transparent" onClick={evt_SetPublic}>PRIVATE: Only you can view this exploration</button>
-      {fs.user.isLoggedIn && <button className="transparent" onClick={evt_SaveAs}>Edit a Copy</button>}
+      <button className="primary" onClick={evt_SaveAs}>Edit a Copy</button>
       <button className="secondary" onClick={deselectExploration}>Back to Explorations</button>
     </div>
   );
