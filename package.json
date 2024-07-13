@@ -4,7 +4,7 @@
     "start": "parcel src/index.html",
     "build": "parcel build",
     "predeploy": "parcel build --public-url .",
-    "deploy": "gh-pages -d dist -r https://bscs-dev-team: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@github.com/bscs-dev-team/fs-vis-click.git"
+    "deploy": "gh-pages -d dist -r https://bscs-dev-team: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@github.com/bscs-dev-team/fs-vis-click.git"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
