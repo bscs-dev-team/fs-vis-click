@@ -53,7 +53,7 @@ export default function FilterEdit({ fs, setFs }) {
 
           <div className="sidebar">
             <div>
-              <label>SELECTED DATA NAME</label>
+              <label>SELECTED DATA NAME </label>
               <input type="text" value={selectedFilter.label} placeholder="Data Source and Filter" onChange={evt_OnTitleChange} />
             </div>
             <div className="steps">
@@ -77,6 +77,8 @@ export default function FilterEdit({ fs, setFs }) {
                   <div>
                     <button>+ Add filter</button> 1 filter
                   </div>
+
+                  <br />
 
                   <label>Value</label>
                   <div className="help">Add filters to show only items that match your criteria.</div>

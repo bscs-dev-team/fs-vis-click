@@ -192,8 +192,8 @@ export default function EXPEdit({ fs, setFs, onExit }) {
                   {exploration.filters.map(f => <option key={f.id} value={f.id}>{f.label}</option>)}
                 </select>
                 <div className="minicontrolbar">
-                  <button className="small" onClick={evt_EditFilter}>EDIT</button>
-                  <button className="small" onClick={evt_NewFilter}>NEW DATA SELECTION</button>
+                  <button className="mini" onClick={evt_EditFilter}>EDIT</button>
+                  <button className="mini" onClick={evt_NewFilter}>NEW DATA SELECTION</button>
                 </div>
               </div>
             </div>

@@ -26,6 +26,7 @@ const DEFAULT_FILTERS = [
 ];
 
 const initialFSState = {
+  defaultFilters: DEFAULT_FILTERS,
   user: {
     isLoggedIn: false,
     userName: null,

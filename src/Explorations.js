@@ -28,7 +28,8 @@ export default function Explorations({ fs, setFs }) {
         description: '',
         modified: new Date(),
         privacy: 'Private',
-        visuals: []
+        visuals: [],
+        filters: [...fs.defaultFilters]
       });
       draft.selectedExploration = NEXTINDEX;
       draft.editWithoutSaving = null;

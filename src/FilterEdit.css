@@ -8,10 +8,10 @@
 }
 .FilterEdit {
   position: absolute;
-  top: 100px;
-  left: 150px;
-  bottom: 100px;
-  right: 150px;
+  top: 50px;
+  left: 100px;
+  bottom: 50px;
+  right: 100px;
   background-color: var(--clr-filter-bg);
   border: 4px double var(--clr-filter-border);
 
@@ -26,8 +26,9 @@
 
 .FilterEdit > .content > .sidebar {
   display: grid;
-  grid-template-rows: 50px auto 40px;
-  width: 50%;
+  grid-template-rows: 20px auto 40px;
+  width: 75%;
+  padding-right: 10px;
 }
 
 .FilterEdit > .content > .sidebar > .steps {
@@ -53,7 +54,13 @@
   grid-template-columns: 60px auto;
   align-items: center;
   overflow: auto;
+  padding-top: 10px;
 }
+
+.FilterEdit > .content > .sidebar .items {
+  padding-top: 10px;
+}
+
 .FilterEdit > .content > .sidebar > .controlbar {
   position: absolute;
   bottom: 0;
