@@ -54,10 +54,10 @@ Notes on setting up the dev stack for `fs-vis-click`
     5. Go to "Generate a new Token (classic)
         --  Set expiration to 6/30/2025
         --  Check all "repo" permissions
-    6. Copy the PAT
-        `git remote set-url origin https://bscs-dev-team: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@github.com/bscs-dev-team/fs-vis-click.git`
+    6. Copy the PAT (get code from package.json `deploy` script)
+        `git remote set-url origin https://bscs-dev-team:xxx@github.com/bscs-dev-team/fs-vis-click.git`
     7. Update deployment script
-        `"deploy": "gh-pages -d dist -r https://bscs-dev-team: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@github.com/bscs-dev-team/fs-vis-click.git"`
+        `"deploy": "gh-pages -d dist -r https://bscs-dev-team:xxx@github.com/bscs-dev-team/fs-vis-click.git"`
 
 7. Set up github pages
     `npm i -S gh-pages`
