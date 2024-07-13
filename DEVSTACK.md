@@ -70,7 +70,7 @@ Notes on setting up the dev stack for `fs-vis-click`
     "scripts": {
         ...
         "predeploy" : "parcel build --public-url .",
-        "deploy": "gh-pages -d dist -r https://bscs-dev-team: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@github.com/bscs-dev-team/fs-vis-click.git,
+        "deploy": "gh-pages -d dist -r https://bscs-dev-team:xxx@github.com/bscs-dev-team/fs-vis-click.git,
     },
     ```
 
@@ -123,9 +123,9 @@ fatal: Authentication failed for 'https://github.com/bscs-dev-team/fs-vis-click.
         --  Set expiration to 6/30/2025
         --  Check all "repo" permissions
     6. Copy the PAT
-        `git remote set-url origin https://bscs-dev-team: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@github.com/bscs-dev-team/fs-vis-click.git`
+        `git remote set-url origin https://bscs-dev-team:xxx@github.com/bscs-dev-team/fs-vis-click.git`
     7. Update deployment script
-        `"deploy": "gh-pages -d dist -r https://bscs-dev-team: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@github.com/bscs-dev-team/fs-vis-click.git"`
+        `"deploy": "gh-pages -d dist -r https://bscs-dev-team:xxx@github.com/bscs-dev-team/fs-vis-click.git"`
     
 
 
