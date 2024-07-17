@@ -140,14 +140,14 @@ export default function EXPEdit({ fs, setFs, onExit }) {
         <label>Selected Graph Type: {visual.type} <button onClick={evt_DeselectType}>Change Map/Graph Type</button></label>
 
 
-        <label>X Axis:
+        <label>X Axis:&nbsp;
           <select>
             <option>Air Temperature</option>
             <option>Call Intensity</option>
           </select>
         </label>
 
-        <label>X Axis Order:
+        <label>X Axis Order:&nbsp;
           <select>
             <option>Air Temperature</option>
             <option>Call Intensity</option>
@@ -156,14 +156,14 @@ export default function EXPEdit({ fs, setFs, onExit }) {
 
         <label><input type="checkbox" readOnly />&nbsp;Round bucket values</label>
 
-        <label>Y Axis summary method
+        <label>Y Axis summary method:&nbsp;
           <select>
             <option>Air Temperature</option>
             <option>Call Intensity</option>
           </select>
         </label>
 
-        <label>Categorize By:
+        <label>Categorize By:&nbsp;
           <select>
             <option>Air Temperature</option>
             <option>Call Intensity</option>

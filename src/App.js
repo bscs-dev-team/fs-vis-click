@@ -63,12 +63,14 @@ const initialFSState = {
       id: 3,
       name: 'Map American Bullfrogs',
       description: 'A map of American Bullfrogs', modified: new Date(), privacy: 'Public',
+      visuals: [],
       filters: [...DEFAULT_FILTERS]
     },
     {
       id: 4,
       name: 'Copy of Histogram Frog vs Toad',
       description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public',
+      visuals: [],
       filters: [...DEFAULT_FILTERS]
     },
   ],
@@ -119,7 +121,7 @@ export function App() {
     {NAVBAR}
     <div>Data</div>
     <button>+ Add Data</button>
-    <div style={{ display: 'flex', flexDirection: 'row' }}>
+    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly' }}>
       <div>My Observations</div>
       <div>Recent Observations</div>
       <div>All Observations</div>
