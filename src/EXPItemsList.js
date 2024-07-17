@@ -85,7 +85,7 @@ export default function EXPItemsList({ fs, setFs }) {
           ))
         }
       </div>
-      {fs.user.isLoggedIn && <div className="controlbar">
+      {(fs.user.isLoggedIn || fs.editWithoutSaving) && <div className="controlbar">
         <button disabled={!selectedVisual} onClick={evt_EditVisual}>EDIT</button>
         <button className="primary" onClick={evt_NewVisual}>NEW DISPLAY</button>
       </div>}
