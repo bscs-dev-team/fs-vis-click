@@ -42,7 +42,8 @@ export default function EXPItemsList({ fs, setFs }) {
           id: NEXTINDEX,
           title: 'Untitled',
           description: '',
-          image: map_gray
+          image: map_gray,
+          filter: 1
         });
       draft.selectedVisual = NEXTINDEX;
       draft.editingVisual = NEXTINDEX;

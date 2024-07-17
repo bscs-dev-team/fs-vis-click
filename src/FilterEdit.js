@@ -12,9 +12,9 @@ export default function FilterEdit({ fs, setFs }) {
   const exploration = fs.explorations.find(e => e.id === selectedExploration);
   const visuals = exploration && exploration.visuals ? exploration.visuals : [];
   const visual = visuals.find(v => v.id === editingVisual) || {
-    title: 'Untitled', description: '', image: map_gray
+    title: 'Untitled', description: '', image: map_gray, filter: 1
   };
-  const selectedFilter = exploration.filters.find(f => f.id === visual.filter);
+  const selectedFilter = exploration.filters.find(f => f.id === Number(visual.filter));
 
   /// UI HANDLERS /////////////////////////////////////////////////////////////
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

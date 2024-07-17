@@ -98,7 +98,7 @@ export default function EXPEdit({ fs, setFs, onExit }) {
   function evt_OnSelectFilter(event) {
     setFs(draft => {
       draft.explorations.find(e => e.id === draft.selectedExploration)
-        .visuals.find(v => v.id === draft.editingVisual).filter = event.target.value
+        .visuals.find(v => v.id === draft.editingVisual).filter = Number(event.target.value)
     });
   }
   function evt_EditFilter(event) {
