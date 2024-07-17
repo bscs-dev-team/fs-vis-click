@@ -46,18 +46,7 @@ Notes on setting up the dev stack for `fs-vis-click`
 5. Start the dev server
     `npm start`
 
-6. Set up personal access token
-    1. Go to account (upper right) and select "settings"
-    2. Go to "Developer SEttings" -- https://github.com/settings/tokens
-    3. Go to Personal access tokens
-    4. Go to "Tokens (classic)
-    5. Go to "Generate a new Token (classic)
-        --  Set expiration to 6/30/2025
-        --  Check all "repo" permissions
-    6. Copy the PAT (get code from package.json `deploy` script)
-        `git remote set-url origin https://bscs-dev-team:xxx@github.com/bscs-dev-team/fs-vis-click.git`
-    7. Update deployment script
-        `"deploy": "gh-pages -d dist -r https://bscs-dev-team:xxx@github.com/bscs-dev-team/fs-vis-click.git"`
+6. Set up SSH key
 
 7. Set up github pages
     `npm i -S gh-pages`
@@ -76,10 +65,42 @@ Notes on setting up the dev stack for `fs-vis-click`
 
 
 
-### set origin
-https://bscs-dev-team@github.com/bscs-dev-team/fs-vis-click.git
+# SSH Keys
 
-    NOTE: with GitHub Desktop you might need to set the "Repository -> Repository Settings -> Git config" to "Use a local Git config" with "bscs-dev-team" as the user.
+Personal Acces Tokens are not great for gh-pages because they expire after 30 days.  It's better to set up a SSH Key.
+
+1. Open a terminal.
+2. Run `ssh-keygen -t ed25519 -C "devops@bscs.org"` and follow the prompts.
+This generates a new SSH key using the Ed25519 algorithm. 
+Add the SSH Key to GitHub.  Created file `~.ssh/bscs-dev-team` and `~.ssh/bscs-dev-team.pub`
+
+3. Copy the contents of your new SSH key to your clipboard: `cat ~/.ssh/bscs-dev-team.pub`
+Go to GitHub and log in.
+Navigate to Settings -> SSH and GPG keys -> New SSH key.
+Paste your key and give it a title.
+Click Add SSH key.
+Configure SSH for GitHub:
+
+4. Ensure the SSH agent is running and add your key: 
+`eval "$(ssh-agent -s)"`
+`ssh-add ~/.ssh/bscs-dev-team`
+Verify the ssh has been added
+`ssh-add -l`
+Test your connection: ssh -T git@github.com.
+
+5. Fix Origin
+`git remote set-url origin git@github.com:bscs-dev-team/fs-vis-click.git`
+
+
+6. Specify SSH user
+```
+# ---------------------------
+Host github.com-bscs-dev-team
+        HostName github.com
+        User git
+        IdentityFile ~/.ssh/bscs-dev-team
+        IdentitiesOnly yes
+```
 
 
     
@@ -114,21 +135,11 @@ fatal: Authentication failed for 'https://github.com/bscs-dev-team/fs-vis-click.
     `npm ci`
     `npm run build`
     `npm run predploy`
-* generate a new Personal Access Token
-    1. Go to account (upper right) and select "settings"
-    2. Go to "Developer SEttings" -- https://github.com/settings/tokens
-    3. Go to Personal access tokens
-    4. Go to "Tokens (classic)
-    5. Go to "Generate a new Token (classic)
-        --  Set expiration to 6/30/2025
-        --  Check all "repo" permissions
-    6. Copy the PAT
-        `git remote set-url origin https://bscs-dev-team:xxx@github.com/bscs-dev-team/fs-vis-click.git`
-    7. Update deployment script
-        `"deploy": "gh-pages -d dist -r https://bscs-dev-team:xxx@github.com/bscs-dev-team/fs-vis-click.git"`
-    
+* check git authentication.  SSH is more reliable.
 
+     
+#### Parcel not building
 
-    
-    
-    
+If Parcel seems to not be refreshing after code changes,
+
+`rm .parcel-cache`
