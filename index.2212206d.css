@@ -34,7 +34,7 @@ h3 {
 }
 
 .main-page {
-  padding: 20px;
+  padding: 15px;
 }
 
 label {
@@ -207,7 +207,7 @@ button.mini {
   width: 100%;
   display: flex;
   position: absolute;
-  top: 94px;
+  top: 64px;
   bottom: 0;
   left: 0;
 }
@@ -313,6 +313,23 @@ button.mini {
 
 .Exploration .footer button {
   color: #fff;
+}
+
+.NotLoggedIn {
+  background-color: #fff;
+  flex-direction: column;
+  padding: 20px;
+  display: flex;
+  position: absolute;
+  inset: 25%;
+}
+
+.NotLoggedIn > .controlbar {
+  justify-content: space-between;
+  margin-top: .5rem;
+  padding: 10px 0;
+  display: flex;
+  bottom: 0;
 }
 
 .EXPItems {
@@ -489,13 +506,19 @@ button.mini {
   margin-left: 1rem;
 }
 
+.screen {
+  background-color: #0000004d;
+  position: absolute;
+  inset: 0;
+}
+
 .FilterEdit {
   background-color: var(--clr-filter-bg);
   border: 4px double var(--clr-filter-border);
   flex-direction: column;
   display: flex;
   position: absolute;
-  inset: 50px 100px;
+  inset: 50px;
 }
 
 .FilterEdit > h3 {
@@ -585,28 +608,5 @@ button.mini {
   justify-content: space-between;
   width: 100%;
   display: flex;
-}
-
-.screen {
-  background-color: #0000004d;
-  position: absolute;
-  inset: 0;
-}
-
-.NotLoggedIn {
-  background-color: #fff;
-  flex-direction: column;
-  padding: 20px;
-  display: flex;
-  position: absolute;
-  inset: 25%;
-}
-
-.NotLoggedIn > .controlbar {
-  justify-content: space-between;
-  margin-top: .5rem;
-  padding: 10px 0;
-  display: flex;
-  bottom: 0;
 }
 /*# sourceMappingURL=index.2212206d.css.map */
