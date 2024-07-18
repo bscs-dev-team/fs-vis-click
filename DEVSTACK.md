@@ -142,4 +142,4 @@ fatal: Authentication failed for 'https://github.com/bscs-dev-team/fs-vis-click.
 
 If Parcel seems to not be refreshing after code changes,
 
-`rm .parcel-cache`
+`rm -rf .parcel-cache`
