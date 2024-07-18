@@ -108,14 +108,29 @@ export default function Exploration({ fs, setFs }) {
     <div className="sidebar">
       <EXPItemsList fs={fs} setFs={setFs} />
       <div className="notes">
-        <h4>YOUR IDEAS & QUESTIONS</h4>
         {fs.user.isLoggedIn || fs.editWithoutSaving
-          ? <textarea
+          ? descriptionIsEditable
+            ? <>
+              <h4>YOUR IDEAS & QUESTIONS
+                <button className='transparent-light' onClick={evt_ToggleDescriptionEdit}>Save</button>
+              </h4>
+              <textarea
             value={exploration.description}
             placeholder="You can use this space to describe the idea or question you would like to explore.  Add any ideas and questions as you make new maps and graphs"
             onChange={evt_OnDescriptionChange}
           />
-          : <div className="description">{exploration.description}</div>
+
+            </>
+            : <>
+              <h4>YOUR IDEAS & QUESTIONS
+                <button className='transparent-light' onClick={evt_ToggleDescriptionEdit}>{IcnPencil}</button>
+              </h4>
+              <div className="description">{exploration.description}</div>
+            </>
+          : <>
+            <h4>YOUR IDEAS & QUESTIONS</h4>
+            <div className="description">{exploration.description}</div>
+          </>
         }
       </div>
     </div>
