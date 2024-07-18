@@ -11,6 +11,7 @@ const IcnPencil = <FontAwesomeIcon icon={faPencil} />;
 
 export default function Exploration({ fs, setFs }) {
   const [titleIsEditable, setTitleIsEditable] = useState(false);
+  const [descriptionIsEditable, setDescriptionIsEditable] = useState(false);
 
 
   /// LOAD DATA ///////////////////////////////////////////////////////////////
@@ -49,6 +50,10 @@ export default function Exploration({ fs, setFs }) {
 
   function evt_ToggleTitleEdit(event) {
     setTitleIsEditable(!titleIsEditable);
+  }
+
+  function evt_ToggleDescriptionEdit(event) {
+    setDescriptionIsEditable(!descriptionIsEditable);
   }
 
   function evt_OnTitleChange(event) {

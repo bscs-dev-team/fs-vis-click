@@ -7,13 +7,8 @@ import threespecies_histo from './img/threespecies_histo.png';
 
 export default function Explorations({ fs, setFs }) {
 
-  const FEATURED_DATA = [
-    { name: 'All 2021 Data', description: 'All data collected in 2021', image: allspecies_map },
-    { name: 'Species Histogram', description: 'A histogram showing all species observed', image: allspecies_histo },
-    { name: 'Species Map', description: 'A map showing where species have been found', image: threespecies_histo },
-  ];
-
-  const EXPLORATIONS_DATA = fs.explorations;
+  const FEATURED_DATA = [fs.explorations[0], fs.explorations[1], fs.explorations[2]];
+  const EXPLORATIONS_DATA = fs.explorations.slice(3);
   const NEXTINDEX = EXPLORATIONS_DATA.length + 2;
 
   /// UI HANDLERS /////////////////////////////////////////////////////////////
@@ -36,6 +31,12 @@ export default function Explorations({ fs, setFs }) {
     });
   }
 
+  function evt_SelectFeature(id) {
+    setFs(draft => {
+      draft.selectedExploration = id;
+    });
+  }
+
   function evt_SelectExploration(id) {
     console.log('Select Exploration', id);
     setFs(draft => {
@@ -49,7 +50,7 @@ export default function Explorations({ fs, setFs }) {
   const FEATURED = (
     <div className='featured'>
       {FEATURED_DATA.map((exploration, i) => (
-        <div className='featured-item' key={i}>
+        <div className='featured-item' key={i} onClick={() => evt_SelectFeature(exploration.id)}>
           <img src={exploration.image} alt={exploration.name} />
           <div className='featured-description'>
             <h4>{exploration.name}</h4>
@@ -73,7 +74,10 @@ export default function Explorations({ fs, setFs }) {
       <tbody>
         {EXPLORATIONS_DATA.map((exploration, i) => (
           <tr key={i} onClick={() => evt_SelectExploration(exploration.id)}>
-            <td>{exploration.name}</td>
+            <td>
+              <img src={exploration.image} />&nbsp;
+              {exploration.name}
+            </td>
             <td>{exploration.description}</td>
             <td>{exploration.modified.toDateString()}</td>
             <td>{exploration.privacy}</td>

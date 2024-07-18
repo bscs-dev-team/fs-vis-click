@@ -58,3 +58,8 @@
   line-height: 1.5715;
   font-size: 14px;
 }
+.Explorations td > img {
+  width: 50px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
