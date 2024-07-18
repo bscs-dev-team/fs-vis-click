@@ -201,6 +201,12 @@ button.mini {
   line-height: 1.5715;
 }
 
+.Explorations td > img {
+  vertical-align: middle;
+  width: 50px;
+  padding-right: 10px;
+}
+
 .Exploration {
   background-color: #d0d7b6;
   flex-direction: column;
