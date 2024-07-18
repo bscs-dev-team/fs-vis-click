@@ -145,6 +145,7 @@ button.mini {
 }
 
 .Explorations .featured .featured-item {
+  cursor: pointer;
   background-color: #eee;
   width: 100%;
   margin: 20px;
@@ -193,6 +194,7 @@ button.mini {
 }
 
 .Explorations tr:hover {
+  cursor: pointer;
   background-color: #f1f1f1;
 }
 
