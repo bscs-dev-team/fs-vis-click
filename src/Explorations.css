@@ -14,6 +14,7 @@
   width: 100%;
   margin: 20px;
   padding: 40px;
+  cursor: pointer;
 }
 .Explorations .featured .featured-item img {
   height: 100px;
@@ -53,6 +54,7 @@
 }
 .Explorations tr:hover {
   background-color: #f1f1f1;
+  cursor: pointer;
 }
 .Explorations td {
   line-height: 1.5715;
