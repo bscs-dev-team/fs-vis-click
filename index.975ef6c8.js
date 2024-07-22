@@ -29289,6 +29289,7 @@ function Explorations({ fs, setFs }) {
         fs.explorations[2]
     ];
     const EXPLORATIONS_DATA = fs.explorations.slice(3);
+    const SHARED_DATA = fs.explorations.slice(4);
     const NEXTINDEX = EXPLORATIONS_DATA.length + 2;
     /// UI HANDLERS /////////////////////////////////////////////////////////////
     /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -29311,7 +29312,6 @@ function Explorations({ fs, setFs }) {
         });
     }
     function evt_SelectFeature(id) {
-        console.log("Select Featured", id);
         setFs((draft)=>{
             draft.selectedExploration = id;
         });
@@ -29475,27 +29475,130 @@ function Explorations({ fs, setFs }) {
         lineNumber: 66,
         columnNumber: 5
     }, this);
+    const SHARED_TABLE = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                            children: "Name"
+                        }, void 0, false, {
+                            fileName: "src/Explorations.js",
+                            lineNumber: 95,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                            children: "Description"
+                        }, void 0, false, {
+                            fileName: "src/Explorations.js",
+                            lineNumber: 96,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                            children: "Last modified"
+                        }, void 0, false, {
+                            fileName: "src/Explorations.js",
+                            lineNumber: 97,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                            children: "Privacy"
+                        }, void 0, false, {
+                            fileName: "src/Explorations.js",
+                            lineNumber: 98,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Explorations.js",
+                    lineNumber: 94,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "src/Explorations.js",
+                lineNumber: 93,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                children: SHARED_DATA.map((exploration, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                        onClick: ()=>evt_SelectExploration(exploration.id),
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: exploration.image
+                                    }, void 0, false, {
+                                        fileName: "src/Explorations.js",
+                                        lineNumber: 105,
+                                        columnNumber: 15
+                                    }, this),
+                                    "\xa0",
+                                    exploration.name
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Explorations.js",
+                                lineNumber: 104,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                children: exploration.description
+                            }, void 0, false, {
+                                fileName: "src/Explorations.js",
+                                lineNumber: 108,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                children: exploration.modified.toDateString()
+                            }, void 0, false, {
+                                fileName: "src/Explorations.js",
+                                lineNumber: 109,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                children: exploration.privacy
+                            }, void 0, false, {
+                                fileName: "src/Explorations.js",
+                                lineNumber: 110,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, i, true, {
+                        fileName: "src/Explorations.js",
+                        lineNumber: 103,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "src/Explorations.js",
+                lineNumber: 101,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/Explorations.js",
+        lineNumber: 92,
+        columnNumber: 5
+    }, this);
     const BROWSER = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Explorations"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 93,
+                lineNumber: 119,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "FrogWatch Volunteer Data. See observations from FrogWatch USA volunteers in maps and graphs, or create your own visualization of data."
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 94,
+                lineNumber: 120,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: "Featured Explorations"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 96,
+                lineNumber: 122,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29503,14 +29606,14 @@ function Explorations({ fs, setFs }) {
                 children: FEATURED
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 97,
+                lineNumber: 123,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: "My Data Explorations"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 100,
+                lineNumber: 126,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -29519,7 +29622,7 @@ function Explorations({ fs, setFs }) {
                 children: "+ Create New Exploration"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 101,
+                lineNumber: 127,
                 columnNumber: 7
             }, this),
             fs.user.isLoggedIn ? BROWSER_TABLE : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29527,9 +29630,17 @@ function Explorations({ fs, setFs }) {
                 children: "Login to save and share your explorations"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 104,
+                lineNumber: 130,
                 columnNumber: 11
-            }, this)
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: "Shared Explorations"
+            }, void 0, false, {
+                fileName: "src/Explorations.js",
+                lineNumber: 132,
+                columnNumber: 7
+            }, this),
+            SHARED_TABLE
         ]
     }, void 0, true);
     const EXPLORATION = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _explorationDefault.default), {
@@ -29537,7 +29648,7 @@ function Explorations({ fs, setFs }) {
         setFs: setFs
     }, void 0, false, {
         fileName: "src/Explorations.js",
-        lineNumber: 110,
+        lineNumber: 138,
         columnNumber: 5
     }, this);
     const VIEW = fs.selectedExploration === null ? BROWSER : EXPLORATION;
@@ -29546,7 +29657,7 @@ function Explorations({ fs, setFs }) {
         children: VIEW
     }, void 0, false, {
         fileName: "src/Explorations.js",
-        lineNumber: 115,
+        lineNumber: 143,
         columnNumber: 5
     }, this);
 }
@@ -29610,10 +29721,6 @@ function Exploration({ fs, setFs }) {
         description: "",
         image: null
     };
-    /// CSV DATA LOADING
-    let alreadyLoaded = false;
-    let fieldsToShow = []; // in sort order
-    let fullDataset = [];
     /// UI HANDLERS /////////////////////////////////////////////////////////////
     /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     function evt_SetPublic(event) {
@@ -29656,24 +29763,6 @@ function Exploration({ fs, setFs }) {
             draft.explorations.find((e)=>e.id === draft.selectedExploration).description = event.target.value;
         });
     }
-    /// CSV UI Handlers - - - - - - - - - - - - - - - - - 
-    function handleDatasetSelect(index) {
-        setSelectedDataset(DATASETS[index]);
-        console.log("handle datsetselect", JSON.stringify(DATASETS[index]));
-    }
-    function handleSetLayout(layout) {
-        // 1. Load CSV First
-        //    a. set selected dataset
-        console.warn("selected dataset", selectedDataset.url, selectedDataset.headers);
-        csvFileUrl = selectedDataset.url;
-        fieldsToShow = selectedDataset.headers;
-        // initFilters(selectedDataset.label);
-        //    b. load 
-        loadCSV();
-    // // 2. Then set layout
-    // setLayout(layout);
-    }
-    // handleSetLayout('chesapeake');
     /// COMPONENT RENDER ////////////////////////////////////////////////////////
     /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     const NAVBAR = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29685,7 +29774,7 @@ function Exploration({ fs, setFs }) {
                     children: "Home"
                 }, void 0, false, {
                     fileName: "src/Exploration.js",
-                    lineNumber: 103,
+                    lineNumber: 77,
                     columnNumber: 9
                 }, this),
                 " >",
@@ -29695,7 +29784,7 @@ function Exploration({ fs, setFs }) {
                     children: "Explorations"
                 }, void 0, false, {
                     fileName: "src/Exploration.js",
-                    lineNumber: 104,
+                    lineNumber: 78,
                     columnNumber: 9
                 }, this),
                 " >",
@@ -29706,12 +29795,12 @@ function Exploration({ fs, setFs }) {
             ]
         }, void 0, true, {
             fileName: "src/Exploration.js",
-            lineNumber: 102,
+            lineNumber: 76,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/Exploration.js",
-        lineNumber: 101,
+        lineNumber: 75,
         columnNumber: 5
     }, this);
     const TITLE = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29727,7 +29816,7 @@ function Exploration({ fs, setFs }) {
                         onChange: evt_OnTitleChange
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 117,
+                        lineNumber: 91,
                         columnNumber: 15
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -29736,7 +29825,7 @@ function Exploration({ fs, setFs }) {
                         children: "Save"
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 118,
+                        lineNumber: 92,
                         columnNumber: 15
                     }, this)
                 ]
@@ -29749,7 +29838,7 @@ function Exploration({ fs, setFs }) {
                         children: IcnPencil
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 124,
+                        lineNumber: 98,
                         columnNumber: 15
                     }, this)
                 ]
@@ -29759,7 +29848,7 @@ function Exploration({ fs, setFs }) {
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 111,
+        lineNumber: 85,
         columnNumber: 5
     }, this);
     const SIDEBAR = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29770,7 +29859,7 @@ function Exploration({ fs, setFs }) {
                 setFs: setFs
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 134,
+                lineNumber: 108,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29786,13 +29875,13 @@ function Exploration({ fs, setFs }) {
                                     children: "Save"
                                 }, void 0, false, {
                                     fileName: "src/Exploration.js",
-                                    lineNumber: 140,
+                                    lineNumber: 114,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 139,
+                            lineNumber: 113,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
@@ -29801,7 +29890,7 @@ function Exploration({ fs, setFs }) {
                             onChange: evt_OnDescriptionChange
                         }, void 0, false, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 142,
+                            lineNumber: 116,
                             columnNumber: 15
                         }, this)
                     ]
@@ -29816,13 +29905,13 @@ function Exploration({ fs, setFs }) {
                                     children: IcnPencil
                                 }, void 0, false, {
                                     fileName: "src/Exploration.js",
-                                    lineNumber: 151,
+                                    lineNumber: 125,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 150,
+                            lineNumber: 124,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29830,7 +29919,7 @@ function Exploration({ fs, setFs }) {
                             children: exploration.description
                         }, void 0, false, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 153,
+                            lineNumber: 127,
                             columnNumber: 15
                         }, this)
                     ]
@@ -29840,7 +29929,7 @@ function Exploration({ fs, setFs }) {
                             children: "YOUR IDEAS & QUESTIONS"
                         }, void 0, false, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 156,
+                            lineNumber: 130,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29848,20 +29937,20 @@ function Exploration({ fs, setFs }) {
                             children: exploration.description
                         }, void 0, false, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 157,
+                            lineNumber: 131,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true)
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 135,
+                lineNumber: 109,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 133,
+        lineNumber: 107,
         columnNumber: 5
     }, this);
     const VISUALIZATION = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29874,24 +29963,24 @@ function Exploration({ fs, setFs }) {
                     setFs: setFs
                 }, v.id, false, {
                     fileName: "src/Exploration.js",
-                    lineNumber: 168,
+                    lineNumber: 142,
                     columnNumber: 29
                 }, this))
         }, void 0, false, {
             fileName: "src/Exploration.js",
-            lineNumber: 167,
+            lineNumber: 141,
             columnNumber: 11
         }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "help",
-            children: 'To start, click "NEW DISPLAY" to create a new way of looking at the data in a display (e.g., graph, map).'
+            children: 'To start, click "NEW MAP/GRAPH" to create a new way of looking at the data in a display (e.g., graph, map).'
         }, void 0, false, {
             fileName: "src/Exploration.js",
-            lineNumber: 170,
+            lineNumber: 144,
             columnNumber: 11
         }, this)
     }, void 0, false, {
         fileName: "src/Exploration.js",
-        lineNumber: 165,
+        lineNumber: 139,
         columnNumber: 5
     }, this);
     const FOOTER = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29903,7 +29992,7 @@ function Exploration({ fs, setFs }) {
                 children: "Copy Link"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 178,
+                lineNumber: 152,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -29912,7 +30001,7 @@ function Exploration({ fs, setFs }) {
                 children: "Embed Exploration"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 179,
+                lineNumber: 153,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -29921,7 +30010,7 @@ function Exploration({ fs, setFs }) {
                 children: "PRIVATE: Only you can view this exploration"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 180,
+                lineNumber: 154,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -29930,7 +30019,7 @@ function Exploration({ fs, setFs }) {
                 children: "Edit a Copy"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 181,
+                lineNumber: 155,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -29939,44 +30028,53 @@ function Exploration({ fs, setFs }) {
                 children: "Back to Explorations"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 182,
+                lineNumber: 156,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 177,
+        lineNumber: 151,
         columnNumber: 5
     }, this);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "Exploration",
         children: [
             NAVBAR,
-            TITLE,
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "content",
+                className: "border",
                 children: [
-                    SIDEBAR,
-                    VISUALIZATION
+                    TITLE,
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "content",
+                        children: [
+                            SIDEBAR,
+                            VISUALIZATION
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Exploration.js",
+                        lineNumber: 165,
+                        columnNumber: 9
+                    }, this),
+                    FOOTER,
+                    !fs.user.isLoggedIn && !fs.editWithoutSaving && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notLoggedInDefault.default), {
+                        fs: fs,
+                        setFs: setFs
+                    }, void 0, false, {
+                        fileName: "src/Exploration.js",
+                        lineNumber: 170,
+                        columnNumber: 58
+                    }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Exploration.js",
-                lineNumber: 190,
+                lineNumber: 163,
                 columnNumber: 7
-            }, this),
-            FOOTER,
-            !fs.user.isLoggedIn && !fs.editWithoutSaving && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notLoggedInDefault.default), {
-                fs: fs,
-                setFs: setFs
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 195,
-                columnNumber: 56
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 187,
+        lineNumber: 161,
         columnNumber: 5
     }, this);
 }
@@ -30183,7 +30281,6 @@ function EXPItemsList({ fs, setFs }) {
         });
     }
     function evt_CloseEditor(event) {
-        console.log("closeEd itor", event.target);
         setFs((draft)=>{
             draft.editingVisual = null;
         });
@@ -30197,7 +30294,7 @@ function EXPItemsList({ fs, setFs }) {
         onExit: evt_CloseEditor
     }, void 0, false, {
         fileName: "src/EXPItemsList.js",
-        lineNumber: 68,
+        lineNumber: 67,
         columnNumber: 5
     }, this);
     // console.log('selectedVisual', selectedVisual, 'editingVisual', editingVisual, 'visual', visual, 'ITEMS', ITEMS)
@@ -30205,10 +30302,10 @@ function EXPItemsList({ fs, setFs }) {
         className: "EXPItems",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: "SAVED VISUALS"
+                children: "SAVED MAPS/GRAPHS"
             }, void 0, false, {
                 fileName: "src/EXPItemsList.js",
-                lineNumber: 75,
+                lineNumber: 74,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30216,17 +30313,17 @@ function EXPItemsList({ fs, setFs }) {
                 children: "Drag to change the sort order"
             }, void 0, false, {
                 fileName: "src/EXPItemsList.js",
-                lineNumber: 76,
+                lineNumber: 75,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "EXPItemsList",
                 children: ITEMS.length < 1 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "help",
-                    children: "Your saved displays will appear here"
+                    children: "Your saved maps/graphs will appear here"
                 }, void 0, false, {
                     fileName: "src/EXPItemsList.js",
-                    lineNumber: 79,
+                    lineNumber: 78,
                     columnNumber: 13
                 }, this) : ITEMS.map((item, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: `item ${selectedVisual === item.id ? "selected" : ""}`,
@@ -30237,7 +30334,7 @@ function EXPItemsList({ fs, setFs }) {
                                 alt: item.title
                             }, void 0, false, {
                                 fileName: "src/EXPItemsList.js",
-                                lineNumber: 82,
+                                lineNumber: 81,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30247,31 +30344,31 @@ function EXPItemsList({ fs, setFs }) {
                                         children: item.title
                                     }, void 0, false, {
                                         fileName: "src/EXPItemsList.js",
-                                        lineNumber: 84,
+                                        lineNumber: 83,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         children: item.description
                                     }, void 0, false, {
                                         fileName: "src/EXPItemsList.js",
-                                        lineNumber: 85,
+                                        lineNumber: 84,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/EXPItemsList.js",
-                                lineNumber: 83,
+                                lineNumber: 82,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, i, true, {
                         fileName: "src/EXPItemsList.js",
-                        lineNumber: 81,
+                        lineNumber: 80,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "src/EXPItemsList.js",
-                lineNumber: 77,
+                lineNumber: 76,
                 columnNumber: 7
             }, this),
             (fs.user.isLoggedIn || fs.editWithoutSaving) && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30283,29 +30380,29 @@ function EXPItemsList({ fs, setFs }) {
                         children: "EDIT"
                     }, void 0, false, {
                         fileName: "src/EXPItemsList.js",
-                        lineNumber: 92,
+                        lineNumber: 91,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "primary",
                         onClick: evt_NewVisual,
-                        children: "NEW DISPLAY"
+                        children: "NEW MAP/GRAPH"
                     }, void 0, false, {
                         fileName: "src/EXPItemsList.js",
-                        lineNumber: 93,
+                        lineNumber: 92,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/EXPItemsList.js",
-                lineNumber: 91,
+                lineNumber: 90,
                 columnNumber: 56
             }, this),
             editingVisual !== null && EDITOR
         ]
     }, void 0, true, {
         fileName: "src/EXPItemsList.js",
-        lineNumber: 74,
+        lineNumber: 73,
         columnNumber: 5
     }, this);
 }
@@ -30713,7 +30810,7 @@ function EXPEdit({ fs, setFs, onExit }) {
         className: "step",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: "2. Configure Map/Grap"
+                children: "2. Configure Map/Graph"
             }, void 0, false, {
                 fileName: "src/EXPEdit.js",
                 lineNumber: 136,
@@ -30732,7 +30829,7 @@ function EXPEdit({ fs, setFs, onExit }) {
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                         children: [
-                            "Selected Graph Type: ",
+                            "Selected Map/Graph Type: ",
                             visual.type,
                             " ",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -30741,7 +30838,7 @@ function EXPEdit({ fs, setFs, onExit }) {
                             }, void 0, false, {
                                 fileName: "src/EXPEdit.js",
                                 lineNumber: 140,
-                                columnNumber: 51
+                                columnNumber: 55
                             }, this)
                         ]
                     }, void 0, true, {
@@ -30915,7 +31012,7 @@ function EXPEdit({ fs, setFs, onExit }) {
                 className: "EXPEdit",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        children: "DISPLAY"
+                        children: "MAP/GRAPH"
                     }, void 0, false, {
                         fileName: "src/EXPEdit.js",
                         lineNumber: 180,
@@ -31047,7 +31144,7 @@ function EXPEdit({ fs, setFs, onExit }) {
                                         className: "minicontrolbar",
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                                children: "DATA SELECTION PREVIEW: All Observations"
+                                                children: "DATA SELECTION PREVIEW: All Data"
                                             }, void 0, false, {
                                                 fileName: "src/EXPEdit.js",
                                                 lineNumber: 206,
@@ -31126,7 +31223,7 @@ function EXPEdit({ fs, setFs, onExit }) {
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 disabled: true,
-                                children: "Duplicate"
+                                children: "Edit a Copy"
                             }, void 0, false, {
                                 fileName: "src/EXPEdit.js",
                                 lineNumber: 222,
@@ -31282,7 +31379,7 @@ function FilterEdit({ fs, setFs }) {
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                                children: "SELECTED DATA NAME "
+                                                children: "SELECTED DATA NAME: "
                                             }, void 0, false, {
                                                 fileName: "src/FilterEdit.js",
                                                 lineNumber: 58,
@@ -31311,7 +31408,7 @@ function FilterEdit({ fs, setFs }) {
                                                 className: "step",
                                                 children: [
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                                        children: "1. Select Data Source"
+                                                        children: "1. Source of Selected Data"
                                                     }, void 0, false, {
                                                         fileName: "src/FilterEdit.js",
                                                         lineNumber: 63,
@@ -31711,7 +31808,7 @@ function FilterEdit({ fs, setFs }) {
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                                 disabled: true,
-                                                children: "Duplicate"
+                                                children: "Edit a Copy"
                                             }, void 0, false, {
                                                 fileName: "src/FilterEdit.js",
                                                 lineNumber: 136,

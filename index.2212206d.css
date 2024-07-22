@@ -9,6 +9,7 @@ body {
   --clr-txt: #333;
   --clr-filter-bg: #b7ddca;
   --clr-filter-border: #0309;
+  --size-navbar: -64px;
 }
 
 code {
@@ -138,6 +139,10 @@ button.mini {
   font-weight: normal;
 }
 
+.Explorations > h3 {
+  margin-top: 3rem;
+}
+
 .Explorations .featured {
   justify-content: space-evenly;
   width: 100%;
@@ -220,7 +225,17 @@ button.mini {
   left: 0;
 }
 
+.Exploration .border {
+  box-sizing: border-box;
+  border-left: 20px solid #5a7202;
+  border-right: 20px solid #5a7202;
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+}
+
 .Exploration .navbar {
+  background-color: #f3f5ec;
   justify-content: space-between;
   align-items: center;
   height: 32px;
@@ -233,7 +248,7 @@ button.mini {
   background-color: #5a7202;
   align-items: center;
   height: 32px;
-  padding: 0 10px;
+  padding-top: 5px;
   display: flex;
 }
 
@@ -251,40 +266,40 @@ button.mini {
   overflow: hidden;
 }
 
-.Exploration > .content > .sidebar {
+.Exploration > .border > .content > .sidebar {
   flex-direction: column;
   align-items: stretch;
   padding: 10px;
   display: flex;
 }
 
-.Exploration > .content > .sidebar > div {
+.Exploration > .border > .content > .sidebar > div {
   height: 50%;
 }
 
-.Exploration > .content > .sidebar h4 {
+.Exploration > .border > .content > .sidebar h4 {
   margin-top: 0;
   margin-bottom: .25rem;
   font-weight: normal;
 }
 
-.Exploration > .content > .sidebar .notes {
+.Exploration > .border > .content > .sidebar .notes {
   flex-direction: column;
   display: flex;
 }
 
-.Exploration > .content > .sidebar .notes h4 {
+.Exploration > .border > .content > .sidebar .notes h4 {
   margin-top: 2rem;
 }
 
-.Exploration > .content > .sidebar textarea {
+.Exploration > .border > .content > .sidebar textarea {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
   padding: .5rem;
 }
 
-.Exploration > .content > .sidebar .notes .description {
+.Exploration > .border > .content > .sidebar .notes .description {
   background-color: #fff3;
   border: 1px solid #0003;
   height: 100%;
@@ -313,7 +328,7 @@ button.mini {
 
 .Exploration .footer {
   color: #fff;
-  background-color: #4f6304;
+  background-color: #5a7202;
   justify-content: space-between;
   padding: 5px 20px;
   display: flex;
@@ -329,7 +344,7 @@ button.mini {
   padding: 20px;
   display: flex;
   position: absolute;
-  inset: 25%;
+  inset: 35% 35% 30%;
 }
 
 .NotLoggedIn > .controlbar {
@@ -337,7 +352,6 @@ button.mini {
   margin-top: .5rem;
   padding: 10px 0;
   display: flex;
-  bottom: 0;
 }
 
 .EXPItems {
@@ -387,6 +401,12 @@ button.mini {
   justify-content: space-between;
   margin-top: .5rem;
   display: flex;
+}
+
+.screen {
+  background-color: #0000004d;
+  position: absolute;
+  inset: 0;
 }
 
 .EXPEdit {
@@ -515,9 +535,12 @@ button.mini {
 }
 
 .screen {
+  top: var(--size-navbar);
   background-color: #0000004d;
   position: absolute;
-  inset: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .FilterEdit {
@@ -578,11 +601,7 @@ button.mini {
 .FilterEdit > .content > .sidebar > .controlbar {
   background-color: var(--clr-filter-bg);
   justify-content: right;
-  margin-top: .5rem;
-  padding: 10px 0;
   display: flex;
-  position: absolute;
-  bottom: 0;
 }
 
 .EXPView {
