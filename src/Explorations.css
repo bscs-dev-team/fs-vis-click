@@ -1,6 +1,9 @@
 .Explorations h1 {
   font-weight: normal;
 }
+.Explorations h3 {
+  margin-top: 3rem;
+}
 
 /* Featured */
 .Explorations .featured {

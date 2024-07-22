@@ -9,6 +9,7 @@ export default function Explorations({ fs, setFs }) {
 
   const FEATURED_DATA = [fs.explorations[0], fs.explorations[1], fs.explorations[2]];
   const EXPLORATIONS_DATA = fs.explorations.slice(3);
+  const SHARED_DATA = fs.explorations.slice(4);
   const NEXTINDEX = EXPLORATIONS_DATA.length + 2;
 
   /// UI HANDLERS /////////////////////////////////////////////////////////////
@@ -87,6 +88,32 @@ export default function Explorations({ fs, setFs }) {
     </table>
   )
 
+  const SHARED_TABLE = (
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Last modified</th>
+          <th>Privacy</th>
+        </tr>
+      </thead>
+      <tbody>
+        {SHARED_DATA.map((exploration, i) => (
+          <tr key={i} onClick={() => evt_SelectExploration(exploration.id)}>
+            <td>
+              <img src={exploration.image} />&nbsp;
+              {exploration.name}
+            </td>
+            <td>{exploration.description}</td>
+            <td>{exploration.modified.toDateString()}</td>
+            <td>{exploration.privacy}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )
+
   const BROWSER = (
     <>
       <h1>Explorations</h1>
@@ -102,6 +129,8 @@ export default function Explorations({ fs, setFs }) {
         ? BROWSER_TABLE
         : <div className="empty-table help">Login to save and share your explorations</div>
       }
+      <h3>Shared Explorations</h3>
+      {SHARED_TABLE}
     </>
   );
 
