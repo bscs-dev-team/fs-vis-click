@@ -219,7 +219,7 @@ export default function EXPEdit({ fs, setFs, onExit }) {
         </div>
 
         <div className="controlbar">
-          <button disabled>Duplicate</button>
+          <button disabled>Edit a Copy</button>
           <div style={{ flexGrow: 1 }}></div>
           <button onClick={onExit}>Cancel</button>
           <button className="primary" onClick={onExit}>Save</button>

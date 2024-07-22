@@ -131,7 +131,7 @@ export default function FilterEdit({ fs, setFs }) {
               <br />
             </div>
             <div className="controlbar">
-              <button disabled>Duplicate</button>
+              <button disabled>Edit a Copy</button>
               <div style={{ flexGrow: 1 }}></div>
               <button onClick={evt_OnExit}>Cancel</button>
               <button className="primary" onClick={evt_OnExit}>Save</button>
