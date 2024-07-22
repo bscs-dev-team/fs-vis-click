@@ -203,7 +203,7 @@ export default function EXPEdit({ fs, setFs, onExit }) {
 
           <div className="visualization">
             <div className="minicontrolbar">
-              <label>DATA SELECTION PREVIEW: All Observations</label>
+              <label>DATA SELECTION PREVIEW: All Data</label>
               <div className="tableOrMap">
                 <label>Table</label>
                 <input value={visual.showTable ? "0" : "1"} onClick={evt_ToggleMap} readOnly type="range" min="0" max="1" step="1" />
