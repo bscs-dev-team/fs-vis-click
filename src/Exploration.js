@@ -25,7 +25,6 @@ export default function Exploration({ fs, setFs }) {
     title: 'Untitled', description: '', image: null
   };
 
-
   /// UI HANDLERS /////////////////////////////////////////////////////////////
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -87,9 +86,9 @@ export default function Exploration({ fs, setFs }) {
       EXPLORATION:{' '}
       {fs.user.isLoggedIn || fs.editWithoutSaving
         ? titleIsEditable
-        ? (
-          <>
-            <input type="text" value={exploration.name} onChange={evt_OnTitleChange} />
+          ? (
+            <>
+              <input type="text" value={exploration.name} onChange={evt_OnTitleChange} />
               <button className='transparent-light' onClick={evt_ToggleTitleEdit}>Save</button>
             </>
           )
@@ -97,8 +96,8 @@ export default function Exploration({ fs, setFs }) {
             <>
               {exploration.name}
               <button className='transparent-light' onClick={evt_ToggleTitleEdit}>{IcnPencil}</button>
-          </>
-        )
+            </>
+          )
         : <>{exploration.name}</>
       }
     </div>
@@ -115,10 +114,10 @@ export default function Exploration({ fs, setFs }) {
                 <button className='transparent-light' onClick={evt_ToggleDescriptionEdit}>Save</button>
               </h4>
               <textarea
-            value={exploration.description}
-            placeholder="You can use this space to describe the idea or question you would like to explore.  Add any ideas and questions as you make new maps and graphs"
-            onChange={evt_OnDescriptionChange}
-          />
+                value={exploration.description}
+                placeholder="You can use this space to describe the idea or question you would like to explore.  Add any ideas and questions as you make new maps and graphs"
+                onChange={evt_OnDescriptionChange}
+              />
 
             </>
             : <>
@@ -141,7 +140,7 @@ export default function Exploration({ fs, setFs }) {
       {selectedVisual
         ? <div className="vis-list">
           {visuals.map(v => <EXPView key={v.id} id={v.id} fs={fs} setFs={setFs} />)}
-      </div>
+        </div>
         : <div className="help">
           To start, click "NEW MAP/GRAPH" to create a new way of looking at the data in a display (e.g., graph, map).
         </div>}
@@ -162,13 +161,14 @@ export default function Exploration({ fs, setFs }) {
     <div className="Exploration">
       {NAVBAR}
       <div className="border">
-      {TITLE}
-      <div className="content">
-        {SIDEBAR}
-        {VISUALIZATION}
+        {TITLE}
+        <div className="content">
+          {SIDEBAR}
+          {VISUALIZATION}
+        </div>
+        {FOOTER}
+        {!fs.user.isLoggedIn && !fs.editWithoutSaving && <NotLoggedIn fs={fs} setFs={setFs} />}
       </div>
-      {FOOTER}
-      {!fs.user.isLoggedIn && !fs.editWithoutSaving && <NotLoggedIn fs={fs} setFs={setFs} />}
-    </div >
+    </div>
   )
 }
