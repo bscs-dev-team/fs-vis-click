@@ -161,6 +161,7 @@ export default function Exploration({ fs, setFs }) {
   return (
     <div className="Exploration">
       {NAVBAR}
+      <div className="border">
       {TITLE}
       <div className="content">
         {SIDEBAR}

@@ -10,12 +10,22 @@
   flex-direction: column;
 }
 
+.Exploration .border {
+  box-sizing: border-box;
+  border-left: 20px solid #5a7202;
+  border-right: 20px solid #5a7202;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .Exploration .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 32px;
   padding: 5px;
+  background-color: #f3f5ec;
 }
 
 .Exploration .title {
@@ -24,7 +34,7 @@
   color: white;
   background-color: #5a7202;
   height: 32px;
-  padding: 0 10px;
+  padding-top: 5px;
 }
 
 .Exploration .title input {
@@ -41,34 +51,34 @@
   overflow: hidden;
 }
 
-.Exploration > .content > .sidebar {
+.Exploration > .border > .content > .sidebar {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   padding: 10px;
 }
-.Exploration > .content > .sidebar > div {
+.Exploration > .border > .content > .sidebar > div {
   height: 50%;
 }
-.Exploration > .content > .sidebar h4 {
+.Exploration > .border > .content > .sidebar h4 {
   font-weight: normal;
   margin-top: 0;
   margin-bottom: 0.25rem;
 }
-.Exploration > .content > .sidebar .notes {
+.Exploration > .border > .content > .sidebar .notes {
   display: flex;
   flex-direction: column;
 }
-.Exploration > .content > .sidebar .notes h4 {
+.Exploration > .border > .content > .sidebar .notes h4 {
   margin-top: 2rem;
 }
-.Exploration > .content > .sidebar textarea {
+.Exploration > .border > .content > .sidebar textarea {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
   padding: 0.5rem;
 }
-.Exploration > .content > .sidebar .notes .description {
+.Exploration > .border > .content > .sidebar .notes .description {
   border: 1px solid #0003;
   background-color: #fff3;
   height: 100%;
@@ -103,7 +113,7 @@
   justify-content: space-between;
   padding: 5px 20px;
   color: white;
-  background-color: #4f6304;
+  background-color: #5a7202;
 }
 .Exploration .footer button {
   color: white;
