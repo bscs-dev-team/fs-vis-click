@@ -67,14 +67,15 @@ export default function EXPItemsList({ fs, setFs }) {
     <EXPEdit fs={fs} setFs={setFs} onExit={evt_CloseEditor} />
   )
 
+  // console.log('selectedVisual', selectedVisual, 'editingVisual', editingVisual, 'visual', visual, 'ITEMS', ITEMS)
 
   return (
     <div className="EXPItems">
-      <h4>SAVED VISUALS</h4>
+      <h4>SAVED MAPS/GRAPHS</h4>
       <div className="help">Drag to change the sort order</div>
       <div className='EXPItemsList'>
         {ITEMS.length < 1
-          ? <div className="help">Your saved displays will appear here</div>
+          ? <div className="help">Your saved maps/graphs will appear here</div>
           : ITEMS.map((item, i) => (
             <div className={`item ${selectedVisual === item.id ? 'selected' : ''}`} key={i} onClick={() => evt_SelectVisual(item.id)}>
               <img src={item.image} alt={item.title} />
@@ -88,7 +89,7 @@ export default function EXPItemsList({ fs, setFs }) {
       </div>
       {(fs.user.isLoggedIn || fs.editWithoutSaving) && <div className="controlbar">
         <button disabled={!selectedVisual} onClick={evt_EditVisual}>EDIT</button>
-        <button className="primary" onClick={evt_NewVisual}>NEW DISPLAY</button>
+        <button className="primary" onClick={evt_NewVisual}>NEW MAP/GRAPH</button>
       </div>}
       {editingVisual !== null && EDITOR}
     </div>

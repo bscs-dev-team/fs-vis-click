@@ -143,7 +143,7 @@ export default function Exploration({ fs, setFs }) {
           {visuals.map(v => <EXPView key={v.id} id={v.id} fs={fs} setFs={setFs} />)}
       </div>
         : <div className="help">
-          To start, click "NEW DISPLAY" to create a new way of looking at the data in a display (e.g., graph, map).
+          To start, click "NEW MAP/GRAPH" to create a new way of looking at the data in a display (e.g., graph, map).
         </div>}
     </div>
   );

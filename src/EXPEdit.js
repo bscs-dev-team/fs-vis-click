@@ -133,11 +133,11 @@ export default function EXPEdit({ fs, setFs, onExit }) {
 
   const CONFIGURE = (
     <div className="step">
-      <h4>2. Configure Map/Grap</h4>
+      <h4>2. Configure Map/Graph</h4>
       <div className="configure">
         <label className="help">Determine how the data is displayed</label>
 
-        <label>Selected Graph Type: {visual.type} <button onClick={evt_DeselectType}>Change Map/Graph Type</button></label>
+        <label>Selected Map/Graph Type: {visual.type} <button onClick={evt_DeselectType}>Change Map/Graph Type</button></label>
 
 
         <label>X Axis:&nbsp;
@@ -177,7 +177,7 @@ export default function EXPEdit({ fs, setFs, onExit }) {
     <div>
       <div className="screen"></div>
       <div className="EXPEdit">
-        <h3>DISPLAY</h3>
+        <h3>MAP/GRAPH</h3>
         <div className="content">
 
           <div className="sidebar">
