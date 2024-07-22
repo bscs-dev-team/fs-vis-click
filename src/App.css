@@ -3,6 +3,8 @@
 
   --clr-filter-bg: #b7ddca;
   --clr-filter-border: #0309;
+
+  --size-navbar: -64px;
 }
 
 .App {

@@ -1,6 +1,6 @@
 .screen {
   position: absolute;
-  top: 0;
+  top: var(--size-navbar);
   left: 0;
   bottom: 0;
   right: 0;
@@ -8,10 +8,10 @@
 }
 .NotLoggedIn {
   position: absolute;
-  top: 25%;
-  left: 25%;
-  bottom: 25%;
-  right: 25%;
+  top: 35%;
+  left: 35%;
+  bottom: 30%;
+  right: 35%;
   background-color: white;
 
   display: flex;
@@ -20,7 +20,6 @@
 }
 
 .NotLoggedIn > .controlbar {
-  bottom: 0;
   display: flex;
   justify-content: space-between;
   margin-top: 0.5rem;

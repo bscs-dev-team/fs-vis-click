@@ -1,6 +1,6 @@
 .screen {
   position: absolute;
-  top: 0;
+  top: var(--size-navbar);
   left: 0;
   bottom: 0;
   right: 0;
@@ -62,11 +62,7 @@
 }
 
 .FilterEdit > .content > .sidebar > .controlbar {
-  position: absolute;
-  bottom: 0;
   background-color: var(--clr-filter-bg);
   display: flex;
   justify-content: right;
-  margin-top: 0.5rem;
-  padding: 10px 0;
 }

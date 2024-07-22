@@ -1,7 +1,7 @@
 .Explorations h1 {
   font-weight: normal;
 }
-.Explorations h3 {
+.Explorations > h3 {
   margin-top: 3rem;
 }
 

@@ -53,12 +53,12 @@ export default function FilterEdit({ fs, setFs }) {
 
           <div className="sidebar">
             <div>
-              <label>SELECTED DATA NAME </label>
+              <label>SELECTED DATA NAME: </label>
               <input type="text" value={selectedFilter.label} placeholder="Data Source and Filter" onChange={evt_OnTitleChange} />
             </div>
             <div className="steps">
               <div className="step">
-                <label>1. Select Data Source</label>
+                <label>1. Source of Selected Data</label>
                 <div>
                   <div className="help">Select the source from which to fetch data.</div>
                   <select>
