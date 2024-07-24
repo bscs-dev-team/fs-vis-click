@@ -50,7 +50,8 @@ const initialFSState = {
         { id: 2, title: 'Species Histogram', description: 'A histogram showing all species observed', filter: 2, type: 'histo', image: allspecies_histo, showTable: false },
         { id: 3, title: 'CA Species Histogram', description: 'A histogram showing CA frogs', filter: 3, type: 'map', image: threespecies_histo, showTable: false }
       ],
-      filters: [{ id: 4, label: 'CA Frogs' }, ...DEFAULT_FILTERS]
+      filters: [{ id: 4, label: 'CA Frogs' }, ...DEFAULT_FILTERS],
+      locked: true
     },
     {
       id: 2,
@@ -60,7 +61,8 @@ const initialFSState = {
       visuals: [
         { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', filter: 1, type: 'map', image: allspecies_map, showTable: false },
       ],
-      filters: [...DEFAULT_FILTERS]
+      filters: [...DEFAULT_FILTERS],
+      locked: true
     },
     {
       id: 3,
@@ -68,11 +70,12 @@ const initialFSState = {
       description: 'A map of American Bullfrogs', modified: new Date(), privacy: 'Public',
       image: map_gray,
       visuals: [],
-      filters: [...DEFAULT_FILTERS]
+      filters: [...DEFAULT_FILTERS],
+      locked: true
     },
     {
       id: 4,
-      name: 'Histogram Frog vs Toad',
+      name: 'Invitations To Inquiry: Frog Eat Frog World',
       description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public',
       image: allspecies_map,
       visuals: [
@@ -80,10 +83,48 @@ const initialFSState = {
         { id: 2, title: 'Species Histogram', description: 'A histogram showing all species observed', filter: 2, type: 'histo', image: allspecies_histo, showTable: false },
         { id: 3, title: 'CA Species Histogram', description: 'A histogram showing CA frogs', filter: 3, type: 'map', image: threespecies_histo, showTable: false }
       ],
-      filters: [{ id: 4, label: 'CA Frogs' }, ...DEFAULT_FILTERS]
+      filters: [{ id: 4, label: 'CA Frogs' }, ...DEFAULT_FILTERS],
+      locked: true,
+      shared: true
     },
     {
       id: 5,
+      name: 'Invitations To Inquiry: Frog Symphony',
+      description: 'A histogram of American Bullfrogs', modified: new Date(), privacy: 'Public',
+      image: allspecies_map,
+      visuals: [
+        { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', filter: 1, type: 'map', image: allspecies_map, showTable: false },
+      ],
+      filters: [...DEFAULT_FILTERS],
+      locked: true,
+      shared: true
+    },
+    {
+      id: 6,
+      name: 'Invitations To Inquiry: Frog Symphony Maps',
+      description: 'A map of American Bullfrogs', modified: new Date(), privacy: 'Public',
+      image: map_gray,
+      visuals: [],
+      filters: [...DEFAULT_FILTERS],
+      locked: true,
+      shared: true
+    },
+    {
+      id: 7,
+      name: 'Akron Maps',
+      description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public',
+      image: allspecies_map,
+      visuals: [
+        { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', filter: 1, type: 'map', image: allspecies_map, showTable: false },
+        { id: 2, title: 'Species Histogram', description: 'A histogram showing all species observed', filter: 2, type: 'histo', image: allspecies_histo, showTable: false },
+        { id: 3, title: 'CA Species Histogram', description: 'A histogram showing CA frogs', filter: 3, type: 'map', image: threespecies_histo, showTable: false }
+      ],
+      filters: [{ id: 4, label: 'CA Frogs' }, ...DEFAULT_FILTERS],
+      locked: true,
+      shared: true
+    },
+    {
+      id: 8,
       name: 'Histogram American Bullfrogs',
       description: 'A histogram of American Bullfrogs', modified: new Date(), privacy: 'Public',
       image: allspecies_map,
@@ -93,7 +134,7 @@ const initialFSState = {
       filters: [...DEFAULT_FILTERS]
     },
     {
-      id: 6,
+      id: 9,
       name: 'Map American Bullfrogs',
       description: 'A map of American Bullfrogs', modified: new Date(), privacy: 'Public',
       image: map_gray,
@@ -101,7 +142,7 @@ const initialFSState = {
       filters: [...DEFAULT_FILTERS]
     },
     {
-      id: 7,
+      id: 10,
       name: 'Copy of Histogram Frog vs Toad',
       description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public',
       image: map_gray,

@@ -8,8 +8,8 @@ import threespecies_histo from './img/threespecies_histo.png';
 export default function Explorations({ fs, setFs }) {
 
   const FEATURED_DATA = [fs.explorations[0], fs.explorations[1], fs.explorations[2]];
-  const EXPLORATIONS_DATA = fs.explorations.slice(3);
-  const SHARED_DATA = fs.explorations.slice(4);
+  const EXPLORATIONS_DATA = fs.explorations.filter(e => !e.shared && !e.locked);
+  const SHARED_DATA = fs.explorations.filter(e => e.shared);
   const NEXTINDEX = EXPLORATIONS_DATA.length + 2;
 
   /// UI HANDLERS /////////////////////////////////////////////////////////////

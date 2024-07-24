@@ -84,7 +84,7 @@ export default function Exploration({ fs, setFs }) {
   const TITLE = (
     <div className="title">
       EXPLORATION:{' '}
-      {fs.user.isLoggedIn || fs.editWithoutSaving
+      {(fs.user.isLoggedIn || fs.editWithoutSaving) && !exploration.locked
         ? titleIsEditable
           ? (
             <>
@@ -107,7 +107,7 @@ export default function Exploration({ fs, setFs }) {
     <div className="sidebar">
       <EXPItemsList fs={fs} setFs={setFs} />
       <div className="notes">
-        {fs.user.isLoggedIn || fs.editWithoutSaving
+        {(fs.user.isLoggedIn || fs.editWithoutSaving) && !exploration.locked
           ? descriptionIsEditable
             ? <>
               <h4>YOUR IDEAS & QUESTIONS
@@ -167,7 +167,7 @@ export default function Exploration({ fs, setFs }) {
           {VISUALIZATION}
         </div>
         {FOOTER}
-        {!fs.user.isLoggedIn && !fs.editWithoutSaving && <NotLoggedIn fs={fs} setFs={setFs} />}
+        {!fs.user.isLoggedIn && !fs.editWithoutSaving && !exploration.locked && <NotLoggedIn fs={fs} setFs={setFs} />}
       </div>
     </div>
   )
