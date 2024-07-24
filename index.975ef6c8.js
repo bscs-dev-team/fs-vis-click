@@ -27523,7 +27523,8 @@ const initialFSState = {
                     label: "CA Frogs"
                 },
                 ...DEFAULT_FILTERS
-            ]
+            ],
+            locked: true
         },
         {
             id: 2,
@@ -27545,7 +27546,8 @@ const initialFSState = {
             ],
             filters: [
                 ...DEFAULT_FILTERS
-            ]
+            ],
+            locked: true
         },
         {
             id: 3,
@@ -27557,11 +27559,12 @@ const initialFSState = {
             visuals: [],
             filters: [
                 ...DEFAULT_FILTERS
-            ]
+            ],
+            locked: true
         },
         {
             id: 4,
-            name: "Histogram Frog vs Toad",
+            name: "Invitations To Inquiry: Frog Eat Frog World",
             description: "A histogram of frog and toad observations",
             modified: new Date(),
             privacy: "Public",
@@ -27601,10 +27604,96 @@ const initialFSState = {
                     label: "CA Frogs"
                 },
                 ...DEFAULT_FILTERS
-            ]
+            ],
+            locked: true,
+            shared: true
         },
         {
             id: 5,
+            name: "Invitations To Inquiry: Frog Symphony",
+            description: "A histogram of American Bullfrogs",
+            modified: new Date(),
+            privacy: "Public",
+            image: (0, _allspeciesMapPngDefault.default),
+            visuals: [
+                {
+                    id: 1,
+                    title: "All 2021 Data",
+                    description: "All data collected in 2021",
+                    filter: 1,
+                    type: "map",
+                    image: (0, _allspeciesMapPngDefault.default),
+                    showTable: false
+                }
+            ],
+            filters: [
+                ...DEFAULT_FILTERS
+            ],
+            locked: true,
+            shared: true
+        },
+        {
+            id: 6,
+            name: "Invitations To Inquiry: Frog Symphony Maps",
+            description: "A map of American Bullfrogs",
+            modified: new Date(),
+            privacy: "Public",
+            image: (0, _mapGrayPngDefault.default),
+            visuals: [],
+            filters: [
+                ...DEFAULT_FILTERS
+            ],
+            locked: true,
+            shared: true
+        },
+        {
+            id: 7,
+            name: "Akron Maps",
+            description: "A histogram of frog and toad observations",
+            modified: new Date(),
+            privacy: "Public",
+            image: (0, _allspeciesMapPngDefault.default),
+            visuals: [
+                {
+                    id: 1,
+                    title: "All 2021 Data",
+                    description: "All data collected in 2021",
+                    filter: 1,
+                    type: "map",
+                    image: (0, _allspeciesMapPngDefault.default),
+                    showTable: false
+                },
+                {
+                    id: 2,
+                    title: "Species Histogram",
+                    description: "A histogram showing all species observed",
+                    filter: 2,
+                    type: "histo",
+                    image: (0, _allspeciesHistoPngDefault.default),
+                    showTable: false
+                },
+                {
+                    id: 3,
+                    title: "CA Species Histogram",
+                    description: "A histogram showing CA frogs",
+                    filter: 3,
+                    type: "map",
+                    image: (0, _threespeciesHistoPngDefault.default),
+                    showTable: false
+                }
+            ],
+            filters: [
+                {
+                    id: 4,
+                    label: "CA Frogs"
+                },
+                ...DEFAULT_FILTERS
+            ],
+            locked: true,
+            shared: true
+        },
+        {
+            id: 8,
             name: "Histogram American Bullfrogs",
             description: "A histogram of American Bullfrogs",
             modified: new Date(),
@@ -27626,7 +27715,7 @@ const initialFSState = {
             ]
         },
         {
-            id: 6,
+            id: 9,
             name: "Map American Bullfrogs",
             description: "A map of American Bullfrogs",
             modified: new Date(),
@@ -27638,7 +27727,7 @@ const initialFSState = {
             ]
         },
         {
-            id: 7,
+            id: 10,
             name: "Copy of Histogram Frog vs Toad",
             description: "A histogram of frog and toad observations",
             modified: new Date(),
@@ -27675,7 +27764,7 @@ function App() {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 335,
+                lineNumber: 376,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27687,7 +27776,7 @@ function App() {
                         children: "Home"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 337,
+                        lineNumber: 378,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27696,7 +27785,7 @@ function App() {
                         children: "Data"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 340,
+                        lineNumber: 381,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27705,13 +27794,13 @@ function App() {
                         children: "Explorations"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 343,
+                        lineNumber: 384,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/App.js",
-                lineNumber: 336,
+                lineNumber: 377,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginDefault.default), {
@@ -27719,13 +27808,13 @@ function App() {
                 setFs: setFs
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 347,
+                lineNumber: 388,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 334,
+        lineNumber: 375,
         columnNumber: 5
     }, this);
     const HOME = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -27733,7 +27822,7 @@ function App() {
             NAVBAR,
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 353,
+                lineNumber: 394,
                 columnNumber: 5
             }, this)
         ]
@@ -27745,14 +27834,14 @@ function App() {
                 children: "Data"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 357,
+                lineNumber: 398,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 children: "+ Add Data"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 358,
+                lineNumber: 399,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27766,27 +27855,27 @@ function App() {
                         children: "My Observations"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 360,
+                        lineNumber: 401,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: "Recent Observations"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 361,
+                        lineNumber: 402,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: "All Observations"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 362,
+                        lineNumber: 403,
                         columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/App.js",
-                lineNumber: 359,
+                lineNumber: 400,
                 columnNumber: 5
             }, this)
         ]
@@ -27799,7 +27888,7 @@ function App() {
                 setFs: setFs
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 367,
+                lineNumber: 408,
                 columnNumber: 5
             }, this)
         ]
@@ -27815,12 +27904,12 @@ function App() {
             children: VIEW
         }, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 378,
+            lineNumber: 419,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 377,
+        lineNumber: 418,
         columnNumber: 5
     }, this);
 }
@@ -29288,8 +29377,8 @@ function Explorations({ fs, setFs }) {
         fs.explorations[1],
         fs.explorations[2]
     ];
-    const EXPLORATIONS_DATA = fs.explorations.slice(3);
-    const SHARED_DATA = fs.explorations.slice(4);
+    const EXPLORATIONS_DATA = fs.explorations.filter((e)=>!e.shared && !e.locked);
+    const SHARED_DATA = fs.explorations.filter((e)=>e.shared);
     const NEXTINDEX = EXPLORATIONS_DATA.length + 2;
     /// UI HANDLERS /////////////////////////////////////////////////////////////
     /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -29803,12 +29892,13 @@ function Exploration({ fs, setFs }) {
         lineNumber: 75,
         columnNumber: 5
     }, this);
+    console.log("locked", exploration.locked);
     const TITLE = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "title",
         children: [
             "EXPLORATION:",
             " ",
-            fs.user.isLoggedIn || fs.editWithoutSaving ? titleIsEditable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+            (fs.user.isLoggedIn || fs.editWithoutSaving) && !exploration.locked ? titleIsEditable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "text",
@@ -29816,7 +29906,7 @@ function Exploration({ fs, setFs }) {
                         onChange: evt_OnTitleChange
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 91,
+                        lineNumber: 92,
                         columnNumber: 15
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -29825,7 +29915,7 @@ function Exploration({ fs, setFs }) {
                         children: "Save"
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 92,
+                        lineNumber: 93,
                         columnNumber: 15
                     }, this)
                 ]
@@ -29838,7 +29928,7 @@ function Exploration({ fs, setFs }) {
                         children: IcnPencil
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 98,
+                        lineNumber: 99,
                         columnNumber: 15
                     }, this)
                 ]
@@ -29848,7 +29938,7 @@ function Exploration({ fs, setFs }) {
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 85,
+        lineNumber: 86,
         columnNumber: 5
     }, this);
     const SIDEBAR = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29859,12 +29949,12 @@ function Exploration({ fs, setFs }) {
                 setFs: setFs
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 108,
+                lineNumber: 109,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "notes",
-                children: fs.user.isLoggedIn || fs.editWithoutSaving ? descriptionIsEditable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                children: (fs.user.isLoggedIn || fs.editWithoutSaving) && !exploration.locked ? descriptionIsEditable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                             children: [
@@ -29875,13 +29965,13 @@ function Exploration({ fs, setFs }) {
                                     children: "Save"
                                 }, void 0, false, {
                                     fileName: "src/Exploration.js",
-                                    lineNumber: 114,
+                                    lineNumber: 115,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 113,
+                            lineNumber: 114,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
@@ -29890,7 +29980,7 @@ function Exploration({ fs, setFs }) {
                             onChange: evt_OnDescriptionChange
                         }, void 0, false, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 116,
+                            lineNumber: 117,
                             columnNumber: 15
                         }, this)
                     ]
@@ -29905,13 +29995,13 @@ function Exploration({ fs, setFs }) {
                                     children: IcnPencil
                                 }, void 0, false, {
                                     fileName: "src/Exploration.js",
-                                    lineNumber: 125,
+                                    lineNumber: 126,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 124,
+                            lineNumber: 125,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29919,7 +30009,7 @@ function Exploration({ fs, setFs }) {
                             children: exploration.description
                         }, void 0, false, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 127,
+                            lineNumber: 128,
                             columnNumber: 15
                         }, this)
                     ]
@@ -29929,7 +30019,7 @@ function Exploration({ fs, setFs }) {
                             children: "YOUR IDEAS & QUESTIONS"
                         }, void 0, false, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 130,
+                            lineNumber: 131,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29937,20 +30027,20 @@ function Exploration({ fs, setFs }) {
                             children: exploration.description
                         }, void 0, false, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 131,
+                            lineNumber: 132,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true)
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 109,
+                lineNumber: 110,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 107,
+        lineNumber: 108,
         columnNumber: 5
     }, this);
     const VISUALIZATION = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29963,24 +30053,24 @@ function Exploration({ fs, setFs }) {
                     setFs: setFs
                 }, v.id, false, {
                     fileName: "src/Exploration.js",
-                    lineNumber: 142,
+                    lineNumber: 143,
                     columnNumber: 29
                 }, this))
         }, void 0, false, {
             fileName: "src/Exploration.js",
-            lineNumber: 141,
+            lineNumber: 142,
             columnNumber: 11
         }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "help",
             children: 'To start, click "NEW MAP/GRAPH" to create a new way of looking at the data in a display (e.g., graph, map).'
         }, void 0, false, {
             fileName: "src/Exploration.js",
-            lineNumber: 144,
+            lineNumber: 145,
             columnNumber: 11
         }, this)
     }, void 0, false, {
         fileName: "src/Exploration.js",
-        lineNumber: 139,
+        lineNumber: 140,
         columnNumber: 5
     }, this);
     const FOOTER = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29992,7 +30082,7 @@ function Exploration({ fs, setFs }) {
                 children: "Copy Link"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 152,
+                lineNumber: 153,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -30001,7 +30091,7 @@ function Exploration({ fs, setFs }) {
                 children: "Embed Exploration"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 153,
+                lineNumber: 154,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -30010,7 +30100,7 @@ function Exploration({ fs, setFs }) {
                 children: "PRIVATE: Only you can view this exploration"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 154,
+                lineNumber: 155,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -30019,7 +30109,7 @@ function Exploration({ fs, setFs }) {
                 children: "Edit a Copy"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 155,
+                lineNumber: 156,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -30028,13 +30118,13 @@ function Exploration({ fs, setFs }) {
                 children: "Back to Explorations"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 156,
+                lineNumber: 157,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 151,
+        lineNumber: 152,
         columnNumber: 5
     }, this);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30053,28 +30143,28 @@ function Exploration({ fs, setFs }) {
                         ]
                     }, void 0, true, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 165,
+                        lineNumber: 166,
                         columnNumber: 9
                     }, this),
                     FOOTER,
-                    !fs.user.isLoggedIn && !fs.editWithoutSaving && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notLoggedInDefault.default), {
+                    !fs.user.isLoggedIn && !fs.editWithoutSaving && !exploration.locked && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notLoggedInDefault.default), {
                         fs: fs,
                         setFs: setFs
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 170,
-                        columnNumber: 58
+                        lineNumber: 171,
+                        columnNumber: 81
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Exploration.js",
-                lineNumber: 163,
+                lineNumber: 164,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 161,
+        lineNumber: 162,
         columnNumber: 5
     }, this);
 }
@@ -30371,7 +30461,7 @@ function EXPItemsList({ fs, setFs }) {
                 lineNumber: 76,
                 columnNumber: 7
             }, this),
-            (fs.user.isLoggedIn || fs.editWithoutSaving) && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            (fs.user.isLoggedIn || fs.editWithoutSaving) && !exploration.locked && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "controlbar",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -30396,7 +30486,7 @@ function EXPItemsList({ fs, setFs }) {
             }, void 0, true, {
                 fileName: "src/EXPItemsList.js",
                 lineNumber: 90,
-                columnNumber: 56
+                columnNumber: 79
             }, this),
             editingVisual !== null && EDITOR
         ]
