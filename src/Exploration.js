@@ -140,7 +140,7 @@ export default function Exploration({ fs, setFs }) {
               <div className="description">{exploration.description}</div>
             </>
           : <>
-            <h4>YOUR IDEAS & QUESTIONS</h4>
+            <h4>IDEAS & QUESTIONS</h4>
             <div className="description">{exploration.description}</div>
           </>
         }
