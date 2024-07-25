@@ -45,6 +45,16 @@
   width: 20rem;
 }
 
+.Exploration .tableOrMap {
+  width: 150px;
+}
+.Exploration .tableOrMap input {
+  width: 30px;
+}
+.Exploration .tableOrMap label {
+  color: white;
+}
+
 .Exploration .content {
   flex-grow: 1;
   display: flex;

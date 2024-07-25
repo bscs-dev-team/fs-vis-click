@@ -66,6 +66,13 @@ export default function Exploration({ fs, setFs }) {
     });
   }
 
+  function evt_TogglePublic(event) {
+    setFs(draft => {
+      const vis = draft.explorations.find(e => e.id === draft.selectedExploration)
+        .privacy = event.target.value === "0" ? "Private" : "Public";
+    });
+  }
+
 
   /// COMPONENT RENDER ////////////////////////////////////////////////////////
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -100,6 +107,12 @@ export default function Exploration({ fs, setFs }) {
           )
         : <>{exploration.name}</>
       }
+      <div style={{ flexGrow: 1 }}></div>
+      <div className="tableOrMap">
+        <label>Public</label>
+        <input value={exploration.privacy === 'Public' ? "0" : "1"} onClick={evt_TogglePublic} readOnly type="range" min="0" max="1" step="1" />
+        <label>Private</label>
+      </div>
     </div>
   );
 
@@ -151,7 +164,6 @@ export default function Exploration({ fs, setFs }) {
     <div className="footer">
       <button className="transparent" onClick={evt_CopyLink}>Copy Link</button>
       <button className="transparent" onClick={evt_Embed}>Embed Exploration</button>
-      <button className="transparent" onClick={evt_SetPublic}>PRIVATE: Only you can view this exploration</button>
       <button className="primary" onClick={evt_SaveAs}>Edit a Copy</button>
       <button className="secondary" onClick={deselectExploration}>Back to Explorations</button>
     </div>
