@@ -39,11 +39,12 @@ const initialFSState = {
   editingVisual: null,
   editingFilter: null,
   editWithoutSaving: null, // Allow non-logged in user to edit visualizations
+  showSaveToLinkDialog: true,
   explorations: [
     {
       id: 1,
       name: 'All 2021 Data',
-      description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public',
+      description: 'A histogram of frog and toad observations', modified: new Date(),
       image: allspecies_map,
       visuals: [
         { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', filter: 1, type: 'map', image: allspecies_map, showTable: false },
@@ -51,32 +52,35 @@ const initialFSState = {
         { id: 3, title: 'CA Species Histogram', description: 'A histogram showing CA frogs', filter: 3, type: 'map', image: threespecies_histo, showTable: false }
       ],
       filters: [{ id: 4, label: 'CA Frogs' }, ...DEFAULT_FILTERS],
-      locked: true
+      privacy: 'Public',
+      isOwner: false
     },
     {
       id: 2,
       name: 'Frog Watch - All Data Visualization + Filters',
-      description: 'A histogram of American Bullfrogs', modified: new Date(), privacy: 'Public',
+      description: 'A histogram of American Bullfrogs', modified: new Date(),
       image: allspecies_map,
       visuals: [
         { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', filter: 1, type: 'map', image: allspecies_map, showTable: false },
       ],
       filters: [...DEFAULT_FILTERS],
-      locked: true
+      privacy: 'Public',
+      isOwner: false
     },
     {
       id: 3,
       name: 'Filter by Species',
-      description: 'A map of American Bullfrogs', modified: new Date(), privacy: 'Public',
+      description: 'A map of American Bullfrogs', modified: new Date(),
       image: map_gray,
       visuals: [],
       filters: [...DEFAULT_FILTERS],
-      locked: true
+      privacy: 'Public',
+      isOwner: false
     },
     {
       id: 4,
       name: 'Invitations To Inquiry: Frog Eat Frog World',
-      description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public',
+      description: 'A histogram of frog and toad observations', modified: new Date(),
       image: allspecies_map,
       visuals: [
         { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', filter: 1, type: 'map', image: allspecies_map, showTable: false },
@@ -84,35 +88,38 @@ const initialFSState = {
         { id: 3, title: 'CA Species Histogram', description: 'A histogram showing CA frogs', filter: 3, type: 'map', image: threespecies_histo, showTable: false }
       ],
       filters: [{ id: 4, label: 'CA Frogs' }, ...DEFAULT_FILTERS],
-      locked: true,
-      shared: true
+      privacy: 'Public',
+      isOwner: false,
+      favorite: true
     },
     {
       id: 5,
       name: 'Invitations To Inquiry: Frog Symphony',
-      description: 'A histogram of American Bullfrogs', modified: new Date(), privacy: 'Public',
+      description: 'A histogram of American Bullfrogs', modified: new Date(),
       image: allspecies_map,
       visuals: [
         { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', filter: 1, type: 'map', image: allspecies_map, showTable: false },
       ],
       filters: [...DEFAULT_FILTERS],
-      locked: true,
-      shared: true
+      privacy: 'Public',
+      isOwner: false,
+      favorite: true
     },
     {
       id: 6,
       name: 'Invitations To Inquiry: Frog Symphony Maps',
-      description: 'A map of American Bullfrogs', modified: new Date(), privacy: 'Public',
+      description: 'A map of American Bullfrogs', modified: new Date(),
       image: map_gray,
       visuals: [],
       filters: [...DEFAULT_FILTERS],
-      locked: true,
-      shared: true
+      privacy: 'Public',
+      isOwner: false,
+      favorite: true
     },
     {
       id: 7,
       name: 'Akron Maps',
-      description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public',
+      description: 'A histogram of frog and toad observations', modified: new Date(),
       image: allspecies_map,
       visuals: [
         { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', filter: 1, type: 'map', image: allspecies_map, showTable: false },
@@ -120,36 +127,44 @@ const initialFSState = {
         { id: 3, title: 'CA Species Histogram', description: 'A histogram showing CA frogs', filter: 3, type: 'map', image: threespecies_histo, showTable: false }
       ],
       filters: [{ id: 4, label: 'CA Frogs' }, ...DEFAULT_FILTERS],
-      locked: true,
-      shared: true
+      privacy: 'Public',
+      isOwner: true,
+      favorite: true
     },
     {
       id: 8,
       name: 'Histogram American Bullfrogs',
-      description: 'A histogram of American Bullfrogs', modified: new Date(), privacy: 'Public',
+      description: 'A histogram of American Bullfrogs', modified: new Date(),
       image: allspecies_map,
       visuals: [
         { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', filter: 1, type: 'map', image: allspecies_map, showTable: false },
       ],
-      filters: [...DEFAULT_FILTERS]
+      filters: [...DEFAULT_FILTERS],
+      privacy: 'Public',
+      isOwner: true
     },
     {
       id: 9,
       name: 'Map American Bullfrogs',
-      description: 'A map of American Bullfrogs', modified: new Date(), privacy: 'Public',
+      description: 'A map of American Bullfrogs', modified: new Date(),
       image: map_gray,
       visuals: [],
-      filters: [...DEFAULT_FILTERS]
+      filters: [...DEFAULT_FILTERS],
+      privacy: 'Public',
+      isOwner: true
     },
     {
       id: 10,
       name: 'Copy of Histogram Frog vs Toad',
-      description: 'A histogram of frog and toad observations', modified: new Date(), privacy: 'Public',
+      description: 'A histogram of frog and toad observations', modified: new Date(),
       image: map_gray,
       visuals: [],
-      filters: [...DEFAULT_FILTERS]
+      filters: [...DEFAULT_FILTERS],
+      privacy: 'Public',
+      isOwner: true
     },
   ],
+  // datasets: DATASETS
 };
 
 /// APP ///////////////////////////////////////////////////////////////////////

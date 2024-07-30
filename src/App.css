@@ -71,7 +71,12 @@ button.primary {
 button.secondary {
   color: #fff;
   border-color: #5a7201;
-  background: #5a7201;
+  background: #5a720299;
+}
+button.tertiary {
+  color: #fff;
+  border-color: #5a7201;
+  background: #fff3;
 }
 button.outline {
   color: var(--clr-txt);
