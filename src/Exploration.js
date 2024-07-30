@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './Exploration.css';
 import NotLoggedIn from "./NotLoggedIn";
 import EXPItemsList from './EXPItemsList';
@@ -12,7 +12,6 @@ const IcnPencil = <FontAwesomeIcon icon={faPencil} />;
 export default function Exploration({ fs, setFs }) {
   const [titleIsEditable, setTitleIsEditable] = useState(false);
   const [descriptionIsEditable, setDescriptionIsEditable] = useState(false);
-
 
   /// LOAD DATA ///////////////////////////////////////////////////////////////
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -34,6 +33,7 @@ export default function Exploration({ fs, setFs }) {
   function evt_SaveAs(event) { alert('Show "Save As..." dialog') }
 
   function setRoute(route) {
+    if (!fs.user.isLoggedIn) alert("Unsaved changes.  Please login to save changes, or click 'Save to Link' to save your changes? [Back to Exploration] [Close and discard changes]");
     setFs(draft => {
       draft.selectedExploration = null;
       draft.selectedVisual = null;
@@ -42,6 +42,7 @@ export default function Exploration({ fs, setFs }) {
   }
 
   function deselectExploration() {
+    if (!fs.user.isLoggedIn) alert("Unsaved changes.  Please login to save changes, or click 'Save to Link' to save your changes? [Back to Exploration] [Close and discard changes]");
     setFs(draft => {
       draft.selectedExploration = null;
     });
@@ -73,6 +74,25 @@ export default function Exploration({ fs, setFs }) {
     });
   }
 
+  function evt_Login() {
+    setFs(draft => {
+      const user = draft.user;
+      user.isLoggedIn = true;
+      user.userName = 'bentbloh@gmail.com';
+    });
+  };
+
+  function evt_DialogShow(event) {
+    if (!fs.user.isLoggedIn)
+      setFs(draft => {
+        draft.showSaveToLinkDialog = true;
+      })
+  }
+  function evt_DialogHide(event) {
+    setFs(draft => {
+      draft.showSaveToLinkDialog = false;
+    })
+  }
 
   /// COMPONENT RENDER ////////////////////////////////////////////////////////
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -81,9 +101,9 @@ export default function Exploration({ fs, setFs }) {
   const NAVBAR = (
     <div className="navbar">
       <div>
-        <span onClick={() => setRoute('home')}>Home</span> &gt;{' '}
-        <span onClick={deselectExploration}>Explorations</span> &gt;{' '}
-        {selectedExploration}: {exploration.name}
+        <span className="url" onClick={() => setRoute('home')}>Home</span> &gt;{' '}
+        <span className="url" onClick={deselectExploration}>Explorations</span> &gt;{' '}
+        <span className="current">{selectedExploration}: {exploration.name}</span>
       </div>
     </div>
   );
@@ -91,28 +111,29 @@ export default function Exploration({ fs, setFs }) {
   const TITLE = (
     <div className="title">
       EXPLORATION:{' '}
-      {(fs.user.isLoggedIn || fs.editWithoutSaving) && !exploration.locked
-        ? titleIsEditable
-          ? (
-            <>
-              <input type="text" value={exploration.name} onChange={evt_OnTitleChange} />
-              <button className='transparent-light' onClick={evt_ToggleTitleEdit}>Save</button>
-            </>
-          )
-          : (
-            <>
-              {exploration.name}
-              <button className='transparent-light' onClick={evt_ToggleTitleEdit}>{IcnPencil}</button>
-            </>
-          )
-        : <>{exploration.name}</>
+      {titleIsEditable
+        ? (
+          <>
+            <input type="text" value={exploration.name} onChange={evt_OnTitleChange} />
+            <button className='transparent-light' onClick={evt_ToggleTitleEdit}>Save</button>
+          </>
+        )
+        : (
+          <>
+            {exploration.name}
+            <button className='transparent-light' onClick={evt_ToggleTitleEdit}
+              onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>{IcnPencil}</button>
+          </>
+        )
       }
       <div style={{ flexGrow: 1 }}></div>
       <div className="tableOrMap">
-        <label>Public</label>
-        <input value={exploration.privacy === 'Public' ? "0" : "1"} onClick={evt_TogglePublic} readOnly type="range" min="0" max="1" step="1" />
         <label>Private</label>
+        <input value={exploration.privacy === 'Public' ? "1" : "0"} onClick={evt_TogglePublic} readOnly type="range" min="0" max="1" step="1" />
+        <label>Public</label>
       </div>
+      {' '}
+      <button className="secondary" onClick={evt_SetPublic}>❤️</button>
     </div>
   );
 
@@ -120,27 +141,23 @@ export default function Exploration({ fs, setFs }) {
     <div className="sidebar">
       <EXPItemsList fs={fs} setFs={setFs} />
       <div className="notes">
-        {(fs.user.isLoggedIn || fs.editWithoutSaving) && !exploration.locked
-          ? descriptionIsEditable
-            ? <>
-              <h4>YOUR IDEAS & QUESTIONS
-                <button className='transparent-light' onClick={evt_ToggleDescriptionEdit}>Save</button>
-              </h4>
-              <textarea
-                value={exploration.description}
-                placeholder="You can use this space to describe the idea or question you would like to explore.  Add any ideas and questions as you make new maps and graphs"
-                onChange={evt_OnDescriptionChange}
-              />
+        {descriptionIsEditable
+          ? <>
+            <h4>YOUR IDEAS & QUESTIONS
+              <button className='transparent-light' onClick={evt_ToggleDescriptionEdit}>Save</button>
+            </h4>
+            <textarea
+              value={exploration.description}
+              placeholder="You can use this space to describe the idea or question you would like to explore.  Add any ideas and questions as you make new maps and graphs"
+              onChange={evt_OnDescriptionChange}
+            />
 
-            </>
-            : <>
-              <h4>YOUR IDEAS & QUESTIONS
-                <button className='transparent-light' onClick={evt_ToggleDescriptionEdit}>{IcnPencil}</button>
-              </h4>
-              <div className="description">{exploration.description}</div>
-            </>
+          </>
           : <>
-            <h4>IDEAS & QUESTIONS</h4>
+            <h4>YOUR IDEAS & QUESTIONS
+              <button className='transparent-light' onClick={evt_ToggleDescriptionEdit}
+                onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>{IcnPencil}</button>
+            </h4>
             <div className="description">{exploration.description}</div>
           </>
         }
@@ -162,15 +179,43 @@ export default function Exploration({ fs, setFs }) {
 
   const FOOTER = (
     <div className="footer">
-      <button className="transparent" onClick={evt_CopyLink}>Copy Link</button>
+      {/* <button className="secondary" onClick={deselectExploration}>Back to Explorations</button> */}
+      <button className="secondary" onClick={evt_SaveAs}>Edit a Copy</button>
+      <div style={{ flexGrow: 1 }}></div>
       <button className="transparent" onClick={evt_Embed}>Embed Exploration</button>
-      <button className="primary" onClick={evt_SaveAs}>Edit a Copy</button>
-      <button className="secondary" onClick={deselectExploration}>Back to Explorations</button>
+      <div style={{ flexGrow: 1 }}></div>
+      <button className={fs.user.isLoggedIn && exploration.isOwner ? "tertiary" : "primary"} onClick={evt_CopyLink}>
+        {fs.user.isLoggedIn && exploration.isOwner
+          ? "Copy Link"
+          : "Save Copy LInk"
+        }
+      </button>
     </div>
   );
 
+  const LOCKEDDIALOG = (
+    <div className="dialog">
+      <h2>Saving requires Login</h2>
+      <p>You have two options:</p>
+      <div className="twocolumns">
+        <div>
+          <p>Log in to edit and save changes to an exploration to your account.</p>
+          <button onClick={evt_Login}>Login</button>
+          <p><i><a href="">Register for free</a> if you don't have an account.</i></p>
+        </div>
+        <p style={{ textAlign: 'center' }}>or</p>
+        <div>
+          <p>You can still edit this exploration, but you can only save this as a link.</p>
+          <p>Copy the link to your own document (e.g. in Google Docs or Word) to save it.</p>
+          <p>Just click "Save and Copy Link" in the lower right when you want to save.</p>
+        </div>
+      </div>
+    </div>
+  )
+
+  console.log('render logged in', fs.user.isLoggedIn, 'isOwner', exploration.isOwner)
   return (
-    <div className="Exploration">
+    <div className={`Exploration ${fs.user.isLoggedIn && exploration.isOwner ? 'isOwner' : ''}`}>
       {NAVBAR}
       <div className="border">
         {TITLE}
@@ -179,8 +224,8 @@ export default function Exploration({ fs, setFs }) {
           {VISUALIZATION}
         </div>
         {FOOTER}
-        {!fs.user.isLoggedIn && !fs.editWithoutSaving && !exploration.locked && <NotLoggedIn fs={fs} setFs={setFs} />}
       </div>
+      {fs.showSaveToLinkDialog && !(fs.user.isLoggedIn && exploration.isOwner) && LOCKEDDIALOG}
     </div>
   )
 }

@@ -56,6 +56,20 @@ export default function EXPItemsList({ fs, setFs }) {
     });
   }
 
+  function evt_DialogShow(event) {
+    console.log('show dialog')
+    if (!fs.user.isLoggedIn)
+      setFs(draft => {
+        draft.showSaveToLinkDialog = true;
+      })
+  }
+  function evt_DialogHide(event) {
+    console.log('hide dialog')
+    setFs(draft => {
+      draft.showSaveToLinkDialog = false;
+    })
+  }
+
 
 
   /// COMPONENT RENDER ////////////////////////////////////////////////////////
@@ -87,10 +101,12 @@ export default function EXPItemsList({ fs, setFs }) {
           ))
         }
       </div>
-      {(fs.user.isLoggedIn || fs.editWithoutSaving) && !exploration.locked && <div className="controlbar">
-        <button disabled={!selectedVisual} onClick={evt_EditVisual}>EDIT</button>
-        <button className="primary" onClick={evt_NewVisual}>NEW MAP/GRAPH</button>
-      </div>}
+      <div className="controlbar">
+        <button disabled={!selectedVisual} onClick={evt_EditVisual}
+          onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>EDIT</button>
+        <button className="primary" onClick={evt_NewVisual}
+          onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>NEW MAP/GRAPH</button>
+      </div>
       {editingVisual !== null && EDITOR}
     </div>
   );

@@ -1,6 +1,6 @@
 .screen {
   position: absolute;
-  top: 0;
+  top: var(--size-navbar);
   left: 0;
   bottom: 0;
   right: 0;
@@ -75,7 +75,7 @@
 
 .EXPEdit .minicontrolbar {
   display: flex;
-  justify-content: space-between;
+  align-items: baseline;
   width: 100%;
 }
 

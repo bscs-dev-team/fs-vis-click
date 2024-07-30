@@ -1,9 +1,21 @@
+@property --colorOwner {
+  syntax: "<color>";
+  initial-value: #5a7202;
+  inherits: true;
+}
+@property --colorNotOwner {
+  syntax: "<color>";
+  initial-value: #777;
+  inherits: true;
+}
+
 .Exploration {
   position: absolute;
   top: 64px;
   left: 0;
   bottom: 0;
   width: 100%;
+  overflow: hidden;
   background-color: #d0d7b6;
 
   display: flex;
@@ -12,11 +24,14 @@
 
 .Exploration .border {
   box-sizing: border-box;
-  border-left: 20px solid #5a7202;
-  border-right: 20px solid #5a7202;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  border-left: 20px solid var(--colorNotOwner);
+  border-right: 20px solid var(--colorNotOwner);
+  display: grid;
+  grid-template-rows: 36px auto 42px;
+  height: 95%; /* hack to prevent Exploration from scrolling */
+}
+.Exploration.isOwner .border {
+  border-color: var(--colorOwner);
 }
 
 .Exploration .navbar {
@@ -25,16 +40,26 @@
   justify-content: space-between;
   height: 32px;
   padding: 5px;
+  color: #0003;
   background-color: #f3f5ec;
+}
+.Exploration .navbar .url {
+  color: #5a7202;
+  cursor: pointer;
+}
+.Exploration .navbar .current {
+  color: #333;
 }
 
 .Exploration .title {
   display: flex;
   align-items: center;
   color: white;
-  background-color: #5a7202;
-  height: 32px;
+  background-color: var(--colorNotOwner);
   padding-top: 5px;
+}
+.Exploration.isOwner .title {
+  background-color: var(--colorOwner);
 }
 
 .Exploration .title input {
@@ -123,8 +148,25 @@
   justify-content: space-between;
   padding: 5px 20px;
   color: white;
-  background-color: #5a7202;
+  background-color: var(--colorNotOwner);
+}
+.Exploration.isOwner .footer {
+  background-color: var(--colorOwner);
 }
 .Exploration .footer button {
   color: white;
+}
+
+.Exploration > .dialog {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  bottom: 35%;
+  right: 25%;
+  padding: 20px;
+  background-color: #f80d;
+}
+.Exploration > .dialog > .twocolumns {
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
 }
