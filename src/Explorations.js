@@ -8,9 +8,9 @@ import threespecies_histo from './img/threespecies_histo.png';
 export default function Explorations({ fs, setFs }) {
 
   const FEATURED_DATA = [fs.explorations[0], fs.explorations[1], fs.explorations[2]];
-  const EXPLORATIONS_DATA = fs.explorations.filter(e => !e.shared && !e.locked);
-  const SHARED_DATA = fs.explorations.filter(e => e.shared);
-  const NEXTINDEX = EXPLORATIONS_DATA.length + 2;
+  const EXPLORATIONS_DATA = fs.explorations.filter(e => !e.favorite && e.isOwner);
+  const FAVORITED_DATA = fs.explorations.filter(e => e.favorite);
+  const NEXTINDEX = fs.explorations.length + 2;
 
   /// UI HANDLERS /////////////////////////////////////////////////////////////
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -25,7 +25,9 @@ export default function Explorations({ fs, setFs }) {
         modified: new Date(),
         privacy: 'Private',
         visuals: [],
-        filters: [...fs.defaultFilters]
+        filters: [...fs.defaultFilters],
+        favorite: false,
+        isOwner: fs.user.isLoggedIn
       });
       draft.selectedExploration = NEXTINDEX;
       draft.editWithoutSaving = null;
@@ -88,7 +90,7 @@ export default function Explorations({ fs, setFs }) {
     </table>
   )
 
-  const SHARED_TABLE = (
+  const FAVORITED_TABLE = (
     <table>
       <thead>
         <tr>
@@ -99,7 +101,7 @@ export default function Explorations({ fs, setFs }) {
         </tr>
       </thead>
       <tbody>
-        {SHARED_DATA.map((exploration, i) => (
+        {FAVORITED_DATA.map((exploration, i) => (
           <tr key={i} onClick={() => evt_SelectExploration(exploration.id)}>
             <td>
               <img src={exploration.image} />&nbsp;
@@ -129,8 +131,11 @@ export default function Explorations({ fs, setFs }) {
         ? BROWSER_TABLE
         : <div className="empty-table help">Login to save and share your explorations</div>
       }
-      <h3>Shared Explorations</h3>
-      {SHARED_TABLE}
+      <h3>Favorites</h3>
+      {fs.user.isLoggedIn
+        ? FAVORITED_TABLE
+        : <div className="empty-table help">Login to view your favorited explorations</div>
+      }
     </>
   );
 
