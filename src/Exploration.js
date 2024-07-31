@@ -127,7 +127,7 @@ export default function Exploration({ fs, setFs }) {
         : (
           <>
             {exploration.name}
-            <button className='transparent-light' onClick={evt_ToggleTitleEdit}
+            <button className={`transparent-light ${!fs.user.isLoggedIn || !exploration.isOwner ? 'disabled' : ''}`} onClick={evt_ToggleTitleEdit}
               onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>{IcnPencil}</button>
           </>
         )
@@ -152,7 +152,8 @@ export default function Exploration({ fs, setFs }) {
         {descriptionIsEditable
           ? <>
             <h4>YOUR IDEAS & QUESTIONS
-              <button className='transparent-light' onClick={evt_ToggleDescriptionEdit}>Save</button>
+              <button className='transparent-light' onClick={evt_ToggleDescriptionEdit}
+              >Save</button>
             </h4>
             <textarea
               value={exploration.description}
@@ -163,7 +164,7 @@ export default function Exploration({ fs, setFs }) {
           </>
           : <>
             <h4>YOUR IDEAS & QUESTIONS
-              <button className='transparent-light' onClick={evt_ToggleDescriptionEdit}
+              <button className={`transparent-light ${!fs.user.isLoggedIn || !exploration.isOwner ? 'disabled' : ''}`} onClick={evt_ToggleDescriptionEdit}
                 onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>{IcnPencil}</button>
             </h4>
             <div className="description">{exploration.description}</div>

@@ -110,6 +110,10 @@ button.mini {
   line-height: 12px;
   font-size: 10px;
 }
+button.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
 
 .tableOrMap {
   display: flex;

@@ -17,6 +17,7 @@ export default function EXPItemsList({ fs, setFs }) {
   const NEXTINDEX = visuals.length + 2;
 
 
+
   /// UI HANDLERS /////////////////////////////////////////////////////////////
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -102,9 +103,12 @@ export default function EXPItemsList({ fs, setFs }) {
         }
       </div>
       <div className="controlbar">
-        <button disabled={!selectedVisual} onClick={evt_EditVisual}
+        <button
+          className={`transparent-light ${!fs.user.isLoggedIn || !exploration.isOwner ? 'disabled' : ''}`}
+          onClick={evt_EditVisual}
           onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>EDIT</button>
-        <button className="primary" onClick={evt_NewVisual}
+        <button className={`primary ${!fs.user.isLoggedIn || !exploration.isOwner ? 'disabled' : ''}`}
+          onClick={evt_NewVisual}
           onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>NEW MAP/GRAPH</button>
       </div>
       {editingVisual !== null && EDITOR}
