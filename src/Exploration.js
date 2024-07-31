@@ -74,6 +74,12 @@ export default function Exploration({ fs, setFs }) {
     });
   }
 
+  function evt_ToggleFavorite(event) {
+      const e = draft.explorations.find(e => e.id === draft.selectedExploration)
+      e.favorite = !e.favorite;
+    });
+  }
+
   function evt_Login() {
     setFs(draft => {
       const user = draft.user;
@@ -83,7 +89,7 @@ export default function Exploration({ fs, setFs }) {
   };
 
   function evt_DialogShow(event) {
-    if (!fs.user.isLoggedIn)
+    if (!fs.user.isLoggedIn || !exploration.isOwner)
       setFs(draft => {
         draft.showSaveToLinkDialog = true;
       })
@@ -133,7 +139,9 @@ export default function Exploration({ fs, setFs }) {
         <label>Public</label>
       </div>
       {' '}
-      <button className="secondary" onClick={evt_SetPublic}>❤️</button>
+      <button className="secondary" onClick={evt_ToggleFavorite}>
+        {exploration.favorite ? "🩷" : "♡"}
+      </button>
     </div>
   );
 
@@ -180,12 +188,12 @@ export default function Exploration({ fs, setFs }) {
   const FOOTER = (
     <div className="footer">
       {/* <button className="secondary" onClick={deselectExploration}>Back to Explorations</button> */}
-      <button className="secondary" onClick={evt_SaveAs}>Edit a Copy</button>
+      <button className={fs.user.isLoggedIn ? "primary" : "secondary"} onClick={evt_SaveAs}>Edit a Copy</button>
       <div style={{ flexGrow: 1 }}></div>
       <button className="transparent" onClick={evt_Embed}>Embed Exploration</button>
       <div style={{ flexGrow: 1 }}></div>
-      <button className={fs.user.isLoggedIn && exploration.isOwner ? "tertiary" : "primary"} onClick={evt_CopyLink}>
-        {fs.user.isLoggedIn && exploration.isOwner
+      <button className={fs.user.isLoggedIn ? "tertiary" : "primary"} onClick={evt_CopyLink}>
+        {fs.user.isLoggedIn
           ? "Copy Link"
           : "Save Copy LInk"
         }
@@ -193,15 +201,37 @@ export default function Exploration({ fs, setFs }) {
     </div>
   );
 
-  const LOCKEDDIALOG = (
-    <div className="dialog">
+  const DIALOG_LOGIN = (
+    <div className="dialog warning">
       <h2>Saving requires Login</h2>
+      <p>You can add and edit maps and graphs, but you will not be able to save your explorations until you log in.</p>
       <p>You have two options:</p>
       <div className="twocolumns">
         <div>
           <p>Log in to edit and save changes to an exploration to your account.</p>
           <button onClick={evt_Login}>Login</button>
           <p><i><a href="">Register for free</a> if you don't have an account.</i></p>
+        </div>
+        <p style={{ textAlign: 'center' }}>or</p>
+        <div>
+          <p>You can still edit this exploration, but you can only save this as a link.</p>
+          <p>Copy the link to your own document (e.g. in Google Docs or Word) to save it.</p>
+          <p>Just click "Save and Copy Link" in the lower right when you want to save.</p>
+        </div>
+      </div>
+    </div>
+  )
+
+  // You're logged in, but you're not the owner of this exploration. You can edit it, but you can't save it. You can save a copy of it, though.
+  const DIALOG_COPY = (
+    <div className="dialog">
+      <h2>"Edit a Copy" to Make Changes</h2>
+      <p>You are viewing an exploration that is not owned by you.</p>
+      <p>You have two options:</p>
+      <div className="twocolumns">
+        <div>
+          <p>Click "Edit a Copy" to duplicate this exploration and make and save changes to it.</p>
+          <button onClick={evt_Login}>Edit a Copy</button>
         </div>
         <p style={{ textAlign: 'center' }}>or</p>
         <div>
@@ -225,7 +255,8 @@ export default function Exploration({ fs, setFs }) {
         </div>
         {FOOTER}
       </div>
-      {fs.showSaveToLinkDialog && !(fs.user.isLoggedIn && exploration.isOwner) && LOCKEDDIALOG}
+      {fs.showSaveToLinkDialog && !fs.user.isLoggedIn && !exploration.isOwner && DIALOG_LOGIN}
+      {fs.showSaveToLinkDialog && fs.user.isLoggedIn && !exploration.isOwner && DIALOG_COPY}
     </div>
   )
 }

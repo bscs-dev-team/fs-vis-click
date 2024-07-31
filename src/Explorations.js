@@ -8,7 +8,7 @@ import threespecies_histo from './img/threespecies_histo.png';
 export default function Explorations({ fs, setFs }) {
 
   const FEATURED_DATA = [fs.explorations[0], fs.explorations[1], fs.explorations[2]];
-  const EXPLORATIONS_DATA = fs.explorations.filter(e => !e.favorite && e.isOwner);
+  const EXPLORATIONS_DATA = fs.explorations.filter(e => e.isOwner);
   const FAVORITED_DATA = fs.explorations.filter(e => e.favorite);
   const NEXTINDEX = fs.explorations.length + 2;
 
@@ -131,7 +131,7 @@ export default function Explorations({ fs, setFs }) {
         ? BROWSER_TABLE
         : <div className="empty-table help">Login to save and share your explorations</div>
       }
-      <h3>Favorites</h3>
+      <h3>Favorites 🩷</h3>
       {fs.user.isLoggedIn
         ? FAVORITED_TABLE
         : <div className="empty-table help">Login to view your favorited explorations</div>

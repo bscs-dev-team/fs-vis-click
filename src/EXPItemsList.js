@@ -58,7 +58,7 @@ export default function EXPItemsList({ fs, setFs }) {
 
   function evt_DialogShow(event) {
     console.log('show dialog')
-    if (!fs.user.isLoggedIn)
+    if (!fs.user.isLoggedIn || !exploration.isOwner)
       setFs(draft => {
         draft.showSaveToLinkDialog = true;
       })

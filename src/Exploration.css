@@ -159,11 +159,12 @@
 
 .Exploration > .dialog {
   position: absolute;
-  top: 35%;
-  left: 25%;
-  bottom: 35%;
-  right: 25%;
+  margin: 20% 25%;
+  width: 50%;
   padding: 20px;
+  background-color: #ff0d;
+}
+.Exploration > .dialog.warning {
   background-color: #f80d;
 }
 .Exploration > .dialog > .twocolumns {
