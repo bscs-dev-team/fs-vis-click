@@ -160,9 +160,11 @@
 .Exploration > .dialog {
   position: absolute;
   margin: 20% 25%;
-  width: 50%;
+  width: 30%;
   padding: 20px;
   background-color: #ff0d;
+  display: flex;
+  flex-direction: column;
 }
 .Exploration > .dialog.warning {
   background-color: #f80d;
@@ -170,4 +172,7 @@
 .Exploration > .dialog > .twocolumns {
   display: grid;
   grid-template-columns: 1fr 80px 1fr;
+}
+.Exploration > .dialog button {
+  align-self: flex-end;
 }
