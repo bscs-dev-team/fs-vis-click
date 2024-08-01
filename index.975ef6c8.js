@@ -29370,6 +29370,8 @@ parcelHelpers.export(exports, "default", ()=>Explorations);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactJoyride = require("react-joyride");
+var _reactJoyrideDefault = parcelHelpers.interopDefault(_reactJoyride);
 var _explorationsCss = require("./Explorations.css");
 var _exploration = require("./Exploration");
 var _explorationDefault = parcelHelpers.interopDefault(_exploration);
@@ -29429,7 +29431,7 @@ function Explorations({ fs, setFs }) {
                         alt: exploration.name
                     }, void 0, false, {
                         fileName: "src/Explorations.js",
-                        lineNumber: 56,
+                        lineNumber: 57,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29439,31 +29441,31 @@ function Explorations({ fs, setFs }) {
                                 children: exploration.name
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 58,
+                                lineNumber: 59,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 children: exploration.description
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 59,
+                                lineNumber: 60,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/Explorations.js",
-                        lineNumber: 57,
+                        lineNumber: 58,
                         columnNumber: 11
                     }, this)
                 ]
             }, i, true, {
                 fileName: "src/Explorations.js",
-                lineNumber: 55,
+                lineNumber: 56,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "src/Explorations.js",
-        lineNumber: 53,
+        lineNumber: 54,
         columnNumber: 5
     }, this);
     const BROWSER_TABLE = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
@@ -29475,53 +29477,53 @@ function Explorations({ fs, setFs }) {
                             children: "\u2661"
                         }, void 0, false, {
                             fileName: "src/Explorations.js",
-                            lineNumber: 70,
+                            lineNumber: 71,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                             children: "Author"
                         }, void 0, false, {
                             fileName: "src/Explorations.js",
-                            lineNumber: 71,
+                            lineNumber: 72,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                             children: "Title \u2304"
                         }, void 0, false, {
                             fileName: "src/Explorations.js",
-                            lineNumber: 72,
+                            lineNumber: 73,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                             children: "Description"
                         }, void 0, false, {
                             fileName: "src/Explorations.js",
-                            lineNumber: 73,
+                            lineNumber: 74,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                             children: "Last modified"
                         }, void 0, false, {
                             fileName: "src/Explorations.js",
-                            lineNumber: 74,
+                            lineNumber: 75,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                             children: "Privacy"
                         }, void 0, false, {
                             fileName: "src/Explorations.js",
-                            lineNumber: 75,
+                            lineNumber: 76,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/Explorations.js",
-                    lineNumber: 69,
+                    lineNumber: 70,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 68,
+                lineNumber: 69,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
@@ -29532,14 +29534,14 @@ function Explorations({ fs, setFs }) {
                                 children: exploration.favorite ? "\uD83E\uDE77" : ""
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 81,
+                                lineNumber: 82,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                 children: exploration.isOwner ? "Me" : "-"
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 82,
+                                lineNumber: 83,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -29548,7 +29550,7 @@ function Explorations({ fs, setFs }) {
                                         src: exploration.image
                                     }, void 0, false, {
                                         fileName: "src/Explorations.js",
-                                        lineNumber: 84,
+                                        lineNumber: 85,
                                         columnNumber: 15
                                     }, this),
                                     "\xa0",
@@ -29556,45 +29558,45 @@ function Explorations({ fs, setFs }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 83,
+                                lineNumber: 84,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                 children: exploration.description
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 87,
+                                lineNumber: 88,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                 children: exploration.modified.toDateString()
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 88,
+                                lineNumber: 89,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                 children: exploration.privacy
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 89,
+                                lineNumber: 90,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, i, true, {
                         fileName: "src/Explorations.js",
-                        lineNumber: 80,
+                        lineNumber: 81,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 78,
+                lineNumber: 79,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Explorations.js",
-        lineNumber: 67,
+        lineNumber: 68,
         columnNumber: 5
     }, this);
     const BROWSER = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -29603,21 +29605,21 @@ function Explorations({ fs, setFs }) {
                 children: "Explorations"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 98,
+                lineNumber: 99,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "FrogWatch Volunteer Data. See observations from FrogWatch USA volunteers in maps and graphs, or create your own visualization of data."
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 99,
+                lineNumber: 100,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: "Featured Explorations"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 101,
+                lineNumber: 102,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29625,14 +29627,14 @@ function Explorations({ fs, setFs }) {
                 children: FEATURED
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 102,
+                lineNumber: 103,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: "My Data Explorations"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 105,
+                lineNumber: 106,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -29641,7 +29643,7 @@ function Explorations({ fs, setFs }) {
                 children: "+ Create New Exploration"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 106,
+                lineNumber: 107,
                 columnNumber: 7
             }, this),
             fs.user.isLoggedIn ? BROWSER_TABLE : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29649,7 +29651,7 @@ function Explorations({ fs, setFs }) {
                 children: "Login to save and share your explorations"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 109,
+                lineNumber: 110,
                 columnNumber: 11
             }, this)
         ]
@@ -29659,7 +29661,7 @@ function Explorations({ fs, setFs }) {
         setFs: setFs
     }, void 0, false, {
         fileName: "src/Explorations.js",
-        lineNumber: 115,
+        lineNumber: 116,
         columnNumber: 5
     }, this);
     const VIEW = fs.selectedExploration === null ? BROWSER : EXPLORATION;
@@ -29668,7 +29670,7 @@ function Explorations({ fs, setFs }) {
         children: VIEW
     }, void 0, false, {
         fileName: "src/Explorations.js",
-        lineNumber: 120,
+        lineNumber: 121,
         columnNumber: 5
     }, this);
 }
@@ -29681,7 +29683,7253 @@ $RefreshReg$(_c, "Explorations");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Explorations.css":"9jFiD","./Exploration":"dDc1i","./img/allspecies_map.png":"3fEu8","./img/allspecies_histo.png":"iWrM3","./img/threespecies_histo.png":"5cwM8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9jFiD":[function() {},{}],"dDc1i":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-joyride":"cxpxM","./Explorations.css":"9jFiD","./Exploration":"dDc1i","./img/allspecies_map.png":"3fEu8","./img/allspecies_histo.png":"iWrM3","./img/threespecies_histo.png":"5cwM8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cxpxM":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ACTIONS", ()=>ACTIONS);
+parcelHelpers.export(exports, "EVENTS", ()=>EVENTS);
+parcelHelpers.export(exports, "LIFECYCLE", ()=>LIFECYCLE);
+parcelHelpers.export(exports, "ORIGIN", ()=>ORIGIN);
+parcelHelpers.export(exports, "STATUS", ()=>STATUS);
+parcelHelpers.export(exports, "default", ()=>components_default);
+// src/components/index.tsx
+var _react = require("react");
+var _deepEqual = require("@gilbarbara/deep-equal");
+var _deepEqualDefault = parcelHelpers.interopDefault(_deepEqual);
+var _isLite = require("is-lite");
+var _isLiteDefault = parcelHelpers.interopDefault(_isLite);
+var _treeChanges = require("tree-changes");
+var _treeChangesDefault = parcelHelpers.interopDefault(_treeChanges);
+// src/modules/dom.ts
+var _scroll = require("scroll");
+var _scrollDefault = parcelHelpers.interopDefault(_scroll);
+var _scrollparent = require("scrollparent");
+var _scrollparentDefault = parcelHelpers.interopDefault(_scrollparent);
+var _reactDom = require("react-dom");
+// src/modules/step.ts
+var _deepmerge = require("deepmerge");
+var _deepmergeDefault = parcelHelpers.interopDefault(_deepmerge);
+var _reactFloater = require("react-floater");
+var _reactFloaterDefault = parcelHelpers.interopDefault(_reactFloater);
+var _reactInnertext = require("react-innertext");
+var _reactInnertextDefault = parcelHelpers.interopDefault(_reactInnertext);
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var __defProp = Object.defineProperty;
+var __defNormalProp = (obj, key, value)=>key in obj ? __defProp(obj, key, {
+        enumerable: true,
+        configurable: true,
+        writable: true,
+        value
+    }) : obj[key] = value;
+var __publicField = (obj, key, value)=>{
+    __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
+    return value;
+};
+// src/literals/index.ts
+var ACTIONS = {
+    INIT: "init",
+    START: "start",
+    STOP: "stop",
+    RESET: "reset",
+    PREV: "prev",
+    NEXT: "next",
+    GO: "go",
+    CLOSE: "close",
+    SKIP: "skip",
+    UPDATE: "update"
+};
+var EVENTS = {
+    TOUR_START: "tour:start",
+    STEP_BEFORE: "step:before",
+    BEACON: "beacon",
+    TOOLTIP: "tooltip",
+    STEP_AFTER: "step:after",
+    TOUR_END: "tour:end",
+    TOUR_STATUS: "tour:status",
+    TARGET_NOT_FOUND: "error:target_not_found",
+    ERROR: "error"
+};
+var LIFECYCLE = {
+    INIT: "init",
+    READY: "ready",
+    BEACON: "beacon",
+    TOOLTIP: "tooltip",
+    COMPLETE: "complete",
+    ERROR: "error"
+};
+var ORIGIN = {
+    BUTTON_CLOSE: "button_close",
+    BUTTON_PRIMARY: "button_primary",
+    KEYBOARD: "keyboard",
+    OVERLAY: "overlay"
+};
+var STATUS = {
+    IDLE: "idle",
+    READY: "ready",
+    WAITING: "waiting",
+    RUNNING: "running",
+    PAUSED: "paused",
+    SKIPPED: "skipped",
+    FINISHED: "finished",
+    ERROR: "error"
+};
+function canUseDOM() {
+    return !!(typeof window !== "undefined" && window.document && window.document.createElement);
+}
+function getClientRect(element) {
+    if (!element) return null;
+    return element.getBoundingClientRect();
+}
+function getDocumentHeight(median = true) {
+    const { body, documentElement } = document;
+    if (!body || !documentElement) return 0;
+    if (median) {
+        const heights = [
+            body.scrollHeight,
+            body.offsetHeight,
+            documentElement.clientHeight,
+            documentElement.scrollHeight,
+            documentElement.offsetHeight
+        ].sort((a, b)=>a - b);
+        const middle = Math.floor(heights.length / 2);
+        if (heights.length % 2 === 0) return (heights[middle - 1] + heights[middle]) / 2;
+        return heights[middle];
+    }
+    return Math.max(body.scrollHeight, body.offsetHeight, documentElement.clientHeight, documentElement.scrollHeight, documentElement.offsetHeight);
+}
+function getElement(element) {
+    if (typeof element === "string") return document.querySelector(element);
+    return element;
+}
+function getStyleComputedProperty(el) {
+    if (!el || el.nodeType !== 1) return null;
+    return getComputedStyle(el);
+}
+function getScrollParent(element, skipFix, forListener) {
+    if (!element) return scrollDocument();
+    const parent = (0, _scrollparentDefault.default)(element);
+    if (parent) {
+        if (parent.isSameNode(scrollDocument())) {
+            if (forListener) return document;
+            return scrollDocument();
+        }
+        const hasScrolling = parent.scrollHeight > parent.offsetHeight;
+        if (!hasScrolling && !skipFix) {
+            parent.style.overflow = "initial";
+            return scrollDocument();
+        }
+    }
+    return parent;
+}
+function hasCustomScrollParent(element, skipFix) {
+    if (!element) return false;
+    const parent = getScrollParent(element, skipFix);
+    return parent ? !parent.isSameNode(scrollDocument()) : false;
+}
+function hasCustomOffsetParent(element) {
+    return element.offsetParent !== document.body;
+}
+function hasPosition(el, type = "fixed") {
+    if (!el || !(el instanceof HTMLElement)) return false;
+    const { nodeName } = el;
+    const styles = getStyleComputedProperty(el);
+    if (nodeName === "BODY" || nodeName === "HTML") return false;
+    if (styles && styles.position === type) return true;
+    if (!el.parentNode) return false;
+    return hasPosition(el.parentNode, type);
+}
+function isElementVisible(element) {
+    var _a;
+    if (!element) return false;
+    let parentElement = element;
+    while(parentElement){
+        if (parentElement === document.body) break;
+        if (parentElement instanceof HTMLElement) {
+            const { display, visibility } = getComputedStyle(parentElement);
+            if (display === "none" || visibility === "hidden") return false;
+        }
+        parentElement = (_a = parentElement.parentElement) != null ? _a : null;
+    }
+    return true;
+}
+function getElementPosition(element, offset, skipFix) {
+    var _a;
+    const elementRect = getClientRect(element);
+    const parent = getScrollParent(element, skipFix);
+    const hasScrollParent = hasCustomScrollParent(element, skipFix);
+    let parentTop = 0;
+    let top = (_a = elementRect == null ? void 0 : elementRect.top) != null ? _a : 0;
+    if (parent instanceof HTMLElement) {
+        parentTop = parent.scrollTop;
+        if (!hasScrollParent && !hasPosition(element)) top += parentTop;
+        if (!parent.isSameNode(scrollDocument())) top += scrollDocument().scrollTop;
+    }
+    return Math.floor(top - offset);
+}
+function getScrollTo(element, offset, skipFix) {
+    var _a;
+    if (!element) return 0;
+    const { offsetTop = 0, scrollTop = 0 } = (_a = (0, _scrollparentDefault.default)(element)) != null ? _a : {};
+    let top = element.getBoundingClientRect().top + scrollTop;
+    if (!!offsetTop && (hasCustomScrollParent(element, skipFix) || hasCustomOffsetParent(element))) top -= offsetTop;
+    const output = Math.floor(top - offset);
+    return output < 0 ? 0 : output;
+}
+function scrollDocument() {
+    var _a;
+    return (_a = document.scrollingElement) != null ? _a : document.documentElement;
+}
+function scrollTo(value, options) {
+    const { duration, element } = options;
+    return new Promise((resolve, reject)=>{
+        const { scrollTop } = element;
+        const limit = value > scrollTop ? value - scrollTop : scrollTop - value;
+        (0, _scrollDefault.default).top(element, value, {
+            duration: limit < 100 ? 50 : duration
+        }, (error)=>{
+            if (error && error.message !== "Element already at target scroll position") return reject(error);
+            return resolve();
+        });
+    });
+}
+var isReact16 = (0, _reactDom.createPortal) !== void 0;
+function getBrowser(userAgent = navigator.userAgent) {
+    let browser = userAgent;
+    if (typeof window === "undefined") browser = "node";
+    else if (document.documentMode) browser = "ie";
+    else if (/Edge/.test(userAgent)) browser = "edge";
+    else if (Boolean(window.opera) || userAgent.includes(" OPR/")) browser = "opera";
+    else if (typeof window.InstallTrigger !== "undefined") browser = "firefox";
+    else if (window.chrome) browser = "chrome";
+    else if (/(Version\/([\d._]+).*Safari|CriOS|FxiOS| Mobile\/)/.test(userAgent)) browser = "safari";
+    return browser;
+}
+function getText(root) {
+    const content = [];
+    const recurse = (child)=>{
+        if (typeof child === "string" || typeof child === "number") content.push(child);
+        else if (Array.isArray(child)) child.forEach((c)=>recurse(c));
+        else if ((0, _react.isValidElement)(child)) {
+            const { children } = child.props;
+            if (Array.isArray(children)) children.forEach((c)=>recurse(c));
+            else recurse(children);
+        }
+    };
+    recurse(root);
+    return content.join(" ").trim();
+}
+function hasValidKeys(object, keys) {
+    if (!(0, _isLiteDefault.default).plainObject(object) || !(0, _isLiteDefault.default).array(keys)) return false;
+    return Object.keys(object).every((d)=>keys.includes(d));
+}
+function hexToRGB(hex) {
+    const shorthandRegex = /^#?([\da-f])([\da-f])([\da-f])$/i;
+    const properHex = hex.replace(shorthandRegex, (_m, r, g, b)=>r + r + g + g + b + b);
+    const result = /^#?([\da-f]{2})([\da-f]{2})([\da-f]{2})$/i.exec(properHex);
+    return result ? [
+        parseInt(result[1], 16),
+        parseInt(result[2], 16),
+        parseInt(result[3], 16)
+    ] : [];
+}
+function hideBeacon(step) {
+    return step.disableBeacon || step.placement === "center";
+}
+function isLegacy() {
+    return ![
+        "chrome",
+        "safari",
+        "firefox",
+        "opera"
+    ].includes(getBrowser());
+}
+function log({ data, debug = false, title, warn = false }) {
+    const logFn = warn ? console.warn || console.error : console.log;
+    if (debug) {
+        if (title && data) {
+            console.groupCollapsed(`%creact-joyride: ${title}`, "color: #ff0044; font-weight: bold; font-size: 12px;");
+            if (Array.isArray(data)) data.forEach((d)=>{
+                if ((0, _isLiteDefault.default).plainObject(d) && d.key) logFn.apply(console, [
+                    d.key,
+                    d.value
+                ]);
+                else logFn.apply(console, [
+                    d
+                ]);
+            });
+            else logFn.apply(console, [
+                data
+            ]);
+            console.groupEnd();
+        } else console.error("Missing title or data props");
+    }
+}
+function noop() {
+    return void 0;
+}
+function objectKeys(input) {
+    return Object.keys(input);
+}
+function omit(input, ...filter) {
+    if (!(0, _isLiteDefault.default).plainObject(input)) throw new TypeError("Expected an object");
+    const output = {};
+    for(const key in input){
+        if (({}).hasOwnProperty.call(input, key)) {
+            if (!filter.includes(key)) output[key] = input[key];
+        }
+    }
+    return output;
+}
+function pick(input, ...filter) {
+    if (!(0, _isLiteDefault.default).plainObject(input)) throw new TypeError("Expected an object");
+    if (!filter.length) return input;
+    const output = {};
+    for(const key in input){
+        if (({}).hasOwnProperty.call(input, key)) {
+            if (filter.includes(key)) output[key] = input[key];
+        }
+    }
+    return output;
+}
+function shouldScroll(options) {
+    const { isFirstStep, lifecycle, previousLifecycle, scrollToFirstStep, step, target } = options;
+    return !step.disableScrolling && (!isFirstStep || scrollToFirstStep || lifecycle === LIFECYCLE.TOOLTIP) && step.placement !== "center" && (!step.isFixed || !hasPosition(target)) && // fixed steps don't need to scroll
+    previousLifecycle !== lifecycle && [
+        LIFECYCLE.BEACON,
+        LIFECYCLE.TOOLTIP
+    ].includes(lifecycle);
+}
+// src/defaults.ts
+var defaultFloaterProps = {
+    options: {
+        preventOverflow: {
+            boundariesElement: "scrollParent"
+        }
+    },
+    wrapperOptions: {
+        offset: -18,
+        position: true
+    }
+};
+var defaultLocale = {
+    back: "Back",
+    close: "Close",
+    last: "Last",
+    next: "Next",
+    open: "Open the dialog",
+    skip: "Skip"
+};
+var defaultStep = {
+    event: "click",
+    placement: "bottom",
+    offset: 10,
+    disableBeacon: false,
+    disableCloseOnEsc: false,
+    disableOverlay: false,
+    disableOverlayClose: false,
+    disableScrollParentFix: false,
+    disableScrolling: false,
+    hideBackButton: false,
+    hideCloseButton: false,
+    hideFooter: false,
+    isFixed: false,
+    locale: defaultLocale,
+    showProgress: false,
+    showSkipButton: false,
+    spotlightClicks: false,
+    spotlightPadding: 10
+};
+var defaultProps = {
+    continuous: false,
+    debug: false,
+    disableCloseOnEsc: false,
+    disableOverlay: false,
+    disableOverlayClose: false,
+    disableScrolling: false,
+    disableScrollParentFix: false,
+    getHelpers: noop(),
+    hideBackButton: false,
+    run: true,
+    scrollOffset: 20,
+    scrollDuration: 300,
+    scrollToFirstStep: false,
+    showSkipButton: false,
+    showProgress: false,
+    spotlightClicks: false,
+    spotlightPadding: 10,
+    steps: []
+};
+var defaultOptions = {
+    arrowColor: "#fff",
+    backgroundColor: "#fff",
+    beaconSize: 36,
+    overlayColor: "rgba(0, 0, 0, 0.5)",
+    primaryColor: "#f04",
+    spotlightShadow: "0 0 15px rgba(0, 0, 0, 0.5)",
+    textColor: "#333",
+    width: 380,
+    zIndex: 100
+};
+var buttonBase = {
+    backgroundColor: "transparent",
+    border: 0,
+    borderRadius: 0,
+    color: "#555",
+    cursor: "pointer",
+    fontSize: 16,
+    lineHeight: 1,
+    padding: 8,
+    WebkitAppearance: "none"
+};
+var spotlight = {
+    borderRadius: 4,
+    position: "absolute"
+};
+function getStyles(props, step) {
+    var _a, _b, _c, _d, _e;
+    const { floaterProps, styles } = props;
+    const mergedFloaterProps = (0, _deepmergeDefault.default)((_a = step.floaterProps) != null ? _a : {}, floaterProps != null ? floaterProps : {});
+    const mergedStyles = (0, _deepmergeDefault.default)(styles != null ? styles : {}, (_b = step.styles) != null ? _b : {});
+    const options = (0, _deepmergeDefault.default)(defaultOptions, mergedStyles.options || {});
+    const hideBeacon2 = step.placement === "center" || step.disableBeacon;
+    let { width } = options;
+    if (window.innerWidth > 480) width = 380;
+    if ("width" in options) width = typeof options.width === "number" && window.innerWidth < options.width ? window.innerWidth - 30 : options.width;
+    const overlay = {
+        bottom: 0,
+        left: 0,
+        overflow: "hidden",
+        position: "absolute",
+        right: 0,
+        top: 0,
+        zIndex: options.zIndex
+    };
+    const defaultStyles = {
+        beacon: {
+            ...buttonBase,
+            display: hideBeacon2 ? "none" : "inline-block",
+            height: options.beaconSize,
+            position: "relative",
+            width: options.beaconSize,
+            zIndex: options.zIndex
+        },
+        beaconInner: {
+            animation: "joyride-beacon-inner 1.2s infinite ease-in-out",
+            backgroundColor: options.primaryColor,
+            borderRadius: "50%",
+            display: "block",
+            height: "50%",
+            left: "50%",
+            opacity: 0.7,
+            position: "absolute",
+            top: "50%",
+            transform: "translate(-50%, -50%)",
+            width: "50%"
+        },
+        beaconOuter: {
+            animation: "joyride-beacon-outer 1.2s infinite ease-in-out",
+            backgroundColor: `rgba(${hexToRGB(options.primaryColor).join(",")}, 0.2)`,
+            border: `2px solid ${options.primaryColor}`,
+            borderRadius: "50%",
+            boxSizing: "border-box",
+            display: "block",
+            height: "100%",
+            left: 0,
+            opacity: 0.9,
+            position: "absolute",
+            top: 0,
+            transformOrigin: "center",
+            width: "100%"
+        },
+        tooltip: {
+            backgroundColor: options.backgroundColor,
+            borderRadius: 5,
+            boxSizing: "border-box",
+            color: options.textColor,
+            fontSize: 16,
+            maxWidth: "100%",
+            padding: 15,
+            position: "relative",
+            width
+        },
+        tooltipContainer: {
+            lineHeight: 1.4,
+            textAlign: "center"
+        },
+        tooltipTitle: {
+            fontSize: 18,
+            margin: 0
+        },
+        tooltipContent: {
+            padding: "20px 10px"
+        },
+        tooltipFooter: {
+            alignItems: "center",
+            display: "flex",
+            justifyContent: "flex-end",
+            marginTop: 15
+        },
+        tooltipFooterSpacer: {
+            flex: 1
+        },
+        buttonNext: {
+            ...buttonBase,
+            backgroundColor: options.primaryColor,
+            borderRadius: 4,
+            color: "#fff"
+        },
+        buttonBack: {
+            ...buttonBase,
+            color: options.primaryColor,
+            marginLeft: "auto",
+            marginRight: 5
+        },
+        buttonClose: {
+            ...buttonBase,
+            color: options.textColor,
+            height: 14,
+            padding: 15,
+            position: "absolute",
+            right: 0,
+            top: 0,
+            width: 14
+        },
+        buttonSkip: {
+            ...buttonBase,
+            color: options.textColor,
+            fontSize: 14
+        },
+        overlay: {
+            ...overlay,
+            backgroundColor: options.overlayColor,
+            mixBlendMode: "hard-light"
+        },
+        overlayLegacy: {
+            ...overlay
+        },
+        overlayLegacyCenter: {
+            ...overlay,
+            backgroundColor: options.overlayColor
+        },
+        spotlight: {
+            ...spotlight,
+            backgroundColor: "gray"
+        },
+        spotlightLegacy: {
+            ...spotlight,
+            boxShadow: `0 0 0 9999px ${options.overlayColor}, ${options.spotlightShadow}`
+        },
+        floaterStyles: {
+            arrow: {
+                color: (_e = (_d = (_c = mergedFloaterProps == null ? void 0 : mergedFloaterProps.styles) == null ? void 0 : _c.arrow) == null ? void 0 : _d.color) != null ? _e : options.arrowColor
+            },
+            options: {
+                zIndex: options.zIndex + 100
+            }
+        },
+        options
+    };
+    return (0, _deepmergeDefault.default)(defaultStyles, mergedStyles);
+}
+// src/modules/step.ts
+function getTourProps(props) {
+    return pick(props, "beaconComponent", "disableCloseOnEsc", "disableOverlay", "disableOverlayClose", "disableScrolling", "disableScrollParentFix", "floaterProps", "hideBackButton", "hideCloseButton", "locale", "showProgress", "showSkipButton", "spotlightClicks", "spotlightPadding", "styles", "tooltipComponent");
+}
+function getMergedStep(props, currentStep) {
+    var _a, _b, _c, _d, _e, _f;
+    const step = currentStep != null ? currentStep : {};
+    const mergedStep = (0, _deepmergeDefault.default).all([
+        defaultStep,
+        getTourProps(props),
+        step
+    ], {
+        isMergeableObject: (0, _isLiteDefault.default).plainObject
+    });
+    const mergedStyles = getStyles(props, mergedStep);
+    const scrollParent2 = hasCustomScrollParent(getElement(mergedStep.target), mergedStep.disableScrollParentFix);
+    const floaterProps = (0, _deepmergeDefault.default).all([
+        defaultFloaterProps,
+        (_a = props.floaterProps) != null ? _a : {},
+        (_b = mergedStep.floaterProps) != null ? _b : {}
+    ]);
+    floaterProps.offset = mergedStep.offset;
+    floaterProps.styles = (0, _deepmergeDefault.default)((_c = floaterProps.styles) != null ? _c : {}, mergedStyles.floaterStyles);
+    floaterProps.offset += (_e = (_d = props.spotlightPadding) != null ? _d : mergedStep.spotlightPadding) != null ? _e : 0;
+    if (mergedStep.placementBeacon && floaterProps.wrapperOptions) floaterProps.wrapperOptions.placement = mergedStep.placementBeacon;
+    if (scrollParent2 && floaterProps.options.preventOverflow) floaterProps.options.preventOverflow.boundariesElement = "window";
+    return {
+        ...mergedStep,
+        locale: (0, _deepmergeDefault.default).all([
+            defaultLocale,
+            (_f = props.locale) != null ? _f : {},
+            mergedStep.locale || {}
+        ]),
+        floaterProps,
+        styles: omit(mergedStyles, "floaterStyles")
+    };
+}
+function validateStep(step, debug = false) {
+    if (!(0, _isLiteDefault.default).plainObject(step)) {
+        log({
+            title: "validateStep",
+            data: "step must be an object",
+            warn: true,
+            debug
+        });
+        return false;
+    }
+    if (!step.target) {
+        log({
+            title: "validateStep",
+            data: "target is missing from the step",
+            warn: true,
+            debug
+        });
+        return false;
+    }
+    return true;
+}
+function validateSteps(steps, debug = false) {
+    if (!(0, _isLiteDefault.default).array(steps)) {
+        log({
+            title: "validateSteps",
+            data: "steps must be an array",
+            warn: true,
+            debug
+        });
+        return false;
+    }
+    return steps.every((d)=>validateStep(d, debug));
+}
+var defaultState = {
+    action: "init",
+    controlled: false,
+    index: 0,
+    lifecycle: LIFECYCLE.INIT,
+    origin: null,
+    size: 0,
+    status: STATUS.IDLE
+};
+var validKeys = objectKeys(omit(defaultState, "controlled", "size"));
+var Store = class {
+    constructor(options){
+        __publicField(this, "beaconPopper");
+        __publicField(this, "tooltipPopper");
+        __publicField(this, "data", /* @__PURE__ */ new Map());
+        __publicField(this, "listener");
+        __publicField(this, "store", /* @__PURE__ */ new Map());
+        __publicField(this, "addListener", (listener)=>{
+            this.listener = listener;
+        });
+        __publicField(this, "setSteps", (steps)=>{
+            const { size, status } = this.getState();
+            const state = {
+                size: steps.length,
+                status
+            };
+            this.data.set("steps", steps);
+            if (status === STATUS.WAITING && !size && steps.length) state.status = STATUS.RUNNING;
+            this.setState(state);
+        });
+        __publicField(this, "getPopper", (name)=>{
+            if (name === "beacon") return this.beaconPopper;
+            return this.tooltipPopper;
+        });
+        __publicField(this, "setPopper", (name, popper)=>{
+            if (name === "beacon") this.beaconPopper = popper;
+            else this.tooltipPopper = popper;
+        });
+        __publicField(this, "cleanupPoppers", ()=>{
+            this.beaconPopper = null;
+            this.tooltipPopper = null;
+        });
+        __publicField(this, "close", (origin = null)=>{
+            const { index, status } = this.getState();
+            if (status !== STATUS.RUNNING) return;
+            this.setState({
+                ...this.getNextState({
+                    action: ACTIONS.CLOSE,
+                    index: index + 1,
+                    origin
+                })
+            });
+        });
+        __publicField(this, "go", (nextIndex)=>{
+            const { controlled, status } = this.getState();
+            if (controlled || status !== STATUS.RUNNING) return;
+            const step = this.getSteps()[nextIndex];
+            this.setState({
+                ...this.getNextState({
+                    action: ACTIONS.GO,
+                    index: nextIndex
+                }),
+                status: step ? status : STATUS.FINISHED
+            });
+        });
+        __publicField(this, "info", ()=>this.getState());
+        __publicField(this, "next", ()=>{
+            const { index, status } = this.getState();
+            if (status !== STATUS.RUNNING) return;
+            this.setState(this.getNextState({
+                action: ACTIONS.NEXT,
+                index: index + 1
+            }));
+        });
+        __publicField(this, "open", ()=>{
+            const { status } = this.getState();
+            if (status !== STATUS.RUNNING) return;
+            this.setState({
+                ...this.getNextState({
+                    action: ACTIONS.UPDATE,
+                    lifecycle: LIFECYCLE.TOOLTIP
+                })
+            });
+        });
+        __publicField(this, "prev", ()=>{
+            const { index, status } = this.getState();
+            if (status !== STATUS.RUNNING) return;
+            this.setState({
+                ...this.getNextState({
+                    action: ACTIONS.PREV,
+                    index: index - 1
+                })
+            });
+        });
+        __publicField(this, "reset", (restart = false)=>{
+            const { controlled } = this.getState();
+            if (controlled) return;
+            this.setState({
+                ...this.getNextState({
+                    action: ACTIONS.RESET,
+                    index: 0
+                }),
+                status: restart ? STATUS.RUNNING : STATUS.READY
+            });
+        });
+        __publicField(this, "skip", ()=>{
+            const { status } = this.getState();
+            if (status !== STATUS.RUNNING) return;
+            this.setState({
+                action: ACTIONS.SKIP,
+                lifecycle: LIFECYCLE.INIT,
+                status: STATUS.SKIPPED
+            });
+        });
+        __publicField(this, "start", (nextIndex)=>{
+            const { index, size } = this.getState();
+            this.setState({
+                ...this.getNextState({
+                    action: ACTIONS.START,
+                    index: (0, _isLiteDefault.default).number(nextIndex) ? nextIndex : index
+                }, true),
+                status: size ? STATUS.RUNNING : STATUS.WAITING
+            });
+        });
+        __publicField(this, "stop", (advance = false)=>{
+            const { index, status } = this.getState();
+            if ([
+                STATUS.FINISHED,
+                STATUS.SKIPPED
+            ].includes(status)) return;
+            this.setState({
+                ...this.getNextState({
+                    action: ACTIONS.STOP,
+                    index: index + (advance ? 1 : 0)
+                }),
+                status: STATUS.PAUSED
+            });
+        });
+        __publicField(this, "update", (state)=>{
+            var _a, _b;
+            if (!hasValidKeys(state, validKeys)) throw new Error(`State is not valid. Valid keys: ${validKeys.join(", ")}`);
+            this.setState({
+                ...this.getNextState({
+                    ...this.getState(),
+                    ...state,
+                    action: (_a = state.action) != null ? _a : ACTIONS.UPDATE,
+                    origin: (_b = state.origin) != null ? _b : null
+                }, true)
+            });
+        });
+        const { continuous = false, stepIndex, steps = [] } = options != null ? options : {};
+        this.setState({
+            action: ACTIONS.INIT,
+            controlled: (0, _isLiteDefault.default).number(stepIndex),
+            continuous,
+            index: (0, _isLiteDefault.default).number(stepIndex) ? stepIndex : 0,
+            lifecycle: LIFECYCLE.INIT,
+            origin: null,
+            status: steps.length ? STATUS.READY : STATUS.IDLE
+        }, true);
+        this.beaconPopper = null;
+        this.tooltipPopper = null;
+        this.listener = null;
+        this.setSteps(steps);
+    }
+    getState() {
+        if (!this.store.size) return {
+            ...defaultState
+        };
+        return {
+            action: this.store.get("action") || "",
+            controlled: this.store.get("controlled") || false,
+            index: parseInt(this.store.get("index"), 10),
+            lifecycle: this.store.get("lifecycle") || "",
+            origin: this.store.get("origin") || null,
+            size: this.store.get("size") || 0,
+            status: this.store.get("status") || ""
+        };
+    }
+    getNextState(state, force = false) {
+        var _a, _b, _c, _d, _e;
+        const { action, controlled, index, size, status } = this.getState();
+        const newIndex = (0, _isLiteDefault.default).number(state.index) ? state.index : index;
+        const nextIndex = controlled && !force ? index : Math.min(Math.max(newIndex, 0), size);
+        return {
+            action: (_a = state.action) != null ? _a : action,
+            controlled,
+            index: nextIndex,
+            lifecycle: (_b = state.lifecycle) != null ? _b : LIFECYCLE.INIT,
+            origin: (_c = state.origin) != null ? _c : null,
+            size: (_d = state.size) != null ? _d : size,
+            status: nextIndex === size ? STATUS.FINISHED : (_e = state.status) != null ? _e : status
+        };
+    }
+    getSteps() {
+        const steps = this.data.get("steps");
+        return Array.isArray(steps) ? steps : [];
+    }
+    hasUpdatedState(oldState) {
+        const before = JSON.stringify(oldState);
+        const after = JSON.stringify(this.getState());
+        return before !== after;
+    }
+    setState(nextState, initial = false) {
+        const state = this.getState();
+        const { action, index, lifecycle, origin = null, size, status } = {
+            ...state,
+            ...nextState
+        };
+        this.store.set("action", action);
+        this.store.set("index", index);
+        this.store.set("lifecycle", lifecycle);
+        this.store.set("origin", origin);
+        this.store.set("size", size);
+        this.store.set("status", status);
+        if (initial) {
+            this.store.set("controlled", nextState.controlled);
+            this.store.set("continuous", nextState.continuous);
+        }
+        if (this.listener && this.hasUpdatedState(state)) this.listener(this.getState());
+    }
+    getHelpers() {
+        return {
+            close: this.close,
+            go: this.go,
+            info: this.info,
+            next: this.next,
+            open: this.open,
+            prev: this.prev,
+            reset: this.reset,
+            skip: this.skip
+        };
+    }
+};
+function createStore(options) {
+    return new Store(options);
+}
+function JoyrideSpotlight({ styles }) {
+    return /* @__PURE__ */ _react.createElement("div", {
+        key: "JoyrideSpotlight",
+        className: "react-joyride__spotlight",
+        "data-test-id": "spotlight",
+        style: styles
+    });
+}
+var Spotlight_default = JoyrideSpotlight;
+// src/components/Overlay.tsx
+var JoyrideOverlay = class extends _react.Component {
+    constructor(){
+        super(...arguments);
+        __publicField(this, "isActive", false);
+        __publicField(this, "resizeTimeout");
+        __publicField(this, "scrollTimeout");
+        __publicField(this, "scrollParent");
+        __publicField(this, "state", {
+            isScrolling: false,
+            mouseOverSpotlight: false,
+            showSpotlight: true
+        });
+        __publicField(this, "hideSpotlight", ()=>{
+            const { continuous, disableOverlay, lifecycle } = this.props;
+            const hiddenLifecycles = [
+                LIFECYCLE.BEACON,
+                LIFECYCLE.COMPLETE,
+                LIFECYCLE.ERROR
+            ];
+            return disableOverlay || (continuous ? hiddenLifecycles.includes(lifecycle) : lifecycle !== LIFECYCLE.TOOLTIP);
+        });
+        __publicField(this, "handleMouseMove", (event)=>{
+            const { mouseOverSpotlight } = this.state;
+            const { height, left, position, top, width } = this.spotlightStyles;
+            const offsetY = position === "fixed" ? event.clientY : event.pageY;
+            const offsetX = position === "fixed" ? event.clientX : event.pageX;
+            const inSpotlightHeight = offsetY >= top && offsetY <= top + height;
+            const inSpotlightWidth = offsetX >= left && offsetX <= left + width;
+            const inSpotlight = inSpotlightWidth && inSpotlightHeight;
+            if (inSpotlight !== mouseOverSpotlight) this.updateState({
+                mouseOverSpotlight: inSpotlight
+            });
+        });
+        __publicField(this, "handleScroll", ()=>{
+            const { target } = this.props;
+            const element = getElement(target);
+            if (this.scrollParent !== document) {
+                const { isScrolling } = this.state;
+                if (!isScrolling) this.updateState({
+                    isScrolling: true,
+                    showSpotlight: false
+                });
+                clearTimeout(this.scrollTimeout);
+                this.scrollTimeout = window.setTimeout(()=>{
+                    this.updateState({
+                        isScrolling: false,
+                        showSpotlight: true
+                    });
+                }, 50);
+            } else if (hasPosition(element, "sticky")) this.updateState({});
+        });
+        __publicField(this, "handleResize", ()=>{
+            clearTimeout(this.resizeTimeout);
+            this.resizeTimeout = window.setTimeout(()=>{
+                if (!this.isActive) return;
+                this.forceUpdate();
+            }, 100);
+        });
+    }
+    componentDidMount() {
+        const { debug, disableScrolling, disableScrollParentFix = false, target } = this.props;
+        const element = getElement(target);
+        this.scrollParent = getScrollParent(element != null ? element : document.body, disableScrollParentFix, true);
+        this.isActive = true;
+        if (!disableScrolling && hasCustomScrollParent(element, true)) log({
+            title: "step has a custom scroll parent and can cause trouble with scrolling",
+            data: [
+                {
+                    key: "parent",
+                    value: this.scrollParent
+                }
+            ],
+            debug
+        });
+        window.addEventListener("resize", this.handleResize);
+    }
+    componentDidUpdate(previousProps) {
+        var _a;
+        const { lifecycle, spotlightClicks } = this.props;
+        const { changed } = (0, _treeChangesDefault.default)(previousProps, this.props);
+        if (changed("lifecycle", LIFECYCLE.TOOLTIP)) {
+            (_a = this.scrollParent) == null || _a.addEventListener("scroll", this.handleScroll, {
+                passive: true
+            });
+            setTimeout(()=>{
+                const { isScrolling } = this.state;
+                if (!isScrolling) this.updateState({
+                    showSpotlight: true
+                });
+            }, 100);
+        }
+        if (changed("spotlightClicks") || changed("disableOverlay") || changed("lifecycle")) {
+            if (spotlightClicks && lifecycle === LIFECYCLE.TOOLTIP) window.addEventListener("mousemove", this.handleMouseMove, false);
+            else if (lifecycle !== LIFECYCLE.TOOLTIP) window.removeEventListener("mousemove", this.handleMouseMove);
+        }
+    }
+    componentWillUnmount() {
+        var _a;
+        this.isActive = false;
+        window.removeEventListener("mousemove", this.handleMouseMove);
+        window.removeEventListener("resize", this.handleResize);
+        clearTimeout(this.resizeTimeout);
+        clearTimeout(this.scrollTimeout);
+        (_a = this.scrollParent) == null || _a.removeEventListener("scroll", this.handleScroll);
+    }
+    get overlayStyles() {
+        const { mouseOverSpotlight } = this.state;
+        const { disableOverlayClose, placement, styles } = this.props;
+        let baseStyles = styles.overlay;
+        if (isLegacy()) baseStyles = placement === "center" ? styles.overlayLegacyCenter : styles.overlayLegacy;
+        return {
+            cursor: disableOverlayClose ? "default" : "pointer",
+            height: getDocumentHeight(),
+            pointerEvents: mouseOverSpotlight ? "none" : "auto",
+            ...baseStyles
+        };
+    }
+    get spotlightStyles() {
+        var _a, _b, _c;
+        const { showSpotlight } = this.state;
+        const { disableScrollParentFix = false, spotlightClicks, spotlightPadding = 0, styles, target } = this.props;
+        const element = getElement(target);
+        const elementRect = getClientRect(element);
+        const isFixedTarget = hasPosition(element);
+        const top = getElementPosition(element, spotlightPadding, disableScrollParentFix);
+        return {
+            ...isLegacy() ? styles.spotlightLegacy : styles.spotlight,
+            height: Math.round(((_a = elementRect == null ? void 0 : elementRect.height) != null ? _a : 0) + spotlightPadding * 2),
+            left: Math.round(((_b = elementRect == null ? void 0 : elementRect.left) != null ? _b : 0) - spotlightPadding),
+            opacity: showSpotlight ? 1 : 0,
+            pointerEvents: spotlightClicks ? "none" : "auto",
+            position: isFixedTarget ? "fixed" : "absolute",
+            top,
+            transition: "opacity 0.2s",
+            width: Math.round(((_c = elementRect == null ? void 0 : elementRect.width) != null ? _c : 0) + spotlightPadding * 2)
+        };
+    }
+    updateState(state) {
+        if (!this.isActive) return;
+        this.setState((previousState)=>({
+                ...previousState,
+                ...state
+            }));
+    }
+    render() {
+        const { showSpotlight } = this.state;
+        const { onClickOverlay, placement } = this.props;
+        const { hideSpotlight, overlayStyles, spotlightStyles } = this;
+        if (hideSpotlight()) return null;
+        let spotlight2 = placement !== "center" && showSpotlight && /* @__PURE__ */ _react.createElement(Spotlight_default, {
+            styles: spotlightStyles
+        });
+        if (getBrowser() === "safari") {
+            const { mixBlendMode, zIndex, ...safariOverlay } = overlayStyles;
+            spotlight2 = /* @__PURE__ */ _react.createElement("div", {
+                style: {
+                    ...safariOverlay
+                }
+            }, spotlight2);
+            delete overlayStyles.backgroundColor;
+        }
+        return /* @__PURE__ */ _react.createElement("div", {
+            className: "react-joyride__overlay",
+            "data-test-id": "overlay",
+            onClick: onClickOverlay,
+            role: "presentation",
+            style: overlayStyles
+        }, spotlight2);
+    }
+};
+var JoyridePortal = class extends _react.Component {
+    constructor(){
+        super(...arguments);
+        __publicField(this, "node", null);
+    }
+    componentDidMount() {
+        const { id } = this.props;
+        if (!canUseDOM()) return;
+        this.node = document.createElement("div");
+        this.node.id = id;
+        document.body.appendChild(this.node);
+        if (!isReact16) this.renderReact15();
+    }
+    componentDidUpdate() {
+        if (!canUseDOM()) return;
+        if (!isReact16) this.renderReact15();
+    }
+    componentWillUnmount() {
+        if (!canUseDOM() || !this.node) return;
+        if (!isReact16) _reactDom.unmountComponentAtNode(this.node);
+        if (this.node.parentNode === document.body) {
+            document.body.removeChild(this.node);
+            this.node = null;
+        }
+    }
+    renderReact15() {
+        if (!canUseDOM()) return;
+        const { children } = this.props;
+        if (this.node) _reactDom.unstable_renderSubtreeIntoContainer(this, children, this.node);
+    }
+    renderReact16() {
+        if (!canUseDOM() || !isReact16) return null;
+        const { children } = this.props;
+        if (!this.node) return null;
+        return _reactDom.createPortal(children, this.node);
+    }
+    render() {
+        if (!isReact16) return null;
+        return this.renderReact16();
+    }
+};
+// src/modules/scope.ts
+var Scope = class {
+    constructor(element, options){
+        __publicField(this, "element");
+        __publicField(this, "options");
+        __publicField(this, "canBeTabbed", (element)=>{
+            const { tabIndex } = element;
+            if (tabIndex === null || tabIndex < 0) return false;
+            return this.canHaveFocus(element);
+        });
+        __publicField(this, "canHaveFocus", (element)=>{
+            const validTabNodes = /input|select|textarea|button|object/;
+            const nodeName = element.nodeName.toLowerCase();
+            const isValid = validTabNodes.test(nodeName) && !element.getAttribute("disabled") || nodeName === "a" && !!element.getAttribute("href");
+            return isValid && this.isVisible(element);
+        });
+        __publicField(this, "findValidTabElements", ()=>[].slice.call(this.element.querySelectorAll("*"), 0).filter(this.canBeTabbed));
+        __publicField(this, "handleKeyDown", (event)=>{
+            const { code = "Tab" } = this.options;
+            if (event.code === code) this.interceptTab(event);
+        });
+        __publicField(this, "interceptTab", (event)=>{
+            event.preventDefault();
+            const elements = this.findValidTabElements();
+            const { shiftKey } = event;
+            if (!elements.length) return;
+            let x = document.activeElement ? elements.indexOf(document.activeElement) : 0;
+            if (x === -1 || !shiftKey && x + 1 === elements.length) x = 0;
+            else if (shiftKey && x === 0) x = elements.length - 1;
+            else x += shiftKey ? -1 : 1;
+            elements[x].focus();
+        });
+        // eslint-disable-next-line class-methods-use-this
+        __publicField(this, "isHidden", (element)=>{
+            const noSize = element.offsetWidth <= 0 && element.offsetHeight <= 0;
+            const style = window.getComputedStyle(element);
+            if (noSize && !element.innerHTML) return true;
+            return noSize && style.getPropertyValue("overflow") !== "visible" || style.getPropertyValue("display") === "none";
+        });
+        __publicField(this, "isVisible", (element)=>{
+            let parentElement = element;
+            while(parentElement)if (parentElement instanceof HTMLElement) {
+                if (parentElement === document.body) break;
+                if (this.isHidden(parentElement)) return false;
+                parentElement = parentElement.parentNode;
+            }
+            return true;
+        });
+        __publicField(this, "removeScope", ()=>{
+            window.removeEventListener("keydown", this.handleKeyDown);
+        });
+        __publicField(this, "checkFocus", (target)=>{
+            if (document.activeElement !== target) {
+                target.focus();
+                window.requestAnimationFrame(()=>this.checkFocus(target));
+            }
+        });
+        __publicField(this, "setFocus", ()=>{
+            const { selector } = this.options;
+            if (!selector) return;
+            const target = this.element.querySelector(selector);
+            if (target) window.requestAnimationFrame(()=>this.checkFocus(target));
+        });
+        if (!(element instanceof HTMLElement)) throw new TypeError("Invalid parameter: element must be an HTMLElement");
+        this.element = element;
+        this.options = options;
+        window.addEventListener("keydown", this.handleKeyDown, false);
+        this.setFocus();
+    }
+};
+var JoyrideBeacon = class extends _react.Component {
+    constructor(props){
+        super(props);
+        __publicField(this, "beacon", null);
+        __publicField(this, "setBeaconRef", (c)=>{
+            this.beacon = c;
+        });
+        if (props.beaconComponent) return;
+        const head = document.head || document.getElementsByTagName("head")[0];
+        const style = document.createElement("style");
+        style.id = "joyride-beacon-animation";
+        if (props.nonce) style.setAttribute("nonce", props.nonce);
+        const css = `
+        @keyframes joyride-beacon-inner {
+          20% {
+            opacity: 0.9;
+          }
+        
+          90% {
+            opacity: 0.7;
+          }
+        }
+        
+        @keyframes joyride-beacon-outer {
+          0% {
+            transform: scale(1);
+          }
+        
+          45% {
+            opacity: 0.7;
+            transform: scale(0.75);
+          }
+        
+          100% {
+            opacity: 0.9;
+            transform: scale(1);
+          }
+        }
+      `;
+        style.appendChild(document.createTextNode(css));
+        head.appendChild(style);
+    }
+    componentDidMount() {
+        const { shouldFocus } = this.props;
+        if (!(0, _isLiteDefault.default).domElement(this.beacon)) console.warn("beacon is not a valid DOM element");
+        setTimeout(()=>{
+            if ((0, _isLiteDefault.default).domElement(this.beacon) && shouldFocus) this.beacon.focus();
+        }, 0);
+    }
+    componentWillUnmount() {
+        const style = document.getElementById("joyride-beacon-animation");
+        if (style == null ? void 0 : style.parentNode) style.parentNode.removeChild(style);
+    }
+    render() {
+        const { beaconComponent, continuous, index, isLastStep, locale, onClickOrHover, size, step, styles } = this.props;
+        const title = (0, _isLiteDefault.default).string(locale.open) ? locale.open : (0, _reactInnertextDefault.default)(locale.open);
+        const sharedProps = {
+            "aria-label": title,
+            onClick: onClickOrHover,
+            onMouseEnter: onClickOrHover,
+            ref: this.setBeaconRef,
+            title
+        };
+        let component;
+        if (beaconComponent) {
+            const BeaconComponent = beaconComponent;
+            component = /* @__PURE__ */ _react.createElement(BeaconComponent, {
+                continuous,
+                index,
+                isLastStep,
+                size,
+                step,
+                ...sharedProps
+            });
+        } else component = /* @__PURE__ */ _react.createElement("button", {
+            key: "JoyrideBeacon",
+            className: "react-joyride__beacon",
+            "data-test-id": "button-beacon",
+            style: styles.beacon,
+            type: "button",
+            ...sharedProps
+        }, /* @__PURE__ */ _react.createElement("span", {
+            style: styles.beaconInner
+        }), /* @__PURE__ */ _react.createElement("span", {
+            style: styles.beaconOuter
+        }));
+        return component;
+    }
+};
+function JoyrideTooltipCloseButton({ styles, ...props }) {
+    const { color, height, width, ...style } = styles;
+    return /* @__PURE__ */ (0, _reactDefault.default).createElement("button", {
+        style,
+        type: "button",
+        ...props
+    }, /* @__PURE__ */ (0, _reactDefault.default).createElement("svg", {
+        height: typeof height === "number" ? `${height}px` : height,
+        preserveAspectRatio: "xMidYMid",
+        version: "1.1",
+        viewBox: "0 0 18 18",
+        width: typeof width === "number" ? `${width}px` : width,
+        xmlns: "http://www.w3.org/2000/svg"
+    }, /* @__PURE__ */ (0, _reactDefault.default).createElement("g", null, /* @__PURE__ */ (0, _reactDefault.default).createElement("path", {
+        d: "M8.13911129,9.00268191 L0.171521827,17.0258467 C-0.0498027049,17.248715 -0.0498027049,17.6098394 0.171521827,17.8327545 C0.28204354,17.9443526 0.427188206,17.9998706 0.572051765,17.9998706 C0.71714958,17.9998706 0.862013139,17.9443526 0.972581703,17.8327545 L9.0000937,9.74924618 L17.0276057,17.8327545 C17.1384085,17.9443526 17.2832721,17.9998706 17.4281356,17.9998706 C17.5729992,17.9998706 17.718097,17.9443526 17.8286656,17.8327545 C18.0499901,17.6098862 18.0499901,17.2487618 17.8286656,17.0258467 L9.86135722,9.00268191 L17.8340066,0.973848225 C18.0553311,0.750979934 18.0553311,0.389855532 17.8340066,0.16694039 C17.6126821,-0.0556467968 17.254037,-0.0556467968 17.0329467,0.16694039 L9.00042166,8.25611765 L0.967006424,0.167268345 C0.745681892,-0.0553188426 0.387317931,-0.0553188426 0.165993399,0.167268345 C-0.0553311331,0.390136635 -0.0553311331,0.751261038 0.165993399,0.974176179 L8.13920499,9.00268191 L8.13911129,9.00268191 Z",
+        fill: color
+    }))));
+}
+var CloseButton_default = JoyrideTooltipCloseButton;
+// src/components/Tooltip/Container.tsx
+function JoyrideTooltipContainer(props) {
+    const { backProps, closeProps, continuous, index, isLastStep, primaryProps, size, skipProps, step, tooltipProps } = props;
+    const { content, hideBackButton, hideCloseButton, hideFooter, locale, showProgress, showSkipButton, styles, title } = step;
+    const { back, close, last, next, skip } = locale;
+    const output = {
+        primary: close
+    };
+    if (continuous) {
+        output.primary = isLastStep ? last : next;
+        if (showProgress) output.primary = /* @__PURE__ */ _react.createElement("span", null, output.primary, " (", index + 1, "/", size, ")");
+    }
+    if (output.primary) output.primary = /* @__PURE__ */ _react.createElement("button", {
+        "data-test-id": "button-primary",
+        style: styles.buttonNext,
+        type: "button",
+        ...primaryProps
+    }, output.primary);
+    if (showSkipButton && !isLastStep) output.skip = /* @__PURE__ */ _react.createElement("button", {
+        "aria-live": "off",
+        "data-test-id": "button-skip",
+        style: styles.buttonSkip,
+        type: "button",
+        ...skipProps
+    }, skip);
+    if (!hideBackButton && index > 0) output.back = /* @__PURE__ */ _react.createElement("button", {
+        "data-test-id": "button-back",
+        style: styles.buttonBack,
+        type: "button",
+        ...backProps
+    }, back);
+    output.close = !hideCloseButton && /* @__PURE__ */ _react.createElement(CloseButton_default, {
+        "data-test-id": "button-close",
+        styles: styles.buttonClose,
+        ...closeProps
+    });
+    return /* @__PURE__ */ _react.createElement("div", {
+        key: "JoyrideTooltip",
+        "aria-label": getText(title) || getText(content),
+        className: "react-joyride__tooltip",
+        style: styles.tooltip,
+        ...tooltipProps
+    }, /* @__PURE__ */ _react.createElement("div", {
+        style: styles.tooltipContainer
+    }, title && /* @__PURE__ */ _react.createElement("h1", {
+        "aria-label": getText(title),
+        style: styles.tooltipTitle
+    }, title), /* @__PURE__ */ _react.createElement("div", {
+        style: styles.tooltipContent
+    }, content)), !hideFooter && /* @__PURE__ */ _react.createElement("div", {
+        style: styles.tooltipFooter
+    }, /* @__PURE__ */ _react.createElement("div", {
+        style: styles.tooltipFooterSpacer
+    }, output.skip), output.back, output.primary), output.close);
+}
+var Container_default = JoyrideTooltipContainer;
+// src/components/Tooltip/index.tsx
+var JoyrideTooltip = class extends _react.Component {
+    constructor(){
+        super(...arguments);
+        __publicField(this, "handleClickBack", (event)=>{
+            event.preventDefault();
+            const { helpers } = this.props;
+            helpers.prev();
+        });
+        __publicField(this, "handleClickClose", (event)=>{
+            event.preventDefault();
+            const { helpers } = this.props;
+            helpers.close("button_close");
+        });
+        __publicField(this, "handleClickPrimary", (event)=>{
+            event.preventDefault();
+            const { continuous, helpers } = this.props;
+            if (!continuous) {
+                helpers.close("button_primary");
+                return;
+            }
+            helpers.next();
+        });
+        __publicField(this, "handleClickSkip", (event)=>{
+            event.preventDefault();
+            const { helpers } = this.props;
+            helpers.skip();
+        });
+        __publicField(this, "getElementsProps", ()=>{
+            const { continuous, isLastStep, setTooltipRef, step } = this.props;
+            const back = getText(step.locale.back);
+            const close = getText(step.locale.close);
+            const last = getText(step.locale.last);
+            const next = getText(step.locale.next);
+            const skip = getText(step.locale.skip);
+            let primaryText = continuous ? next : close;
+            if (isLastStep) primaryText = last;
+            return {
+                backProps: {
+                    "aria-label": back,
+                    "data-action": "back",
+                    onClick: this.handleClickBack,
+                    role: "button",
+                    title: back
+                },
+                closeProps: {
+                    "aria-label": close,
+                    "data-action": "close",
+                    onClick: this.handleClickClose,
+                    role: "button",
+                    title: close
+                },
+                primaryProps: {
+                    "aria-label": primaryText,
+                    "data-action": "primary",
+                    onClick: this.handleClickPrimary,
+                    role: "button",
+                    title: primaryText
+                },
+                skipProps: {
+                    "aria-label": skip,
+                    "data-action": "skip",
+                    onClick: this.handleClickSkip,
+                    role: "button",
+                    title: skip
+                },
+                tooltipProps: {
+                    "aria-modal": true,
+                    ref: setTooltipRef,
+                    role: "alertdialog"
+                }
+            };
+        });
+    }
+    render() {
+        const { continuous, index, isLastStep, setTooltipRef, size, step } = this.props;
+        const { beaconComponent, tooltipComponent, ...cleanStep } = step;
+        let component;
+        if (tooltipComponent) {
+            const renderProps = {
+                ...this.getElementsProps(),
+                continuous,
+                index,
+                isLastStep,
+                size,
+                step: cleanStep,
+                setTooltipRef
+            };
+            const TooltipComponent = tooltipComponent;
+            component = /* @__PURE__ */ _react.createElement(TooltipComponent, {
+                ...renderProps
+            });
+        } else component = /* @__PURE__ */ _react.createElement(Container_default, {
+            ...this.getElementsProps(),
+            continuous,
+            index,
+            isLastStep,
+            size,
+            step
+        });
+        return component;
+    }
+};
+// src/components/Step.tsx
+var JoyrideStep = class extends _react.Component {
+    constructor(){
+        super(...arguments);
+        __publicField(this, "scope", null);
+        __publicField(this, "tooltip", null);
+        /**
+     * Beacon click/hover event listener
+     */ __publicField(this, "handleClickHoverBeacon", (event)=>{
+            const { step, store } = this.props;
+            if (event.type === "mouseenter" && step.event !== "hover") return;
+            store.update({
+                lifecycle: LIFECYCLE.TOOLTIP
+            });
+        });
+        __publicField(this, "setTooltipRef", (element)=>{
+            this.tooltip = element;
+        });
+        __publicField(this, "setPopper", (popper, type)=>{
+            var _a;
+            const { action, lifecycle, step, store } = this.props;
+            if (type === "wrapper") store.setPopper("beacon", popper);
+            else store.setPopper("tooltip", popper);
+            if (store.getPopper("beacon") && store.getPopper("tooltip") && lifecycle === LIFECYCLE.INIT) store.update({
+                action,
+                lifecycle: LIFECYCLE.READY
+            });
+            if ((_a = step.floaterProps) == null ? void 0 : _a.getPopper) step.floaterProps.getPopper(popper, type);
+        });
+        __publicField(this, "renderTooltip", (renderProps)=>{
+            const { continuous, helpers, index, size, step } = this.props;
+            return /* @__PURE__ */ _react.createElement(JoyrideTooltip, {
+                continuous,
+                helpers,
+                index,
+                isLastStep: index + 1 === size,
+                setTooltipRef: this.setTooltipRef,
+                size,
+                step,
+                ...renderProps
+            });
+        });
+    }
+    componentDidMount() {
+        const { debug, index } = this.props;
+        log({
+            title: `step:${index}`,
+            data: [
+                {
+                    key: "props",
+                    value: this.props
+                }
+            ],
+            debug
+        });
+    }
+    componentDidUpdate(previousProps) {
+        var _a;
+        const { action, callback, continuous, controlled, debug, helpers, index, lifecycle, status, step, store } = this.props;
+        const { changed, changedFrom } = (0, _treeChangesDefault.default)(previousProps, this.props);
+        const state = helpers.info();
+        const skipBeacon = continuous && action !== ACTIONS.CLOSE && (index > 0 || action === ACTIONS.PREV);
+        const hasStoreChanged = changed("action") || changed("index") || changed("lifecycle") || changed("status");
+        const isInitial = changedFrom("lifecycle", [
+            LIFECYCLE.TOOLTIP,
+            LIFECYCLE.INIT
+        ], LIFECYCLE.INIT);
+        const isAfterAction = changed("action", [
+            ACTIONS.NEXT,
+            ACTIONS.PREV,
+            ACTIONS.SKIP,
+            ACTIONS.CLOSE
+        ]);
+        const isControlled = controlled && index === previousProps.index;
+        if (isAfterAction && (isInitial || isControlled)) callback({
+            ...state,
+            index: previousProps.index,
+            lifecycle: LIFECYCLE.COMPLETE,
+            step: previousProps.step,
+            type: EVENTS.STEP_AFTER
+        });
+        if (step.placement === "center" && status === STATUS.RUNNING && changed("index") && action !== ACTIONS.START && lifecycle === LIFECYCLE.INIT) store.update({
+            lifecycle: LIFECYCLE.READY
+        });
+        if (hasStoreChanged) {
+            const element = getElement(step.target);
+            const elementExists = !!element;
+            const hasRenderedTarget = elementExists && isElementVisible(element);
+            if (hasRenderedTarget) {
+                if (changedFrom("status", STATUS.READY, STATUS.RUNNING) || changedFrom("lifecycle", LIFECYCLE.INIT, LIFECYCLE.READY)) callback({
+                    ...state,
+                    step,
+                    type: EVENTS.STEP_BEFORE
+                });
+            } else {
+                console.warn(elementExists ? "Target not visible" : "Target not mounted", step);
+                callback({
+                    ...state,
+                    type: EVENTS.TARGET_NOT_FOUND,
+                    step
+                });
+                if (!controlled) store.update({
+                    index: index + (action === ACTIONS.PREV ? -1 : 1)
+                });
+            }
+        }
+        if (changedFrom("lifecycle", LIFECYCLE.INIT, LIFECYCLE.READY)) store.update({
+            lifecycle: hideBeacon(step) || skipBeacon ? LIFECYCLE.TOOLTIP : LIFECYCLE.BEACON
+        });
+        if (changed("index")) log({
+            title: `step:${lifecycle}`,
+            data: [
+                {
+                    key: "props",
+                    value: this.props
+                }
+            ],
+            debug
+        });
+        if (changed("lifecycle", LIFECYCLE.BEACON)) callback({
+            ...state,
+            step,
+            type: EVENTS.BEACON
+        });
+        if (changed("lifecycle", LIFECYCLE.TOOLTIP)) {
+            callback({
+                ...state,
+                step,
+                type: EVENTS.TOOLTIP
+            });
+            if (this.tooltip) {
+                this.scope = new Scope(this.tooltip, {
+                    selector: "[data-action=primary]"
+                });
+                this.scope.setFocus();
+            }
+        }
+        if (changedFrom("lifecycle", [
+            LIFECYCLE.TOOLTIP,
+            LIFECYCLE.INIT
+        ], LIFECYCLE.INIT)) {
+            (_a = this.scope) == null || _a.removeScope();
+            store.cleanupPoppers();
+        }
+    }
+    componentWillUnmount() {
+        var _a;
+        (_a = this.scope) == null || _a.removeScope();
+    }
+    get open() {
+        const { lifecycle, step } = this.props;
+        return hideBeacon(step) || lifecycle === LIFECYCLE.TOOLTIP;
+    }
+    render() {
+        const { continuous, debug, index, nonce, shouldScroll: shouldScroll2, size, step } = this.props;
+        const target = getElement(step.target);
+        if (!validateStep(step) || !(0, _isLiteDefault.default).domElement(target)) return null;
+        return /* @__PURE__ */ _react.createElement("div", {
+            key: `JoyrideStep-${index}`,
+            className: "react-joyride__step"
+        }, /* @__PURE__ */ _react.createElement((0, _reactFloaterDefault.default), {
+            ...step.floaterProps,
+            component: this.renderTooltip,
+            debug,
+            getPopper: this.setPopper,
+            id: `react-joyride-step-${index}`,
+            open: this.open,
+            placement: step.placement,
+            target: step.target
+        }, /* @__PURE__ */ _react.createElement(JoyrideBeacon, {
+            beaconComponent: step.beaconComponent,
+            continuous,
+            index,
+            isLastStep: index + 1 === size,
+            locale: step.locale,
+            nonce,
+            onClickOrHover: this.handleClickHoverBeacon,
+            shouldFocus: shouldScroll2,
+            size,
+            step,
+            styles: step.styles
+        })));
+    }
+};
+// src/components/index.tsx
+var Joyride = class extends _react.Component {
+    constructor(props){
+        super(props);
+        __publicField(this, "helpers");
+        __publicField(this, "store");
+        /**
+     * Trigger the callback.
+     */ __publicField(this, "callback", (data)=>{
+            const { callback } = this.props;
+            if ((0, _isLiteDefault.default).function(callback)) callback(data);
+        });
+        /**
+     * Keydown event listener
+     */ __publicField(this, "handleKeyboard", (event)=>{
+            const { index, lifecycle } = this.state;
+            const { steps } = this.props;
+            const step = steps[index];
+            if (lifecycle === LIFECYCLE.TOOLTIP) {
+                if (event.code === "Escape" && step && !step.disableCloseOnEsc) this.store.close("keyboard");
+            }
+        });
+        __publicField(this, "handleClickOverlay", ()=>{
+            const { index } = this.state;
+            const { steps } = this.props;
+            const step = getMergedStep(this.props, steps[index]);
+            if (!step.disableOverlayClose) this.helpers.close("overlay");
+        });
+        /**
+     * Sync the store with the component's state
+     */ __publicField(this, "syncState", (state)=>{
+            this.setState(state);
+        });
+        const { debug, getHelpers, run, stepIndex } = props;
+        this.store = createStore({
+            ...props,
+            controlled: run && (0, _isLiteDefault.default).number(stepIndex)
+        });
+        this.helpers = this.store.getHelpers();
+        const { addListener } = this.store;
+        log({
+            title: "init",
+            data: [
+                {
+                    key: "props",
+                    value: this.props
+                },
+                {
+                    key: "state",
+                    value: this.state
+                }
+            ],
+            debug
+        });
+        addListener(this.syncState);
+        if (getHelpers) getHelpers(this.helpers);
+        this.state = this.store.getState();
+    }
+    componentDidMount() {
+        if (!canUseDOM()) return;
+        const { debug, disableCloseOnEsc, run, steps } = this.props;
+        const { start } = this.store;
+        if (validateSteps(steps, debug) && run) start();
+        if (!disableCloseOnEsc) document.body.addEventListener("keydown", this.handleKeyboard, {
+            passive: true
+        });
+    }
+    componentDidUpdate(previousProps, previousState) {
+        if (!canUseDOM()) return;
+        const { action, controlled, index, lifecycle, status } = this.state;
+        const { debug, run, stepIndex, steps } = this.props;
+        const { stepIndex: previousStepIndex, steps: previousSteps } = previousProps;
+        const { reset, setSteps, start, stop, update } = this.store;
+        const { changed: changedProps } = (0, _treeChangesDefault.default)(previousProps, this.props);
+        const { changed, changedFrom } = (0, _treeChangesDefault.default)(previousState, this.state);
+        const step = getMergedStep(this.props, steps[index]);
+        const stepsChanged = !(0, _deepEqualDefault.default)(previousSteps, steps);
+        const stepIndexChanged = (0, _isLiteDefault.default).number(stepIndex) && changedProps("stepIndex");
+        const target = getElement(step.target);
+        if (stepsChanged) {
+            if (validateSteps(steps, debug)) setSteps(steps);
+            else console.warn("Steps are not valid", steps);
+        }
+        if (changedProps("run")) {
+            if (run) start(stepIndex);
+            else stop();
+        }
+        if (stepIndexChanged) {
+            let nextAction = (0, _isLiteDefault.default).number(previousStepIndex) && previousStepIndex < stepIndex ? ACTIONS.NEXT : ACTIONS.PREV;
+            if (action === ACTIONS.STOP) nextAction = ACTIONS.START;
+            if (![
+                STATUS.FINISHED,
+                STATUS.SKIPPED
+            ].includes(status)) update({
+                action: action === ACTIONS.CLOSE ? ACTIONS.CLOSE : nextAction,
+                index: stepIndex,
+                lifecycle: LIFECYCLE.INIT
+            });
+        }
+        if (!controlled && status === STATUS.RUNNING && index === 0 && !target) {
+            this.store.update({
+                index: index + 1
+            });
+            this.callback({
+                ...this.state,
+                type: EVENTS.TARGET_NOT_FOUND,
+                step
+            });
+        }
+        const callbackData = {
+            ...this.state,
+            index,
+            step
+        };
+        const isAfterAction = changed("action", [
+            ACTIONS.NEXT,
+            ACTIONS.PREV,
+            ACTIONS.SKIP,
+            ACTIONS.CLOSE
+        ]);
+        if (isAfterAction && changed("status", STATUS.PAUSED)) {
+            const previousStep = getMergedStep(this.props, steps[previousState.index]);
+            this.callback({
+                ...callbackData,
+                index: previousState.index,
+                lifecycle: LIFECYCLE.COMPLETE,
+                step: previousStep,
+                type: EVENTS.STEP_AFTER
+            });
+        }
+        if (changed("status", [
+            STATUS.FINISHED,
+            STATUS.SKIPPED
+        ])) {
+            const previousStep = getMergedStep(this.props, steps[previousState.index]);
+            if (!controlled) this.callback({
+                ...callbackData,
+                index: previousState.index,
+                lifecycle: LIFECYCLE.COMPLETE,
+                step: previousStep,
+                type: EVENTS.STEP_AFTER
+            });
+            this.callback({
+                ...callbackData,
+                type: EVENTS.TOUR_END,
+                // Return the last step when the tour is finished
+                step: previousStep,
+                index: previousState.index
+            });
+            reset();
+        } else if (changedFrom("status", [
+            STATUS.IDLE,
+            STATUS.READY
+        ], STATUS.RUNNING)) this.callback({
+            ...callbackData,
+            type: EVENTS.TOUR_START
+        });
+        else if (changed("status") || changed("action", ACTIONS.RESET)) this.callback({
+            ...callbackData,
+            type: EVENTS.TOUR_STATUS
+        });
+        this.scrollToStep(previousState);
+        if (step.placement === "center" && status === STATUS.RUNNING && lifecycle === LIFECYCLE.INIT) this.store.update({
+            lifecycle: LIFECYCLE.READY
+        });
+    }
+    componentWillUnmount() {
+        const { disableCloseOnEsc } = this.props;
+        if (!disableCloseOnEsc) document.body.removeEventListener("keydown", this.handleKeyboard);
+    }
+    scrollToStep(previousState) {
+        const { index, lifecycle, status } = this.state;
+        const { debug, disableScrollParentFix = false, scrollDuration, scrollOffset = 20, scrollToFirstStep = false, steps } = this.props;
+        const step = getMergedStep(this.props, steps[index]);
+        const target = getElement(step.target);
+        const shouldScrollToStep = shouldScroll({
+            isFirstStep: index === 0,
+            lifecycle,
+            previousLifecycle: previousState.lifecycle,
+            scrollToFirstStep,
+            step,
+            target
+        });
+        if (status === STATUS.RUNNING && shouldScrollToStep) {
+            const hasCustomScroll = hasCustomScrollParent(target, disableScrollParentFix);
+            const scrollParent2 = getScrollParent(target, disableScrollParentFix);
+            let scrollY = Math.floor(getScrollTo(target, scrollOffset, disableScrollParentFix)) || 0;
+            log({
+                title: "scrollToStep",
+                data: [
+                    {
+                        key: "index",
+                        value: index
+                    },
+                    {
+                        key: "lifecycle",
+                        value: lifecycle
+                    },
+                    {
+                        key: "status",
+                        value: status
+                    }
+                ],
+                debug
+            });
+            const beaconPopper = this.store.getPopper("beacon");
+            const tooltipPopper = this.store.getPopper("tooltip");
+            if (lifecycle === LIFECYCLE.BEACON && beaconPopper) {
+                const { offsets, placement } = beaconPopper;
+                if (![
+                    "bottom"
+                ].includes(placement) && !hasCustomScroll) scrollY = Math.floor(offsets.popper.top - scrollOffset);
+            } else if (lifecycle === LIFECYCLE.TOOLTIP && tooltipPopper) {
+                const { flipped, offsets, placement } = tooltipPopper;
+                if ([
+                    "top",
+                    "right",
+                    "left"
+                ].includes(placement) && !flipped && !hasCustomScroll) scrollY = Math.floor(offsets.popper.top - scrollOffset);
+                else scrollY -= step.spotlightPadding;
+            }
+            scrollY = scrollY >= 0 ? scrollY : 0;
+            if (status === STATUS.RUNNING) scrollTo(scrollY, {
+                element: scrollParent2,
+                duration: scrollDuration
+            }).then(()=>{
+                setTimeout(()=>{
+                    var _a;
+                    (_a = this.store.getPopper("tooltip")) == null || _a.instance.update();
+                }, 10);
+            });
+        }
+    }
+    render() {
+        if (!canUseDOM()) return null;
+        const { index, lifecycle, status } = this.state;
+        const { continuous = false, debug = false, nonce, scrollToFirstStep = false, steps } = this.props;
+        const isRunning = status === STATUS.RUNNING;
+        const content = {};
+        if (isRunning && steps[index]) {
+            const step = getMergedStep(this.props, steps[index]);
+            content.step = /* @__PURE__ */ _react.createElement(JoyrideStep, {
+                ...this.state,
+                callback: this.callback,
+                continuous,
+                debug,
+                helpers: this.helpers,
+                nonce,
+                shouldScroll: !step.disableScrolling && (index !== 0 || scrollToFirstStep),
+                step,
+                store: this.store
+            });
+            content.overlay = /* @__PURE__ */ _react.createElement(JoyridePortal, {
+                id: "react-joyride-portal"
+            }, /* @__PURE__ */ _react.createElement(JoyrideOverlay, {
+                ...step,
+                continuous,
+                debug,
+                lifecycle,
+                onClickOverlay: this.handleClickOverlay
+            }));
+        }
+        return /* @__PURE__ */ _react.createElement("div", {
+            className: "react-joyride"
+        }, content.step, content.overlay);
+    }
+};
+__publicField(Joyride, "defaultProps", defaultProps);
+var components_default = Joyride;
+
+},{"react":"21dqq","@gilbarbara/deep-equal":"gHFCL","is-lite":"gwB0j","tree-changes":"4nHh8","scroll":"km2lI","scrollparent":"9CNUl","react-dom":"j6uA9","deepmerge":"ck1Q2","react-floater":"bD8yQ","react-innertext":"a7mvC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gHFCL":[function(require,module,exports) {
+// src/helpers.ts
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>equal);
+function isOfType(type) {
+    return (value)=>typeof value === type;
+}
+var isFunction = isOfType("function");
+var isNull = (value)=>{
+    return value === null;
+};
+var isRegex = (value)=>{
+    return Object.prototype.toString.call(value).slice(8, -1) === "RegExp";
+};
+var isObject = (value)=>{
+    return !isUndefined(value) && !isNull(value) && (isFunction(value) || typeof value === "object");
+};
+var isUndefined = isOfType("undefined");
+// src/index.ts
+function equalArray(left, right) {
+    const { length } = left;
+    if (length !== right.length) return false;
+    for(let index = length; index-- !== 0;){
+        if (!equal(left[index], right[index])) return false;
+    }
+    return true;
+}
+function equalArrayBuffer(left, right) {
+    if (left.byteLength !== right.byteLength) return false;
+    const view1 = new DataView(left.buffer);
+    const view2 = new DataView(right.buffer);
+    let index = left.byteLength;
+    while(index--){
+        if (view1.getUint8(index) !== view2.getUint8(index)) return false;
+    }
+    return true;
+}
+function equalMap(left, right) {
+    if (left.size !== right.size) return false;
+    for (const index of left.entries()){
+        if (!right.has(index[0])) return false;
+    }
+    for (const index of left.entries()){
+        if (!equal(index[1], right.get(index[0]))) return false;
+    }
+    return true;
+}
+function equalSet(left, right) {
+    if (left.size !== right.size) return false;
+    for (const index of left.entries()){
+        if (!right.has(index[0])) return false;
+    }
+    return true;
+}
+function equal(left, right) {
+    if (left === right) return true;
+    if (left && isObject(left) && right && isObject(right)) {
+        if (left.constructor !== right.constructor) return false;
+        if (Array.isArray(left) && Array.isArray(right)) return equalArray(left, right);
+        if (left instanceof Map && right instanceof Map) return equalMap(left, right);
+        if (left instanceof Set && right instanceof Set) return equalSet(left, right);
+        if (ArrayBuffer.isView(left) && ArrayBuffer.isView(right)) return equalArrayBuffer(left, right);
+        if (isRegex(left) && isRegex(right)) return left.source === right.source && left.flags === right.flags;
+        if (left.valueOf !== Object.prototype.valueOf) return left.valueOf() === right.valueOf();
+        if (left.toString !== Object.prototype.toString) return left.toString() === right.toString();
+        const leftKeys = Object.keys(left);
+        const rightKeys = Object.keys(right);
+        if (leftKeys.length !== rightKeys.length) return false;
+        for(let index = leftKeys.length; index-- !== 0;){
+            if (!Object.prototype.hasOwnProperty.call(right, leftKeys[index])) return false;
+        }
+        for(let index = leftKeys.length; index-- !== 0;){
+            const key = leftKeys[index];
+            if (key === "_owner" && left.$$typeof) continue;
+            if (!equal(left[key], right[key])) return false;
+        }
+        return true;
+    }
+    if (Number.isNaN(left) && Number.isNaN(right)) return true;
+    return left === right;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gwB0j":[function(require,module,exports) {
+// src/helpers.ts
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>src_default);
+var objectTypes = [
+    "Array",
+    "ArrayBuffer",
+    "AsyncFunction",
+    "AsyncGenerator",
+    "AsyncGeneratorFunction",
+    "Date",
+    "Error",
+    "Function",
+    "Generator",
+    "GeneratorFunction",
+    "HTMLElement",
+    "Map",
+    "Object",
+    "Promise",
+    "RegExp",
+    "Set",
+    "WeakMap",
+    "WeakSet"
+];
+var primitiveTypes = [
+    "bigint",
+    "boolean",
+    "null",
+    "number",
+    "string",
+    "symbol",
+    "undefined"
+];
+function getObjectType(value) {
+    const objectTypeName = Object.prototype.toString.call(value).slice(8, -1);
+    if (/HTML\w+Element/.test(objectTypeName)) return "HTMLElement";
+    if (isObjectType(objectTypeName)) return objectTypeName;
+    return void 0;
+}
+function isObjectOfType(type) {
+    return (value)=>getObjectType(value) === type;
+}
+function isObjectType(name) {
+    return objectTypes.includes(name);
+}
+function isOfType(type) {
+    return (value)=>typeof value === type;
+}
+function isPrimitiveType(name) {
+    return primitiveTypes.includes(name);
+}
+// src/index.ts
+var DOM_PROPERTIES_TO_CHECK = [
+    "innerHTML",
+    "ownerDocument",
+    "style",
+    "attributes",
+    "nodeValue"
+];
+function is(value) {
+    if (value === null) return "null";
+    switch(typeof value){
+        case "bigint":
+            return "bigint";
+        case "boolean":
+            return "boolean";
+        case "number":
+            return "number";
+        case "string":
+            return "string";
+        case "symbol":
+            return "symbol";
+        case "undefined":
+            return "undefined";
+        default:
+    }
+    if (is.array(value)) return "Array";
+    if (is.plainFunction(value)) return "Function";
+    const tagType = getObjectType(value);
+    if (tagType) return tagType;
+    return "Object";
+}
+is.array = Array.isArray;
+is.arrayOf = (target, predicate)=>{
+    if (!is.array(target) && !is.function(predicate)) return false;
+    return target.every((d)=>predicate(d));
+};
+is.asyncGeneratorFunction = (value)=>getObjectType(value) === "AsyncGeneratorFunction";
+is.asyncFunction = isObjectOfType("AsyncFunction");
+is.bigint = isOfType("bigint");
+is.boolean = (value)=>{
+    return value === true || value === false;
+};
+is.date = isObjectOfType("Date");
+is.defined = (value)=>!is.undefined(value);
+is.domElement = (value)=>{
+    return is.object(value) && !is.plainObject(value) && value.nodeType === 1 && is.string(value.nodeName) && DOM_PROPERTIES_TO_CHECK.every((property)=>property in value);
+};
+is.empty = (value)=>{
+    return is.string(value) && value.length === 0 || is.array(value) && value.length === 0 || is.object(value) && !is.map(value) && !is.set(value) && Object.keys(value).length === 0 || is.set(value) && value.size === 0 || is.map(value) && value.size === 0;
+};
+is.error = isObjectOfType("Error");
+is.function = isOfType("function");
+is.generator = (value)=>{
+    return is.iterable(value) && is.function(value.next) && is.function(value.throw);
+};
+is.generatorFunction = isObjectOfType("GeneratorFunction");
+is.instanceOf = (instance, class_)=>{
+    if (!instance || !class_) return false;
+    return Object.getPrototypeOf(instance) === class_.prototype;
+};
+is.iterable = (value)=>{
+    return !is.nullOrUndefined(value) && is.function(value[Symbol.iterator]);
+};
+is.map = isObjectOfType("Map");
+is.nan = (value)=>{
+    return Number.isNaN(value);
+};
+is.null = (value)=>{
+    return value === null;
+};
+is.nullOrUndefined = (value)=>{
+    return is.null(value) || is.undefined(value);
+};
+is.number = (value)=>{
+    return isOfType("number")(value) && !is.nan(value);
+};
+is.numericString = (value)=>{
+    return is.string(value) && value.length > 0 && !Number.isNaN(Number(value));
+};
+is.object = (value)=>{
+    return !is.nullOrUndefined(value) && (is.function(value) || typeof value === "object");
+};
+is.oneOf = (target, value)=>{
+    if (!is.array(target)) return false;
+    return target.indexOf(value) > -1;
+};
+is.plainFunction = isObjectOfType("Function");
+is.plainObject = (value)=>{
+    if (getObjectType(value) !== "Object") return false;
+    const prototype = Object.getPrototypeOf(value);
+    return prototype === null || prototype === Object.getPrototypeOf({});
+};
+is.primitive = (value)=>is.null(value) || isPrimitiveType(typeof value);
+is.promise = isObjectOfType("Promise");
+is.propertyOf = (target, key, predicate)=>{
+    if (!is.object(target) || !key) return false;
+    const value = target[key];
+    if (is.function(predicate)) return predicate(value);
+    return is.defined(value);
+};
+is.regexp = isObjectOfType("RegExp");
+is.set = isObjectOfType("Set");
+is.string = isOfType("string");
+is.symbol = isOfType("symbol");
+is.undefined = isOfType("undefined");
+is.weakMap = isObjectOfType("WeakMap");
+is.weakSet = isObjectOfType("WeakSet");
+var src_default = is;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4nHh8":[function(require,module,exports) {
+// src/index.ts
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>treeChanges);
+var _deepEqual = require("@gilbarbara/deep-equal");
+var _deepEqualDefault = parcelHelpers.interopDefault(_deepEqual);
+var _isLite = require("is-lite");
+var _isLiteDefault = parcelHelpers.interopDefault(_isLite);
+function canHaveLength(...arguments_) {
+    return arguments_.every((d)=>(0, _isLiteDefault.default).string(d) || (0, _isLiteDefault.default).array(d) || (0, _isLiteDefault.default).plainObject(d));
+}
+function checkEquality(left, right, value) {
+    if (!isSameType(left, right)) return false;
+    if ([
+        left,
+        right
+    ].every((0, _isLiteDefault.default).array)) return !left.some(hasValue(value)) && right.some(hasValue(value));
+    if ([
+        left,
+        right
+    ].every((0, _isLiteDefault.default).plainObject)) return !Object.entries(left).some(hasEntry(value)) && Object.entries(right).some(hasEntry(value));
+    return right === value;
+}
+function compareNumbers(previousData, data, options) {
+    const { actual, key, previous, type } = options;
+    const left = nested(previousData, key);
+    const right = nested(data, key);
+    let changed = [
+        left,
+        right
+    ].every((0, _isLiteDefault.default).number) && (type === "increased" ? left < right : left > right);
+    if (!(0, _isLiteDefault.default).undefined(actual)) changed = changed && right === actual;
+    if (!(0, _isLiteDefault.default).undefined(previous)) changed = changed && left === previous;
+    return changed;
+}
+function compareValues(previousData, data, options) {
+    const { key, type, value } = options;
+    const left = nested(previousData, key);
+    const right = nested(data, key);
+    const primary = type === "added" ? left : right;
+    const secondary = type === "added" ? right : left;
+    if (!(0, _isLiteDefault.default).nullOrUndefined(value)) {
+        if ((0, _isLiteDefault.default).defined(primary)) {
+            if ((0, _isLiteDefault.default).array(primary) || (0, _isLiteDefault.default).plainObject(primary)) return checkEquality(primary, secondary, value);
+        } else return (0, _deepEqualDefault.default)(secondary, value);
+        return false;
+    }
+    if ([
+        left,
+        right
+    ].every((0, _isLiteDefault.default).array)) return !secondary.every(isEqualPredicate(primary));
+    if ([
+        left,
+        right
+    ].every((0, _isLiteDefault.default).plainObject)) return hasExtraKeys(Object.keys(primary), Object.keys(secondary));
+    return ![
+        left,
+        right
+    ].every((d)=>(0, _isLiteDefault.default).primitive(d) && (0, _isLiteDefault.default).defined(d)) && (type === "added" ? !(0, _isLiteDefault.default).defined(left) && (0, _isLiteDefault.default).defined(right) : (0, _isLiteDefault.default).defined(left) && !(0, _isLiteDefault.default).defined(right));
+}
+function getIterables(previousData, data, { key } = {}) {
+    let left = nested(previousData, key);
+    let right = nested(data, key);
+    if (!isSameType(left, right)) throw new TypeError("Inputs have different types");
+    if (!canHaveLength(left, right)) throw new TypeError("Inputs don't have length");
+    if ([
+        left,
+        right
+    ].every((0, _isLiteDefault.default).plainObject)) {
+        left = Object.keys(left);
+        right = Object.keys(right);
+    }
+    return [
+        left,
+        right
+    ];
+}
+function hasEntry(input) {
+    return ([key, value])=>{
+        if ((0, _isLiteDefault.default).array(input)) return (0, _deepEqualDefault.default)(input, value) || input.some((d)=>(0, _deepEqualDefault.default)(d, value) || (0, _isLiteDefault.default).array(value) && isEqualPredicate(value)(d));
+        if ((0, _isLiteDefault.default).plainObject(input) && input[key]) return !!input[key] && (0, _deepEqualDefault.default)(input[key], value);
+        return (0, _deepEqualDefault.default)(input, value);
+    };
+}
+function hasExtraKeys(left, right) {
+    return right.some((d)=>!left.includes(d));
+}
+function hasValue(input) {
+    return (value)=>{
+        if ((0, _isLiteDefault.default).array(input)) return input.some((d)=>(0, _deepEqualDefault.default)(d, value) || (0, _isLiteDefault.default).array(value) && isEqualPredicate(value)(d));
+        return (0, _deepEqualDefault.default)(input, value);
+    };
+}
+function includesOrEqualsTo(previousValue, value) {
+    return (0, _isLiteDefault.default).array(previousValue) ? previousValue.some((d)=>(0, _deepEqualDefault.default)(d, value)) : (0, _deepEqualDefault.default)(previousValue, value);
+}
+function isEqualPredicate(data) {
+    return (value)=>data.some((d)=>(0, _deepEqualDefault.default)(d, value));
+}
+function isSameType(...arguments_) {
+    return arguments_.every((0, _isLiteDefault.default).array) || arguments_.every((0, _isLiteDefault.default).number) || arguments_.every((0, _isLiteDefault.default).plainObject) || arguments_.every((0, _isLiteDefault.default).string);
+}
+function nested(data, property) {
+    if ((0, _isLiteDefault.default).plainObject(data) || (0, _isLiteDefault.default).array(data)) {
+        if ((0, _isLiteDefault.default).string(property)) {
+            const props = property.split(".");
+            return props.reduce((acc, d)=>acc && acc[d], data);
+        }
+        if ((0, _isLiteDefault.default).number(property)) return data[property];
+        return data;
+    }
+    return data;
+}
+// src/index.ts
+function treeChanges(previousData, data) {
+    if ([
+        previousData,
+        data
+    ].some((0, _isLiteDefault.default).nullOrUndefined)) throw new Error("Missing required parameters");
+    if (![
+        previousData,
+        data
+    ].every((d)=>(0, _isLiteDefault.default).plainObject(d) || (0, _isLiteDefault.default).array(d))) throw new Error("Expected plain objects or array");
+    const added = (key, value)=>{
+        try {
+            return compareValues(previousData, data, {
+                key,
+                type: "added",
+                value
+            });
+        } catch  {
+            return false;
+        }
+    };
+    const changed = (key, actual, previous)=>{
+        try {
+            const left = nested(previousData, key);
+            const right = nested(data, key);
+            const hasActual = (0, _isLiteDefault.default).defined(actual);
+            const hasPrevious = (0, _isLiteDefault.default).defined(previous);
+            if (hasActual || hasPrevious) {
+                const leftComparator = hasPrevious ? includesOrEqualsTo(previous, left) : !includesOrEqualsTo(actual, left);
+                const rightComparator = includesOrEqualsTo(actual, right);
+                return leftComparator && rightComparator;
+            }
+            if ([
+                left,
+                right
+            ].every((0, _isLiteDefault.default).array) || [
+                left,
+                right
+            ].every((0, _isLiteDefault.default).plainObject)) return !(0, _deepEqualDefault.default)(left, right);
+            return left !== right;
+        } catch  {
+            return false;
+        }
+    };
+    const changedFrom = (key, previous, actual)=>{
+        if (!(0, _isLiteDefault.default).defined(key)) return false;
+        try {
+            const left = nested(previousData, key);
+            const right = nested(data, key);
+            const hasActual = (0, _isLiteDefault.default).defined(actual);
+            return includesOrEqualsTo(previous, left) && (hasActual ? includesOrEqualsTo(actual, right) : !hasActual);
+        } catch  {
+            return false;
+        }
+    };
+    const decreased = (key, actual, previous)=>{
+        if (!(0, _isLiteDefault.default).defined(key)) return false;
+        try {
+            return compareNumbers(previousData, data, {
+                key,
+                actual,
+                previous,
+                type: "decreased"
+            });
+        } catch  {
+            return false;
+        }
+    };
+    const emptied = (key)=>{
+        try {
+            const [left, right] = getIterables(previousData, data, {
+                key
+            });
+            return !!left.length && !right.length;
+        } catch  {
+            return false;
+        }
+    };
+    const filled = (key)=>{
+        try {
+            const [left, right] = getIterables(previousData, data, {
+                key
+            });
+            return !left.length && !!right.length;
+        } catch  {
+            return false;
+        }
+    };
+    const increased = (key, actual, previous)=>{
+        if (!(0, _isLiteDefault.default).defined(key)) return false;
+        try {
+            return compareNumbers(previousData, data, {
+                key,
+                actual,
+                previous,
+                type: "increased"
+            });
+        } catch  {
+            return false;
+        }
+    };
+    const removed = (key, value)=>{
+        try {
+            return compareValues(previousData, data, {
+                key,
+                type: "removed",
+                value
+            });
+        } catch  {
+            return false;
+        }
+    };
+    return {
+        added,
+        changed,
+        changedFrom,
+        decreased,
+        emptied,
+        filled,
+        increased,
+        removed
+    };
+}
+
+},{"@gilbarbara/deep-equal":"gHFCL","is-lite":"gwB0j","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"km2lI":[function(require,module,exports) {
+var E_NOSCROLL = new Error("Element already at target scroll position");
+var E_CANCELLED = new Error("Scroll cancelled");
+var min = Math.min;
+var ms = Date.now;
+module.exports = {
+    left: make("scrollLeft"),
+    top: make("scrollTop")
+};
+function make(prop) {
+    return function scroll(el, to, opts, cb) {
+        opts = opts || {};
+        if (typeof opts == "function") cb = opts, opts = {};
+        if (typeof cb != "function") cb = noop;
+        var start = ms();
+        var from = el[prop];
+        var ease = opts.ease || inOutSine;
+        var duration = !isNaN(opts.duration) ? +opts.duration : 350;
+        var cancelled = false;
+        return from === to ? cb(E_NOSCROLL, el[prop]) : requestAnimationFrame(animate), cancel;
+        function cancel() {
+            cancelled = true;
+        }
+        function animate(timestamp) {
+            if (cancelled) return cb(E_CANCELLED, el[prop]);
+            var now = ms();
+            var time = min(1, (now - start) / duration);
+            var eased = ease(time);
+            el[prop] = eased * (to - from) + from;
+            time < 1 ? requestAnimationFrame(animate) : requestAnimationFrame(function() {
+                cb(null, el[prop]);
+            });
+        }
+    };
+}
+function inOutSine(n) {
+    return 0.5 * (1 - Math.cos(Math.PI * n));
+}
+function noop() {}
+
+},{}],"9CNUl":[function(require,module,exports) {
+(function(root, factory) {
+    if (typeof define === "function" && define.amd) define([], factory);
+    else if (0, module.exports) module.exports = factory();
+    else root.Scrollparent = factory();
+})(this, function() {
+    function isScrolling(node) {
+        var overflow = getComputedStyle(node, null).getPropertyValue("overflow");
+        return overflow.indexOf("scroll") > -1 || overflow.indexOf("auto") > -1;
+    }
+    function scrollParent(node) {
+        if (!(node instanceof HTMLElement || node instanceof SVGElement)) return undefined;
+        var current = node.parentNode;
+        while(current.parentNode){
+            if (isScrolling(current)) return current;
+            current = current.parentNode;
+        }
+        return document.scrollingElement || document.documentElement;
+    }
+    return scrollParent;
+});
+
+},{}],"ck1Q2":[function(require,module,exports) {
+"use strict";
+var isMergeableObject = function isMergeableObject(value) {
+    return isNonNullObject(value) && !isSpecial(value);
+};
+function isNonNullObject(value) {
+    return !!value && typeof value === "object";
+}
+function isSpecial(value) {
+    var stringValue = Object.prototype.toString.call(value);
+    return stringValue === "[object RegExp]" || stringValue === "[object Date]" || isReactElement(value);
+}
+// see https://github.com/facebook/react/blob/b5ac963fb791d1298e7f396236383bc955f916c1/src/isomorphic/classic/element/ReactElement.js#L21-L25
+var canUseSymbol = typeof Symbol === "function" && Symbol.for;
+var REACT_ELEMENT_TYPE = canUseSymbol ? Symbol.for("react.element") : 0xeac7;
+function isReactElement(value) {
+    return value.$$typeof === REACT_ELEMENT_TYPE;
+}
+function emptyTarget(val) {
+    return Array.isArray(val) ? [] : {};
+}
+function cloneUnlessOtherwiseSpecified(value, options) {
+    return options.clone !== false && options.isMergeableObject(value) ? deepmerge(emptyTarget(value), value, options) : value;
+}
+function defaultArrayMerge(target, source, options) {
+    return target.concat(source).map(function(element) {
+        return cloneUnlessOtherwiseSpecified(element, options);
+    });
+}
+function getMergeFunction(key, options) {
+    if (!options.customMerge) return deepmerge;
+    var customMerge = options.customMerge(key);
+    return typeof customMerge === "function" ? customMerge : deepmerge;
+}
+function getEnumerableOwnPropertySymbols(target) {
+    return Object.getOwnPropertySymbols ? Object.getOwnPropertySymbols(target).filter(function(symbol) {
+        return Object.propertyIsEnumerable.call(target, symbol);
+    }) : [];
+}
+function getKeys(target) {
+    return Object.keys(target).concat(getEnumerableOwnPropertySymbols(target));
+}
+function propertyIsOnObject(object, property) {
+    try {
+        return property in object;
+    } catch (_) {
+        return false;
+    }
+}
+// Protects from prototype poisoning and unexpected merging up the prototype chain.
+function propertyIsUnsafe(target, key) {
+    return propertyIsOnObject(target, key) // Properties are safe to merge if they don't exist in the target yet,
+     && !(Object.hasOwnProperty.call(target, key) // unsafe if they exist up the prototype chain,
+     && Object.propertyIsEnumerable.call(target, key) // and also unsafe if they're nonenumerable.
+    );
+}
+function mergeObject(target, source, options) {
+    var destination = {};
+    if (options.isMergeableObject(target)) getKeys(target).forEach(function(key) {
+        destination[key] = cloneUnlessOtherwiseSpecified(target[key], options);
+    });
+    getKeys(source).forEach(function(key) {
+        if (propertyIsUnsafe(target, key)) return;
+        if (propertyIsOnObject(target, key) && options.isMergeableObject(source[key])) destination[key] = getMergeFunction(key, options)(target[key], source[key], options);
+        else destination[key] = cloneUnlessOtherwiseSpecified(source[key], options);
+    });
+    return destination;
+}
+function deepmerge(target, source, options) {
+    options = options || {};
+    options.arrayMerge = options.arrayMerge || defaultArrayMerge;
+    options.isMergeableObject = options.isMergeableObject || isMergeableObject;
+    // cloneUnlessOtherwiseSpecified is added to `options` so that custom arrayMerge()
+    // implementations can use it. The caller may not replace it.
+    options.cloneUnlessOtherwiseSpecified = cloneUnlessOtherwiseSpecified;
+    var sourceIsArray = Array.isArray(source);
+    var targetIsArray = Array.isArray(target);
+    var sourceAndTargetTypesMatch = sourceIsArray === targetIsArray;
+    if (!sourceAndTargetTypesMatch) return cloneUnlessOtherwiseSpecified(source, options);
+    else if (sourceIsArray) return options.arrayMerge(target, source, options);
+    else return mergeObject(target, source, options);
+}
+deepmerge.all = function deepmergeAll(array, options) {
+    if (!Array.isArray(array)) throw new Error("first argument should be an array");
+    return array.reduce(function(prev, next) {
+        return deepmerge(prev, next, options);
+    }, {});
+};
+var deepmerge_1 = deepmerge;
+module.exports = deepmerge_1;
+
+},{}],"bD8yQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>ReactFloater);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _popperJs = require("popper.js");
+var _popperJsDefault = parcelHelpers.interopDefault(_popperJs);
+var _deepmerge = require("deepmerge");
+var _deepmergeDefault = parcelHelpers.interopDefault(_deepmerge);
+var _isLite = require("is-lite");
+var _isLiteDefault = parcelHelpers.interopDefault(_isLite);
+var _treeChanges = require("tree-changes");
+var _treeChangesDefault = parcelHelpers.interopDefault(_treeChanges);
+var _reactDom = require("react-dom");
+var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
+function ownKeys(e, r) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+        var o = Object.getOwnPropertySymbols(e);
+        r && (o = o.filter(function(r) {
+            return Object.getOwnPropertyDescriptor(e, r).enumerable;
+        })), t.push.apply(t, o);
+    }
+    return t;
+}
+function _objectSpread2(e) {
+    for(var r = 1; r < arguments.length; r++){
+        var t = null != arguments[r] ? arguments[r] : {};
+        r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
+            _defineProperty(e, r, t[r]);
+        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
+            Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
+        });
+    }
+    return e;
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor);
+    }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    Object.defineProperty(Constructor, "prototype", {
+        writable: false
+    });
+    return Constructor;
+}
+function _defineProperty(obj, key, value) {
+    key = _toPropertyKey(key);
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            writable: true,
+            configurable: true
+        }
+    });
+    Object.defineProperty(subClass, "prototype", {
+        writable: false
+    });
+    if (superClass) _setPrototypeOf(subClass, superClass);
+}
+function _getPrototypeOf(o) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) {
+        return o.__proto__ || Object.getPrototypeOf(o);
+    };
+    return _getPrototypeOf(o);
+}
+function _setPrototypeOf(o, p) {
+    _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
+        o.__proto__ = p;
+        return o;
+    };
+    return _setPrototypeOf(o, p);
+}
+function _isNativeReflectConstruct() {
+    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+    if (Reflect.construct.sham) return false;
+    if (typeof Proxy === "function") return true;
+    try {
+        Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {}));
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+function _objectWithoutPropertiesLoose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+function _objectWithoutProperties(source, excluded) {
+    if (source == null) return {};
+    var target = _objectWithoutPropertiesLoose(source, excluded);
+    var key, i;
+    if (Object.getOwnPropertySymbols) {
+        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+        for(i = 0; i < sourceSymbolKeys.length; i++){
+            key = sourceSymbolKeys[i];
+            if (excluded.indexOf(key) >= 0) continue;
+            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+            target[key] = source[key];
+        }
+    }
+    return target;
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return self;
+}
+function _possibleConstructorReturn(self, call) {
+    if (call && (typeof call === "object" || typeof call === "function")) return call;
+    else if (call !== void 0) throw new TypeError("Derived constructors may only return object or undefined");
+    return _assertThisInitialized(self);
+}
+function _createSuper(Derived) {
+    var hasNativeReflectConstruct = _isNativeReflectConstruct();
+    return function _createSuperInternal() {
+        var Super = _getPrototypeOf(Derived), result;
+        if (hasNativeReflectConstruct) {
+            var NewTarget = _getPrototypeOf(this).constructor;
+            result = Reflect.construct(Super, arguments, NewTarget);
+        } else result = Super.apply(this, arguments);
+        return _possibleConstructorReturn(this, result);
+    };
+}
+function _toPrimitive(input, hint) {
+    if (typeof input !== "object" || input === null) return input;
+    var prim = input[Symbol.toPrimitive];
+    if (prim !== undefined) {
+        var res = prim.call(input, hint || "default");
+        if (typeof res !== "object") return res;
+        throw new TypeError("@@toPrimitive must return a primitive value.");
+    }
+    return (hint === "string" ? String : Number)(input);
+}
+function _toPropertyKey(arg) {
+    var key = _toPrimitive(arg, "string");
+    return typeof key === "symbol" ? key : String(key);
+}
+var DEFAULTS = {
+    flip: {
+        padding: 20
+    },
+    preventOverflow: {
+        padding: 10
+    }
+};
+var VALIDATOR_ARG_ERROR_MESSAGE = "The typeValidator argument must be a function with the signature function(props, propName, componentName).";
+var MESSAGE_ARG_ERROR_MESSAGE = "The error message is optional, but must be a string if provided.";
+function propIsRequired(condition, props, propName, componentName) {
+    if (typeof condition === "boolean") return condition;
+    if (typeof condition === "function") return condition(props, propName, componentName);
+    if (Boolean(condition) === true) return Boolean(condition);
+    return false;
+}
+function propExists(props, propName) {
+    return Object.hasOwnProperty.call(props, propName);
+}
+function missingPropError(props, propName, componentName, message) {
+    if (message) return new Error(message);
+    return new Error("Required ".concat(props[propName], " `").concat(propName, "` was not specified in `").concat(componentName, "`."));
+}
+function guardAgainstInvalidArgTypes(typeValidator, message) {
+    if (typeof typeValidator !== "function") throw new TypeError(VALIDATOR_ARG_ERROR_MESSAGE);
+    if (Boolean(message) && typeof message !== "string") throw new TypeError(MESSAGE_ARG_ERROR_MESSAGE);
+}
+function isRequiredIf(typeValidator, condition, message) {
+    guardAgainstInvalidArgTypes(typeValidator, message);
+    return function(props, propName, componentName) {
+        for(var _len = arguments.length, rest = new Array(_len > 3 ? _len - 3 : 0), _key = 3; _key < _len; _key++)rest[_key - 3] = arguments[_key];
+        if (propIsRequired(condition, props, propName, componentName)) {
+            if (propExists(props, propName)) return typeValidator.apply(void 0, [
+                props,
+                propName,
+                componentName
+            ].concat(rest));
+            return missingPropError(props, propName, componentName, message);
+        } // Is not required, so just run typeValidator.
+        return typeValidator.apply(void 0, [
+            props,
+            propName,
+            componentName
+        ].concat(rest));
+    };
+}
+var STATUS = {
+    INIT: "init",
+    IDLE: "idle",
+    OPENING: "opening",
+    OPEN: "open",
+    CLOSING: "closing",
+    ERROR: "error"
+};
+var isReact16 = (0, _reactDomDefault.default).createPortal !== undefined;
+function canUseDOM() {
+    return !!(typeof window !== "undefined" && window.document && window.document.createElement);
+}
+function isMobile() {
+    return "ontouchstart" in window && /Mobi/.test(navigator.userAgent);
+} /**
+ * Log method calls if debug is enabled
+ *
+ * @private
+ * @param {Object}       arg
+ * @param {string}       arg.title    - The title the logger was called from
+ * @param {Object|Array} [arg.data]   - The data to be logged
+ * @param {boolean}      [arg.warn]  - If true, the message will be a warning
+ * @param {boolean}      [arg.debug] - Nothing will be logged unless debug is true
+ */ 
+function log(_ref) {
+    var title = _ref.title, data = _ref.data, _ref$warn = _ref.warn, warn = _ref$warn === void 0 ? false : _ref$warn, _ref$debug = _ref.debug, debug = _ref$debug === void 0 ? false : _ref$debug; /* eslint-disable no-console */ 
+    var logFn = warn ? console.warn || console.error : console.log;
+    if (debug && title && data) {
+        console.groupCollapsed("%creact-floater: ".concat(title), "color: #9b00ff; font-weight: bold; font-size: 12px;");
+        if (Array.isArray(data)) data.forEach(function(d) {
+            if ((0, _isLiteDefault.default).plainObject(d) && d.key) logFn.apply(console, [
+                d.key,
+                d.value
+            ]);
+            else logFn.apply(console, [
+                d
+            ]);
+        });
+        else logFn.apply(console, [
+            data
+        ]);
+        console.groupEnd();
+    } /* eslint-enable */ 
+}
+function on(element, event, cb) {
+    var capture = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+    element.addEventListener(event, cb, capture);
+}
+function off(element, event, cb) {
+    var capture = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+    element.removeEventListener(event, cb, capture);
+}
+function once(element, event, cb) {
+    var capture = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+    var _nextCB; // eslint-disable-next-line prefer-const
+    _nextCB = function nextCB(e) {
+        cb(e);
+        off(element, event, _nextCB);
+    };
+    on(element, event, _nextCB, capture);
+}
+function noop() {}
+var ReactFloaterPortal = /*#__PURE__*/ function(_React$Component) {
+    _inherits(ReactFloaterPortal, _React$Component);
+    var _super = _createSuper(ReactFloaterPortal);
+    function ReactFloaterPortal() {
+        _classCallCheck(this, ReactFloaterPortal);
+        return _super.apply(this, arguments);
+    }
+    _createClass(ReactFloaterPortal, [
+        {
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                if (!canUseDOM()) return;
+                if (!this.node) this.appendNode();
+                if (!isReact16) this.renderPortal();
+            }
+        },
+        {
+            key: "componentDidUpdate",
+            value: function componentDidUpdate() {
+                if (!canUseDOM()) return;
+                if (!isReact16) this.renderPortal();
+            }
+        },
+        {
+            key: "componentWillUnmount",
+            value: function componentWillUnmount() {
+                if (!canUseDOM() || !this.node) return;
+                if (!isReact16) (0, _reactDomDefault.default).unmountComponentAtNode(this.node);
+                if (this.node && this.node.parentNode === document.body) {
+                    document.body.removeChild(this.node);
+                    this.node = undefined;
+                }
+            }
+        },
+        {
+            key: "appendNode",
+            value: function appendNode() {
+                var _this$props = this.props, id = _this$props.id, zIndex = _this$props.zIndex;
+                if (!this.node) {
+                    this.node = document.createElement("div"); /* istanbul ignore else */ 
+                    if (id) this.node.id = id;
+                    if (zIndex) this.node.style.zIndex = zIndex;
+                    document.body.appendChild(this.node);
+                }
+            }
+        },
+        {
+            key: "renderPortal",
+            value: function renderPortal() {
+                if (!canUseDOM()) return null;
+                var _this$props2 = this.props, children = _this$props2.children, setRef = _this$props2.setRef;
+                if (!this.node) this.appendNode();
+                 /* istanbul ignore else */ 
+                if (isReact16) return /*#__PURE__*/ (0, _reactDomDefault.default).createPortal(children, this.node);
+                var portal = (0, _reactDomDefault.default).unstable_renderSubtreeIntoContainer(this, children.length > 1 ? /*#__PURE__*/ (0, _reactDefault.default).createElement("div", null, children) : children[0], this.node);
+                setRef(portal);
+                return null;
+            }
+        },
+        {
+            key: "renderReact16",
+            value: function renderReact16() {
+                var _this$props3 = this.props, hasChildren = _this$props3.hasChildren, placement = _this$props3.placement, target = _this$props3.target;
+                if (!hasChildren) {
+                    if (target || placement === "center") return this.renderPortal();
+                    return null;
+                }
+                return this.renderPortal();
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                if (!isReact16) return null;
+                return this.renderReact16();
+            }
+        }
+    ]);
+    return ReactFloaterPortal;
+}((0, _reactDefault.default).Component);
+_defineProperty(ReactFloaterPortal, "propTypes", {
+    children: (0, _propTypesDefault.default).oneOfType([
+        (0, _propTypesDefault.default).element,
+        (0, _propTypesDefault.default).array
+    ]),
+    hasChildren: (0, _propTypesDefault.default).bool,
+    id: (0, _propTypesDefault.default).oneOfType([
+        (0, _propTypesDefault.default).string,
+        (0, _propTypesDefault.default).number
+    ]),
+    placement: (0, _propTypesDefault.default).string,
+    setRef: (0, _propTypesDefault.default).func.isRequired,
+    target: (0, _propTypesDefault.default).oneOfType([
+        (0, _propTypesDefault.default).object,
+        (0, _propTypesDefault.default).string
+    ]),
+    zIndex: (0, _propTypesDefault.default).number
+});
+var FloaterArrow = /*#__PURE__*/ function(_React$Component) {
+    _inherits(FloaterArrow, _React$Component);
+    var _super = _createSuper(FloaterArrow);
+    function FloaterArrow() {
+        _classCallCheck(this, FloaterArrow);
+        return _super.apply(this, arguments);
+    }
+    _createClass(FloaterArrow, [
+        {
+            key: "parentStyle",
+            get: function get() {
+                var _this$props = this.props, placement = _this$props.placement, styles = _this$props.styles;
+                var length = styles.arrow.length;
+                var arrow = {
+                    pointerEvents: "none",
+                    position: "absolute",
+                    width: "100%"
+                }; /* istanbul ignore else */ 
+                if (placement.startsWith("top")) {
+                    arrow.bottom = 0;
+                    arrow.left = 0;
+                    arrow.right = 0;
+                    arrow.height = length;
+                } else if (placement.startsWith("bottom")) {
+                    arrow.left = 0;
+                    arrow.right = 0;
+                    arrow.top = 0;
+                    arrow.height = length;
+                } else if (placement.startsWith("left")) {
+                    arrow.right = 0;
+                    arrow.top = 0;
+                    arrow.bottom = 0;
+                } else if (placement.startsWith("right")) {
+                    arrow.left = 0;
+                    arrow.top = 0;
+                }
+                return arrow;
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                var _this$props2 = this.props, placement = _this$props2.placement, setArrowRef = _this$props2.setArrowRef, styles = _this$props2.styles;
+                var _styles$arrow = styles.arrow, color = _styles$arrow.color, display = _styles$arrow.display, length = _styles$arrow.length, margin = _styles$arrow.margin, position = _styles$arrow.position, spread = _styles$arrow.spread;
+                var arrowStyles = {
+                    display: display,
+                    position: position
+                };
+                var points;
+                var x = spread;
+                var y = length; /* istanbul ignore else */ 
+                if (placement.startsWith("top")) {
+                    points = "0,0 ".concat(x / 2, ",").concat(y, " ").concat(x, ",0");
+                    arrowStyles.bottom = 0;
+                    arrowStyles.marginLeft = margin;
+                    arrowStyles.marginRight = margin;
+                } else if (placement.startsWith("bottom")) {
+                    points = "".concat(x, ",").concat(y, " ").concat(x / 2, ",0 0,").concat(y);
+                    arrowStyles.top = 0;
+                    arrowStyles.marginLeft = margin;
+                    arrowStyles.marginRight = margin;
+                } else if (placement.startsWith("left")) {
+                    y = spread;
+                    x = length;
+                    points = "0,0 ".concat(x, ",").concat(y / 2, " 0,").concat(y);
+                    arrowStyles.right = 0;
+                    arrowStyles.marginTop = margin;
+                    arrowStyles.marginBottom = margin;
+                } else if (placement.startsWith("right")) {
+                    y = spread;
+                    x = length;
+                    points = "".concat(x, ",").concat(y, " ").concat(x, ",0 0,").concat(y / 2);
+                    arrowStyles.left = 0;
+                    arrowStyles.marginTop = margin;
+                    arrowStyles.marginBottom = margin;
+                }
+                return /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+                    className: "__floater__arrow",
+                    style: this.parentStyle
+                }, /*#__PURE__*/ (0, _reactDefault.default).createElement("span", {
+                    ref: setArrowRef,
+                    style: arrowStyles
+                }, /*#__PURE__*/ (0, _reactDefault.default).createElement("svg", {
+                    width: x,
+                    height: y,
+                    version: "1.1",
+                    xmlns: "http://www.w3.org/2000/svg"
+                }, /*#__PURE__*/ (0, _reactDefault.default).createElement("polygon", {
+                    points: points,
+                    fill: color
+                }))));
+            }
+        }
+    ]);
+    return FloaterArrow;
+}((0, _reactDefault.default).Component);
+_defineProperty(FloaterArrow, "propTypes", {
+    placement: (0, _propTypesDefault.default).string.isRequired,
+    setArrowRef: (0, _propTypesDefault.default).func.isRequired,
+    styles: (0, _propTypesDefault.default).object.isRequired
+});
+var _excluded$1 = [
+    "color",
+    "height",
+    "width"
+];
+function FloaterCloseBtn(_ref) {
+    var handleClick = _ref.handleClick, styles = _ref.styles;
+    var color = styles.color, height = styles.height, width = styles.width, style = _objectWithoutProperties(styles, _excluded$1);
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement("button", {
+        "aria-label": "close",
+        onClick: handleClick,
+        style: style,
+        type: "button"
+    }, /*#__PURE__*/ (0, _reactDefault.default).createElement("svg", {
+        width: "".concat(width, "px"),
+        height: "".concat(height, "px"),
+        viewBox: "0 0 18 18",
+        version: "1.1",
+        xmlns: "http://www.w3.org/2000/svg",
+        preserveAspectRatio: "xMidYMid"
+    }, /*#__PURE__*/ (0, _reactDefault.default).createElement("g", null, /*#__PURE__*/ (0, _reactDefault.default).createElement("path", {
+        d: "M8.13911129,9.00268191 L0.171521827,17.0258467 C-0.0498027049,17.248715 -0.0498027049,17.6098394 0.171521827,17.8327545 C0.28204354,17.9443526 0.427188206,17.9998706 0.572051765,17.9998706 C0.71714958,17.9998706 0.862013139,17.9443526 0.972581703,17.8327545 L9.0000937,9.74924618 L17.0276057,17.8327545 C17.1384085,17.9443526 17.2832721,17.9998706 17.4281356,17.9998706 C17.5729992,17.9998706 17.718097,17.9443526 17.8286656,17.8327545 C18.0499901,17.6098862 18.0499901,17.2487618 17.8286656,17.0258467 L9.86135722,9.00268191 L17.8340066,0.973848225 C18.0553311,0.750979934 18.0553311,0.389855532 17.8340066,0.16694039 C17.6126821,-0.0556467968 17.254037,-0.0556467968 17.0329467,0.16694039 L9.00042166,8.25611765 L0.967006424,0.167268345 C0.745681892,-0.0553188426 0.387317931,-0.0553188426 0.165993399,0.167268345 C-0.0553311331,0.390136635 -0.0553311331,0.751261038 0.165993399,0.974176179 L8.13920499,9.00268191 L8.13911129,9.00268191 Z",
+        fill: color
+    }))));
+}
+FloaterCloseBtn.propTypes = {
+    handleClick: (0, _propTypesDefault.default).func.isRequired,
+    styles: (0, _propTypesDefault.default).object.isRequired
+};
+function FloaterContainer(_ref) {
+    var content = _ref.content, footer = _ref.footer, handleClick = _ref.handleClick, open = _ref.open, positionWrapper = _ref.positionWrapper, showCloseButton = _ref.showCloseButton, title = _ref.title, styles = _ref.styles;
+    var output = {
+        content: /*#__PURE__*/ (0, _reactDefault.default).isValidElement(content) ? content : /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+            className: "__floater__content",
+            style: styles.content
+        }, content)
+    };
+    if (title) output.title = /*#__PURE__*/ (0, _reactDefault.default).isValidElement(title) ? title : /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        className: "__floater__title",
+        style: styles.title
+    }, title);
+    if (footer) output.footer = /*#__PURE__*/ (0, _reactDefault.default).isValidElement(footer) ? footer : /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        className: "__floater__footer",
+        style: styles.footer
+    }, footer);
+    if ((showCloseButton || positionWrapper) && !(0, _isLiteDefault.default)["boolean"](open)) output.close = /*#__PURE__*/ (0, _reactDefault.default).createElement(FloaterCloseBtn, {
+        styles: styles.close,
+        handleClick: handleClick
+    });
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        className: "__floater__container",
+        style: styles.container
+    }, output.close, output.title, output.content, output.footer);
+}
+FloaterContainer.propTypes = {
+    content: (0, _propTypesDefault.default).node.isRequired,
+    footer: (0, _propTypesDefault.default).node,
+    handleClick: (0, _propTypesDefault.default).func.isRequired,
+    open: (0, _propTypesDefault.default).bool,
+    positionWrapper: (0, _propTypesDefault.default).bool.isRequired,
+    showCloseButton: (0, _propTypesDefault.default).bool.isRequired,
+    styles: (0, _propTypesDefault.default).object.isRequired,
+    title: (0, _propTypesDefault.default).node
+};
+var Floater = /*#__PURE__*/ function(_React$Component) {
+    _inherits(Floater, _React$Component);
+    var _super = _createSuper(Floater);
+    function Floater() {
+        _classCallCheck(this, Floater);
+        return _super.apply(this, arguments);
+    }
+    _createClass(Floater, [
+        {
+            key: "style",
+            get: function get() {
+                var _this$props = this.props, disableAnimation = _this$props.disableAnimation, component = _this$props.component, placement = _this$props.placement, hideArrow = _this$props.hideArrow, status = _this$props.status, styles = _this$props.styles;
+                var length = styles.arrow.length, floater = styles.floater, floaterCentered = styles.floaterCentered, floaterClosing = styles.floaterClosing, floaterOpening = styles.floaterOpening, floaterWithAnimation = styles.floaterWithAnimation, floaterWithComponent = styles.floaterWithComponent;
+                var element = {};
+                if (!hideArrow) {
+                    if (placement.startsWith("top")) element.padding = "0 0 ".concat(length, "px");
+                    else if (placement.startsWith("bottom")) element.padding = "".concat(length, "px 0 0");
+                    else if (placement.startsWith("left")) element.padding = "0 ".concat(length, "px 0 0");
+                    else if (placement.startsWith("right")) element.padding = "0 0 0 ".concat(length, "px");
+                }
+                if ([
+                    STATUS.OPENING,
+                    STATUS.OPEN
+                ].indexOf(status) !== -1) element = _objectSpread2(_objectSpread2({}, element), floaterOpening);
+                if (status === STATUS.CLOSING) element = _objectSpread2(_objectSpread2({}, element), floaterClosing);
+                if (status === STATUS.OPEN && !disableAnimation) element = _objectSpread2(_objectSpread2({}, element), floaterWithAnimation);
+                if (placement === "center") element = _objectSpread2(_objectSpread2({}, element), floaterCentered);
+                if (component) element = _objectSpread2(_objectSpread2({}, element), floaterWithComponent);
+                return _objectSpread2(_objectSpread2({}, floater), element);
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                var _this$props2 = this.props, component = _this$props2.component, closeFn = _this$props2.handleClick, hideArrow = _this$props2.hideArrow, setFloaterRef = _this$props2.setFloaterRef, status = _this$props2.status;
+                var output = {};
+                var classes = [
+                    "__floater"
+                ];
+                if (component) {
+                    if (/*#__PURE__*/ (0, _reactDefault.default).isValidElement(component)) output.content = /*#__PURE__*/ (0, _reactDefault.default).cloneElement(component, {
+                        closeFn: closeFn
+                    });
+                    else output.content = component({
+                        closeFn: closeFn
+                    });
+                } else output.content = /*#__PURE__*/ (0, _reactDefault.default).createElement(FloaterContainer, this.props);
+                if (status === STATUS.OPEN) classes.push("__floater__open");
+                if (!hideArrow) output.arrow = /*#__PURE__*/ (0, _reactDefault.default).createElement(FloaterArrow, this.props);
+                return /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+                    ref: setFloaterRef,
+                    className: classes.join(" "),
+                    style: this.style
+                }, /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+                    className: "__floater__body"
+                }, output.content, output.arrow));
+            }
+        }
+    ]);
+    return Floater;
+}((0, _reactDefault.default).Component);
+_defineProperty(Floater, "propTypes", {
+    component: (0, _propTypesDefault.default).oneOfType([
+        (0, _propTypesDefault.default).func,
+        (0, _propTypesDefault.default).element
+    ]),
+    content: (0, _propTypesDefault.default).node,
+    disableAnimation: (0, _propTypesDefault.default).bool.isRequired,
+    footer: (0, _propTypesDefault.default).node,
+    handleClick: (0, _propTypesDefault.default).func.isRequired,
+    hideArrow: (0, _propTypesDefault.default).bool.isRequired,
+    open: (0, _propTypesDefault.default).bool,
+    placement: (0, _propTypesDefault.default).string.isRequired,
+    positionWrapper: (0, _propTypesDefault.default).bool.isRequired,
+    setArrowRef: (0, _propTypesDefault.default).func.isRequired,
+    setFloaterRef: (0, _propTypesDefault.default).func.isRequired,
+    showCloseButton: (0, _propTypesDefault.default).bool,
+    status: (0, _propTypesDefault.default).string.isRequired,
+    styles: (0, _propTypesDefault.default).object.isRequired,
+    title: (0, _propTypesDefault.default).node
+});
+var ReactFloaterWrapper = /*#__PURE__*/ function(_React$Component) {
+    _inherits(ReactFloaterWrapper, _React$Component);
+    var _super = _createSuper(ReactFloaterWrapper);
+    function ReactFloaterWrapper() {
+        _classCallCheck(this, ReactFloaterWrapper);
+        return _super.apply(this, arguments);
+    }
+    _createClass(ReactFloaterWrapper, [
+        {
+            key: "render",
+            value: function render() {
+                var _this$props = this.props, children = _this$props.children, handleClick = _this$props.handleClick, handleMouseEnter = _this$props.handleMouseEnter, handleMouseLeave = _this$props.handleMouseLeave, setChildRef = _this$props.setChildRef, setWrapperRef = _this$props.setWrapperRef, style = _this$props.style, styles = _this$props.styles;
+                var element; /* istanbul ignore else */ 
+                if (children) {
+                    if ((0, _reactDefault.default).Children.count(children) === 1) {
+                        if (!/*#__PURE__*/ (0, _reactDefault.default).isValidElement(children)) element = /*#__PURE__*/ (0, _reactDefault.default).createElement("span", null, children);
+                        else {
+                            var refProp = (0, _isLiteDefault.default)["function"](children.type) ? "innerRef" : "ref";
+                            element = /*#__PURE__*/ (0, _reactDefault.default).cloneElement((0, _reactDefault.default).Children.only(children), _defineProperty({}, refProp, setChildRef));
+                        }
+                    } else element = children;
+                }
+                if (!element) return null;
+                return /*#__PURE__*/ (0, _reactDefault.default).createElement("span", {
+                    ref: setWrapperRef,
+                    style: _objectSpread2(_objectSpread2({}, styles), style),
+                    onClick: handleClick,
+                    onMouseEnter: handleMouseEnter,
+                    onMouseLeave: handleMouseLeave
+                }, element);
+            }
+        }
+    ]);
+    return ReactFloaterWrapper;
+}((0, _reactDefault.default).Component);
+_defineProperty(ReactFloaterWrapper, "propTypes", {
+    children: (0, _propTypesDefault.default).node,
+    handleClick: (0, _propTypesDefault.default).func.isRequired,
+    handleMouseEnter: (0, _propTypesDefault.default).func.isRequired,
+    handleMouseLeave: (0, _propTypesDefault.default).func.isRequired,
+    setChildRef: (0, _propTypesDefault.default).func.isRequired,
+    setWrapperRef: (0, _propTypesDefault.default).func.isRequired,
+    style: (0, _propTypesDefault.default).object,
+    styles: (0, _propTypesDefault.default).object.isRequired
+});
+var defaultOptions = {
+    zIndex: 100
+};
+function getStyles(styles) {
+    var options = (0, _deepmergeDefault.default)(defaultOptions, styles.options || {});
+    return {
+        wrapper: {
+            cursor: "help",
+            display: "inline-flex",
+            flexDirection: "column",
+            zIndex: options.zIndex
+        },
+        wrapperPosition: {
+            left: -1000,
+            position: "absolute",
+            top: -1000,
+            visibility: "hidden"
+        },
+        floater: {
+            display: "inline-block",
+            filter: "drop-shadow(0 0 3px rgba(0, 0, 0, 0.3))",
+            maxWidth: 300,
+            opacity: 0,
+            position: "relative",
+            transition: "opacity 0.3s",
+            visibility: "hidden",
+            zIndex: options.zIndex
+        },
+        floaterOpening: {
+            opacity: 1,
+            visibility: "visible"
+        },
+        floaterWithAnimation: {
+            opacity: 1,
+            transition: "opacity 0.3s, transform 0.2s",
+            visibility: "visible"
+        },
+        floaterWithComponent: {
+            maxWidth: "100%"
+        },
+        floaterClosing: {
+            opacity: 0,
+            visibility: "visible"
+        },
+        floaterCentered: {
+            left: "50%",
+            position: "fixed",
+            top: "50%",
+            transform: "translate(-50%, -50%)"
+        },
+        container: {
+            backgroundColor: "#fff",
+            color: "#666",
+            minHeight: 60,
+            minWidth: 200,
+            padding: 20,
+            position: "relative",
+            zIndex: 10
+        },
+        title: {
+            borderBottom: "1px solid #555",
+            color: "#555",
+            fontSize: 18,
+            marginBottom: 5,
+            paddingBottom: 6,
+            paddingRight: 18
+        },
+        content: {
+            fontSize: 15
+        },
+        close: {
+            backgroundColor: "transparent",
+            border: 0,
+            borderRadius: 0,
+            color: "#555",
+            fontSize: 0,
+            height: 15,
+            outline: "none",
+            padding: 10,
+            position: "absolute",
+            right: 0,
+            top: 0,
+            width: 15,
+            WebkitAppearance: "none"
+        },
+        footer: {
+            borderTop: "1px solid #ccc",
+            fontSize: 13,
+            marginTop: 10,
+            paddingTop: 5
+        },
+        arrow: {
+            color: "#fff",
+            display: "inline-flex",
+            length: 16,
+            margin: 8,
+            position: "absolute",
+            spread: 32
+        },
+        options: options
+    };
+}
+var _excluded = [
+    "arrow",
+    "flip",
+    "offset"
+];
+var POSITIONING_PROPS = [
+    "position",
+    "top",
+    "right",
+    "bottom",
+    "left"
+];
+var ReactFloater = /*#__PURE__*/ function(_React$Component) {
+    _inherits(ReactFloater, _React$Component);
+    var _super = _createSuper(ReactFloater);
+    function ReactFloater(props) {
+        var _this;
+        _classCallCheck(this, ReactFloater);
+        _this = _super.call(this, props); /* istanbul ignore else */ 
+        _defineProperty(_assertThisInitialized(_this), "setArrowRef", function(ref) {
+            _this.arrowRef = ref;
+        });
+        _defineProperty(_assertThisInitialized(_this), "setChildRef", function(ref) {
+            _this.childRef = ref;
+        });
+        _defineProperty(_assertThisInitialized(_this), "setFloaterRef", function(ref) {
+            _this.floaterRef = ref;
+        });
+        _defineProperty(_assertThisInitialized(_this), "setWrapperRef", function(ref) {
+            _this.wrapperRef = ref;
+        });
+        _defineProperty(_assertThisInitialized(_this), "handleTransitionEnd", function() {
+            var status = _this.state.status;
+            var callback = _this.props.callback; /* istanbul ignore else */ 
+            if (_this.wrapperPopper) _this.wrapperPopper.instance.update();
+            _this.setState({
+                status: status === STATUS.OPENING ? STATUS.OPEN : STATUS.IDLE
+            }, function() {
+                var newStatus = _this.state.status;
+                callback(newStatus === STATUS.OPEN ? "open" : "close", _this.props);
+            });
+        });
+        _defineProperty(_assertThisInitialized(_this), "handleClick", function() {
+            var _this$props = _this.props, event = _this$props.event, open = _this$props.open;
+            if ((0, _isLiteDefault.default)["boolean"](open)) return;
+            var _this$state = _this.state, positionWrapper = _this$state.positionWrapper, status = _this$state.status; /* istanbul ignore else */ 
+            if (_this.event === "click" || _this.event === "hover" && positionWrapper) {
+                log({
+                    title: "click",
+                    data: [
+                        {
+                            event: event,
+                            status: status === STATUS.OPEN ? "closing" : "opening"
+                        }
+                    ],
+                    debug: _this.debug
+                });
+                _this.toggle();
+            }
+        });
+        _defineProperty(_assertThisInitialized(_this), "handleMouseEnter", function() {
+            var _this$props2 = _this.props, event = _this$props2.event, open = _this$props2.open;
+            if ((0, _isLiteDefault.default)["boolean"](open) || isMobile()) return;
+            var status = _this.state.status; /* istanbul ignore else */ 
+            if (_this.event === "hover" && status === STATUS.IDLE) {
+                log({
+                    title: "mouseEnter",
+                    data: [
+                        {
+                            key: "originalEvent",
+                            value: event
+                        }
+                    ],
+                    debug: _this.debug
+                });
+                clearTimeout(_this.eventDelayTimeout);
+                _this.toggle();
+            }
+        });
+        _defineProperty(_assertThisInitialized(_this), "handleMouseLeave", function() {
+            var _this$props3 = _this.props, event = _this$props3.event, eventDelay = _this$props3.eventDelay, open = _this$props3.open;
+            if ((0, _isLiteDefault.default)["boolean"](open) || isMobile()) return;
+            var _this$state2 = _this.state, status = _this$state2.status, positionWrapper = _this$state2.positionWrapper; /* istanbul ignore else */ 
+            if (_this.event === "hover") {
+                log({
+                    title: "mouseLeave",
+                    data: [
+                        {
+                            key: "originalEvent",
+                            value: event
+                        }
+                    ],
+                    debug: _this.debug
+                });
+                if (!eventDelay) _this.toggle(STATUS.IDLE);
+                else if ([
+                    STATUS.OPENING,
+                    STATUS.OPEN
+                ].indexOf(status) !== -1 && !positionWrapper && !_this.eventDelayTimeout) _this.eventDelayTimeout = setTimeout(function() {
+                    delete _this.eventDelayTimeout;
+                    _this.toggle();
+                }, eventDelay * 1000);
+            }
+        });
+        _this.state = {
+            currentPlacement: props.placement,
+            needsUpdate: false,
+            positionWrapper: props.wrapperOptions.position && !!props.target,
+            status: STATUS.INIT,
+            statusWrapper: STATUS.INIT
+        };
+        _this._isMounted = false;
+        _this.hasMounted = false;
+        if (canUseDOM()) window.addEventListener("load", function() {
+            if (_this.popper) _this.popper.instance.update();
+            if (_this.wrapperPopper) _this.wrapperPopper.instance.update();
+        });
+        return _this;
+    }
+    _createClass(ReactFloater, [
+        {
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                if (!canUseDOM()) return;
+                var positionWrapper = this.state.positionWrapper;
+                var _this$props5 = this.props, children = _this$props5.children, open = _this$props5.open, target = _this$props5.target;
+                this._isMounted = true;
+                log({
+                    title: "init",
+                    data: {
+                        hasChildren: !!children,
+                        hasTarget: !!target,
+                        isControlled: (0, _isLiteDefault.default)["boolean"](open),
+                        positionWrapper: positionWrapper,
+                        target: this.target,
+                        floater: this.floaterRef
+                    },
+                    debug: this.debug
+                });
+                if (!this.hasMounted) {
+                    this.initPopper();
+                    this.hasMounted = true;
+                }
+                !children && target && (0, _isLiteDefault.default)["boolean"](open);
+            }
+        },
+        {
+            key: "componentDidUpdate",
+            value: function componentDidUpdate(prevProps, prevState) {
+                if (!canUseDOM()) return;
+                var _this$props6 = this.props, autoOpen = _this$props6.autoOpen, open = _this$props6.open, target = _this$props6.target, wrapperOptions = _this$props6.wrapperOptions;
+                var _treeChanges = (0, _treeChangesDefault.default)(prevState, this.state), changedFrom = _treeChanges.changedFrom, changed = _treeChanges.changed;
+                if (prevProps.open !== open) {
+                    var forceStatus; // always follow `open` in controlled mode
+                    if ((0, _isLiteDefault.default)["boolean"](open)) forceStatus = open ? STATUS.OPENING : STATUS.CLOSING;
+                    this.toggle(forceStatus);
+                }
+                if (prevProps.wrapperOptions.position !== wrapperOptions.position || prevProps.target !== target) this.changeWrapperPosition(this.props);
+                if (changed("status", STATUS.IDLE) && open) this.toggle(STATUS.OPEN);
+                else if (changedFrom("status", STATUS.INIT, STATUS.IDLE) && autoOpen) this.toggle(STATUS.OPEN);
+                if (this.popper && changed("status", STATUS.OPENING)) this.popper.instance.update();
+                if (this.floaterRef && (changed("status", STATUS.OPENING) || changed("status", STATUS.CLOSING))) once(this.floaterRef, "transitionend", this.handleTransitionEnd);
+                if (changed("needsUpdate", true)) this.rebuildPopper();
+            }
+        },
+        {
+            key: "componentWillUnmount",
+            value: function componentWillUnmount() {
+                if (!canUseDOM()) return;
+                this._isMounted = false;
+                if (this.popper) this.popper.instance.destroy();
+                if (this.wrapperPopper) this.wrapperPopper.instance.destroy();
+            }
+        },
+        {
+            key: "initPopper",
+            value: function initPopper() {
+                var _this2 = this;
+                var target = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.target;
+                var positionWrapper = this.state.positionWrapper;
+                var _this$props7 = this.props, disableFlip = _this$props7.disableFlip, getPopper = _this$props7.getPopper, hideArrow = _this$props7.hideArrow, offset = _this$props7.offset, placement = _this$props7.placement, wrapperOptions = _this$props7.wrapperOptions;
+                var flipBehavior = placement === "top" || placement === "bottom" ? "flip" : [
+                    "right",
+                    "bottom-end",
+                    "top-end",
+                    "left",
+                    "top-start",
+                    "bottom-start"
+                ]; /* istanbul ignore else */ 
+                if (placement === "center") this.setState({
+                    status: STATUS.IDLE
+                });
+                else if (target && this.floaterRef) {
+                    var _this$options = this.options, arrow = _this$options.arrow, flip = _this$options.flip, offsetOptions = _this$options.offset, rest = _objectWithoutProperties(_this$options, _excluded);
+                    new (0, _popperJsDefault.default)(target, this.floaterRef, {
+                        placement: placement,
+                        modifiers: _objectSpread2({
+                            arrow: _objectSpread2({
+                                enabled: !hideArrow,
+                                element: this.arrowRef
+                            }, arrow),
+                            flip: _objectSpread2({
+                                enabled: !disableFlip,
+                                behavior: flipBehavior
+                            }, flip),
+                            offset: _objectSpread2({
+                                offset: "0, ".concat(offset, "px")
+                            }, offsetOptions)
+                        }, rest),
+                        onCreate: function onCreate(data) {
+                            var _this2$floaterRef;
+                            _this2.popper = data;
+                            if (!((_this2$floaterRef = _this2.floaterRef) !== null && _this2$floaterRef !== void 0 && _this2$floaterRef.isConnected)) {
+                                _this2.setState({
+                                    needsUpdate: true
+                                });
+                                return;
+                            }
+                            getPopper(data, "floater");
+                            if (_this2._isMounted) _this2.setState({
+                                currentPlacement: data.placement,
+                                status: STATUS.IDLE
+                            });
+                            if (placement !== data.placement) setTimeout(function() {
+                                data.instance.update();
+                            }, 1);
+                        },
+                        onUpdate: function onUpdate(data) {
+                            _this2.popper = data;
+                            var currentPlacement = _this2.state.currentPlacement;
+                            if (_this2._isMounted && data.placement !== currentPlacement) _this2.setState({
+                                currentPlacement: data.placement
+                            });
+                        }
+                    });
+                }
+                if (positionWrapper) {
+                    var wrapperOffset = !(0, _isLiteDefault.default).undefined(wrapperOptions.offset) ? wrapperOptions.offset : 0;
+                    new (0, _popperJsDefault.default)(this.target, this.wrapperRef, {
+                        placement: wrapperOptions.placement || placement,
+                        modifiers: {
+                            arrow: {
+                                enabled: false
+                            },
+                            offset: {
+                                offset: "0, ".concat(wrapperOffset, "px")
+                            },
+                            flip: {
+                                enabled: false
+                            }
+                        },
+                        onCreate: function onCreate(data) {
+                            _this2.wrapperPopper = data;
+                            if (_this2._isMounted) _this2.setState({
+                                statusWrapper: STATUS.IDLE
+                            });
+                            getPopper(data, "wrapper");
+                            if (placement !== data.placement) setTimeout(function() {
+                                data.instance.update();
+                            }, 1);
+                        }
+                    });
+                }
+            }
+        },
+        {
+            key: "rebuildPopper",
+            value: function rebuildPopper() {
+                var _this3 = this;
+                this.floaterRefInterval = setInterval(function() {
+                    var _this3$floaterRef;
+                    if ((_this3$floaterRef = _this3.floaterRef) !== null && _this3$floaterRef !== void 0 && _this3$floaterRef.isConnected) {
+                        clearInterval(_this3.floaterRefInterval);
+                        _this3.setState({
+                            needsUpdate: false
+                        });
+                        _this3.initPopper();
+                    }
+                }, 50);
+            }
+        },
+        {
+            key: "changeWrapperPosition",
+            value: function changeWrapperPosition(_ref) {
+                var target = _ref.target, wrapperOptions = _ref.wrapperOptions;
+                this.setState({
+                    positionWrapper: wrapperOptions.position && !!target
+                });
+            }
+        },
+        {
+            key: "toggle",
+            value: function toggle(forceStatus) {
+                var status = this.state.status;
+                var nextStatus = status === STATUS.OPEN ? STATUS.CLOSING : STATUS.OPENING;
+                if (!(0, _isLiteDefault.default).undefined(forceStatus)) nextStatus = forceStatus;
+                this.setState({
+                    status: nextStatus
+                });
+            }
+        },
+        {
+            key: "debug",
+            get: function get() {
+                var debug = this.props.debug;
+                return debug || canUseDOM() && "ReactFloaterDebug" in window && !!window.ReactFloaterDebug;
+            }
+        },
+        {
+            key: "event",
+            get: function get() {
+                var _this$props8 = this.props, disableHoverToClick = _this$props8.disableHoverToClick, event = _this$props8.event;
+                if (event === "hover" && isMobile() && !disableHoverToClick) return "click";
+                return event;
+            }
+        },
+        {
+            key: "options",
+            get: function get() {
+                var options = this.props.options;
+                return (0, _deepmergeDefault.default)(DEFAULTS, options || {});
+            }
+        },
+        {
+            key: "styles",
+            get: function get() {
+                var _this4 = this;
+                var _this$state3 = this.state, status = _this$state3.status, positionWrapper = _this$state3.positionWrapper, statusWrapper = _this$state3.statusWrapper;
+                var styles = this.props.styles;
+                var nextStyles = (0, _deepmergeDefault.default)(getStyles(styles), styles);
+                if (positionWrapper) {
+                    var wrapperStyles;
+                    if (!([
+                        STATUS.IDLE
+                    ].indexOf(status) !== -1) || !([
+                        STATUS.IDLE
+                    ].indexOf(statusWrapper) !== -1)) wrapperStyles = nextStyles.wrapperPosition;
+                    else wrapperStyles = this.wrapperPopper.styles;
+                    nextStyles.wrapper = _objectSpread2(_objectSpread2({}, nextStyles.wrapper), wrapperStyles);
+                } /* istanbul ignore else */ 
+                if (this.target) {
+                    var targetStyles = window.getComputedStyle(this.target); /* istanbul ignore else */ 
+                    if (this.wrapperStyles) nextStyles.wrapper = _objectSpread2(_objectSpread2({}, nextStyles.wrapper), this.wrapperStyles);
+                    else if (!([
+                        "relative",
+                        "static"
+                    ].indexOf(targetStyles.position) !== -1)) {
+                        this.wrapperStyles = {};
+                        if (!positionWrapper) {
+                            POSITIONING_PROPS.forEach(function(d) {
+                                _this4.wrapperStyles[d] = targetStyles[d];
+                            });
+                            nextStyles.wrapper = _objectSpread2(_objectSpread2({}, nextStyles.wrapper), this.wrapperStyles);
+                            this.target.style.position = "relative";
+                            this.target.style.top = "auto";
+                            this.target.style.right = "auto";
+                            this.target.style.bottom = "auto";
+                            this.target.style.left = "auto";
+                        }
+                    }
+                }
+                return nextStyles;
+            }
+        },
+        {
+            key: "target",
+            get: function get() {
+                if (!canUseDOM()) return null;
+                var target = this.props.target;
+                if (target) {
+                    if ((0, _isLiteDefault.default).domElement(target)) return target;
+                    return document.querySelector(target);
+                }
+                return this.childRef || this.wrapperRef;
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                var _this$state4 = this.state, currentPlacement = _this$state4.currentPlacement, positionWrapper = _this$state4.positionWrapper, status = _this$state4.status;
+                var _this$props9 = this.props, children = _this$props9.children, component = _this$props9.component, content = _this$props9.content, disableAnimation = _this$props9.disableAnimation, footer = _this$props9.footer, hideArrow = _this$props9.hideArrow, id = _this$props9.id, open = _this$props9.open, showCloseButton = _this$props9.showCloseButton, style = _this$props9.style, target = _this$props9.target, title = _this$props9.title;
+                var wrapper = /*#__PURE__*/ (0, _reactDefault.default).createElement(ReactFloaterWrapper, {
+                    handleClick: this.handleClick,
+                    handleMouseEnter: this.handleMouseEnter,
+                    handleMouseLeave: this.handleMouseLeave,
+                    setChildRef: this.setChildRef,
+                    setWrapperRef: this.setWrapperRef,
+                    style: style,
+                    styles: this.styles.wrapper
+                }, children);
+                var output = {};
+                if (positionWrapper) output.wrapperInPortal = wrapper;
+                else output.wrapperAsChildren = wrapper;
+                return /*#__PURE__*/ (0, _reactDefault.default).createElement("span", null, /*#__PURE__*/ (0, _reactDefault.default).createElement(ReactFloaterPortal, {
+                    hasChildren: !!children,
+                    id: id,
+                    placement: currentPlacement,
+                    setRef: this.setFloaterRef,
+                    target: target,
+                    zIndex: this.styles.options.zIndex
+                }, /*#__PURE__*/ (0, _reactDefault.default).createElement(Floater, {
+                    component: component,
+                    content: content,
+                    disableAnimation: disableAnimation,
+                    footer: footer,
+                    handleClick: this.handleClick,
+                    hideArrow: hideArrow || currentPlacement === "center",
+                    open: open,
+                    placement: currentPlacement,
+                    positionWrapper: positionWrapper,
+                    setArrowRef: this.setArrowRef,
+                    setFloaterRef: this.setFloaterRef,
+                    showCloseButton: showCloseButton,
+                    status: status,
+                    styles: this.styles,
+                    title: title
+                }), output.wrapperInPortal), output.wrapperAsChildren);
+            }
+        }
+    ]);
+    return ReactFloater;
+}((0, _reactDefault.default).Component);
+_defineProperty(ReactFloater, "propTypes", {
+    autoOpen: (0, _propTypesDefault.default).bool,
+    callback: (0, _propTypesDefault.default).func,
+    children: (0, _propTypesDefault.default).node,
+    component: isRequiredIf((0, _propTypesDefault.default).oneOfType([
+        (0, _propTypesDefault.default).func,
+        (0, _propTypesDefault.default).element
+    ]), function(props) {
+        return !props.content;
+    }),
+    content: isRequiredIf((0, _propTypesDefault.default).node, function(props) {
+        return !props.component;
+    }),
+    debug: (0, _propTypesDefault.default).bool,
+    disableAnimation: (0, _propTypesDefault.default).bool,
+    disableFlip: (0, _propTypesDefault.default).bool,
+    disableHoverToClick: (0, _propTypesDefault.default).bool,
+    event: (0, _propTypesDefault.default).oneOf([
+        "hover",
+        "click"
+    ]),
+    eventDelay: (0, _propTypesDefault.default).number,
+    footer: (0, _propTypesDefault.default).node,
+    getPopper: (0, _propTypesDefault.default).func,
+    hideArrow: (0, _propTypesDefault.default).bool,
+    id: (0, _propTypesDefault.default).oneOfType([
+        (0, _propTypesDefault.default).string,
+        (0, _propTypesDefault.default).number
+    ]),
+    offset: (0, _propTypesDefault.default).number,
+    open: (0, _propTypesDefault.default).bool,
+    options: (0, _propTypesDefault.default).object,
+    placement: (0, _propTypesDefault.default).oneOf([
+        "top",
+        "top-start",
+        "top-end",
+        "bottom",
+        "bottom-start",
+        "bottom-end",
+        "left",
+        "left-start",
+        "left-end",
+        "right",
+        "right-start",
+        "right-end",
+        "auto",
+        "center"
+    ]),
+    showCloseButton: (0, _propTypesDefault.default).bool,
+    style: (0, _propTypesDefault.default).object,
+    styles: (0, _propTypesDefault.default).object,
+    target: (0, _propTypesDefault.default).oneOfType([
+        (0, _propTypesDefault.default).object,
+        (0, _propTypesDefault.default).string
+    ]),
+    title: (0, _propTypesDefault.default).node,
+    wrapperOptions: (0, _propTypesDefault.default).shape({
+        offset: (0, _propTypesDefault.default).number,
+        placement: (0, _propTypesDefault.default).oneOf([
+            "top",
+            "top-start",
+            "top-end",
+            "bottom",
+            "bottom-start",
+            "bottom-end",
+            "left",
+            "left-start",
+            "left-end",
+            "right",
+            "right-start",
+            "right-end",
+            "auto"
+        ]),
+        position: (0, _propTypesDefault.default).bool
+    })
+});
+_defineProperty(ReactFloater, "defaultProps", {
+    autoOpen: false,
+    callback: noop,
+    debug: false,
+    disableAnimation: false,
+    disableFlip: false,
+    disableHoverToClick: false,
+    event: "click",
+    eventDelay: 0.4,
+    getPopper: noop,
+    hideArrow: false,
+    offset: 15,
+    placement: "bottom",
+    showCloseButton: false,
+    styles: {},
+    target: null,
+    wrapperOptions: {
+        position: false
+    }
+});
+
+},{"react":"21dqq","prop-types":"7wKI2","popper.js":"dj939","deepmerge":"ck1Q2","is-lite":"15VPg","tree-changes":"djyHC","react-dom":"j6uA9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7wKI2":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ var ReactIs = require("96e34ae03f5a2631");
+// By explicitly using `prop-types` you are opting into new development behavior.
+// http://fb.me/prop-types-in-prod
+var throwOnDirectAccess = true;
+module.exports = require("cb216452e2171041")(ReactIs.isElement, throwOnDirectAccess);
+
+},{"96e34ae03f5a2631":"7EuwB","cb216452e2171041":"bBUgD"}],"7EuwB":[function(require,module,exports) {
+"use strict";
+module.exports = require("2255125a8e8b1051");
+
+},{"2255125a8e8b1051":"5DsXl"}],"5DsXl":[function(require,module,exports) {
+/** @license React v16.13.1
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+(function() {
+    "use strict";
+    // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+    // nor polyfill, then a plain number is used for performance.
+    var hasSymbol = typeof Symbol === "function" && Symbol.for;
+    var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for("react.element") : 0xeac7;
+    var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for("react.portal") : 0xeaca;
+    var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for("react.fragment") : 0xeacb;
+    var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for("react.strict_mode") : 0xeacc;
+    var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for("react.profiler") : 0xead2;
+    var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for("react.provider") : 0xeacd;
+    var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for("react.context") : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+    // (unstable) APIs that have been removed. Can we remove the symbols?
+    var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for("react.async_mode") : 0xeacf;
+    var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for("react.concurrent_mode") : 0xeacf;
+    var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for("react.forward_ref") : 0xead0;
+    var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for("react.suspense") : 0xead1;
+    var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for("react.suspense_list") : 0xead8;
+    var REACT_MEMO_TYPE = hasSymbol ? Symbol.for("react.memo") : 0xead3;
+    var REACT_LAZY_TYPE = hasSymbol ? Symbol.for("react.lazy") : 0xead4;
+    var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for("react.block") : 0xead9;
+    var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for("react.fundamental") : 0xead5;
+    var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for("react.responder") : 0xead6;
+    var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for("react.scope") : 0xead7;
+    function isValidElementType(type) {
+        return typeof type === "string" || typeof type === "function" || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+        type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === "object" && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+    }
+    function typeOf(object) {
+        if (typeof object === "object" && object !== null) {
+            var $$typeof = object.$$typeof;
+            switch($$typeof){
+                case REACT_ELEMENT_TYPE:
+                    var type = object.type;
+                    switch(type){
+                        case REACT_ASYNC_MODE_TYPE:
+                        case REACT_CONCURRENT_MODE_TYPE:
+                        case REACT_FRAGMENT_TYPE:
+                        case REACT_PROFILER_TYPE:
+                        case REACT_STRICT_MODE_TYPE:
+                        case REACT_SUSPENSE_TYPE:
+                            return type;
+                        default:
+                            var $$typeofType = type && type.$$typeof;
+                            switch($$typeofType){
+                                case REACT_CONTEXT_TYPE:
+                                case REACT_FORWARD_REF_TYPE:
+                                case REACT_LAZY_TYPE:
+                                case REACT_MEMO_TYPE:
+                                case REACT_PROVIDER_TYPE:
+                                    return $$typeofType;
+                                default:
+                                    return $$typeof;
+                            }
+                    }
+                case REACT_PORTAL_TYPE:
+                    return $$typeof;
+            }
+        }
+        return undefined;
+    } // AsyncMode is deprecated along with isAsyncMode
+    var AsyncMode = REACT_ASYNC_MODE_TYPE;
+    var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+    var ContextConsumer = REACT_CONTEXT_TYPE;
+    var ContextProvider = REACT_PROVIDER_TYPE;
+    var Element = REACT_ELEMENT_TYPE;
+    var ForwardRef = REACT_FORWARD_REF_TYPE;
+    var Fragment = REACT_FRAGMENT_TYPE;
+    var Lazy = REACT_LAZY_TYPE;
+    var Memo = REACT_MEMO_TYPE;
+    var Portal = REACT_PORTAL_TYPE;
+    var Profiler = REACT_PROFILER_TYPE;
+    var StrictMode = REACT_STRICT_MODE_TYPE;
+    var Suspense = REACT_SUSPENSE_TYPE;
+    var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
+    function isAsyncMode(object) {
+        if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+            hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+            console["warn"]("The ReactIs.isAsyncMode() alias has been deprecated, and will be removed in React 17+. Update your code to use ReactIs.isConcurrentMode() instead. It has the exact same API.");
+        }
+        return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+    }
+    function isConcurrentMode(object) {
+        return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+    }
+    function isContextConsumer(object) {
+        return typeOf(object) === REACT_CONTEXT_TYPE;
+    }
+    function isContextProvider(object) {
+        return typeOf(object) === REACT_PROVIDER_TYPE;
+    }
+    function isElement(object) {
+        return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+    }
+    function isForwardRef(object) {
+        return typeOf(object) === REACT_FORWARD_REF_TYPE;
+    }
+    function isFragment(object) {
+        return typeOf(object) === REACT_FRAGMENT_TYPE;
+    }
+    function isLazy(object) {
+        return typeOf(object) === REACT_LAZY_TYPE;
+    }
+    function isMemo(object) {
+        return typeOf(object) === REACT_MEMO_TYPE;
+    }
+    function isPortal(object) {
+        return typeOf(object) === REACT_PORTAL_TYPE;
+    }
+    function isProfiler(object) {
+        return typeOf(object) === REACT_PROFILER_TYPE;
+    }
+    function isStrictMode(object) {
+        return typeOf(object) === REACT_STRICT_MODE_TYPE;
+    }
+    function isSuspense(object) {
+        return typeOf(object) === REACT_SUSPENSE_TYPE;
+    }
+    exports.AsyncMode = AsyncMode;
+    exports.ConcurrentMode = ConcurrentMode;
+    exports.ContextConsumer = ContextConsumer;
+    exports.ContextProvider = ContextProvider;
+    exports.Element = Element;
+    exports.ForwardRef = ForwardRef;
+    exports.Fragment = Fragment;
+    exports.Lazy = Lazy;
+    exports.Memo = Memo;
+    exports.Portal = Portal;
+    exports.Profiler = Profiler;
+    exports.StrictMode = StrictMode;
+    exports.Suspense = Suspense;
+    exports.isAsyncMode = isAsyncMode;
+    exports.isConcurrentMode = isConcurrentMode;
+    exports.isContextConsumer = isContextConsumer;
+    exports.isContextProvider = isContextProvider;
+    exports.isElement = isElement;
+    exports.isForwardRef = isForwardRef;
+    exports.isFragment = isFragment;
+    exports.isLazy = isLazy;
+    exports.isMemo = isMemo;
+    exports.isPortal = isPortal;
+    exports.isProfiler = isProfiler;
+    exports.isStrictMode = isStrictMode;
+    exports.isSuspense = isSuspense;
+    exports.isValidElementType = isValidElementType;
+    exports.typeOf = typeOf;
+})();
+
+},{}],"bBUgD":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+var ReactIs = require("c437388b089702c3");
+var assign = require("c067a60101d8520c");
+var ReactPropTypesSecret = require("74a0f89a70b9f3c2");
+var has = require("18441b11647bc78");
+var checkPropTypes = require("bec3f6ff89f0b072");
+var printWarning = function() {};
+printWarning = function(text) {
+    var message = "Warning: " + text;
+    if (typeof console !== "undefined") console.error(message);
+    try {
+        // --- Welcome to debugging React ---
+        // This error was thrown as a convenience so that you can use this stack
+        // to find the callsite that caused this warning to fire.
+        throw new Error(message);
+    } catch (x) {}
+};
+function emptyFunctionThatReturnsNull() {
+    return null;
+}
+module.exports = function(isValidElement, throwOnDirectAccess) {
+    /* global Symbol */ var ITERATOR_SYMBOL = typeof Symbol === "function" && Symbol.iterator;
+    var FAUX_ITERATOR_SYMBOL = "@@iterator"; // Before Symbol spec.
+    /**
+   * Returns the iterator method function contained on the iterable object.
+   *
+   * Be sure to invoke the function with the iterable as context:
+   *
+   *     var iteratorFn = getIteratorFn(myIterable);
+   *     if (iteratorFn) {
+   *       var iterator = iteratorFn.call(myIterable);
+   *       ...
+   *     }
+   *
+   * @param {?object} maybeIterable
+   * @return {?function}
+   */ function getIteratorFn(maybeIterable) {
+        var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+        if (typeof iteratorFn === "function") return iteratorFn;
+    }
+    /**
+   * Collection of methods that allow declaration and validation of props that are
+   * supplied to React components. Example usage:
+   *
+   *   var Props = require('ReactPropTypes');
+   *   var MyArticle = React.createClass({
+   *     propTypes: {
+   *       // An optional string prop named "description".
+   *       description: Props.string,
+   *
+   *       // A required enum prop named "category".
+   *       category: Props.oneOf(['News','Photos']).isRequired,
+   *
+   *       // A prop named "dialog" that requires an instance of Dialog.
+   *       dialog: Props.instanceOf(Dialog).isRequired
+   *     },
+   *     render: function() { ... }
+   *   });
+   *
+   * A more formal specification of how these methods are used:
+   *
+   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+   *   decl := ReactPropTypes.{type}(.isRequired)?
+   *
+   * Each and every declaration produces a function with the same signature. This
+   * allows the creation of custom validation functions. For example:
+   *
+   *  var MyLink = React.createClass({
+   *    propTypes: {
+   *      // An optional string or URI prop named "href".
+   *      href: function(props, propName, componentName) {
+   *        var propValue = props[propName];
+   *        if (propValue != null && typeof propValue !== 'string' &&
+   *            !(propValue instanceof URI)) {
+   *          return new Error(
+   *            'Expected a string or an URI for ' + propName + ' in ' +
+   *            componentName
+   *          );
+   *        }
+   *      }
+   *    },
+   *    render: function() {...}
+   *  });
+   *
+   * @internal
+   */ var ANONYMOUS = "<<anonymous>>";
+    // Important!
+    // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+    var ReactPropTypes = {
+        array: createPrimitiveTypeChecker("array"),
+        bigint: createPrimitiveTypeChecker("bigint"),
+        bool: createPrimitiveTypeChecker("boolean"),
+        func: createPrimitiveTypeChecker("function"),
+        number: createPrimitiveTypeChecker("number"),
+        object: createPrimitiveTypeChecker("object"),
+        string: createPrimitiveTypeChecker("string"),
+        symbol: createPrimitiveTypeChecker("symbol"),
+        any: createAnyTypeChecker(),
+        arrayOf: createArrayOfTypeChecker,
+        element: createElementTypeChecker(),
+        elementType: createElementTypeTypeChecker(),
+        instanceOf: createInstanceTypeChecker,
+        node: createNodeChecker(),
+        objectOf: createObjectOfTypeChecker,
+        oneOf: createEnumTypeChecker,
+        oneOfType: createUnionTypeChecker,
+        shape: createShapeTypeChecker,
+        exact: createStrictShapeTypeChecker
+    };
+    /**
+   * inlined Object.is polyfill to avoid requiring consumers ship their own
+   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+   */ /*eslint-disable no-self-compare*/ function is(x, y) {
+        // SameValue algorithm
+        if (x === y) // Steps 1-5, 7-10
+        // Steps 6.b-6.e: +0 != -0
+        return x !== 0 || 1 / x === 1 / y;
+        else // Step 6.a: NaN == NaN
+        return x !== x && y !== y;
+    }
+    /*eslint-enable no-self-compare*/ /**
+   * We use an Error-like object for backward compatibility as people may call
+   * PropTypes directly and inspect their output. However, we don't use real
+   * Errors anymore. We don't inspect their stack anyway, and creating them
+   * is prohibitively expensive if they are created too often, such as what
+   * happens in oneOfType() for any type before the one that matched.
+   */ function PropTypeError(message, data) {
+        this.message = message;
+        this.data = data && typeof data === "object" ? data : {};
+        this.stack = "";
+    }
+    // Make `instanceof Error` still work for returned errors.
+    PropTypeError.prototype = Error.prototype;
+    function createChainableTypeChecker(validate) {
+        var manualPropTypeCallCache = {};
+        var manualPropTypeWarningCount = 0;
+        function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+            componentName = componentName || ANONYMOUS;
+            propFullName = propFullName || propName;
+            if (secret !== ReactPropTypesSecret) {
+                if (throwOnDirectAccess) {
+                    // New behavior only for users of `prop-types` package
+                    var err = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use `PropTypes.checkPropTypes()` to call them. Read more at http://fb.me/use-check-prop-types");
+                    err.name = "Invariant Violation";
+                    throw err;
+                } else if (typeof console !== "undefined") {
+                    // Old behavior for people using React.PropTypes
+                    var cacheKey = componentName + ":" + propName;
+                    if (!manualPropTypeCallCache[cacheKey] && // Avoid spamming the console because they are often not actionable except for lib authors
+                    manualPropTypeWarningCount < 3) {
+                        printWarning("You are manually calling a React.PropTypes validation function for the `" + propFullName + "` prop on `" + componentName + "`. This is deprecated " + "and will throw in the standalone `prop-types` package. " + "You may be seeing this warning due to a third-party PropTypes " + "library. See https://fb.me/react-warning-dont-call-proptypes " + "for details.");
+                        manualPropTypeCallCache[cacheKey] = true;
+                        manualPropTypeWarningCount++;
+                    }
+                }
+            }
+            if (props[propName] == null) {
+                if (isRequired) {
+                    if (props[propName] === null) return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required " + ("in `" + componentName + "`, but its value is `null`."));
+                    return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required in " + ("`" + componentName + "`, but its value is `undefined`."));
+                }
+                return null;
+            } else return validate(props, propName, componentName, location, propFullName);
+        }
+        var chainedCheckType = checkType.bind(null, false);
+        chainedCheckType.isRequired = checkType.bind(null, true);
+        return chainedCheckType;
+    }
+    function createPrimitiveTypeChecker(expectedType) {
+        function validate(props, propName, componentName, location, propFullName, secret) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== expectedType) {
+                // `propValue` being instance of, say, date/regexp, pass the 'object'
+                // check, but we can offer a more precise error message here rather than
+                // 'of type `object`'.
+                var preciseType = getPreciseType(propValue);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + preciseType + "` supplied to `" + componentName + "`, expected ") + ("`" + expectedType + "`."), {
+                    expectedType: expectedType
+                });
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createAnyTypeChecker() {
+        return createChainableTypeChecker(emptyFunctionThatReturnsNull);
+    }
+    function createArrayOfTypeChecker(typeChecker) {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (typeof typeChecker !== "function") return new PropTypeError("Property `" + propFullName + "` of component `" + componentName + "` has invalid PropType notation inside arrayOf.");
+            var propValue = props[propName];
+            if (!Array.isArray(propValue)) {
+                var propType = getPropType(propValue);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected an array."));
+            }
+            for(var i = 0; i < propValue.length; i++){
+                var error = typeChecker(propValue, i, componentName, location, propFullName + "[" + i + "]", ReactPropTypesSecret);
+                if (error instanceof Error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createElementTypeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            if (!isValidElement(propValue)) {
+                var propType = getPropType(propValue);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected a single ReactElement."));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createElementTypeTypeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            if (!ReactIs.isValidElementType(propValue)) {
+                var propType = getPropType(propValue);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected a single ReactElement type."));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createInstanceTypeChecker(expectedClass) {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (!(props[propName] instanceof expectedClass)) {
+                var expectedClassName = expectedClass.name || ANONYMOUS;
+                var actualClassName = getClassName(props[propName]);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + actualClassName + "` supplied to `" + componentName + "`, expected ") + ("instance of `" + expectedClassName + "`."));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createEnumTypeChecker(expectedValues) {
+        if (!Array.isArray(expectedValues)) {
+            {
+                if (arguments.length > 1) printWarning("Invalid arguments supplied to oneOf, expected an array, got " + arguments.length + " arguments. " + "A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).");
+                else printWarning("Invalid argument supplied to oneOf, expected an array.");
+            }
+            return emptyFunctionThatReturnsNull;
+        }
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            for(var i = 0; i < expectedValues.length; i++){
+                if (is(propValue, expectedValues[i])) return null;
+            }
+            var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
+                var type = getPreciseType(value);
+                if (type === "symbol") return String(value);
+                return value;
+            });
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of value `" + String(propValue) + "` " + ("supplied to `" + componentName + "`, expected one of " + valuesString + "."));
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createObjectOfTypeChecker(typeChecker) {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (typeof typeChecker !== "function") return new PropTypeError("Property `" + propFullName + "` of component `" + componentName + "` has invalid PropType notation inside objectOf.");
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== "object") return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected an object."));
+            for(var key in propValue)if (has(propValue, key)) {
+                var error = typeChecker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
+                if (error instanceof Error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createUnionTypeChecker(arrayOfTypeCheckers) {
+        if (!Array.isArray(arrayOfTypeCheckers)) {
+            printWarning("Invalid argument supplied to oneOfType, expected an instance of array.");
+            return emptyFunctionThatReturnsNull;
+        }
+        for(var i = 0; i < arrayOfTypeCheckers.length; i++){
+            var checker = arrayOfTypeCheckers[i];
+            if (typeof checker !== "function") {
+                printWarning("Invalid argument supplied to oneOfType. Expected an array of check functions, but received " + getPostfixForTypeWarning(checker) + " at index " + i + ".");
+                return emptyFunctionThatReturnsNull;
+            }
+        }
+        function validate(props, propName, componentName, location, propFullName) {
+            var expectedTypes = [];
+            for(var i = 0; i < arrayOfTypeCheckers.length; i++){
+                var checker = arrayOfTypeCheckers[i];
+                var checkerResult = checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret);
+                if (checkerResult == null) return null;
+                if (checkerResult.data && has(checkerResult.data, "expectedType")) expectedTypes.push(checkerResult.data.expectedType);
+            }
+            var expectedTypesMessage = expectedTypes.length > 0 ? ", expected one of type [" + expectedTypes.join(", ") + "]" : "";
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName + "`" + expectedTypesMessage + "."));
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createNodeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (!isNode(props[propName])) return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName + "`, expected a ReactNode."));
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function invalidValidatorError(componentName, location, propFullName, key, type) {
+        return new PropTypeError((componentName || "React class") + ": " + location + " type `" + propFullName + "." + key + "` is invalid; " + "it must be a function, usually from the `prop-types` package, but received `" + type + "`.");
+    }
+    function createShapeTypeChecker(shapeTypes) {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== "object") return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName + "`, expected `object`."));
+            for(var key in shapeTypes){
+                var checker = shapeTypes[key];
+                if (typeof checker !== "function") return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+                var error = checker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
+                if (error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createStrictShapeTypeChecker(shapeTypes) {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== "object") return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName + "`, expected `object`."));
+            // We need to check all keys in case some are required but missing from props.
+            var allKeys = assign({}, props[propName], shapeTypes);
+            for(var key in allKeys){
+                var checker = shapeTypes[key];
+                if (has(shapeTypes, key) && typeof checker !== "function") return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+                if (!checker) return new PropTypeError("Invalid " + location + " `" + propFullName + "` key `" + key + "` supplied to `" + componentName + "`." + "\nBad object: " + JSON.stringify(props[propName], null, "  ") + "\nValid keys: " + JSON.stringify(Object.keys(shapeTypes), null, "  "));
+                var error = checker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
+                if (error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function isNode(propValue) {
+        switch(typeof propValue){
+            case "number":
+            case "string":
+            case "undefined":
+                return true;
+            case "boolean":
+                return !propValue;
+            case "object":
+                if (Array.isArray(propValue)) return propValue.every(isNode);
+                if (propValue === null || isValidElement(propValue)) return true;
+                var iteratorFn = getIteratorFn(propValue);
+                if (iteratorFn) {
+                    var iterator = iteratorFn.call(propValue);
+                    var step;
+                    if (iteratorFn !== propValue.entries) while(!(step = iterator.next()).done){
+                        if (!isNode(step.value)) return false;
+                    }
+                    else // Iterator will provide entry [k,v] tuples rather than values.
+                    while(!(step = iterator.next()).done){
+                        var entry = step.value;
+                        if (entry) {
+                            if (!isNode(entry[1])) return false;
+                        }
+                    }
+                } else return false;
+                return true;
+            default:
+                return false;
+        }
+    }
+    function isSymbol(propType, propValue) {
+        // Native Symbol.
+        if (propType === "symbol") return true;
+        // falsy value can't be a Symbol
+        if (!propValue) return false;
+        // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+        if (propValue["@@toStringTag"] === "Symbol") return true;
+        // Fallback for non-spec compliant Symbols which are polyfilled.
+        if (typeof Symbol === "function" && propValue instanceof Symbol) return true;
+        return false;
+    }
+    // Equivalent of `typeof` but with special handling for array and regexp.
+    function getPropType(propValue) {
+        var propType = typeof propValue;
+        if (Array.isArray(propValue)) return "array";
+        if (propValue instanceof RegExp) // Old webkits (at least until Android 4.0) return 'function' rather than
+        // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+        // passes PropTypes.object.
+        return "object";
+        if (isSymbol(propType, propValue)) return "symbol";
+        return propType;
+    }
+    // This handles more types than `getPropType`. Only used for error messages.
+    // See `createPrimitiveTypeChecker`.
+    function getPreciseType(propValue) {
+        if (typeof propValue === "undefined" || propValue === null) return "" + propValue;
+        var propType = getPropType(propValue);
+        if (propType === "object") {
+            if (propValue instanceof Date) return "date";
+            else if (propValue instanceof RegExp) return "regexp";
+        }
+        return propType;
+    }
+    // Returns a string that is postfixed to a warning about an invalid type.
+    // For example, "undefined" or "of type array"
+    function getPostfixForTypeWarning(value) {
+        var type = getPreciseType(value);
+        switch(type){
+            case "array":
+            case "object":
+                return "an " + type;
+            case "boolean":
+            case "date":
+            case "regexp":
+                return "a " + type;
+            default:
+                return type;
+        }
+    }
+    // Returns class name of the object, if any.
+    function getClassName(propValue) {
+        if (!propValue.constructor || !propValue.constructor.name) return ANONYMOUS;
+        return propValue.constructor.name;
+    }
+    ReactPropTypes.checkPropTypes = checkPropTypes;
+    ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
+    ReactPropTypes.PropTypes = ReactPropTypes;
+    return ReactPropTypes;
+};
+
+},{"c437388b089702c3":"7EuwB","c067a60101d8520c":"7OXxh","74a0f89a70b9f3c2":"jZTZJ","18441b11647bc78":"fqKuf","bec3f6ff89f0b072":"5VwyJ"}],"7OXxh":[function(require,module,exports) {
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/ "use strict";
+/* eslint-disable no-unused-vars */ var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+function toObject(val) {
+    if (val === null || val === undefined) throw new TypeError("Object.assign cannot be called with null or undefined");
+    return Object(val);
+}
+function shouldUseNative() {
+    try {
+        if (!Object.assign) return false;
+        // Detect buggy property enumeration order in older V8 versions.
+        // https://bugs.chromium.org/p/v8/issues/detail?id=4118
+        var test1 = new String("abc"); // eslint-disable-line no-new-wrappers
+        test1[5] = "de";
+        if (Object.getOwnPropertyNames(test1)[0] === "5") return false;
+        // https://bugs.chromium.org/p/v8/issues/detail?id=3056
+        var test2 = {};
+        for(var i = 0; i < 10; i++)test2["_" + String.fromCharCode(i)] = i;
+        var order2 = Object.getOwnPropertyNames(test2).map(function(n) {
+            return test2[n];
+        });
+        if (order2.join("") !== "0123456789") return false;
+        // https://bugs.chromium.org/p/v8/issues/detail?id=3056
+        var test3 = {};
+        "abcdefghijklmnopqrst".split("").forEach(function(letter) {
+            test3[letter] = letter;
+        });
+        if (Object.keys(Object.assign({}, test3)).join("") !== "abcdefghijklmnopqrst") return false;
+        return true;
+    } catch (err) {
+        // We don't expect any of the above to throw, but better to be safe.
+        return false;
+    }
+}
+module.exports = shouldUseNative() ? Object.assign : function(target, source) {
+    var from;
+    var to = toObject(target);
+    var symbols;
+    for(var s = 1; s < arguments.length; s++){
+        from = Object(arguments[s]);
+        for(var key in from)if (hasOwnProperty.call(from, key)) to[key] = from[key];
+        if (getOwnPropertySymbols) {
+            symbols = getOwnPropertySymbols(from);
+            for(var i = 0; i < symbols.length; i++)if (propIsEnumerable.call(from, symbols[i])) to[symbols[i]] = from[symbols[i]];
+        }
+    }
+    return to;
+};
+
+},{}],"jZTZJ":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+var ReactPropTypesSecret = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
+module.exports = ReactPropTypesSecret;
+
+},{}],"fqKuf":[function(require,module,exports) {
+module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
+
+},{}],"5VwyJ":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+var printWarning = function() {};
+var ReactPropTypesSecret = require("24ba1e58d167a82c");
+var loggedTypeFailures = {};
+var has = require("898bc82f39d83f7c");
+printWarning = function(text) {
+    var message = "Warning: " + text;
+    if (typeof console !== "undefined") console.error(message);
+    try {
+        // --- Welcome to debugging React ---
+        // This error was thrown as a convenience so that you can use this stack
+        // to find the callsite that caused this warning to fire.
+        throw new Error(message);
+    } catch (x) {}
+};
+/**
+ * Assert that the values match with the type specs.
+ * Error messages are memorized and will only be shown once.
+ *
+ * @param {object} typeSpecs Map of name to a ReactPropType
+ * @param {object} values Runtime values that need to be type-checked
+ * @param {string} location e.g. "prop", "context", "child context"
+ * @param {string} componentName Name of the component for error messages.
+ * @param {?Function} getStack Returns the component stack.
+ * @private
+ */ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+    for(var typeSpecName in typeSpecs)if (has(typeSpecs, typeSpecName)) {
+        var error;
+        // Prop type validation may throw. In case they do, we don't want to
+        // fail the render phase where it didn't fail before. So we log it.
+        // After these have been cleaned up, we'll let them throw.
+        try {
+            // This is intentionally an invariant that gets caught. It's the same
+            // behavior as without this statement except with a better message.
+            if (typeof typeSpecs[typeSpecName] !== "function") {
+                var err = Error((componentName || "React class") + ": " + location + " type `" + typeSpecName + "` is invalid; " + "it must be a function, usually from the `prop-types` package, but received `" + typeof typeSpecs[typeSpecName] + "`." + "This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                err.name = "Invariant Violation";
+                throw err;
+            }
+            error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+        } catch (ex) {
+            error = ex;
+        }
+        if (error && !(error instanceof Error)) printWarning((componentName || "React class") + ": type specification of " + location + " `" + typeSpecName + "` is invalid; the type checker " + "function must return `null` or an `Error` but returned a " + typeof error + ". " + "You may have forgotten to pass an argument to the type checker " + "creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and " + "shape all require an argument).");
+        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+            // Only monitor this failure once because there tends to be a lot of the
+            // same error.
+            loggedTypeFailures[error.message] = true;
+            var stack = getStack ? getStack() : "";
+            printWarning("Failed " + location + " type: " + error.message + (stack != null ? stack : ""));
+        }
+    }
+}
+/**
+ * Resets warning cache when testing.
+ *
+ * @private
+ */ checkPropTypes.resetWarningCache = function() {
+    loggedTypeFailures = {};
+};
+module.exports = checkPropTypes;
+
+},{"24ba1e58d167a82c":"jZTZJ","898bc82f39d83f7c":"fqKuf"}],"dj939":[function(require,module,exports) {
+/**!
+ * @fileOverview Kickass library to create and place poppers near their reference elements.
+ * @version 1.16.1
+ * @license
+ * Copyright (c) 2016 Federico Zivolo and contributors
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var global = arguments[3];
+var isBrowser = typeof window !== "undefined" && typeof document !== "undefined" && typeof navigator !== "undefined";
+var timeoutDuration = function() {
+    var longerTimeoutBrowsers = [
+        "Edge",
+        "Trident",
+        "Firefox"
+    ];
+    for(var i = 0; i < longerTimeoutBrowsers.length; i += 1){
+        if (isBrowser && navigator.userAgent.indexOf(longerTimeoutBrowsers[i]) >= 0) return 1;
+    }
+    return 0;
+}();
+function microtaskDebounce(fn) {
+    var called = false;
+    return function() {
+        if (called) return;
+        called = true;
+        window.Promise.resolve().then(function() {
+            called = false;
+            fn();
+        });
+    };
+}
+function taskDebounce(fn) {
+    var scheduled = false;
+    return function() {
+        if (!scheduled) {
+            scheduled = true;
+            setTimeout(function() {
+                scheduled = false;
+                fn();
+            }, timeoutDuration);
+        }
+    };
+}
+var supportsMicroTasks = isBrowser && window.Promise;
+/**
+* Create a debounced version of a method, that's asynchronously deferred
+* but called in the minimum time possible.
+*
+* @method
+* @memberof Popper.Utils
+* @argument {Function} fn
+* @returns {Function}
+*/ var debounce = supportsMicroTasks ? microtaskDebounce : taskDebounce;
+/**
+ * Check if the given variable is a function
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Any} functionToCheck - variable to check
+ * @returns {Boolean} answer to: is a function?
+ */ function isFunction(functionToCheck) {
+    var getType = {};
+    return functionToCheck && getType.toString.call(functionToCheck) === "[object Function]";
+}
+/**
+ * Get CSS computed property of the given element
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Eement} element
+ * @argument {String} property
+ */ function getStyleComputedProperty(element, property) {
+    if (element.nodeType !== 1) return [];
+    // NOTE: 1 DOM access here
+    var window1 = element.ownerDocument.defaultView;
+    var css = window1.getComputedStyle(element, null);
+    return property ? css[property] : css;
+}
+/**
+ * Returns the parentNode or the host of the element
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @returns {Element} parent
+ */ function getParentNode(element) {
+    if (element.nodeName === "HTML") return element;
+    return element.parentNode || element.host;
+}
+/**
+ * Returns the scrolling parent of the given element
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @returns {Element} scroll parent
+ */ function getScrollParent(element) {
+    // Return body, `getScroll` will take care to get the correct `scrollTop` from it
+    if (!element) return document.body;
+    switch(element.nodeName){
+        case "HTML":
+        case "BODY":
+            return element.ownerDocument.body;
+        case "#document":
+            return element.body;
+    }
+    // Firefox want us to check `-x` and `-y` variations as well
+    var _getStyleComputedProp = getStyleComputedProperty(element), overflow = _getStyleComputedProp.overflow, overflowX = _getStyleComputedProp.overflowX, overflowY = _getStyleComputedProp.overflowY;
+    if (/(auto|scroll|overlay)/.test(overflow + overflowY + overflowX)) return element;
+    return getScrollParent(getParentNode(element));
+}
+/**
+ * Returns the reference node of the reference object, or the reference object itself.
+ * @method
+ * @memberof Popper.Utils
+ * @param {Element|Object} reference - the reference element (the popper will be relative to this)
+ * @returns {Element} parent
+ */ function getReferenceNode(reference) {
+    return reference && reference.referenceNode ? reference.referenceNode : reference;
+}
+var isIE11 = isBrowser && !!(window.MSInputMethodContext && document.documentMode);
+var isIE10 = isBrowser && /MSIE 10/.test(navigator.userAgent);
+/**
+ * Determines if the browser is Internet Explorer
+ * @method
+ * @memberof Popper.Utils
+ * @param {Number} version to check
+ * @returns {Boolean} isIE
+ */ function isIE(version) {
+    if (version === 11) return isIE11;
+    if (version === 10) return isIE10;
+    return isIE11 || isIE10;
+}
+/**
+ * Returns the offset parent of the given element
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @returns {Element} offset parent
+ */ function getOffsetParent(element) {
+    if (!element) return document.documentElement;
+    var noOffsetParent = isIE(10) ? document.body : null;
+    // NOTE: 1 DOM access here
+    var offsetParent = element.offsetParent || null;
+    // Skip hidden elements which don't have an offsetParent
+    while(offsetParent === noOffsetParent && element.nextElementSibling)offsetParent = (element = element.nextElementSibling).offsetParent;
+    var nodeName = offsetParent && offsetParent.nodeName;
+    if (!nodeName || nodeName === "BODY" || nodeName === "HTML") return element ? element.ownerDocument.documentElement : document.documentElement;
+    // .offsetParent will return the closest TH, TD or TABLE in case
+    // no offsetParent is present, I hate this job...
+    if ([
+        "TH",
+        "TD",
+        "TABLE"
+    ].indexOf(offsetParent.nodeName) !== -1 && getStyleComputedProperty(offsetParent, "position") === "static") return getOffsetParent(offsetParent);
+    return offsetParent;
+}
+function isOffsetContainer(element) {
+    var nodeName = element.nodeName;
+    if (nodeName === "BODY") return false;
+    return nodeName === "HTML" || getOffsetParent(element.firstElementChild) === element;
+}
+/**
+ * Finds the root node (document, shadowDOM root) of the given element
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} node
+ * @returns {Element} root node
+ */ function getRoot(node) {
+    if (node.parentNode !== null) return getRoot(node.parentNode);
+    return node;
+}
+/**
+ * Finds the offset parent common to the two provided nodes
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element1
+ * @argument {Element} element2
+ * @returns {Element} common offset parent
+ */ function findCommonOffsetParent(element1, element2) {
+    // This check is needed to avoid errors in case one of the elements isn't defined for any reason
+    if (!element1 || !element1.nodeType || !element2 || !element2.nodeType) return document.documentElement;
+    // Here we make sure to give as "start" the element that comes first in the DOM
+    var order = element1.compareDocumentPosition(element2) & Node.DOCUMENT_POSITION_FOLLOWING;
+    var start = order ? element1 : element2;
+    var end = order ? element2 : element1;
+    // Get common ancestor container
+    var range = document.createRange();
+    range.setStart(start, 0);
+    range.setEnd(end, 0);
+    var commonAncestorContainer = range.commonAncestorContainer;
+    // Both nodes are inside #document
+    if (element1 !== commonAncestorContainer && element2 !== commonAncestorContainer || start.contains(end)) {
+        if (isOffsetContainer(commonAncestorContainer)) return commonAncestorContainer;
+        return getOffsetParent(commonAncestorContainer);
+    }
+    // one of the nodes is inside shadowDOM, find which one
+    var element1root = getRoot(element1);
+    if (element1root.host) return findCommonOffsetParent(element1root.host, element2);
+    else return findCommonOffsetParent(element1, getRoot(element2).host);
+}
+/**
+ * Gets the scroll value of the given element in the given side (top and left)
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @argument {String} side `top` or `left`
+ * @returns {number} amount of scrolled pixels
+ */ function getScroll(element) {
+    var side = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "top";
+    var upperSide = side === "top" ? "scrollTop" : "scrollLeft";
+    var nodeName = element.nodeName;
+    if (nodeName === "BODY" || nodeName === "HTML") {
+        var html = element.ownerDocument.documentElement;
+        var scrollingElement = element.ownerDocument.scrollingElement || html;
+        return scrollingElement[upperSide];
+    }
+    return element[upperSide];
+}
+/*
+ * Sum or subtract the element scroll values (left and top) from a given rect object
+ * @method
+ * @memberof Popper.Utils
+ * @param {Object} rect - Rect object you want to change
+ * @param {HTMLElement} element - The element from the function reads the scroll values
+ * @param {Boolean} subtract - set to true if you want to subtract the scroll values
+ * @return {Object} rect - The modifier rect object
+ */ function includeScroll(rect, element) {
+    var subtract = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+    var scrollTop = getScroll(element, "top");
+    var scrollLeft = getScroll(element, "left");
+    var modifier = subtract ? -1 : 1;
+    rect.top += scrollTop * modifier;
+    rect.bottom += scrollTop * modifier;
+    rect.left += scrollLeft * modifier;
+    rect.right += scrollLeft * modifier;
+    return rect;
+}
+/*
+ * Helper to detect borders of a given element
+ * @method
+ * @memberof Popper.Utils
+ * @param {CSSStyleDeclaration} styles
+ * Result of `getStyleComputedProperty` on the given element
+ * @param {String} axis - `x` or `y`
+ * @return {number} borders - The borders size of the given axis
+ */ function getBordersSize(styles, axis) {
+    var sideA = axis === "x" ? "Left" : "Top";
+    var sideB = sideA === "Left" ? "Right" : "Bottom";
+    return parseFloat(styles["border" + sideA + "Width"]) + parseFloat(styles["border" + sideB + "Width"]);
+}
+function getSize(axis, body, html, computedStyle) {
+    return Math.max(body["offset" + axis], body["scroll" + axis], html["client" + axis], html["offset" + axis], html["scroll" + axis], isIE(10) ? parseInt(html["offset" + axis]) + parseInt(computedStyle["margin" + (axis === "Height" ? "Top" : "Left")]) + parseInt(computedStyle["margin" + (axis === "Height" ? "Bottom" : "Right")]) : 0);
+}
+function getWindowSizes(document1) {
+    var body = document1.body;
+    var html = document1.documentElement;
+    var computedStyle = isIE(10) && getComputedStyle(html);
+    return {
+        height: getSize("Height", body, html, computedStyle),
+        width: getSize("Width", body, html, computedStyle)
+    };
+}
+var classCallCheck = function(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+};
+var createClass = function() {
+    function defineProperties(target, props) {
+        for(var i = 0; i < props.length; i++){
+            var descriptor = props[i];
+            descriptor.enumerable = descriptor.enumerable || false;
+            descriptor.configurable = true;
+            if ("value" in descriptor) descriptor.writable = true;
+            Object.defineProperty(target, descriptor.key, descriptor);
+        }
+    }
+    return function(Constructor, protoProps, staticProps) {
+        if (protoProps) defineProperties(Constructor.prototype, protoProps);
+        if (staticProps) defineProperties(Constructor, staticProps);
+        return Constructor;
+    };
+}();
+var defineProperty = function(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+};
+var _extends = Object.assign || function(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i];
+        for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
+    }
+    return target;
+};
+/**
+ * Given element offsets, generate an output similar to getBoundingClientRect
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Object} offsets
+ * @returns {Object} ClientRect like output
+ */ function getClientRect(offsets) {
+    return _extends({}, offsets, {
+        right: offsets.left + offsets.width,
+        bottom: offsets.top + offsets.height
+    });
+}
+/**
+ * Get bounding client rect of given element
+ * @method
+ * @memberof Popper.Utils
+ * @param {HTMLElement} element
+ * @return {Object} client rect
+ */ function getBoundingClientRect(element) {
+    var rect = {};
+    // IE10 10 FIX: Please, don't ask, the element isn't
+    // considered in DOM in some circumstances...
+    // This isn't reproducible in IE10 compatibility mode of IE11
+    try {
+        if (isIE(10)) {
+            rect = element.getBoundingClientRect();
+            var scrollTop = getScroll(element, "top");
+            var scrollLeft = getScroll(element, "left");
+            rect.top += scrollTop;
+            rect.left += scrollLeft;
+            rect.bottom += scrollTop;
+            rect.right += scrollLeft;
+        } else rect = element.getBoundingClientRect();
+    } catch (e) {}
+    var result = {
+        left: rect.left,
+        top: rect.top,
+        width: rect.right - rect.left,
+        height: rect.bottom - rect.top
+    };
+    // subtract scrollbar size from sizes
+    var sizes = element.nodeName === "HTML" ? getWindowSizes(element.ownerDocument) : {};
+    var width = sizes.width || element.clientWidth || result.width;
+    var height = sizes.height || element.clientHeight || result.height;
+    var horizScrollbar = element.offsetWidth - width;
+    var vertScrollbar = element.offsetHeight - height;
+    // if an hypothetical scrollbar is detected, we must be sure it's not a `border`
+    // we make this check conditional for performance reasons
+    if (horizScrollbar || vertScrollbar) {
+        var styles = getStyleComputedProperty(element);
+        horizScrollbar -= getBordersSize(styles, "x");
+        vertScrollbar -= getBordersSize(styles, "y");
+        result.width -= horizScrollbar;
+        result.height -= vertScrollbar;
+    }
+    return getClientRect(result);
+}
+function getOffsetRectRelativeToArbitraryNode(children, parent) {
+    var fixedPosition = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+    var isIE10 = isIE(10);
+    var isHTML = parent.nodeName === "HTML";
+    var childrenRect = getBoundingClientRect(children);
+    var parentRect = getBoundingClientRect(parent);
+    var scrollParent = getScrollParent(children);
+    var styles = getStyleComputedProperty(parent);
+    var borderTopWidth = parseFloat(styles.borderTopWidth);
+    var borderLeftWidth = parseFloat(styles.borderLeftWidth);
+    // In cases where the parent is fixed, we must ignore negative scroll in offset calc
+    if (fixedPosition && isHTML) {
+        parentRect.top = Math.max(parentRect.top, 0);
+        parentRect.left = Math.max(parentRect.left, 0);
+    }
+    var offsets = getClientRect({
+        top: childrenRect.top - parentRect.top - borderTopWidth,
+        left: childrenRect.left - parentRect.left - borderLeftWidth,
+        width: childrenRect.width,
+        height: childrenRect.height
+    });
+    offsets.marginTop = 0;
+    offsets.marginLeft = 0;
+    // Subtract margins of documentElement in case it's being used as parent
+    // we do this only on HTML because it's the only element that behaves
+    // differently when margins are applied to it. The margins are included in
+    // the box of the documentElement, in the other cases not.
+    if (!isIE10 && isHTML) {
+        var marginTop = parseFloat(styles.marginTop);
+        var marginLeft = parseFloat(styles.marginLeft);
+        offsets.top -= borderTopWidth - marginTop;
+        offsets.bottom -= borderTopWidth - marginTop;
+        offsets.left -= borderLeftWidth - marginLeft;
+        offsets.right -= borderLeftWidth - marginLeft;
+        // Attach marginTop and marginLeft because in some circumstances we may need them
+        offsets.marginTop = marginTop;
+        offsets.marginLeft = marginLeft;
+    }
+    if (isIE10 && !fixedPosition ? parent.contains(scrollParent) : parent === scrollParent && scrollParent.nodeName !== "BODY") offsets = includeScroll(offsets, parent);
+    return offsets;
+}
+function getViewportOffsetRectRelativeToArtbitraryNode(element) {
+    var excludeScroll = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+    var html = element.ownerDocument.documentElement;
+    var relativeOffset = getOffsetRectRelativeToArbitraryNode(element, html);
+    var width = Math.max(html.clientWidth, window.innerWidth || 0);
+    var height = Math.max(html.clientHeight, window.innerHeight || 0);
+    var scrollTop = !excludeScroll ? getScroll(html) : 0;
+    var scrollLeft = !excludeScroll ? getScroll(html, "left") : 0;
+    var offset = {
+        top: scrollTop - relativeOffset.top + relativeOffset.marginTop,
+        left: scrollLeft - relativeOffset.left + relativeOffset.marginLeft,
+        width: width,
+        height: height
+    };
+    return getClientRect(offset);
+}
+/**
+ * Check if the given element is fixed or is inside a fixed parent
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @argument {Element} customContainer
+ * @returns {Boolean} answer to "isFixed?"
+ */ function isFixed(element) {
+    var nodeName = element.nodeName;
+    if (nodeName === "BODY" || nodeName === "HTML") return false;
+    if (getStyleComputedProperty(element, "position") === "fixed") return true;
+    var parentNode = getParentNode(element);
+    if (!parentNode) return false;
+    return isFixed(parentNode);
+}
+/**
+ * Finds the first parent of an element that has a transformed property defined
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @returns {Element} first transformed parent or documentElement
+ */ function getFixedPositionOffsetParent(element) {
+    // This check is needed to avoid errors in case one of the elements isn't defined for any reason
+    if (!element || !element.parentElement || isIE()) return document.documentElement;
+    var el = element.parentElement;
+    while(el && getStyleComputedProperty(el, "transform") === "none")el = el.parentElement;
+    return el || document.documentElement;
+}
+/**
+ * Computed the boundaries limits and return them
+ * @method
+ * @memberof Popper.Utils
+ * @param {HTMLElement} popper
+ * @param {HTMLElement} reference
+ * @param {number} padding
+ * @param {HTMLElement} boundariesElement - Element used to define the boundaries
+ * @param {Boolean} fixedPosition - Is in fixed position mode
+ * @returns {Object} Coordinates of the boundaries
+ */ function getBoundaries(popper, reference, padding, boundariesElement) {
+    var fixedPosition = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
+    // NOTE: 1 DOM access here
+    var boundaries = {
+        top: 0,
+        left: 0
+    };
+    var offsetParent = fixedPosition ? getFixedPositionOffsetParent(popper) : findCommonOffsetParent(popper, getReferenceNode(reference));
+    // Handle viewport case
+    if (boundariesElement === "viewport") boundaries = getViewportOffsetRectRelativeToArtbitraryNode(offsetParent, fixedPosition);
+    else {
+        // Handle other cases based on DOM element used as boundaries
+        var boundariesNode = void 0;
+        if (boundariesElement === "scrollParent") {
+            boundariesNode = getScrollParent(getParentNode(reference));
+            if (boundariesNode.nodeName === "BODY") boundariesNode = popper.ownerDocument.documentElement;
+        } else if (boundariesElement === "window") boundariesNode = popper.ownerDocument.documentElement;
+        else boundariesNode = boundariesElement;
+        var offsets = getOffsetRectRelativeToArbitraryNode(boundariesNode, offsetParent, fixedPosition);
+        // In case of HTML, we need a different computation
+        if (boundariesNode.nodeName === "HTML" && !isFixed(offsetParent)) {
+            var _getWindowSizes = getWindowSizes(popper.ownerDocument), height = _getWindowSizes.height, width = _getWindowSizes.width;
+            boundaries.top += offsets.top - offsets.marginTop;
+            boundaries.bottom = height + offsets.top;
+            boundaries.left += offsets.left - offsets.marginLeft;
+            boundaries.right = width + offsets.left;
+        } else // for all the other DOM elements, this one is good
+        boundaries = offsets;
+    }
+    // Add paddings
+    padding = padding || 0;
+    var isPaddingNumber = typeof padding === "number";
+    boundaries.left += isPaddingNumber ? padding : padding.left || 0;
+    boundaries.top += isPaddingNumber ? padding : padding.top || 0;
+    boundaries.right -= isPaddingNumber ? padding : padding.right || 0;
+    boundaries.bottom -= isPaddingNumber ? padding : padding.bottom || 0;
+    return boundaries;
+}
+function getArea(_ref) {
+    var width = _ref.width, height = _ref.height;
+    return width * height;
+}
+/**
+ * Utility used to transform the `auto` placement to the placement with more
+ * available space.
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Object} data - The data object generated by update method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */ function computeAutoPlacement(placement, refRect, popper, reference, boundariesElement) {
+    var padding = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 0;
+    if (placement.indexOf("auto") === -1) return placement;
+    var boundaries = getBoundaries(popper, reference, padding, boundariesElement);
+    var rects = {
+        top: {
+            width: boundaries.width,
+            height: refRect.top - boundaries.top
+        },
+        right: {
+            width: boundaries.right - refRect.right,
+            height: boundaries.height
+        },
+        bottom: {
+            width: boundaries.width,
+            height: boundaries.bottom - refRect.bottom
+        },
+        left: {
+            width: refRect.left - boundaries.left,
+            height: boundaries.height
+        }
+    };
+    var sortedAreas = Object.keys(rects).map(function(key) {
+        return _extends({
+            key: key
+        }, rects[key], {
+            area: getArea(rects[key])
+        });
+    }).sort(function(a, b) {
+        return b.area - a.area;
+    });
+    var filteredAreas = sortedAreas.filter(function(_ref2) {
+        var width = _ref2.width, height = _ref2.height;
+        return width >= popper.clientWidth && height >= popper.clientHeight;
+    });
+    var computedPlacement = filteredAreas.length > 0 ? filteredAreas[0].key : sortedAreas[0].key;
+    var variation = placement.split("-")[1];
+    return computedPlacement + (variation ? "-" + variation : "");
+}
+/**
+ * Get offsets to the reference element
+ * @method
+ * @memberof Popper.Utils
+ * @param {Object} state
+ * @param {Element} popper - the popper element
+ * @param {Element} reference - the reference element (the popper will be relative to this)
+ * @param {Element} fixedPosition - is in fixed position mode
+ * @returns {Object} An object containing the offsets which will be applied to the popper
+ */ function getReferenceOffsets(state, popper, reference) {
+    var fixedPosition = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : null;
+    var commonOffsetParent = fixedPosition ? getFixedPositionOffsetParent(popper) : findCommonOffsetParent(popper, getReferenceNode(reference));
+    return getOffsetRectRelativeToArbitraryNode(reference, commonOffsetParent, fixedPosition);
+}
+/**
+ * Get the outer sizes of the given element (offset size + margins)
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @returns {Object} object containing width and height properties
+ */ function getOuterSizes(element) {
+    var window1 = element.ownerDocument.defaultView;
+    var styles = window1.getComputedStyle(element);
+    var x = parseFloat(styles.marginTop || 0) + parseFloat(styles.marginBottom || 0);
+    var y = parseFloat(styles.marginLeft || 0) + parseFloat(styles.marginRight || 0);
+    var result = {
+        width: element.offsetWidth + y,
+        height: element.offsetHeight + x
+    };
+    return result;
+}
+/**
+ * Get the opposite placement of the given one
+ * @method
+ * @memberof Popper.Utils
+ * @argument {String} placement
+ * @returns {String} flipped placement
+ */ function getOppositePlacement(placement) {
+    var hash = {
+        left: "right",
+        right: "left",
+        bottom: "top",
+        top: "bottom"
+    };
+    return placement.replace(/left|right|bottom|top/g, function(matched) {
+        return hash[matched];
+    });
+}
+/**
+ * Get offsets to the popper
+ * @method
+ * @memberof Popper.Utils
+ * @param {Object} position - CSS position the Popper will get applied
+ * @param {HTMLElement} popper - the popper element
+ * @param {Object} referenceOffsets - the reference offsets (the popper will be relative to this)
+ * @param {String} placement - one of the valid placement options
+ * @returns {Object} popperOffsets - An object containing the offsets which will be applied to the popper
+ */ function getPopperOffsets(popper, referenceOffsets, placement) {
+    placement = placement.split("-")[0];
+    // Get popper node sizes
+    var popperRect = getOuterSizes(popper);
+    // Add position, width and height to our offsets object
+    var popperOffsets = {
+        width: popperRect.width,
+        height: popperRect.height
+    };
+    // depending by the popper placement we have to compute its offsets slightly differently
+    var isHoriz = [
+        "right",
+        "left"
+    ].indexOf(placement) !== -1;
+    var mainSide = isHoriz ? "top" : "left";
+    var secondarySide = isHoriz ? "left" : "top";
+    var measurement = isHoriz ? "height" : "width";
+    var secondaryMeasurement = !isHoriz ? "height" : "width";
+    popperOffsets[mainSide] = referenceOffsets[mainSide] + referenceOffsets[measurement] / 2 - popperRect[measurement] / 2;
+    if (placement === secondarySide) popperOffsets[secondarySide] = referenceOffsets[secondarySide] - popperRect[secondaryMeasurement];
+    else popperOffsets[secondarySide] = referenceOffsets[getOppositePlacement(secondarySide)];
+    return popperOffsets;
+}
+/**
+ * Mimics the `find` method of Array
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Array} arr
+ * @argument prop
+ * @argument value
+ * @returns index or -1
+ */ function find(arr, check) {
+    // use native find if supported
+    if (Array.prototype.find) return arr.find(check);
+    // use `filter` to obtain the same behavior of `find`
+    return arr.filter(check)[0];
+}
+/**
+ * Return the index of the matching object
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Array} arr
+ * @argument prop
+ * @argument value
+ * @returns index or -1
+ */ function findIndex(arr, prop, value) {
+    // use native findIndex if supported
+    if (Array.prototype.findIndex) return arr.findIndex(function(cur) {
+        return cur[prop] === value;
+    });
+    // use `find` + `indexOf` if `findIndex` isn't supported
+    var match = find(arr, function(obj) {
+        return obj[prop] === value;
+    });
+    return arr.indexOf(match);
+}
+/**
+ * Loop trough the list of modifiers and run them in order,
+ * each of them will then edit the data object.
+ * @method
+ * @memberof Popper.Utils
+ * @param {dataObject} data
+ * @param {Array} modifiers
+ * @param {String} ends - Optional modifier name used as stopper
+ * @returns {dataObject}
+ */ function runModifiers(modifiers, data, ends) {
+    var modifiersToRun = ends === undefined ? modifiers : modifiers.slice(0, findIndex(modifiers, "name", ends));
+    modifiersToRun.forEach(function(modifier) {
+        if (modifier["function"]) // eslint-disable-line dot-notation
+        console.warn("`modifier.function` is deprecated, use `modifier.fn`!");
+        var fn = modifier["function"] || modifier.fn; // eslint-disable-line dot-notation
+        if (modifier.enabled && isFunction(fn)) {
+            // Add properties to offsets to make them a complete clientRect object
+            // we do this before each modifier to make sure the previous one doesn't
+            // mess with these values
+            data.offsets.popper = getClientRect(data.offsets.popper);
+            data.offsets.reference = getClientRect(data.offsets.reference);
+            data = fn(data, modifier);
+        }
+    });
+    return data;
+}
+/**
+ * Updates the position of the popper, computing the new offsets and applying
+ * the new style.<br />
+ * Prefer `scheduleUpdate` over `update` because of performance reasons.
+ * @method
+ * @memberof Popper
+ */ function update() {
+    // if popper is destroyed, don't perform any further update
+    if (this.state.isDestroyed) return;
+    var data = {
+        instance: this,
+        styles: {},
+        arrowStyles: {},
+        attributes: {},
+        flipped: false,
+        offsets: {}
+    };
+    // compute reference element offsets
+    data.offsets.reference = getReferenceOffsets(this.state, this.popper, this.reference, this.options.positionFixed);
+    // compute auto placement, store placement inside the data object,
+    // modifiers will be able to edit `placement` if needed
+    // and refer to originalPlacement to know the original value
+    data.placement = computeAutoPlacement(this.options.placement, data.offsets.reference, this.popper, this.reference, this.options.modifiers.flip.boundariesElement, this.options.modifiers.flip.padding);
+    // store the computed placement inside `originalPlacement`
+    data.originalPlacement = data.placement;
+    data.positionFixed = this.options.positionFixed;
+    // compute the popper offsets
+    data.offsets.popper = getPopperOffsets(this.popper, data.offsets.reference, data.placement);
+    data.offsets.popper.position = this.options.positionFixed ? "fixed" : "absolute";
+    // run the modifiers
+    data = runModifiers(this.modifiers, data);
+    // the first `update` will call `onCreate` callback
+    // the other ones will call `onUpdate` callback
+    if (!this.state.isCreated) {
+        this.state.isCreated = true;
+        this.options.onCreate(data);
+    } else this.options.onUpdate(data);
+}
+/**
+ * Helper used to know if the given modifier is enabled.
+ * @method
+ * @memberof Popper.Utils
+ * @returns {Boolean}
+ */ function isModifierEnabled(modifiers, modifierName) {
+    return modifiers.some(function(_ref) {
+        var name = _ref.name, enabled = _ref.enabled;
+        return enabled && name === modifierName;
+    });
+}
+/**
+ * Get the prefixed supported property name
+ * @method
+ * @memberof Popper.Utils
+ * @argument {String} property (camelCase)
+ * @returns {String} prefixed property (camelCase or PascalCase, depending on the vendor prefix)
+ */ function getSupportedPropertyName(property) {
+    var prefixes = [
+        false,
+        "ms",
+        "Webkit",
+        "Moz",
+        "O"
+    ];
+    var upperProp = property.charAt(0).toUpperCase() + property.slice(1);
+    for(var i = 0; i < prefixes.length; i++){
+        var prefix = prefixes[i];
+        var toCheck = prefix ? "" + prefix + upperProp : property;
+        if (typeof document.body.style[toCheck] !== "undefined") return toCheck;
+    }
+    return null;
+}
+/**
+ * Destroys the popper.
+ * @method
+ * @memberof Popper
+ */ function destroy() {
+    this.state.isDestroyed = true;
+    // touch DOM only if `applyStyle` modifier is enabled
+    if (isModifierEnabled(this.modifiers, "applyStyle")) {
+        this.popper.removeAttribute("x-placement");
+        this.popper.style.position = "";
+        this.popper.style.top = "";
+        this.popper.style.left = "";
+        this.popper.style.right = "";
+        this.popper.style.bottom = "";
+        this.popper.style.willChange = "";
+        this.popper.style[getSupportedPropertyName("transform")] = "";
+    }
+    this.disableEventListeners();
+    // remove the popper if user explicitly asked for the deletion on destroy
+    // do not use `remove` because IE11 doesn't support it
+    if (this.options.removeOnDestroy) this.popper.parentNode.removeChild(this.popper);
+    return this;
+}
+/**
+ * Get the window associated with the element
+ * @argument {Element} element
+ * @returns {Window}
+ */ function getWindow(element) {
+    var ownerDocument = element.ownerDocument;
+    return ownerDocument ? ownerDocument.defaultView : window;
+}
+function attachToScrollParents(scrollParent, event, callback, scrollParents) {
+    var isBody = scrollParent.nodeName === "BODY";
+    var target = isBody ? scrollParent.ownerDocument.defaultView : scrollParent;
+    target.addEventListener(event, callback, {
+        passive: true
+    });
+    if (!isBody) attachToScrollParents(getScrollParent(target.parentNode), event, callback, scrollParents);
+    scrollParents.push(target);
+}
+/**
+ * Setup needed event listeners used to update the popper position
+ * @method
+ * @memberof Popper.Utils
+ * @private
+ */ function setupEventListeners(reference, options, state, updateBound) {
+    // Resize event listener on window
+    state.updateBound = updateBound;
+    getWindow(reference).addEventListener("resize", state.updateBound, {
+        passive: true
+    });
+    // Scroll event listener on scroll parents
+    var scrollElement = getScrollParent(reference);
+    attachToScrollParents(scrollElement, "scroll", state.updateBound, state.scrollParents);
+    state.scrollElement = scrollElement;
+    state.eventsEnabled = true;
+    return state;
+}
+/**
+ * It will add resize/scroll events and start recalculating
+ * position of the popper element when they are triggered.
+ * @method
+ * @memberof Popper
+ */ function enableEventListeners() {
+    if (!this.state.eventsEnabled) this.state = setupEventListeners(this.reference, this.options, this.state, this.scheduleUpdate);
+}
+/**
+ * Remove event listeners used to update the popper position
+ * @method
+ * @memberof Popper.Utils
+ * @private
+ */ function removeEventListeners(reference, state) {
+    // Remove resize event listener on window
+    getWindow(reference).removeEventListener("resize", state.updateBound);
+    // Remove scroll event listener on scroll parents
+    state.scrollParents.forEach(function(target) {
+        target.removeEventListener("scroll", state.updateBound);
+    });
+    // Reset state
+    state.updateBound = null;
+    state.scrollParents = [];
+    state.scrollElement = null;
+    state.eventsEnabled = false;
+    return state;
+}
+/**
+ * It will remove resize/scroll events and won't recalculate popper position
+ * when they are triggered. It also won't trigger `onUpdate` callback anymore,
+ * unless you call `update` method manually.
+ * @method
+ * @memberof Popper
+ */ function disableEventListeners() {
+    if (this.state.eventsEnabled) {
+        cancelAnimationFrame(this.scheduleUpdate);
+        this.state = removeEventListeners(this.reference, this.state);
+    }
+}
+/**
+ * Tells if a given input is a number
+ * @method
+ * @memberof Popper.Utils
+ * @param {*} input to check
+ * @return {Boolean}
+ */ function isNumeric(n) {
+    return n !== "" && !isNaN(parseFloat(n)) && isFinite(n);
+}
+/**
+ * Set the style to the given popper
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element - Element to apply the style to
+ * @argument {Object} styles
+ * Object with a list of properties and values which will be applied to the element
+ */ function setStyles(element, styles) {
+    Object.keys(styles).forEach(function(prop) {
+        var unit = "";
+        // add unit if the value is numeric and is one of the following
+        if ([
+            "width",
+            "height",
+            "top",
+            "right",
+            "bottom",
+            "left"
+        ].indexOf(prop) !== -1 && isNumeric(styles[prop])) unit = "px";
+        element.style[prop] = styles[prop] + unit;
+    });
+}
+/**
+ * Set the attributes to the given popper
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element - Element to apply the attributes to
+ * @argument {Object} styles
+ * Object with a list of properties and values which will be applied to the element
+ */ function setAttributes(element, attributes) {
+    Object.keys(attributes).forEach(function(prop) {
+        var value = attributes[prop];
+        if (value !== false) element.setAttribute(prop, attributes[prop]);
+        else element.removeAttribute(prop);
+    });
+}
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by `update` method
+ * @argument {Object} data.styles - List of style properties - values to apply to popper element
+ * @argument {Object} data.attributes - List of attribute properties - values to apply to popper element
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The same data object
+ */ function applyStyle(data) {
+    // any property present in `data.styles` will be applied to the popper,
+    // in this way we can make the 3rd party modifiers add custom styles to it
+    // Be aware, modifiers could override the properties defined in the previous
+    // lines of this modifier!
+    setStyles(data.instance.popper, data.styles);
+    // any property present in `data.attributes` will be applied to the popper,
+    // they will be set as HTML attributes of the element
+    setAttributes(data.instance.popper, data.attributes);
+    // if arrowElement is defined and arrowStyles has some properties
+    if (data.arrowElement && Object.keys(data.arrowStyles).length) setStyles(data.arrowElement, data.arrowStyles);
+    return data;
+}
+/**
+ * Set the x-placement attribute before everything else because it could be used
+ * to add margins to the popper margins needs to be calculated to get the
+ * correct popper offsets.
+ * @method
+ * @memberof Popper.modifiers
+ * @param {HTMLElement} reference - The reference element used to position the popper
+ * @param {HTMLElement} popper - The HTML element used as popper
+ * @param {Object} options - Popper.js options
+ */ function applyStyleOnLoad(reference, popper, options, modifierOptions, state) {
+    // compute reference element offsets
+    var referenceOffsets = getReferenceOffsets(state, popper, reference, options.positionFixed);
+    // compute auto placement, store placement inside the data object,
+    // modifiers will be able to edit `placement` if needed
+    // and refer to originalPlacement to know the original value
+    var placement = computeAutoPlacement(options.placement, referenceOffsets, popper, reference, options.modifiers.flip.boundariesElement, options.modifiers.flip.padding);
+    popper.setAttribute("x-placement", placement);
+    // Apply `position` to popper before anything else because
+    // without the position applied we can't guarantee correct computations
+    setStyles(popper, {
+        position: options.positionFixed ? "fixed" : "absolute"
+    });
+    return options;
+}
+/**
+ * @function
+ * @memberof Popper.Utils
+ * @argument {Object} data - The data object generated by `update` method
+ * @argument {Boolean} shouldRound - If the offsets should be rounded at all
+ * @returns {Object} The popper's position offsets rounded
+ *
+ * The tale of pixel-perfect positioning. It's still not 100% perfect, but as
+ * good as it can be within reason.
+ * Discussion here: https://github.com/FezVrasta/popper.js/pull/715
+ *
+ * Low DPI screens cause a popper to be blurry if not using full pixels (Safari
+ * as well on High DPI screens).
+ *
+ * Firefox prefers no rounding for positioning and does not have blurriness on
+ * high DPI screens.
+ *
+ * Only horizontal placement and left/right values need to be considered.
+ */ function getRoundedOffsets(data, shouldRound) {
+    var _data$offsets = data.offsets, popper = _data$offsets.popper, reference = _data$offsets.reference;
+    var round = Math.round, floor = Math.floor;
+    var noRound = function noRound(v) {
+        return v;
+    };
+    var referenceWidth = round(reference.width);
+    var popperWidth = round(popper.width);
+    var isVertical = [
+        "left",
+        "right"
+    ].indexOf(data.placement) !== -1;
+    var isVariation = data.placement.indexOf("-") !== -1;
+    var sameWidthParity = referenceWidth % 2 === popperWidth % 2;
+    var bothOddWidth = referenceWidth % 2 === 1 && popperWidth % 2 === 1;
+    var horizontalToInteger = !shouldRound ? noRound : isVertical || isVariation || sameWidthParity ? round : floor;
+    var verticalToInteger = !shouldRound ? noRound : round;
+    return {
+        left: horizontalToInteger(bothOddWidth && !isVariation && shouldRound ? popper.left - 1 : popper.left),
+        top: verticalToInteger(popper.top),
+        bottom: verticalToInteger(popper.bottom),
+        right: horizontalToInteger(popper.right)
+    };
+}
+var isFirefox = isBrowser && /Firefox/i.test(navigator.userAgent);
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by `update` method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */ function computeStyle(data, options) {
+    var x = options.x, y = options.y;
+    var popper = data.offsets.popper;
+    // Remove this legacy support in Popper.js v2
+    var legacyGpuAccelerationOption = find(data.instance.modifiers, function(modifier) {
+        return modifier.name === "applyStyle";
+    }).gpuAcceleration;
+    if (legacyGpuAccelerationOption !== undefined) console.warn("WARNING: `gpuAcceleration` option moved to `computeStyle` modifier and will not be supported in future versions of Popper.js!");
+    var gpuAcceleration = legacyGpuAccelerationOption !== undefined ? legacyGpuAccelerationOption : options.gpuAcceleration;
+    var offsetParent = getOffsetParent(data.instance.popper);
+    var offsetParentRect = getBoundingClientRect(offsetParent);
+    // Styles
+    var styles = {
+        position: popper.position
+    };
+    var offsets = getRoundedOffsets(data, window.devicePixelRatio < 2 || !isFirefox);
+    var sideA = x === "bottom" ? "top" : "bottom";
+    var sideB = y === "right" ? "left" : "right";
+    // if gpuAcceleration is set to `true` and transform is supported,
+    //  we use `translate3d` to apply the position to the popper we
+    // automatically use the supported prefixed version if needed
+    var prefixedProperty = getSupportedPropertyName("transform");
+    // now, let's make a step back and look at this code closely (wtf?)
+    // If the content of the popper grows once it's been positioned, it
+    // may happen that the popper gets misplaced because of the new content
+    // overflowing its reference element
+    // To avoid this problem, we provide two options (x and y), which allow
+    // the consumer to define the offset origin.
+    // If we position a popper on top of a reference element, we can set
+    // `x` to `top` to make the popper grow towards its top instead of
+    // its bottom.
+    var left = void 0, top = void 0;
+    if (sideA === "bottom") {
+        // when offsetParent is <html> the positioning is relative to the bottom of the screen (excluding the scrollbar)
+        // and not the bottom of the html element
+        if (offsetParent.nodeName === "HTML") top = -offsetParent.clientHeight + offsets.bottom;
+        else top = -offsetParentRect.height + offsets.bottom;
+    } else top = offsets.top;
+    if (sideB === "right") {
+        if (offsetParent.nodeName === "HTML") left = -offsetParent.clientWidth + offsets.right;
+        else left = -offsetParentRect.width + offsets.right;
+    } else left = offsets.left;
+    if (gpuAcceleration && prefixedProperty) {
+        styles[prefixedProperty] = "translate3d(" + left + "px, " + top + "px, 0)";
+        styles[sideA] = 0;
+        styles[sideB] = 0;
+        styles.willChange = "transform";
+    } else {
+        // othwerise, we use the standard `top`, `left`, `bottom` and `right` properties
+        var invertTop = sideA === "bottom" ? -1 : 1;
+        var invertLeft = sideB === "right" ? -1 : 1;
+        styles[sideA] = top * invertTop;
+        styles[sideB] = left * invertLeft;
+        styles.willChange = sideA + ", " + sideB;
+    }
+    // Attributes
+    var attributes = {
+        "x-placement": data.placement
+    };
+    // Update `data` attributes, styles and arrowStyles
+    data.attributes = _extends({}, attributes, data.attributes);
+    data.styles = _extends({}, styles, data.styles);
+    data.arrowStyles = _extends({}, data.offsets.arrow, data.arrowStyles);
+    return data;
+}
+/**
+ * Helper used to know if the given modifier depends from another one.<br />
+ * It checks if the needed modifier is listed and enabled.
+ * @method
+ * @memberof Popper.Utils
+ * @param {Array} modifiers - list of modifiers
+ * @param {String} requestingName - name of requesting modifier
+ * @param {String} requestedName - name of requested modifier
+ * @returns {Boolean}
+ */ function isModifierRequired(modifiers, requestingName, requestedName) {
+    var requesting = find(modifiers, function(_ref) {
+        var name = _ref.name;
+        return name === requestingName;
+    });
+    var isRequired = !!requesting && modifiers.some(function(modifier) {
+        return modifier.name === requestedName && modifier.enabled && modifier.order < requesting.order;
+    });
+    if (!isRequired) {
+        var _requesting = "`" + requestingName + "`";
+        var requested = "`" + requestedName + "`";
+        console.warn(requested + " modifier is required by " + _requesting + " modifier in order to work, be sure to include it before " + _requesting + "!");
+    }
+    return isRequired;
+}
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by update method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */ function arrow(data, options) {
+    var _data$offsets$arrow;
+    // arrow depends on keepTogether in order to work
+    if (!isModifierRequired(data.instance.modifiers, "arrow", "keepTogether")) return data;
+    var arrowElement = options.element;
+    // if arrowElement is a string, suppose it's a CSS selector
+    if (typeof arrowElement === "string") {
+        arrowElement = data.instance.popper.querySelector(arrowElement);
+        // if arrowElement is not found, don't run the modifier
+        if (!arrowElement) return data;
+    } else // if the arrowElement isn't a query selector we must check that the
+    // provided DOM node is child of its popper node
+    if (!data.instance.popper.contains(arrowElement)) {
+        console.warn("WARNING: `arrow.element` must be child of its popper element!");
+        return data;
+    }
+    var placement = data.placement.split("-")[0];
+    var _data$offsets = data.offsets, popper = _data$offsets.popper, reference = _data$offsets.reference;
+    var isVertical = [
+        "left",
+        "right"
+    ].indexOf(placement) !== -1;
+    var len = isVertical ? "height" : "width";
+    var sideCapitalized = isVertical ? "Top" : "Left";
+    var side = sideCapitalized.toLowerCase();
+    var altSide = isVertical ? "left" : "top";
+    var opSide = isVertical ? "bottom" : "right";
+    var arrowElementSize = getOuterSizes(arrowElement)[len];
+    //
+    // extends keepTogether behavior making sure the popper and its
+    // reference have enough pixels in conjunction
+    //
+    // top/left side
+    if (reference[opSide] - arrowElementSize < popper[side]) data.offsets.popper[side] -= popper[side] - (reference[opSide] - arrowElementSize);
+    // bottom/right side
+    if (reference[side] + arrowElementSize > popper[opSide]) data.offsets.popper[side] += reference[side] + arrowElementSize - popper[opSide];
+    data.offsets.popper = getClientRect(data.offsets.popper);
+    // compute center of the popper
+    var center = reference[side] + reference[len] / 2 - arrowElementSize / 2;
+    // Compute the sideValue using the updated popper offsets
+    // take popper margin in account because we don't have this info available
+    var css = getStyleComputedProperty(data.instance.popper);
+    var popperMarginSide = parseFloat(css["margin" + sideCapitalized]);
+    var popperBorderSide = parseFloat(css["border" + sideCapitalized + "Width"]);
+    var sideValue = center - data.offsets.popper[side] - popperMarginSide - popperBorderSide;
+    // prevent arrowElement from being placed not contiguously to its popper
+    sideValue = Math.max(Math.min(popper[len] - arrowElementSize, sideValue), 0);
+    data.arrowElement = arrowElement;
+    data.offsets.arrow = (_data$offsets$arrow = {}, defineProperty(_data$offsets$arrow, side, Math.round(sideValue)), defineProperty(_data$offsets$arrow, altSide, ""), _data$offsets$arrow);
+    return data;
+}
+/**
+ * Get the opposite placement variation of the given one
+ * @method
+ * @memberof Popper.Utils
+ * @argument {String} placement variation
+ * @returns {String} flipped placement variation
+ */ function getOppositeVariation(variation) {
+    if (variation === "end") return "start";
+    else if (variation === "start") return "end";
+    return variation;
+}
+/**
+ * List of accepted placements to use as values of the `placement` option.<br />
+ * Valid placements are:
+ * - `auto`
+ * - `top`
+ * - `right`
+ * - `bottom`
+ * - `left`
+ *
+ * Each placement can have a variation from this list:
+ * - `-start`
+ * - `-end`
+ *
+ * Variations are interpreted easily if you think of them as the left to right
+ * written languages. Horizontally (`top` and `bottom`), `start` is left and `end`
+ * is right.<br />
+ * Vertically (`left` and `right`), `start` is top and `end` is bottom.
+ *
+ * Some valid examples are:
+ * - `top-end` (on top of reference, right aligned)
+ * - `right-start` (on right of reference, top aligned)
+ * - `bottom` (on bottom, centered)
+ * - `auto-end` (on the side with more space available, alignment depends by placement)
+ *
+ * @static
+ * @type {Array}
+ * @enum {String}
+ * @readonly
+ * @method placements
+ * @memberof Popper
+ */ var placements = [
+    "auto-start",
+    "auto",
+    "auto-end",
+    "top-start",
+    "top",
+    "top-end",
+    "right-start",
+    "right",
+    "right-end",
+    "bottom-end",
+    "bottom",
+    "bottom-start",
+    "left-end",
+    "left",
+    "left-start"
+];
+// Get rid of `auto` `auto-start` and `auto-end`
+var validPlacements = placements.slice(3);
+/**
+ * Given an initial placement, returns all the subsequent placements
+ * clockwise (or counter-clockwise).
+ *
+ * @method
+ * @memberof Popper.Utils
+ * @argument {String} placement - A valid placement (it accepts variations)
+ * @argument {Boolean} counter - Set to true to walk the placements counterclockwise
+ * @returns {Array} placements including their variations
+ */ function clockwise(placement) {
+    var counter = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+    var index = validPlacements.indexOf(placement);
+    var arr = validPlacements.slice(index + 1).concat(validPlacements.slice(0, index));
+    return counter ? arr.reverse() : arr;
+}
+var BEHAVIORS = {
+    FLIP: "flip",
+    CLOCKWISE: "clockwise",
+    COUNTERCLOCKWISE: "counterclockwise"
+};
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by update method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */ function flip(data, options) {
+    // if `inner` modifier is enabled, we can't use the `flip` modifier
+    if (isModifierEnabled(data.instance.modifiers, "inner")) return data;
+    if (data.flipped && data.placement === data.originalPlacement) // seems like flip is trying to loop, probably there's not enough space on any of the flippable sides
+    return data;
+    var boundaries = getBoundaries(data.instance.popper, data.instance.reference, options.padding, options.boundariesElement, data.positionFixed);
+    var placement = data.placement.split("-")[0];
+    var placementOpposite = getOppositePlacement(placement);
+    var variation = data.placement.split("-")[1] || "";
+    var flipOrder = [];
+    switch(options.behavior){
+        case BEHAVIORS.FLIP:
+            flipOrder = [
+                placement,
+                placementOpposite
+            ];
+            break;
+        case BEHAVIORS.CLOCKWISE:
+            flipOrder = clockwise(placement);
+            break;
+        case BEHAVIORS.COUNTERCLOCKWISE:
+            flipOrder = clockwise(placement, true);
+            break;
+        default:
+            flipOrder = options.behavior;
+    }
+    flipOrder.forEach(function(step, index) {
+        if (placement !== step || flipOrder.length === index + 1) return data;
+        placement = data.placement.split("-")[0];
+        placementOpposite = getOppositePlacement(placement);
+        var popperOffsets = data.offsets.popper;
+        var refOffsets = data.offsets.reference;
+        // using floor because the reference offsets may contain decimals we are not going to consider here
+        var floor = Math.floor;
+        var overlapsRef = placement === "left" && floor(popperOffsets.right) > floor(refOffsets.left) || placement === "right" && floor(popperOffsets.left) < floor(refOffsets.right) || placement === "top" && floor(popperOffsets.bottom) > floor(refOffsets.top) || placement === "bottom" && floor(popperOffsets.top) < floor(refOffsets.bottom);
+        var overflowsLeft = floor(popperOffsets.left) < floor(boundaries.left);
+        var overflowsRight = floor(popperOffsets.right) > floor(boundaries.right);
+        var overflowsTop = floor(popperOffsets.top) < floor(boundaries.top);
+        var overflowsBottom = floor(popperOffsets.bottom) > floor(boundaries.bottom);
+        var overflowsBoundaries = placement === "left" && overflowsLeft || placement === "right" && overflowsRight || placement === "top" && overflowsTop || placement === "bottom" && overflowsBottom;
+        // flip the variation if required
+        var isVertical = [
+            "top",
+            "bottom"
+        ].indexOf(placement) !== -1;
+        // flips variation if reference element overflows boundaries
+        var flippedVariationByRef = !!options.flipVariations && (isVertical && variation === "start" && overflowsLeft || isVertical && variation === "end" && overflowsRight || !isVertical && variation === "start" && overflowsTop || !isVertical && variation === "end" && overflowsBottom);
+        // flips variation if popper content overflows boundaries
+        var flippedVariationByContent = !!options.flipVariationsByContent && (isVertical && variation === "start" && overflowsRight || isVertical && variation === "end" && overflowsLeft || !isVertical && variation === "start" && overflowsBottom || !isVertical && variation === "end" && overflowsTop);
+        var flippedVariation = flippedVariationByRef || flippedVariationByContent;
+        if (overlapsRef || overflowsBoundaries || flippedVariation) {
+            // this boolean to detect any flip loop
+            data.flipped = true;
+            if (overlapsRef || overflowsBoundaries) placement = flipOrder[index + 1];
+            if (flippedVariation) variation = getOppositeVariation(variation);
+            data.placement = placement + (variation ? "-" + variation : "");
+            // this object contains `position`, we want to preserve it along with
+            // any additional property we may add in the future
+            data.offsets.popper = _extends({}, data.offsets.popper, getPopperOffsets(data.instance.popper, data.offsets.reference, data.placement));
+            data = runModifiers(data.instance.modifiers, data, "flip");
+        }
+    });
+    return data;
+}
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by update method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */ function keepTogether(data) {
+    var _data$offsets = data.offsets, popper = _data$offsets.popper, reference = _data$offsets.reference;
+    var placement = data.placement.split("-")[0];
+    var floor = Math.floor;
+    var isVertical = [
+        "top",
+        "bottom"
+    ].indexOf(placement) !== -1;
+    var side = isVertical ? "right" : "bottom";
+    var opSide = isVertical ? "left" : "top";
+    var measurement = isVertical ? "width" : "height";
+    if (popper[side] < floor(reference[opSide])) data.offsets.popper[opSide] = floor(reference[opSide]) - popper[measurement];
+    if (popper[opSide] > floor(reference[side])) data.offsets.popper[opSide] = floor(reference[side]);
+    return data;
+}
+/**
+ * Converts a string containing value + unit into a px value number
+ * @function
+ * @memberof {modifiers~offset}
+ * @private
+ * @argument {String} str - Value + unit string
+ * @argument {String} measurement - `height` or `width`
+ * @argument {Object} popperOffsets
+ * @argument {Object} referenceOffsets
+ * @returns {Number|String}
+ * Value in pixels, or original string if no values were extracted
+ */ function toValue(str, measurement, popperOffsets, referenceOffsets) {
+    // separate value from unit
+    var split = str.match(/((?:\-|\+)?\d*\.?\d*)(.*)/);
+    var value = +split[1];
+    var unit = split[2];
+    // If it's not a number it's an operator, I guess
+    if (!value) return str;
+    if (unit.indexOf("%") === 0) {
+        var element = void 0;
+        switch(unit){
+            case "%p":
+                element = popperOffsets;
+                break;
+            case "%":
+            case "%r":
+            default:
+                element = referenceOffsets;
+        }
+        var rect = getClientRect(element);
+        return rect[measurement] / 100 * value;
+    } else if (unit === "vh" || unit === "vw") {
+        // if is a vh or vw, we calculate the size based on the viewport
+        var size = void 0;
+        if (unit === "vh") size = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        else size = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        return size / 100 * value;
+    } else // if is an explicit pixel unit, we get rid of the unit and keep the value
+    // if is an implicit unit, it's px, and we return just the value
+    return value;
+}
+/**
+ * Parse an `offset` string to extrapolate `x` and `y` numeric offsets.
+ * @function
+ * @memberof {modifiers~offset}
+ * @private
+ * @argument {String} offset
+ * @argument {Object} popperOffsets
+ * @argument {Object} referenceOffsets
+ * @argument {String} basePlacement
+ * @returns {Array} a two cells array with x and y offsets in numbers
+ */ function parseOffset(offset, popperOffsets, referenceOffsets, basePlacement) {
+    var offsets = [
+        0,
+        0
+    ];
+    // Use height if placement is left or right and index is 0 otherwise use width
+    // in this way the first offset will use an axis and the second one
+    // will use the other one
+    var useHeight = [
+        "right",
+        "left"
+    ].indexOf(basePlacement) !== -1;
+    // Split the offset string to obtain a list of values and operands
+    // The regex addresses values with the plus or minus sign in front (+10, -20, etc)
+    var fragments = offset.split(/(\+|\-)/).map(function(frag) {
+        return frag.trim();
+    });
+    // Detect if the offset string contains a pair of values or a single one
+    // they could be separated by comma or space
+    var divider = fragments.indexOf(find(fragments, function(frag) {
+        return frag.search(/,|\s/) !== -1;
+    }));
+    if (fragments[divider] && fragments[divider].indexOf(",") === -1) console.warn("Offsets separated by white space(s) are deprecated, use a comma (,) instead.");
+    // If divider is found, we divide the list of values and operands to divide
+    // them by ofset X and Y.
+    var splitRegex = /\s*,\s*|\s+/;
+    var ops = divider !== -1 ? [
+        fragments.slice(0, divider).concat([
+            fragments[divider].split(splitRegex)[0]
+        ]),
+        [
+            fragments[divider].split(splitRegex)[1]
+        ].concat(fragments.slice(divider + 1))
+    ] : [
+        fragments
+    ];
+    // Convert the values with units to absolute pixels to allow our computations
+    ops = ops.map(function(op, index) {
+        // Most of the units rely on the orientation of the popper
+        var measurement = (index === 1 ? !useHeight : useHeight) ? "height" : "width";
+        var mergeWithPrevious = false;
+        return op// This aggregates any `+` or `-` sign that aren't considered operators
+        // e.g.: 10 + +5 => [10, +, +5]
+        .reduce(function(a, b) {
+            if (a[a.length - 1] === "" && [
+                "+",
+                "-"
+            ].indexOf(b) !== -1) {
+                a[a.length - 1] = b;
+                mergeWithPrevious = true;
+                return a;
+            } else if (mergeWithPrevious) {
+                a[a.length - 1] += b;
+                mergeWithPrevious = false;
+                return a;
+            } else return a.concat(b);
+        }, [])// Here we convert the string values into number values (in px)
+        .map(function(str) {
+            return toValue(str, measurement, popperOffsets, referenceOffsets);
+        });
+    });
+    // Loop trough the offsets arrays and execute the operations
+    ops.forEach(function(op, index) {
+        op.forEach(function(frag, index2) {
+            if (isNumeric(frag)) offsets[index] += frag * (op[index2 - 1] === "-" ? -1 : 1);
+        });
+    });
+    return offsets;
+}
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by update method
+ * @argument {Object} options - Modifiers configuration and options
+ * @argument {Number|String} options.offset=0
+ * The offset value as described in the modifier description
+ * @returns {Object} The data object, properly modified
+ */ function offset(data, _ref) {
+    var offset = _ref.offset;
+    var placement = data.placement, _data$offsets = data.offsets, popper = _data$offsets.popper, reference = _data$offsets.reference;
+    var basePlacement = placement.split("-")[0];
+    var offsets = void 0;
+    if (isNumeric(+offset)) offsets = [
+        +offset,
+        0
+    ];
+    else offsets = parseOffset(offset, popper, reference, basePlacement);
+    if (basePlacement === "left") {
+        popper.top += offsets[0];
+        popper.left -= offsets[1];
+    } else if (basePlacement === "right") {
+        popper.top += offsets[0];
+        popper.left += offsets[1];
+    } else if (basePlacement === "top") {
+        popper.left += offsets[0];
+        popper.top -= offsets[1];
+    } else if (basePlacement === "bottom") {
+        popper.left += offsets[0];
+        popper.top += offsets[1];
+    }
+    data.popper = popper;
+    return data;
+}
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by `update` method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */ function preventOverflow(data, options) {
+    var boundariesElement = options.boundariesElement || getOffsetParent(data.instance.popper);
+    // If offsetParent is the reference element, we really want to
+    // go one step up and use the next offsetParent as reference to
+    // avoid to make this modifier completely useless and look like broken
+    if (data.instance.reference === boundariesElement) boundariesElement = getOffsetParent(boundariesElement);
+    // NOTE: DOM access here
+    // resets the popper's position so that the document size can be calculated excluding
+    // the size of the popper element itself
+    var transformProp = getSupportedPropertyName("transform");
+    var popperStyles = data.instance.popper.style; // assignment to help minification
+    var top = popperStyles.top, left = popperStyles.left, transform = popperStyles[transformProp];
+    popperStyles.top = "";
+    popperStyles.left = "";
+    popperStyles[transformProp] = "";
+    var boundaries = getBoundaries(data.instance.popper, data.instance.reference, options.padding, boundariesElement, data.positionFixed);
+    // NOTE: DOM access here
+    // restores the original style properties after the offsets have been computed
+    popperStyles.top = top;
+    popperStyles.left = left;
+    popperStyles[transformProp] = transform;
+    options.boundaries = boundaries;
+    var order = options.priority;
+    var popper = data.offsets.popper;
+    var check = {
+        primary: function primary(placement) {
+            var value = popper[placement];
+            if (popper[placement] < boundaries[placement] && !options.escapeWithReference) value = Math.max(popper[placement], boundaries[placement]);
+            return defineProperty({}, placement, value);
+        },
+        secondary: function secondary(placement) {
+            var mainSide = placement === "right" ? "left" : "top";
+            var value = popper[mainSide];
+            if (popper[placement] > boundaries[placement] && !options.escapeWithReference) value = Math.min(popper[mainSide], boundaries[placement] - (placement === "right" ? popper.width : popper.height));
+            return defineProperty({}, mainSide, value);
+        }
+    };
+    order.forEach(function(placement) {
+        var side = [
+            "left",
+            "top"
+        ].indexOf(placement) !== -1 ? "primary" : "secondary";
+        popper = _extends({}, popper, check[side](placement));
+    });
+    data.offsets.popper = popper;
+    return data;
+}
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by `update` method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */ function shift(data) {
+    var placement = data.placement;
+    var basePlacement = placement.split("-")[0];
+    var shiftvariation = placement.split("-")[1];
+    // if shift shiftvariation is specified, run the modifier
+    if (shiftvariation) {
+        var _data$offsets = data.offsets, reference = _data$offsets.reference, popper = _data$offsets.popper;
+        var isVertical = [
+            "bottom",
+            "top"
+        ].indexOf(basePlacement) !== -1;
+        var side = isVertical ? "left" : "top";
+        var measurement = isVertical ? "width" : "height";
+        var shiftOffsets = {
+            start: defineProperty({}, side, reference[side]),
+            end: defineProperty({}, side, reference[side] + reference[measurement] - popper[measurement])
+        };
+        data.offsets.popper = _extends({}, popper, shiftOffsets[shiftvariation]);
+    }
+    return data;
+}
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by update method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */ function hide(data) {
+    if (!isModifierRequired(data.instance.modifiers, "hide", "preventOverflow")) return data;
+    var refRect = data.offsets.reference;
+    var bound = find(data.instance.modifiers, function(modifier) {
+        return modifier.name === "preventOverflow";
+    }).boundaries;
+    if (refRect.bottom < bound.top || refRect.left > bound.right || refRect.top > bound.bottom || refRect.right < bound.left) {
+        // Avoid unnecessary DOM access if visibility hasn't changed
+        if (data.hide === true) return data;
+        data.hide = true;
+        data.attributes["x-out-of-boundaries"] = "";
+    } else {
+        // Avoid unnecessary DOM access if visibility hasn't changed
+        if (data.hide === false) return data;
+        data.hide = false;
+        data.attributes["x-out-of-boundaries"] = false;
+    }
+    return data;
+}
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by `update` method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */ function inner(data) {
+    var placement = data.placement;
+    var basePlacement = placement.split("-")[0];
+    var _data$offsets = data.offsets, popper = _data$offsets.popper, reference = _data$offsets.reference;
+    var isHoriz = [
+        "left",
+        "right"
+    ].indexOf(basePlacement) !== -1;
+    var subtractLength = [
+        "top",
+        "left"
+    ].indexOf(basePlacement) === -1;
+    popper[isHoriz ? "left" : "top"] = reference[basePlacement] - (subtractLength ? popper[isHoriz ? "width" : "height"] : 0);
+    data.placement = getOppositePlacement(placement);
+    data.offsets.popper = getClientRect(popper);
+    return data;
+}
+/**
+ * Modifier function, each modifier can have a function of this type assigned
+ * to its `fn` property.<br />
+ * These functions will be called on each update, this means that you must
+ * make sure they are performant enough to avoid performance bottlenecks.
+ *
+ * @function ModifierFn
+ * @argument {dataObject} data - The data object generated by `update` method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {dataObject} The data object, properly modified
+ */ /**
+ * Modifiers are plugins used to alter the behavior of your poppers.<br />
+ * Popper.js uses a set of 9 modifiers to provide all the basic functionalities
+ * needed by the library.
+ *
+ * Usually you don't want to override the `order`, `fn` and `onLoad` props.
+ * All the other properties are configurations that could be tweaked.
+ * @namespace modifiers
+ */ var modifiers = {
+    /**
+   * Modifier used to shift the popper on the start or end of its reference
+   * element.<br />
+   * It will read the variation of the `placement` property.<br />
+   * It can be one either `-end` or `-start`.
+   * @memberof modifiers
+   * @inner
+   */ shift: {
+        /** @prop {number} order=100 - Index used to define the order of execution */ order: 100,
+        /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */ enabled: true,
+        /** @prop {ModifierFn} */ fn: shift
+    },
+    /**
+   * The `offset` modifier can shift your popper on both its axis.
+   *
+   * It accepts the following units:
+   * - `px` or unit-less, interpreted as pixels
+   * - `%` or `%r`, percentage relative to the length of the reference element
+   * - `%p`, percentage relative to the length of the popper element
+   * - `vw`, CSS viewport width unit
+   * - `vh`, CSS viewport height unit
+   *
+   * For length is intended the main axis relative to the placement of the popper.<br />
+   * This means that if the placement is `top` or `bottom`, the length will be the
+   * `width`. In case of `left` or `right`, it will be the `height`.
+   *
+   * You can provide a single value (as `Number` or `String`), or a pair of values
+   * as `String` divided by a comma or one (or more) white spaces.<br />
+   * The latter is a deprecated method because it leads to confusion and will be
+   * removed in v2.<br />
+   * Additionally, it accepts additions and subtractions between different units.
+   * Note that multiplications and divisions aren't supported.
+   *
+   * Valid examples are:
+   * ```
+   * 10
+   * '10%'
+   * '10, 10'
+   * '10%, 10'
+   * '10 + 10%'
+   * '10 - 5vh + 3%'
+   * '-10px + 5vh, 5px - 6%'
+   * ```
+   * > **NB**: If you desire to apply offsets to your poppers in a way that may make them overlap
+   * > with their reference element, unfortunately, you will have to disable the `flip` modifier.
+   * > You can read more on this at this [issue](https://github.com/FezVrasta/popper.js/issues/373).
+   *
+   * @memberof modifiers
+   * @inner
+   */ offset: {
+        /** @prop {number} order=200 - Index used to define the order of execution */ order: 200,
+        /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */ enabled: true,
+        /** @prop {ModifierFn} */ fn: offset,
+        /** @prop {Number|String} offset=0
+     * The offset value as described in the modifier description
+     */ offset: 0
+    },
+    /**
+   * Modifier used to prevent the popper from being positioned outside the boundary.
+   *
+   * A scenario exists where the reference itself is not within the boundaries.<br />
+   * We can say it has "escaped the boundaries" — or just "escaped".<br />
+   * In this case we need to decide whether the popper should either:
+   *
+   * - detach from the reference and remain "trapped" in the boundaries, or
+   * - if it should ignore the boundary and "escape with its reference"
+   *
+   * When `escapeWithReference` is set to`true` and reference is completely
+   * outside its boundaries, the popper will overflow (or completely leave)
+   * the boundaries in order to remain attached to the edge of the reference.
+   *
+   * @memberof modifiers
+   * @inner
+   */ preventOverflow: {
+        /** @prop {number} order=300 - Index used to define the order of execution */ order: 300,
+        /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */ enabled: true,
+        /** @prop {ModifierFn} */ fn: preventOverflow,
+        /**
+     * @prop {Array} [priority=['left','right','top','bottom']]
+     * Popper will try to prevent overflow following these priorities by default,
+     * then, it could overflow on the left and on top of the `boundariesElement`
+     */ priority: [
+            "left",
+            "right",
+            "top",
+            "bottom"
+        ],
+        /**
+     * @prop {number} padding=5
+     * Amount of pixel used to define a minimum distance between the boundaries
+     * and the popper. This makes sure the popper always has a little padding
+     * between the edges of its container
+     */ padding: 5,
+        /**
+     * @prop {String|HTMLElement} boundariesElement='scrollParent'
+     * Boundaries used by the modifier. Can be `scrollParent`, `window`,
+     * `viewport` or any DOM element.
+     */ boundariesElement: "scrollParent"
+    },
+    /**
+   * Modifier used to make sure the reference and its popper stay near each other
+   * without leaving any gap between the two. Especially useful when the arrow is
+   * enabled and you want to ensure that it points to its reference element.
+   * It cares only about the first axis. You can still have poppers with margin
+   * between the popper and its reference element.
+   * @memberof modifiers
+   * @inner
+   */ keepTogether: {
+        /** @prop {number} order=400 - Index used to define the order of execution */ order: 400,
+        /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */ enabled: true,
+        /** @prop {ModifierFn} */ fn: keepTogether
+    },
+    /**
+   * This modifier is used to move the `arrowElement` of the popper to make
+   * sure it is positioned between the reference element and its popper element.
+   * It will read the outer size of the `arrowElement` node to detect how many
+   * pixels of conjunction are needed.
+   *
+   * It has no effect if no `arrowElement` is provided.
+   * @memberof modifiers
+   * @inner
+   */ arrow: {
+        /** @prop {number} order=500 - Index used to define the order of execution */ order: 500,
+        /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */ enabled: true,
+        /** @prop {ModifierFn} */ fn: arrow,
+        /** @prop {String|HTMLElement} element='[x-arrow]' - Selector or node used as arrow */ element: "[x-arrow]"
+    },
+    /**
+   * Modifier used to flip the popper's placement when it starts to overlap its
+   * reference element.
+   *
+   * Requires the `preventOverflow` modifier before it in order to work.
+   *
+   * **NOTE:** this modifier will interrupt the current update cycle and will
+   * restart it if it detects the need to flip the placement.
+   * @memberof modifiers
+   * @inner
+   */ flip: {
+        /** @prop {number} order=600 - Index used to define the order of execution */ order: 600,
+        /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */ enabled: true,
+        /** @prop {ModifierFn} */ fn: flip,
+        /**
+     * @prop {String|Array} behavior='flip'
+     * The behavior used to change the popper's placement. It can be one of
+     * `flip`, `clockwise`, `counterclockwise` or an array with a list of valid
+     * placements (with optional variations)
+     */ behavior: "flip",
+        /**
+     * @prop {number} padding=5
+     * The popper will flip if it hits the edges of the `boundariesElement`
+     */ padding: 5,
+        /**
+     * @prop {String|HTMLElement} boundariesElement='viewport'
+     * The element which will define the boundaries of the popper position.
+     * The popper will never be placed outside of the defined boundaries
+     * (except if `keepTogether` is enabled)
+     */ boundariesElement: "viewport",
+        /**
+     * @prop {Boolean} flipVariations=false
+     * The popper will switch placement variation between `-start` and `-end` when
+     * the reference element overlaps its boundaries.
+     *
+     * The original placement should have a set variation.
+     */ flipVariations: false,
+        /**
+     * @prop {Boolean} flipVariationsByContent=false
+     * The popper will switch placement variation between `-start` and `-end` when
+     * the popper element overlaps its reference boundaries.
+     *
+     * The original placement should have a set variation.
+     */ flipVariationsByContent: false
+    },
+    /**
+   * Modifier used to make the popper flow toward the inner of the reference element.
+   * By default, when this modifier is disabled, the popper will be placed outside
+   * the reference element.
+   * @memberof modifiers
+   * @inner
+   */ inner: {
+        /** @prop {number} order=700 - Index used to define the order of execution */ order: 700,
+        /** @prop {Boolean} enabled=false - Whether the modifier is enabled or not */ enabled: false,
+        /** @prop {ModifierFn} */ fn: inner
+    },
+    /**
+   * Modifier used to hide the popper when its reference element is outside of the
+   * popper boundaries. It will set a `x-out-of-boundaries` attribute which can
+   * be used to hide with a CSS selector the popper when its reference is
+   * out of boundaries.
+   *
+   * Requires the `preventOverflow` modifier before it in order to work.
+   * @memberof modifiers
+   * @inner
+   */ hide: {
+        /** @prop {number} order=800 - Index used to define the order of execution */ order: 800,
+        /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */ enabled: true,
+        /** @prop {ModifierFn} */ fn: hide
+    },
+    /**
+   * Computes the style that will be applied to the popper element to gets
+   * properly positioned.
+   *
+   * Note that this modifier will not touch the DOM, it just prepares the styles
+   * so that `applyStyle` modifier can apply it. This separation is useful
+   * in case you need to replace `applyStyle` with a custom implementation.
+   *
+   * This modifier has `850` as `order` value to maintain backward compatibility
+   * with previous versions of Popper.js. Expect the modifiers ordering method
+   * to change in future major versions of the library.
+   *
+   * @memberof modifiers
+   * @inner
+   */ computeStyle: {
+        /** @prop {number} order=850 - Index used to define the order of execution */ order: 850,
+        /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */ enabled: true,
+        /** @prop {ModifierFn} */ fn: computeStyle,
+        /**
+     * @prop {Boolean} gpuAcceleration=true
+     * If true, it uses the CSS 3D transformation to position the popper.
+     * Otherwise, it will use the `top` and `left` properties
+     */ gpuAcceleration: true,
+        /**
+     * @prop {string} [x='bottom']
+     * Where to anchor the X axis (`bottom` or `top`). AKA X offset origin.
+     * Change this if your popper should grow in a direction different from `bottom`
+     */ x: "bottom",
+        /**
+     * @prop {string} [x='left']
+     * Where to anchor the Y axis (`left` or `right`). AKA Y offset origin.
+     * Change this if your popper should grow in a direction different from `right`
+     */ y: "right"
+    },
+    /**
+   * Applies the computed styles to the popper element.
+   *
+   * All the DOM manipulations are limited to this modifier. This is useful in case
+   * you want to integrate Popper.js inside a framework or view library and you
+   * want to delegate all the DOM manipulations to it.
+   *
+   * Note that if you disable this modifier, you must make sure the popper element
+   * has its position set to `absolute` before Popper.js can do its work!
+   *
+   * Just disable this modifier and define your own to achieve the desired effect.
+   *
+   * @memberof modifiers
+   * @inner
+   */ applyStyle: {
+        /** @prop {number} order=900 - Index used to define the order of execution */ order: 900,
+        /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */ enabled: true,
+        /** @prop {ModifierFn} */ fn: applyStyle,
+        /** @prop {Function} */ onLoad: applyStyleOnLoad,
+        /**
+     * @deprecated since version 1.10.0, the property moved to `computeStyle` modifier
+     * @prop {Boolean} gpuAcceleration=true
+     * If true, it uses the CSS 3D transformation to position the popper.
+     * Otherwise, it will use the `top` and `left` properties
+     */ gpuAcceleration: undefined
+    }
+};
+/**
+ * The `dataObject` is an object containing all the information used by Popper.js.
+ * This object is passed to modifiers and to the `onCreate` and `onUpdate` callbacks.
+ * @name dataObject
+ * @property {Object} data.instance The Popper.js instance
+ * @property {String} data.placement Placement applied to popper
+ * @property {String} data.originalPlacement Placement originally defined on init
+ * @property {Boolean} data.flipped True if popper has been flipped by flip modifier
+ * @property {Boolean} data.hide True if the reference element is out of boundaries, useful to know when to hide the popper
+ * @property {HTMLElement} data.arrowElement Node used as arrow by arrow modifier
+ * @property {Object} data.styles Any CSS property defined here will be applied to the popper. It expects the JavaScript nomenclature (eg. `marginBottom`)
+ * @property {Object} data.arrowStyles Any CSS property defined here will be applied to the popper arrow. It expects the JavaScript nomenclature (eg. `marginBottom`)
+ * @property {Object} data.boundaries Offsets of the popper boundaries
+ * @property {Object} data.offsets The measurements of popper, reference and arrow elements
+ * @property {Object} data.offsets.popper `top`, `left`, `width`, `height` values
+ * @property {Object} data.offsets.reference `top`, `left`, `width`, `height` values
+ * @property {Object} data.offsets.arrow] `top` and `left` offsets, only one of them will be different from 0
+ */ /**
+ * Default options provided to Popper.js constructor.<br />
+ * These can be overridden using the `options` argument of Popper.js.<br />
+ * To override an option, simply pass an object with the same
+ * structure of the `options` object, as the 3rd argument. For example:
+ * ```
+ * new Popper(ref, pop, {
+ *   modifiers: {
+ *     preventOverflow: { enabled: false }
+ *   }
+ * })
+ * ```
+ * @type {Object}
+ * @static
+ * @memberof Popper
+ */ var Defaults = {
+    /**
+   * Popper's placement.
+   * @prop {Popper.placements} placement='bottom'
+   */ placement: "bottom",
+    /**
+   * Set this to true if you want popper to position it self in 'fixed' mode
+   * @prop {Boolean} positionFixed=false
+   */ positionFixed: false,
+    /**
+   * Whether events (resize, scroll) are initially enabled.
+   * @prop {Boolean} eventsEnabled=true
+   */ eventsEnabled: true,
+    /**
+   * Set to true if you want to automatically remove the popper when
+   * you call the `destroy` method.
+   * @prop {Boolean} removeOnDestroy=false
+   */ removeOnDestroy: false,
+    /**
+   * Callback called when the popper is created.<br />
+   * By default, it is set to no-op.<br />
+   * Access Popper.js instance with `data.instance`.
+   * @prop {onCreate}
+   */ onCreate: function onCreate() {},
+    /**
+   * Callback called when the popper is updated. This callback is not called
+   * on the initialization/creation of the popper, but only on subsequent
+   * updates.<br />
+   * By default, it is set to no-op.<br />
+   * Access Popper.js instance with `data.instance`.
+   * @prop {onUpdate}
+   */ onUpdate: function onUpdate() {},
+    /**
+   * List of modifiers used to modify the offsets before they are applied to the popper.
+   * They provide most of the functionalities of Popper.js.
+   * @prop {modifiers}
+   */ modifiers: modifiers
+};
+/**
+ * @callback onCreate
+ * @param {dataObject} data
+ */ /**
+ * @callback onUpdate
+ * @param {dataObject} data
+ */ // Utils
+// Methods
+var Popper = function() {
+    /**
+   * Creates a new Popper.js instance.
+   * @class Popper
+   * @param {Element|referenceObject} reference - The reference element used to position the popper
+   * @param {Element} popper - The HTML / XML element used as the popper
+   * @param {Object} options - Your custom options to override the ones defined in [Defaults](#defaults)
+   * @return {Object} instance - The generated Popper.js instance
+   */ function Popper(reference, popper) {
+        var _this = this;
+        var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+        classCallCheck(this, Popper);
+        this.scheduleUpdate = function() {
+            return requestAnimationFrame(_this.update);
+        };
+        // make update() debounced, so that it only runs at most once-per-tick
+        this.update = debounce(this.update.bind(this));
+        // with {} we create a new object with the options inside it
+        this.options = _extends({}, Popper.Defaults, options);
+        // init state
+        this.state = {
+            isDestroyed: false,
+            isCreated: false,
+            scrollParents: []
+        };
+        // get reference and popper elements (allow jQuery wrappers)
+        this.reference = reference && reference.jquery ? reference[0] : reference;
+        this.popper = popper && popper.jquery ? popper[0] : popper;
+        // Deep merge modifiers options
+        this.options.modifiers = {};
+        Object.keys(_extends({}, Popper.Defaults.modifiers, options.modifiers)).forEach(function(name) {
+            _this.options.modifiers[name] = _extends({}, Popper.Defaults.modifiers[name] || {}, options.modifiers ? options.modifiers[name] : {});
+        });
+        // Refactoring modifiers' list (Object => Array)
+        this.modifiers = Object.keys(this.options.modifiers).map(function(name) {
+            return _extends({
+                name: name
+            }, _this.options.modifiers[name]);
+        })// sort the modifiers by order
+        .sort(function(a, b) {
+            return a.order - b.order;
+        });
+        // modifiers have the ability to execute arbitrary code when Popper.js get inited
+        // such code is executed in the same order of its modifier
+        // they could add new properties to their options configuration
+        // BE AWARE: don't add options to `options.modifiers.name` but to `modifierOptions`!
+        this.modifiers.forEach(function(modifierOptions) {
+            if (modifierOptions.enabled && isFunction(modifierOptions.onLoad)) modifierOptions.onLoad(_this.reference, _this.popper, _this.options, modifierOptions, _this.state);
+        });
+        // fire the first update to position the popper in the right place
+        this.update();
+        var eventsEnabled = this.options.eventsEnabled;
+        if (eventsEnabled) // setup event listeners, they will take care of update the position in specific situations
+        this.enableEventListeners();
+        this.state.eventsEnabled = eventsEnabled;
+    }
+    // We can't use class properties because they don't get listed in the
+    // class prototype and break stuff like Sinon stubs
+    createClass(Popper, [
+        {
+            key: "update",
+            value: function update$$1() {
+                return update.call(this);
+            }
+        },
+        {
+            key: "destroy",
+            value: function destroy$$1() {
+                return destroy.call(this);
+            }
+        },
+        {
+            key: "enableEventListeners",
+            value: function enableEventListeners$$1() {
+                return enableEventListeners.call(this);
+            }
+        },
+        {
+            key: "disableEventListeners",
+            value: function disableEventListeners$$1() {
+                return disableEventListeners.call(this);
+            }
+        }
+    ]);
+    return Popper;
+}();
+/**
+ * The `referenceObject` is an object that provides an interface compatible with Popper.js
+ * and lets you use it as replacement of a real DOM node.<br />
+ * You can use this method to position a popper relatively to a set of coordinates
+ * in case you don't have a DOM node to use as reference.
+ *
+ * ```
+ * new Popper(referenceObject, popperNode);
+ * ```
+ *
+ * NB: This feature isn't supported in Internet Explorer 10.
+ * @name referenceObject
+ * @property {Function} data.getBoundingClientRect
+ * A function that returns a set of coordinates compatible with the native `getBoundingClientRect` method.
+ * @property {number} data.clientWidth
+ * An ES6 getter that will return the width of the virtual reference element.
+ * @property {number} data.clientHeight
+ * An ES6 getter that will return the height of the virtual reference element.
+ */ Popper.Utils = (typeof window !== "undefined" ? window : global).PopperUtils;
+Popper.placements = placements;
+Popper.Defaults = Defaults;
+exports.default = Popper;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"15VPg":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getObjectType", ()=>getObjectType);
+var _types = require("./types");
+parcelHelpers.exportAll(_types, exports);
+var DOM_PROPERTIES_TO_CHECK = [
+    "innerHTML",
+    "ownerDocument",
+    "style",
+    "attributes",
+    "nodeValue"
+];
+var objectTypes = [
+    "Array",
+    "ArrayBuffer",
+    "AsyncFunction",
+    "AsyncGenerator",
+    "AsyncGeneratorFunction",
+    "Date",
+    "Error",
+    "Function",
+    "Generator",
+    "GeneratorFunction",
+    "HTMLElement",
+    "Map",
+    "Object",
+    "Promise",
+    "RegExp",
+    "Set",
+    "WeakMap",
+    "WeakSet"
+];
+var primitiveTypes = [
+    "bigint",
+    "boolean",
+    "null",
+    "number",
+    "string",
+    "symbol",
+    "undefined"
+];
+function getObjectType(value) {
+    var objectTypeName = Object.prototype.toString.call(value).slice(8, -1);
+    if (/HTML\w+Element/.test(objectTypeName)) return "HTMLElement";
+    if (isObjectType(objectTypeName)) return objectTypeName;
+    return undefined;
+}
+function isObjectOfType(type) {
+    return function(value) {
+        return getObjectType(value) === type;
+    };
+}
+function isObjectType(name) {
+    return objectTypes.includes(name);
+}
+// eslint-disable-next-line @typescript-eslint/ban-types
+function isOfType(type) {
+    return function(value) {
+        return typeof value === type;
+    };
+}
+function isPrimitiveType(name) {
+    return primitiveTypes.includes(name);
+}
+function is(value) {
+    if (value === null) return "null";
+    switch(typeof value){
+        case "bigint":
+            return "bigint";
+        case "boolean":
+            return "boolean";
+        case "number":
+            return "number";
+        case "string":
+            return "string";
+        case "symbol":
+            return "symbol";
+        case "undefined":
+            return "undefined";
+        default:
+    }
+    if (is.array(value)) return "Array";
+    if (is.plainFunction(value)) return "Function";
+    var tagType = getObjectType(value);
+    /* istanbul ignore else */ if (tagType) return tagType;
+    /* istanbul ignore next */ return "Object";
+}
+is.array = Array.isArray;
+is.arrayOf = function(target, predicate) {
+    if (!is.array(target) && !is.function(predicate)) return false;
+    return target.every(function(d) {
+        return predicate(d);
+    });
+};
+is.asyncGeneratorFunction = function(value) {
+    return getObjectType(value) === "AsyncGeneratorFunction";
+};
+// eslint-disable-next-line @typescript-eslint/ban-types
+is.asyncFunction = isObjectOfType("AsyncFunction");
+is.bigint = isOfType("bigint");
+is.boolean = function(value) {
+    return value === true || value === false;
+};
+is.date = isObjectOfType("Date");
+is.defined = function(value) {
+    return !is.undefined(value);
+};
+is.domElement = function(value) {
+    return is.object(value) && !is.plainObject(value) && value.nodeType === 1 && is.string(value.nodeName) && DOM_PROPERTIES_TO_CHECK.every(function(property) {
+        return property in value;
+    });
+};
+is.empty = function(value) {
+    return is.string(value) && value.length === 0 || is.array(value) && value.length === 0 || is.object(value) && !is.map(value) && !is.set(value) && Object.keys(value).length === 0 || is.set(value) && value.size === 0 || is.map(value) && value.size === 0;
+};
+is.error = isObjectOfType("Error");
+// eslint-disable-next-line @typescript-eslint/ban-types
+is.function = isOfType("function");
+is.generator = function(value) {
+    return is.iterable(value) && is.function(value.next) && is.function(value.throw);
+};
+is.generatorFunction = isObjectOfType("GeneratorFunction");
+is.instanceOf = function(instance, class_) {
+    if (!instance || !class_) return false;
+    return Object.getPrototypeOf(instance) === class_.prototype;
+};
+is.iterable = function(value) {
+    return !is.nullOrUndefined(value) && is.function(value[Symbol.iterator]);
+};
+is.map = isObjectOfType("Map");
+is.nan = function(value) {
+    return Number.isNaN(value);
+};
+is.null = function(value) {
+    return value === null;
+};
+is.nullOrUndefined = function(value) {
+    return is.null(value) || is.undefined(value);
+};
+is.number = function(value) {
+    return isOfType("number")(value) && !is.nan(value);
+};
+is.numericString = function(value) {
+    return is.string(value) && value.length > 0 && !Number.isNaN(Number(value));
+};
+// eslint-disable-next-line @typescript-eslint/ban-types
+is.object = function(value) {
+    return !is.nullOrUndefined(value) && (is.function(value) || typeof value === "object");
+};
+is.oneOf = function(target, value) {
+    if (!is.array(target)) return false;
+    // eslint-disable-next-line unicorn/prefer-includes
+    return target.indexOf(value) > -1;
+};
+// eslint-disable-next-line @typescript-eslint/ban-types
+is.plainFunction = isObjectOfType("Function");
+is.plainObject = function(value) {
+    if (getObjectType(value) !== "Object") return false;
+    var prototype = Object.getPrototypeOf(value);
+    return prototype === null || prototype === Object.getPrototypeOf({});
+};
+is.primitive = function(value) {
+    return is.null(value) || isPrimitiveType(typeof value);
+};
+is.promise = isObjectOfType("Promise");
+is.propertyOf = function(target, key, predicate) {
+    if (!is.object(target) || !key) return false;
+    var value = target[key];
+    if (is.function(predicate)) return predicate(value);
+    return is.defined(value);
+};
+is.regexp = isObjectOfType("RegExp");
+is.set = isObjectOfType("Set");
+is.string = isOfType("string");
+is.symbol = isOfType("symbol");
+is.undefined = isOfType("undefined");
+is.weakMap = isObjectOfType("WeakMap");
+is.weakSet = isObjectOfType("WeakSet");
+exports.default = is;
+
+},{"./types":false,"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"djyHC":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>treeChanges);
+var _deepEqual = require("@gilbarbara/deep-equal");
+var _deepEqualDefault = parcelHelpers.interopDefault(_deepEqual);
+var _isLite = require("is-lite");
+var _isLiteDefault = parcelHelpers.interopDefault(_isLite);
+var _helpers = require("./helpers");
+var _types = require("./types");
+parcelHelpers.exportAll(_types, exports);
+function treeChanges(previousData, data) {
+    if ([
+        previousData,
+        data
+    ].some((0, _isLiteDefault.default).nullOrUndefined)) throw new Error("Missing required parameters");
+    if (![
+        previousData,
+        data
+    ].every(function(d) {
+        return (0, _isLiteDefault.default).plainObject(d) || (0, _isLiteDefault.default).array(d);
+    })) throw new Error("Expected plain objects or array");
+    var added = function(key, value) {
+        try {
+            return (0, _helpers.compareValues)(previousData, data, {
+                key: key,
+                type: "added",
+                value: value
+            });
+        } catch (_a) {
+            /* istanbul ignore next */ return false;
+        }
+    };
+    var changed = function(key, actual, previous) {
+        try {
+            var left = (0, _helpers.nested)(previousData, key);
+            var right = (0, _helpers.nested)(data, key);
+            var hasActual = (0, _isLiteDefault.default).defined(actual);
+            var hasPrevious = (0, _isLiteDefault.default).defined(previous);
+            if (hasActual || hasPrevious) {
+                var leftComparator = hasPrevious ? (0, _helpers.includesOrEqualsTo)(previous, left) : !(0, _helpers.includesOrEqualsTo)(actual, left);
+                var rightComparator = (0, _helpers.includesOrEqualsTo)(actual, right);
+                return leftComparator && rightComparator;
+            }
+            if ([
+                left,
+                right
+            ].every((0, _isLiteDefault.default).array) || [
+                left,
+                right
+            ].every((0, _isLiteDefault.default).plainObject)) return !(0, _deepEqualDefault.default)(left, right);
+            return left !== right;
+        } catch (_a) {
+            /* istanbul ignore next */ return false;
+        }
+    };
+    var changedFrom = function(key, previous, actual) {
+        if (!(0, _isLiteDefault.default).defined(key)) return false;
+        try {
+            var left = (0, _helpers.nested)(previousData, key);
+            var right = (0, _helpers.nested)(data, key);
+            var hasActual = (0, _isLiteDefault.default).defined(actual);
+            return (0, _helpers.includesOrEqualsTo)(previous, left) && (hasActual ? (0, _helpers.includesOrEqualsTo)(actual, right) : !hasActual);
+        } catch (_a) {
+            /* istanbul ignore next */ return false;
+        }
+    };
+    /**
+     * @deprecated
+     * Use "changed" instead
+     */ var changedTo = function(key, actual) {
+        if (!(0, _isLiteDefault.default).defined(key)) return false;
+        // eslint-disable-next-line no-console
+        console.warn("`changedTo` is deprecated! Replace it with `change`");
+        return changed(key, actual);
+    };
+    var decreased = function(key, actual, previous) {
+        if (!(0, _isLiteDefault.default).defined(key)) return false;
+        try {
+            return (0, _helpers.compareNumbers)(previousData, data, {
+                key: key,
+                actual: actual,
+                previous: previous,
+                type: "decreased"
+            });
+        } catch (_a) {
+            /* istanbul ignore next */ return false;
+        }
+    };
+    var emptied = function(key) {
+        try {
+            var _a = (0, _helpers.getIterables)(previousData, data, {
+                key: key
+            }), left = _a[0], right = _a[1];
+            return !!left.length && !right.length;
+        } catch (_b) {
+            /* istanbul ignore next */ return false;
+        }
+    };
+    var filled = function(key) {
+        try {
+            var _a = (0, _helpers.getIterables)(previousData, data, {
+                key: key
+            }), left = _a[0], right = _a[1];
+            return !left.length && !!right.length;
+        } catch (_b) {
+            /* istanbul ignore next */ return false;
+        }
+    };
+    var increased = function(key, actual, previous) {
+        if (!(0, _isLiteDefault.default).defined(key)) return false;
+        try {
+            return (0, _helpers.compareNumbers)(previousData, data, {
+                key: key,
+                actual: actual,
+                previous: previous,
+                type: "increased"
+            });
+        } catch (_a) {
+            /* istanbul ignore next */ return false;
+        }
+    };
+    var removed = function(key, value) {
+        try {
+            return (0, _helpers.compareValues)(previousData, data, {
+                key: key,
+                type: "removed",
+                value: value
+            });
+        } catch (_a) {
+            /* istanbul ignore next */ return false;
+        }
+    };
+    return {
+        added: added,
+        changed: changed,
+        changedFrom: changedFrom,
+        changedTo: changedTo,
+        decreased: decreased,
+        emptied: emptied,
+        filled: filled,
+        increased: increased,
+        removed: removed
+    };
+}
+
+},{"@gilbarbara/deep-equal":"htexp","is-lite":"15VPg","./helpers":"ipsox","./types":false,"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"htexp":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>equal);
+var _helpers = require("./helpers");
+var __values = undefined && undefined.__values || function(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function() {
+            if (o && i >= o.length) o = void 0;
+            return {
+                value: o && o[i++],
+                done: !o
+            };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+};
+function equalArray(left, right) {
+    var length = left.length;
+    if (length !== right.length) return false;
+    for(var index = length; index-- !== 0;){
+        if (!equal(left[index], right[index])) return false;
+    }
+    return true;
+}
+function equalArrayBuffer(left, right) {
+    if (left.byteLength !== right.byteLength) return false;
+    var view1 = new DataView(left.buffer);
+    var view2 = new DataView(right.buffer);
+    var index = left.byteLength;
+    while(index--){
+        if (view1.getUint8(index) !== view2.getUint8(index)) return false;
+    }
+    return true;
+}
+function equalMap(left, right) {
+    var e_1, _a, e_2, _b;
+    if (left.size !== right.size) return false;
+    try {
+        for(var _c = __values(left.entries()), _d = _c.next(); !_d.done; _d = _c.next()){
+            var index = _d.value;
+            if (!right.has(index[0])) return false;
+        }
+    } catch (e_1_1) {
+        e_1 = {
+            error: e_1_1
+        };
+    } finally{
+        try {
+            if (_d && !_d.done && (_a = _c.return)) _a.call(_c);
+        } finally{
+            if (e_1) throw e_1.error;
+        }
+    }
+    try {
+        for(var _e = __values(left.entries()), _f = _e.next(); !_f.done; _f = _e.next()){
+            var index = _f.value;
+            if (!equal(index[1], right.get(index[0]))) return false;
+        }
+    } catch (e_2_1) {
+        e_2 = {
+            error: e_2_1
+        };
+    } finally{
+        try {
+            if (_f && !_f.done && (_b = _e.return)) _b.call(_e);
+        } finally{
+            if (e_2) throw e_2.error;
+        }
+    }
+    return true;
+}
+function equalSet(left, right) {
+    var e_3, _a;
+    if (left.size !== right.size) return false;
+    try {
+        for(var _b = __values(left.entries()), _c = _b.next(); !_c.done; _c = _b.next()){
+            var index = _c.value;
+            if (!right.has(index[0])) return false;
+        }
+    } catch (e_3_1) {
+        e_3 = {
+            error: e_3_1
+        };
+    } finally{
+        try {
+            if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+        } finally{
+            if (e_3) throw e_3.error;
+        }
+    }
+    return true;
+}
+function equal(left, right) {
+    if (left === right) return true;
+    if (left && (0, _helpers.isObject)(left) && right && (0, _helpers.isObject)(right)) {
+        if (left.constructor !== right.constructor) return false;
+        if (Array.isArray(left) && Array.isArray(right)) return equalArray(left, right);
+        if (left instanceof Map && right instanceof Map) return equalMap(left, right);
+        if (left instanceof Set && right instanceof Set) return equalSet(left, right);
+        if (ArrayBuffer.isView(left) && ArrayBuffer.isView(right)) return equalArrayBuffer(left, right);
+        if ((0, _helpers.isRegex)(left) && (0, _helpers.isRegex)(right)) return left.source === right.source && left.flags === right.flags;
+        if (left.valueOf !== Object.prototype.valueOf) return left.valueOf() === right.valueOf();
+        if (left.toString !== Object.prototype.toString) return left.toString() === right.toString();
+        var leftKeys = Object.keys(left);
+        var rightKeys = Object.keys(right);
+        if (leftKeys.length !== rightKeys.length) return false;
+        for(var index = leftKeys.length; index-- !== 0;){
+            if (!Object.prototype.hasOwnProperty.call(right, leftKeys[index])) return false;
+        }
+        for(var index = leftKeys.length; index-- !== 0;){
+            var key = leftKeys[index];
+            if (key === "_owner" && left.$$typeof) continue;
+            if (!equal(left[key], right[key])) return false;
+        }
+        return true;
+    }
+    if (Number.isNaN(left) && Number.isNaN(right)) return true;
+    return left === right;
+}
+
+},{"./helpers":"4t6xO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4t6xO":[function(require,module,exports) {
+// eslint-disable-next-line @typescript-eslint/ban-types
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isFunction", ()=>isFunction);
+parcelHelpers.export(exports, "isNull", ()=>isNull);
+parcelHelpers.export(exports, "isRegex", ()=>isRegex);
+parcelHelpers.export(exports, "isObject", ()=>isObject);
+parcelHelpers.export(exports, "isUndefined", ()=>isUndefined);
+function isOfType(type) {
+    return function(value) {
+        return typeof value === type;
+    };
+}
+var isFunction = isOfType("function");
+var isNull = function(value) {
+    return value === null;
+};
+var isRegex = function(value) {
+    return Object.prototype.toString.call(value).slice(8, -1) === "RegExp";
+};
+var isObject = function(value) {
+    return !isUndefined(value) && !isNull(value) && (isFunction(value) || typeof value === "object");
+};
+var isUndefined = isOfType("undefined");
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ipsox":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "canHaveLength", ()=>canHaveLength);
+parcelHelpers.export(exports, "checkEquality", ()=>checkEquality);
+parcelHelpers.export(exports, "compareNumbers", ()=>compareNumbers);
+parcelHelpers.export(exports, "compareValues", ()=>compareValues);
+parcelHelpers.export(exports, "getIterables", ()=>getIterables);
+parcelHelpers.export(exports, "hasEntry", ()=>hasEntry);
+parcelHelpers.export(exports, "hasExtraKeys", ()=>hasExtraKeys);
+parcelHelpers.export(exports, "hasValue", ()=>hasValue);
+parcelHelpers.export(exports, "includesOrEqualsTo", ()=>includesOrEqualsTo);
+parcelHelpers.export(exports, "isEqualPredicate", ()=>isEqualPredicate);
+parcelHelpers.export(exports, "isSameType", ()=>isSameType);
+parcelHelpers.export(exports, "nested", ()=>nested);
+var _deepEqual = require("@gilbarbara/deep-equal");
+var _deepEqualDefault = parcelHelpers.interopDefault(_deepEqual);
+var _isLite = require("is-lite");
+var _isLiteDefault = parcelHelpers.interopDefault(_isLite);
+function canHaveLength() {
+    var arguments_ = [];
+    for(var _i = 0; _i < arguments.length; _i++)arguments_[_i] = arguments[_i];
+    return arguments_.every(function(d) {
+        return (0, _isLiteDefault.default).string(d) || (0, _isLiteDefault.default).array(d) || (0, _isLiteDefault.default).plainObject(d);
+    });
+}
+function checkEquality(left, right, value) {
+    if (!isSameType(left, right)) return false;
+    if ([
+        left,
+        right
+    ].every((0, _isLiteDefault.default).array)) return !left.some(hasValue(value)) && right.some(hasValue(value));
+    /* istanbul ignore else */ if ([
+        left,
+        right
+    ].every((0, _isLiteDefault.default).plainObject)) return !Object.entries(left).some(hasEntry(value)) && Object.entries(right).some(hasEntry(value));
+    return right === value;
+}
+function compareNumbers(previousData, data, options) {
+    var actual = options.actual, key = options.key, previous = options.previous, type = options.type;
+    var left = nested(previousData, key);
+    var right = nested(data, key);
+    var changed = [
+        left,
+        right
+    ].every((0, _isLiteDefault.default).number) && (type === "increased" ? left < right : left > right);
+    if (!(0, _isLiteDefault.default).undefined(actual)) changed = changed && right === actual;
+    if (!(0, _isLiteDefault.default).undefined(previous)) changed = changed && left === previous;
+    return changed;
+}
+function compareValues(previousData, data, options) {
+    var key = options.key, type = options.type, value = options.value;
+    var left = nested(previousData, key);
+    var right = nested(data, key);
+    var primary = type === "added" ? left : right;
+    var secondary = type === "added" ? right : left;
+    // console.log({ primary, secondary });
+    if (!(0, _isLiteDefault.default).nullOrUndefined(value)) {
+        if ((0, _isLiteDefault.default).defined(primary)) {
+            // check if nested data matches
+            if ((0, _isLiteDefault.default).array(primary) || (0, _isLiteDefault.default).plainObject(primary)) return checkEquality(primary, secondary, value);
+        } else return (0, _deepEqualDefault.default)(secondary, value);
+        return false;
+    }
+    if ([
+        left,
+        right
+    ].every((0, _isLiteDefault.default).array)) return !secondary.every(isEqualPredicate(primary));
+    if ([
+        left,
+        right
+    ].every((0, _isLiteDefault.default).plainObject)) return hasExtraKeys(Object.keys(primary), Object.keys(secondary));
+    return ![
+        left,
+        right
+    ].every(function(d) {
+        return (0, _isLiteDefault.default).primitive(d) && (0, _isLiteDefault.default).defined(d);
+    }) && (type === "added" ? !(0, _isLiteDefault.default).defined(left) && (0, _isLiteDefault.default).defined(right) : (0, _isLiteDefault.default).defined(left) && !(0, _isLiteDefault.default).defined(right));
+}
+function getIterables(previousData, data, _a) {
+    var _b = _a === void 0 ? {} : _a, key = _b.key;
+    var left = nested(previousData, key);
+    var right = nested(data, key);
+    if (!isSameType(left, right)) throw new TypeError("Inputs have different types");
+    if (!canHaveLength(left, right)) throw new TypeError("Inputs don't have length");
+    if ([
+        left,
+        right
+    ].every((0, _isLiteDefault.default).plainObject)) {
+        left = Object.keys(left);
+        right = Object.keys(right);
+    }
+    return [
+        left,
+        right
+    ];
+}
+function hasEntry(input) {
+    return function(_a) {
+        var key = _a[0], value = _a[1];
+        if ((0, _isLiteDefault.default).array(input)) return (0, _deepEqualDefault.default)(input, value) || input.some(function(d) {
+            return (0, _deepEqualDefault.default)(d, value) || (0, _isLiteDefault.default).array(value) && isEqualPredicate(value)(d);
+        });
+        /* istanbul ignore else */ if ((0, _isLiteDefault.default).plainObject(input) && input[key]) return !!input[key] && (0, _deepEqualDefault.default)(input[key], value);
+        return (0, _deepEqualDefault.default)(input, value);
+    };
+}
+function hasExtraKeys(left, right) {
+    return right.some(function(d) {
+        return !left.includes(d);
+    });
+}
+function hasValue(input) {
+    return function(value) {
+        if ((0, _isLiteDefault.default).array(input)) return input.some(function(d) {
+            return (0, _deepEqualDefault.default)(d, value) || (0, _isLiteDefault.default).array(value) && isEqualPredicate(value)(d);
+        });
+        return (0, _deepEqualDefault.default)(input, value);
+    };
+}
+function includesOrEqualsTo(previousValue, value) {
+    return (0, _isLiteDefault.default).array(previousValue) ? previousValue.some(function(d) {
+        return (0, _deepEqualDefault.default)(d, value);
+    }) : (0, _deepEqualDefault.default)(previousValue, value);
+}
+function isEqualPredicate(data) {
+    return function(value) {
+        return data.some(function(d) {
+            return (0, _deepEqualDefault.default)(d, value);
+        });
+    };
+}
+function isSameType() {
+    var arguments_ = [];
+    for(var _i = 0; _i < arguments.length; _i++)arguments_[_i] = arguments[_i];
+    return arguments_.every((0, _isLiteDefault.default).array) || arguments_.every((0, _isLiteDefault.default).number) || arguments_.every((0, _isLiteDefault.default).plainObject) || arguments_.every((0, _isLiteDefault.default).string);
+}
+function nested(data, property) {
+    /* istanbul ignore else */ if ((0, _isLiteDefault.default).plainObject(data) || (0, _isLiteDefault.default).array(data)) {
+        /* istanbul ignore else */ if ((0, _isLiteDefault.default).string(property)) {
+            var props = property.split(".");
+            return props.reduce(function(acc, d) {
+                return acc && acc[d];
+            }, data);
+        }
+        /* istanbul ignore else */ if ((0, _isLiteDefault.default).number(property)) return data[property];
+        return data;
+    }
+    return data;
+}
+
+},{"@gilbarbara/deep-equal":"htexp","is-lite":"15VPg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"a7mvC":[function(require,module,exports) {
+"use strict";
+var hasProps = function(jsx) {
+    return Object.prototype.hasOwnProperty.call(jsx, "props");
+};
+var reduceJsxToString = function(previous, current) {
+    return previous + innerText(current);
+};
+var innerText = function(jsx) {
+    if (jsx === null || typeof jsx === "boolean" || typeof jsx === "undefined") return "";
+    if (typeof jsx === "number") return jsx.toString();
+    if (typeof jsx === "string") return jsx;
+    if (Array.isArray(jsx)) return jsx.reduce(reduceJsxToString, "");
+    if (hasProps(jsx) && Object.prototype.hasOwnProperty.call(jsx.props, "children")) return innerText(jsx.props.children);
+    return "";
+};
+innerText.default = innerText;
+module.exports = innerText;
+
+},{}],"9jFiD":[function() {},{}],"dDc1i":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$a575 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -29694,6 +36942,8 @@ parcelHelpers.export(exports, "default", ()=>Exploration);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactJoyride = require("react-joyride");
+var _reactJoyrideDefault = parcelHelpers.interopDefault(_reactJoyride);
 var _explorationCss = require("./Exploration.css");
 var _notLoggedIn = require("./NotLoggedIn");
 var _notLoggedInDefault = parcelHelpers.interopDefault(_notLoggedIn);
@@ -29709,11 +36959,35 @@ const IcnPencil = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome
     icon: (0, _freeSolidSvgIcons.faPencil)
 }, void 0, false, {
     fileName: "src/Exploration.js",
-    lineNumber: 10,
+    lineNumber: 11,
     columnNumber: 19
 }, undefined);
 function Exploration({ fs, setFs }) {
     _s();
+    // Joyride
+    const STEPS = [
+        {
+            target: ".title-text",
+            content: "This is name of the exploration.  Use a short descriptive name to help you distinguish it from other explorations. Click the pencil to edit."
+        },
+        {
+            target: ".exploration-new-btn",
+            content: 'Create a "New Map/Graph" by clicking this button'
+        },
+        {
+            target: ".EXPItemsList",
+            content: "Your maps and graphs will be saved here."
+        },
+        {
+            target: ".exploration-edit-btn",
+            content: 'Select a map/graph and click "Edit" to edit the Map or Graph'
+        },
+        {
+            target: ".notes",
+            content: "Use this space to describe the idea or question you would like to explore.  Add any ideas and questions as you make new maps and graphs. Click the pencil to edit."
+        }
+    ];
+    const [run, setRun] = (0, _react.useState)(true);
     const [titleIsEditable, setTitleIsEditable] = (0, _react.useState)(false);
     const [descriptionIsEditable, setDescriptionIsEditable] = (0, _react.useState)(false);
     /// LOAD DATA ///////////////////////////////////////////////////////////////
@@ -29820,7 +37094,7 @@ function Exploration({ fs, setFs }) {
                     children: "Home"
                 }, void 0, false, {
                     fileName: "src/Exploration.js",
-                    lineNumber: 117,
+                    lineNumber: 143,
                     columnNumber: 9
                 }, this),
                 " >",
@@ -29831,7 +37105,7 @@ function Exploration({ fs, setFs }) {
                     children: "Explorations"
                 }, void 0, false, {
                     fileName: "src/Exploration.js",
-                    lineNumber: 118,
+                    lineNumber: 144,
                     columnNumber: 9
                 }, this),
                 " >",
@@ -29845,18 +37119,18 @@ function Exploration({ fs, setFs }) {
                     ]
                 }, void 0, true, {
                     fileName: "src/Exploration.js",
-                    lineNumber: 119,
+                    lineNumber: 145,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/Exploration.js",
-            lineNumber: 116,
+            lineNumber: 142,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/Exploration.js",
-        lineNumber: 115,
+        lineNumber: 141,
         columnNumber: 5
     }, this);
     const TITLE = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29867,12 +37141,13 @@ function Exploration({ fs, setFs }) {
             titleIsEditable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        className: "title-text",
                         type: "text",
                         value: exploration.name,
                         onChange: evt_OnTitleChange
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 130,
+                        lineNumber: 156,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -29881,13 +37156,20 @@ function Exploration({ fs, setFs }) {
                         children: "Save"
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 131,
+                        lineNumber: 157,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                 children: [
-                    exploration.name,
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "title-text",
+                        children: exploration.name
+                    }, void 0, false, {
+                        fileName: "src/Exploration.js",
+                        lineNumber: 162,
+                        columnNumber: 13
+                    }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: `transparent-light ${!fs.user.isLoggedIn || !exploration.isOwner ? "disabled" : ""}`,
                         onClick: evt_ToggleTitleEdit,
@@ -29896,7 +37178,7 @@ function Exploration({ fs, setFs }) {
                         children: IcnPencil
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 137,
+                        lineNumber: 163,
                         columnNumber: 13
                     }, this)
                 ]
@@ -29907,7 +37189,7 @@ function Exploration({ fs, setFs }) {
                 }
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 142,
+                lineNumber: 168,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29917,7 +37199,7 @@ function Exploration({ fs, setFs }) {
                         children: "Private"
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 144,
+                        lineNumber: 170,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -29930,20 +37212,20 @@ function Exploration({ fs, setFs }) {
                         step: "1"
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 145,
+                        lineNumber: 171,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                         children: "Public"
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 146,
+                        lineNumber: 172,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Exploration.js",
-                lineNumber: 143,
+                lineNumber: 169,
                 columnNumber: 7
             }, this),
             " ",
@@ -29953,13 +37235,13 @@ function Exploration({ fs, setFs }) {
                 children: exploration.favorite ? "\uD83E\uDE77" : "\u2661"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 149,
+                lineNumber: 175,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 125,
+        lineNumber: 151,
         columnNumber: 5
     }, this);
     const SIDEBAR = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29970,7 +37252,7 @@ function Exploration({ fs, setFs }) {
                 setFs: setFs
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 157,
+                lineNumber: 183,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29986,13 +37268,13 @@ function Exploration({ fs, setFs }) {
                                     children: "Save"
                                 }, void 0, false, {
                                     fileName: "src/Exploration.js",
-                                    lineNumber: 162,
+                                    lineNumber: 188,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 161,
+                            lineNumber: 187,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
@@ -30001,7 +37283,7 @@ function Exploration({ fs, setFs }) {
                             onChange: evt_OnDescriptionChange
                         }, void 0, false, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 165,
+                            lineNumber: 191,
                             columnNumber: 13
                         }, this)
                     ]
@@ -30018,13 +37300,13 @@ function Exploration({ fs, setFs }) {
                                     children: IcnPencil
                                 }, void 0, false, {
                                     fileName: "src/Exploration.js",
-                                    lineNumber: 174,
+                                    lineNumber: 200,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 173,
+                            lineNumber: 199,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30032,20 +37314,20 @@ function Exploration({ fs, setFs }) {
                             children: exploration.description
                         }, void 0, false, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 177,
+                            lineNumber: 203,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true)
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 158,
+                lineNumber: 184,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 156,
+        lineNumber: 182,
         columnNumber: 5
     }, this);
     const VISUALIZATION = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30058,24 +37340,24 @@ function Exploration({ fs, setFs }) {
                     setFs: setFs
                 }, v.id, false, {
                     fileName: "src/Exploration.js",
-                    lineNumber: 188,
+                    lineNumber: 214,
                     columnNumber: 29
                 }, this))
         }, void 0, false, {
             fileName: "src/Exploration.js",
-            lineNumber: 187,
+            lineNumber: 213,
             columnNumber: 11
         }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "help",
             children: 'To start, click "NEW MAP/GRAPH" to create a new way of looking at the data in a display (e.g., graph, map).'
         }, void 0, false, {
             fileName: "src/Exploration.js",
-            lineNumber: 190,
+            lineNumber: 216,
             columnNumber: 11
         }, this)
     }, void 0, false, {
         fileName: "src/Exploration.js",
-        lineNumber: 185,
+        lineNumber: 211,
         columnNumber: 5
     }, this);
     const FOOTER = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30087,7 +37369,7 @@ function Exploration({ fs, setFs }) {
                 children: "Edit a Copy"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 199,
+                lineNumber: 225,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30096,7 +37378,7 @@ function Exploration({ fs, setFs }) {
                 }
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 200,
+                lineNumber: 226,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -30105,7 +37387,7 @@ function Exploration({ fs, setFs }) {
                 children: "Embed Exploration"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 201,
+                lineNumber: 227,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30114,7 +37396,7 @@ function Exploration({ fs, setFs }) {
                 }
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 202,
+                lineNumber: 228,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -30123,13 +37405,13 @@ function Exploration({ fs, setFs }) {
                 children: fs.user.isLoggedIn ? "Copy Link" : "Save Exploration Link"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 203,
+                lineNumber: 229,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 197,
+        lineNumber: 223,
         columnNumber: 5
     }, this);
     const DIALOG_LOGIN = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30139,21 +37421,21 @@ function Exploration({ fs, setFs }) {
                 children: "Saving requires Login"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 214,
+                lineNumber: 240,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "You can add and edit maps and graphs, but you will not be able to save your explorations until you log in."
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 215,
+                lineNumber: 241,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Log in to edit and save changes to an exploration to your account."
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 216,
+                lineNumber: 242,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -30164,19 +37446,19 @@ function Exploration({ fs, setFs }) {
                             children: "Register for free"
                         }, void 0, false, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 217,
+                            lineNumber: 243,
                             columnNumber: 13
                         }, this),
                         " if you don't have an account."
                     ]
                 }, void 0, true, {
                     fileName: "src/Exploration.js",
-                    lineNumber: 217,
+                    lineNumber: 243,
                     columnNumber: 10
                 }, this)
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 217,
+                lineNumber: 243,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -30184,13 +37466,13 @@ function Exploration({ fs, setFs }) {
                 children: "Login"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 218,
+                lineNumber: 244,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 213,
+        lineNumber: 239,
         columnNumber: 5
     }, this);
     // You're logged in, but you're not the owner of this exploration. You can edit it, but you can't save it. You can save a copy of it, though.
@@ -30201,21 +37483,21 @@ function Exploration({ fs, setFs }) {
                 children: '"Edit a Copy" to Make Changes'
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 225,
+                lineNumber: 251,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "You are viewing an exploration that is not owned by you."
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 226,
+                lineNumber: 252,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: 'Click "Edit a Copy" to duplicate this exploration and make and save changes to it.'
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 227,
+                lineNumber: 253,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -30224,19 +37506,36 @@ function Exploration({ fs, setFs }) {
                 children: "Edit a Copy"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 229,
+                lineNumber: 255,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 224,
+        lineNumber: 250,
         columnNumber: 5
     }, this);
     console.log("render logged in", fs.user.isLoggedIn, "isOwner", exploration.isOwner);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: `Exploration ${fs.user.isLoggedIn && exploration.isOwner ? "isOwner" : ""}`,
         children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactJoyrideDefault.default), {
+                run: run,
+                steps: STEPS,
+                continuous: true,
+                scrollToFirstStep: true,
+                showProgress: true,
+                showSkipButton: true,
+                styles: {
+                    options: {
+                        zIndex: 10000
+                    }
+                }
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 262,
+                columnNumber: 7
+            }, this),
             NAVBAR,
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "border",
@@ -30250,14 +37549,14 @@ function Exploration({ fs, setFs }) {
                         ]
                     }, void 0, true, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 239,
+                        lineNumber: 275,
                         columnNumber: 9
                     }, this),
                     FOOTER
                 ]
             }, void 0, true, {
                 fileName: "src/Exploration.js",
-                lineNumber: 237,
+                lineNumber: 273,
                 columnNumber: 7
             }, this),
             fs.showSaveToLinkDialog && !fs.user.isLoggedIn && !exploration.isOwner && DIALOG_LOGIN,
@@ -30265,11 +37564,11 @@ function Exploration({ fs, setFs }) {
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 235,
+        lineNumber: 261,
         columnNumber: 5
     }, this);
 }
-_s(Exploration, "NKrbJQdlmnTtTKq3JWDNYnUpw1M=");
+_s(Exploration, "y3cyEg/+hDfjTtD8FrvIEwqjR3g=");
 _c = Exploration;
 var _c;
 $RefreshReg$(_c, "Exploration");
@@ -30279,7 +37578,7 @@ $RefreshReg$(_c, "Exploration");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Exploration.css":"99opG","./NotLoggedIn":"5ocTP","./EXPItemsList":"lXWbC","./EXPView":"fqACg","process":"d5jf4","@fortawesome/react-fontawesome":"clIT3","@fortawesome/free-solid-svg-icons":"5lkdy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"99opG":[function() {},{}],"5ocTP":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-joyride":"cxpxM","./Exploration.css":"99opG","./NotLoggedIn":"5ocTP","./EXPItemsList":"lXWbC","./EXPView":"fqACg","process":"d5jf4","@fortawesome/react-fontawesome":"clIT3","@fortawesome/free-solid-svg-icons":"5lkdy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"99opG":[function() {},{}],"5ocTP":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$51aa = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -30578,7 +37877,7 @@ function EXPItemsList({ fs, setFs }) {
                 className: "controlbar",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: `transparent-light ${!fs.user.isLoggedIn || !exploration.isOwner ? "disabled" : ""}`,
+                        className: `exploration-edit-btn transparent-light ${!fs.user.isLoggedIn || !exploration.isOwner ? "disabled" : ""}`,
                         onClick: evt_EditVisual,
                         onMouseEnter: evt_DialogShow,
                         onMouseLeave: evt_DialogHide,
@@ -30589,7 +37888,7 @@ function EXPItemsList({ fs, setFs }) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: `primary ${!fs.user.isLoggedIn || !exploration.isOwner ? "disabled" : ""}`,
+                        className: `exploration-new-btn primary ${!fs.user.isLoggedIn || !exploration.isOwner ? "disabled" : ""}`,
                         onClick: evt_NewVisual,
                         onMouseEnter: evt_DialogShow,
                         onMouseLeave: evt_DialogHide,
@@ -35739,754 +43038,7 @@ const layer = api.layer;
 const text = api.text;
 const counter = api.counter;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7wKI2":[function(require,module,exports) {
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ var ReactIs = require("96e34ae03f5a2631");
-// By explicitly using `prop-types` you are opting into new development behavior.
-// http://fb.me/prop-types-in-prod
-var throwOnDirectAccess = true;
-module.exports = require("cb216452e2171041")(ReactIs.isElement, throwOnDirectAccess);
-
-},{"96e34ae03f5a2631":"7EuwB","cb216452e2171041":"bBUgD"}],"7EuwB":[function(require,module,exports) {
-"use strict";
-module.exports = require("2255125a8e8b1051");
-
-},{"2255125a8e8b1051":"5DsXl"}],"5DsXl":[function(require,module,exports) {
-/** @license React v16.13.1
- * react-is.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ "use strict";
-(function() {
-    "use strict";
-    // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-    // nor polyfill, then a plain number is used for performance.
-    var hasSymbol = typeof Symbol === "function" && Symbol.for;
-    var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for("react.element") : 0xeac7;
-    var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for("react.portal") : 0xeaca;
-    var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for("react.fragment") : 0xeacb;
-    var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for("react.strict_mode") : 0xeacc;
-    var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for("react.profiler") : 0xead2;
-    var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for("react.provider") : 0xeacd;
-    var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for("react.context") : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
-    // (unstable) APIs that have been removed. Can we remove the symbols?
-    var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for("react.async_mode") : 0xeacf;
-    var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for("react.concurrent_mode") : 0xeacf;
-    var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for("react.forward_ref") : 0xead0;
-    var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for("react.suspense") : 0xead1;
-    var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for("react.suspense_list") : 0xead8;
-    var REACT_MEMO_TYPE = hasSymbol ? Symbol.for("react.memo") : 0xead3;
-    var REACT_LAZY_TYPE = hasSymbol ? Symbol.for("react.lazy") : 0xead4;
-    var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for("react.block") : 0xead9;
-    var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for("react.fundamental") : 0xead5;
-    var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for("react.responder") : 0xead6;
-    var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for("react.scope") : 0xead7;
-    function isValidElementType(type) {
-        return typeof type === "string" || typeof type === "function" || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-        type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === "object" && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
-    }
-    function typeOf(object) {
-        if (typeof object === "object" && object !== null) {
-            var $$typeof = object.$$typeof;
-            switch($$typeof){
-                case REACT_ELEMENT_TYPE:
-                    var type = object.type;
-                    switch(type){
-                        case REACT_ASYNC_MODE_TYPE:
-                        case REACT_CONCURRENT_MODE_TYPE:
-                        case REACT_FRAGMENT_TYPE:
-                        case REACT_PROFILER_TYPE:
-                        case REACT_STRICT_MODE_TYPE:
-                        case REACT_SUSPENSE_TYPE:
-                            return type;
-                        default:
-                            var $$typeofType = type && type.$$typeof;
-                            switch($$typeofType){
-                                case REACT_CONTEXT_TYPE:
-                                case REACT_FORWARD_REF_TYPE:
-                                case REACT_LAZY_TYPE:
-                                case REACT_MEMO_TYPE:
-                                case REACT_PROVIDER_TYPE:
-                                    return $$typeofType;
-                                default:
-                                    return $$typeof;
-                            }
-                    }
-                case REACT_PORTAL_TYPE:
-                    return $$typeof;
-            }
-        }
-        return undefined;
-    } // AsyncMode is deprecated along with isAsyncMode
-    var AsyncMode = REACT_ASYNC_MODE_TYPE;
-    var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
-    var ContextConsumer = REACT_CONTEXT_TYPE;
-    var ContextProvider = REACT_PROVIDER_TYPE;
-    var Element = REACT_ELEMENT_TYPE;
-    var ForwardRef = REACT_FORWARD_REF_TYPE;
-    var Fragment = REACT_FRAGMENT_TYPE;
-    var Lazy = REACT_LAZY_TYPE;
-    var Memo = REACT_MEMO_TYPE;
-    var Portal = REACT_PORTAL_TYPE;
-    var Profiler = REACT_PROFILER_TYPE;
-    var StrictMode = REACT_STRICT_MODE_TYPE;
-    var Suspense = REACT_SUSPENSE_TYPE;
-    var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
-    function isAsyncMode(object) {
-        if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-            hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
-            console["warn"]("The ReactIs.isAsyncMode() alias has been deprecated, and will be removed in React 17+. Update your code to use ReactIs.isConcurrentMode() instead. It has the exact same API.");
-        }
-        return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
-    }
-    function isConcurrentMode(object) {
-        return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
-    }
-    function isContextConsumer(object) {
-        return typeOf(object) === REACT_CONTEXT_TYPE;
-    }
-    function isContextProvider(object) {
-        return typeOf(object) === REACT_PROVIDER_TYPE;
-    }
-    function isElement(object) {
-        return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-    }
-    function isForwardRef(object) {
-        return typeOf(object) === REACT_FORWARD_REF_TYPE;
-    }
-    function isFragment(object) {
-        return typeOf(object) === REACT_FRAGMENT_TYPE;
-    }
-    function isLazy(object) {
-        return typeOf(object) === REACT_LAZY_TYPE;
-    }
-    function isMemo(object) {
-        return typeOf(object) === REACT_MEMO_TYPE;
-    }
-    function isPortal(object) {
-        return typeOf(object) === REACT_PORTAL_TYPE;
-    }
-    function isProfiler(object) {
-        return typeOf(object) === REACT_PROFILER_TYPE;
-    }
-    function isStrictMode(object) {
-        return typeOf(object) === REACT_STRICT_MODE_TYPE;
-    }
-    function isSuspense(object) {
-        return typeOf(object) === REACT_SUSPENSE_TYPE;
-    }
-    exports.AsyncMode = AsyncMode;
-    exports.ConcurrentMode = ConcurrentMode;
-    exports.ContextConsumer = ContextConsumer;
-    exports.ContextProvider = ContextProvider;
-    exports.Element = Element;
-    exports.ForwardRef = ForwardRef;
-    exports.Fragment = Fragment;
-    exports.Lazy = Lazy;
-    exports.Memo = Memo;
-    exports.Portal = Portal;
-    exports.Profiler = Profiler;
-    exports.StrictMode = StrictMode;
-    exports.Suspense = Suspense;
-    exports.isAsyncMode = isAsyncMode;
-    exports.isConcurrentMode = isConcurrentMode;
-    exports.isContextConsumer = isContextConsumer;
-    exports.isContextProvider = isContextProvider;
-    exports.isElement = isElement;
-    exports.isForwardRef = isForwardRef;
-    exports.isFragment = isFragment;
-    exports.isLazy = isLazy;
-    exports.isMemo = isMemo;
-    exports.isPortal = isPortal;
-    exports.isProfiler = isProfiler;
-    exports.isStrictMode = isStrictMode;
-    exports.isSuspense = isSuspense;
-    exports.isValidElementType = isValidElementType;
-    exports.typeOf = typeOf;
-})();
-
-},{}],"bBUgD":[function(require,module,exports) {
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ "use strict";
-var ReactIs = require("c437388b089702c3");
-var assign = require("c067a60101d8520c");
-var ReactPropTypesSecret = require("74a0f89a70b9f3c2");
-var has = require("18441b11647bc78");
-var checkPropTypes = require("bec3f6ff89f0b072");
-var printWarning = function() {};
-printWarning = function(text) {
-    var message = "Warning: " + text;
-    if (typeof console !== "undefined") console.error(message);
-    try {
-        // --- Welcome to debugging React ---
-        // This error was thrown as a convenience so that you can use this stack
-        // to find the callsite that caused this warning to fire.
-        throw new Error(message);
-    } catch (x) {}
-};
-function emptyFunctionThatReturnsNull() {
-    return null;
-}
-module.exports = function(isValidElement, throwOnDirectAccess) {
-    /* global Symbol */ var ITERATOR_SYMBOL = typeof Symbol === "function" && Symbol.iterator;
-    var FAUX_ITERATOR_SYMBOL = "@@iterator"; // Before Symbol spec.
-    /**
-   * Returns the iterator method function contained on the iterable object.
-   *
-   * Be sure to invoke the function with the iterable as context:
-   *
-   *     var iteratorFn = getIteratorFn(myIterable);
-   *     if (iteratorFn) {
-   *       var iterator = iteratorFn.call(myIterable);
-   *       ...
-   *     }
-   *
-   * @param {?object} maybeIterable
-   * @return {?function}
-   */ function getIteratorFn(maybeIterable) {
-        var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
-        if (typeof iteratorFn === "function") return iteratorFn;
-    }
-    /**
-   * Collection of methods that allow declaration and validation of props that are
-   * supplied to React components. Example usage:
-   *
-   *   var Props = require('ReactPropTypes');
-   *   var MyArticle = React.createClass({
-   *     propTypes: {
-   *       // An optional string prop named "description".
-   *       description: Props.string,
-   *
-   *       // A required enum prop named "category".
-   *       category: Props.oneOf(['News','Photos']).isRequired,
-   *
-   *       // A prop named "dialog" that requires an instance of Dialog.
-   *       dialog: Props.instanceOf(Dialog).isRequired
-   *     },
-   *     render: function() { ... }
-   *   });
-   *
-   * A more formal specification of how these methods are used:
-   *
-   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
-   *   decl := ReactPropTypes.{type}(.isRequired)?
-   *
-   * Each and every declaration produces a function with the same signature. This
-   * allows the creation of custom validation functions. For example:
-   *
-   *  var MyLink = React.createClass({
-   *    propTypes: {
-   *      // An optional string or URI prop named "href".
-   *      href: function(props, propName, componentName) {
-   *        var propValue = props[propName];
-   *        if (propValue != null && typeof propValue !== 'string' &&
-   *            !(propValue instanceof URI)) {
-   *          return new Error(
-   *            'Expected a string or an URI for ' + propName + ' in ' +
-   *            componentName
-   *          );
-   *        }
-   *      }
-   *    },
-   *    render: function() {...}
-   *  });
-   *
-   * @internal
-   */ var ANONYMOUS = "<<anonymous>>";
-    // Important!
-    // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
-    var ReactPropTypes = {
-        array: createPrimitiveTypeChecker("array"),
-        bigint: createPrimitiveTypeChecker("bigint"),
-        bool: createPrimitiveTypeChecker("boolean"),
-        func: createPrimitiveTypeChecker("function"),
-        number: createPrimitiveTypeChecker("number"),
-        object: createPrimitiveTypeChecker("object"),
-        string: createPrimitiveTypeChecker("string"),
-        symbol: createPrimitiveTypeChecker("symbol"),
-        any: createAnyTypeChecker(),
-        arrayOf: createArrayOfTypeChecker,
-        element: createElementTypeChecker(),
-        elementType: createElementTypeTypeChecker(),
-        instanceOf: createInstanceTypeChecker,
-        node: createNodeChecker(),
-        objectOf: createObjectOfTypeChecker,
-        oneOf: createEnumTypeChecker,
-        oneOfType: createUnionTypeChecker,
-        shape: createShapeTypeChecker,
-        exact: createStrictShapeTypeChecker
-    };
-    /**
-   * inlined Object.is polyfill to avoid requiring consumers ship their own
-   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
-   */ /*eslint-disable no-self-compare*/ function is(x, y) {
-        // SameValue algorithm
-        if (x === y) // Steps 1-5, 7-10
-        // Steps 6.b-6.e: +0 != -0
-        return x !== 0 || 1 / x === 1 / y;
-        else // Step 6.a: NaN == NaN
-        return x !== x && y !== y;
-    }
-    /*eslint-enable no-self-compare*/ /**
-   * We use an Error-like object for backward compatibility as people may call
-   * PropTypes directly and inspect their output. However, we don't use real
-   * Errors anymore. We don't inspect their stack anyway, and creating them
-   * is prohibitively expensive if they are created too often, such as what
-   * happens in oneOfType() for any type before the one that matched.
-   */ function PropTypeError(message, data) {
-        this.message = message;
-        this.data = data && typeof data === "object" ? data : {};
-        this.stack = "";
-    }
-    // Make `instanceof Error` still work for returned errors.
-    PropTypeError.prototype = Error.prototype;
-    function createChainableTypeChecker(validate) {
-        var manualPropTypeCallCache = {};
-        var manualPropTypeWarningCount = 0;
-        function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
-            componentName = componentName || ANONYMOUS;
-            propFullName = propFullName || propName;
-            if (secret !== ReactPropTypesSecret) {
-                if (throwOnDirectAccess) {
-                    // New behavior only for users of `prop-types` package
-                    var err = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use `PropTypes.checkPropTypes()` to call them. Read more at http://fb.me/use-check-prop-types");
-                    err.name = "Invariant Violation";
-                    throw err;
-                } else if (typeof console !== "undefined") {
-                    // Old behavior for people using React.PropTypes
-                    var cacheKey = componentName + ":" + propName;
-                    if (!manualPropTypeCallCache[cacheKey] && // Avoid spamming the console because they are often not actionable except for lib authors
-                    manualPropTypeWarningCount < 3) {
-                        printWarning("You are manually calling a React.PropTypes validation function for the `" + propFullName + "` prop on `" + componentName + "`. This is deprecated " + "and will throw in the standalone `prop-types` package. " + "You may be seeing this warning due to a third-party PropTypes " + "library. See https://fb.me/react-warning-dont-call-proptypes " + "for details.");
-                        manualPropTypeCallCache[cacheKey] = true;
-                        manualPropTypeWarningCount++;
-                    }
-                }
-            }
-            if (props[propName] == null) {
-                if (isRequired) {
-                    if (props[propName] === null) return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required " + ("in `" + componentName + "`, but its value is `null`."));
-                    return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required in " + ("`" + componentName + "`, but its value is `undefined`."));
-                }
-                return null;
-            } else return validate(props, propName, componentName, location, propFullName);
-        }
-        var chainedCheckType = checkType.bind(null, false);
-        chainedCheckType.isRequired = checkType.bind(null, true);
-        return chainedCheckType;
-    }
-    function createPrimitiveTypeChecker(expectedType) {
-        function validate(props, propName, componentName, location, propFullName, secret) {
-            var propValue = props[propName];
-            var propType = getPropType(propValue);
-            if (propType !== expectedType) {
-                // `propValue` being instance of, say, date/regexp, pass the 'object'
-                // check, but we can offer a more precise error message here rather than
-                // 'of type `object`'.
-                var preciseType = getPreciseType(propValue);
-                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + preciseType + "` supplied to `" + componentName + "`, expected ") + ("`" + expectedType + "`."), {
-                    expectedType: expectedType
-                });
-            }
-            return null;
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function createAnyTypeChecker() {
-        return createChainableTypeChecker(emptyFunctionThatReturnsNull);
-    }
-    function createArrayOfTypeChecker(typeChecker) {
-        function validate(props, propName, componentName, location, propFullName) {
-            if (typeof typeChecker !== "function") return new PropTypeError("Property `" + propFullName + "` of component `" + componentName + "` has invalid PropType notation inside arrayOf.");
-            var propValue = props[propName];
-            if (!Array.isArray(propValue)) {
-                var propType = getPropType(propValue);
-                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected an array."));
-            }
-            for(var i = 0; i < propValue.length; i++){
-                var error = typeChecker(propValue, i, componentName, location, propFullName + "[" + i + "]", ReactPropTypesSecret);
-                if (error instanceof Error) return error;
-            }
-            return null;
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function createElementTypeChecker() {
-        function validate(props, propName, componentName, location, propFullName) {
-            var propValue = props[propName];
-            if (!isValidElement(propValue)) {
-                var propType = getPropType(propValue);
-                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected a single ReactElement."));
-            }
-            return null;
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function createElementTypeTypeChecker() {
-        function validate(props, propName, componentName, location, propFullName) {
-            var propValue = props[propName];
-            if (!ReactIs.isValidElementType(propValue)) {
-                var propType = getPropType(propValue);
-                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected a single ReactElement type."));
-            }
-            return null;
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function createInstanceTypeChecker(expectedClass) {
-        function validate(props, propName, componentName, location, propFullName) {
-            if (!(props[propName] instanceof expectedClass)) {
-                var expectedClassName = expectedClass.name || ANONYMOUS;
-                var actualClassName = getClassName(props[propName]);
-                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + actualClassName + "` supplied to `" + componentName + "`, expected ") + ("instance of `" + expectedClassName + "`."));
-            }
-            return null;
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function createEnumTypeChecker(expectedValues) {
-        if (!Array.isArray(expectedValues)) {
-            {
-                if (arguments.length > 1) printWarning("Invalid arguments supplied to oneOf, expected an array, got " + arguments.length + " arguments. " + "A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).");
-                else printWarning("Invalid argument supplied to oneOf, expected an array.");
-            }
-            return emptyFunctionThatReturnsNull;
-        }
-        function validate(props, propName, componentName, location, propFullName) {
-            var propValue = props[propName];
-            for(var i = 0; i < expectedValues.length; i++){
-                if (is(propValue, expectedValues[i])) return null;
-            }
-            var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
-                var type = getPreciseType(value);
-                if (type === "symbol") return String(value);
-                return value;
-            });
-            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of value `" + String(propValue) + "` " + ("supplied to `" + componentName + "`, expected one of " + valuesString + "."));
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function createObjectOfTypeChecker(typeChecker) {
-        function validate(props, propName, componentName, location, propFullName) {
-            if (typeof typeChecker !== "function") return new PropTypeError("Property `" + propFullName + "` of component `" + componentName + "` has invalid PropType notation inside objectOf.");
-            var propValue = props[propName];
-            var propType = getPropType(propValue);
-            if (propType !== "object") return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected an object."));
-            for(var key in propValue)if (has(propValue, key)) {
-                var error = typeChecker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
-                if (error instanceof Error) return error;
-            }
-            return null;
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function createUnionTypeChecker(arrayOfTypeCheckers) {
-        if (!Array.isArray(arrayOfTypeCheckers)) {
-            printWarning("Invalid argument supplied to oneOfType, expected an instance of array.");
-            return emptyFunctionThatReturnsNull;
-        }
-        for(var i = 0; i < arrayOfTypeCheckers.length; i++){
-            var checker = arrayOfTypeCheckers[i];
-            if (typeof checker !== "function") {
-                printWarning("Invalid argument supplied to oneOfType. Expected an array of check functions, but received " + getPostfixForTypeWarning(checker) + " at index " + i + ".");
-                return emptyFunctionThatReturnsNull;
-            }
-        }
-        function validate(props, propName, componentName, location, propFullName) {
-            var expectedTypes = [];
-            for(var i = 0; i < arrayOfTypeCheckers.length; i++){
-                var checker = arrayOfTypeCheckers[i];
-                var checkerResult = checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret);
-                if (checkerResult == null) return null;
-                if (checkerResult.data && has(checkerResult.data, "expectedType")) expectedTypes.push(checkerResult.data.expectedType);
-            }
-            var expectedTypesMessage = expectedTypes.length > 0 ? ", expected one of type [" + expectedTypes.join(", ") + "]" : "";
-            return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName + "`" + expectedTypesMessage + "."));
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function createNodeChecker() {
-        function validate(props, propName, componentName, location, propFullName) {
-            if (!isNode(props[propName])) return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName + "`, expected a ReactNode."));
-            return null;
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function invalidValidatorError(componentName, location, propFullName, key, type) {
-        return new PropTypeError((componentName || "React class") + ": " + location + " type `" + propFullName + "." + key + "` is invalid; " + "it must be a function, usually from the `prop-types` package, but received `" + type + "`.");
-    }
-    function createShapeTypeChecker(shapeTypes) {
-        function validate(props, propName, componentName, location, propFullName) {
-            var propValue = props[propName];
-            var propType = getPropType(propValue);
-            if (propType !== "object") return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName + "`, expected `object`."));
-            for(var key in shapeTypes){
-                var checker = shapeTypes[key];
-                if (typeof checker !== "function") return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
-                var error = checker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
-                if (error) return error;
-            }
-            return null;
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function createStrictShapeTypeChecker(shapeTypes) {
-        function validate(props, propName, componentName, location, propFullName) {
-            var propValue = props[propName];
-            var propType = getPropType(propValue);
-            if (propType !== "object") return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName + "`, expected `object`."));
-            // We need to check all keys in case some are required but missing from props.
-            var allKeys = assign({}, props[propName], shapeTypes);
-            for(var key in allKeys){
-                var checker = shapeTypes[key];
-                if (has(shapeTypes, key) && typeof checker !== "function") return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
-                if (!checker) return new PropTypeError("Invalid " + location + " `" + propFullName + "` key `" + key + "` supplied to `" + componentName + "`." + "\nBad object: " + JSON.stringify(props[propName], null, "  ") + "\nValid keys: " + JSON.stringify(Object.keys(shapeTypes), null, "  "));
-                var error = checker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
-                if (error) return error;
-            }
-            return null;
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function isNode(propValue) {
-        switch(typeof propValue){
-            case "number":
-            case "string":
-            case "undefined":
-                return true;
-            case "boolean":
-                return !propValue;
-            case "object":
-                if (Array.isArray(propValue)) return propValue.every(isNode);
-                if (propValue === null || isValidElement(propValue)) return true;
-                var iteratorFn = getIteratorFn(propValue);
-                if (iteratorFn) {
-                    var iterator = iteratorFn.call(propValue);
-                    var step;
-                    if (iteratorFn !== propValue.entries) while(!(step = iterator.next()).done){
-                        if (!isNode(step.value)) return false;
-                    }
-                    else // Iterator will provide entry [k,v] tuples rather than values.
-                    while(!(step = iterator.next()).done){
-                        var entry = step.value;
-                        if (entry) {
-                            if (!isNode(entry[1])) return false;
-                        }
-                    }
-                } else return false;
-                return true;
-            default:
-                return false;
-        }
-    }
-    function isSymbol(propType, propValue) {
-        // Native Symbol.
-        if (propType === "symbol") return true;
-        // falsy value can't be a Symbol
-        if (!propValue) return false;
-        // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
-        if (propValue["@@toStringTag"] === "Symbol") return true;
-        // Fallback for non-spec compliant Symbols which are polyfilled.
-        if (typeof Symbol === "function" && propValue instanceof Symbol) return true;
-        return false;
-    }
-    // Equivalent of `typeof` but with special handling for array and regexp.
-    function getPropType(propValue) {
-        var propType = typeof propValue;
-        if (Array.isArray(propValue)) return "array";
-        if (propValue instanceof RegExp) // Old webkits (at least until Android 4.0) return 'function' rather than
-        // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
-        // passes PropTypes.object.
-        return "object";
-        if (isSymbol(propType, propValue)) return "symbol";
-        return propType;
-    }
-    // This handles more types than `getPropType`. Only used for error messages.
-    // See `createPrimitiveTypeChecker`.
-    function getPreciseType(propValue) {
-        if (typeof propValue === "undefined" || propValue === null) return "" + propValue;
-        var propType = getPropType(propValue);
-        if (propType === "object") {
-            if (propValue instanceof Date) return "date";
-            else if (propValue instanceof RegExp) return "regexp";
-        }
-        return propType;
-    }
-    // Returns a string that is postfixed to a warning about an invalid type.
-    // For example, "undefined" or "of type array"
-    function getPostfixForTypeWarning(value) {
-        var type = getPreciseType(value);
-        switch(type){
-            case "array":
-            case "object":
-                return "an " + type;
-            case "boolean":
-            case "date":
-            case "regexp":
-                return "a " + type;
-            default:
-                return type;
-        }
-    }
-    // Returns class name of the object, if any.
-    function getClassName(propValue) {
-        if (!propValue.constructor || !propValue.constructor.name) return ANONYMOUS;
-        return propValue.constructor.name;
-    }
-    ReactPropTypes.checkPropTypes = checkPropTypes;
-    ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
-    ReactPropTypes.PropTypes = ReactPropTypes;
-    return ReactPropTypes;
-};
-
-},{"c437388b089702c3":"7EuwB","c067a60101d8520c":"7OXxh","74a0f89a70b9f3c2":"jZTZJ","18441b11647bc78":"fqKuf","bec3f6ff89f0b072":"5VwyJ"}],"7OXxh":[function(require,module,exports) {
-/*
-object-assign
-(c) Sindre Sorhus
-@license MIT
-*/ "use strict";
-/* eslint-disable no-unused-vars */ var getOwnPropertySymbols = Object.getOwnPropertySymbols;
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-var propIsEnumerable = Object.prototype.propertyIsEnumerable;
-function toObject(val) {
-    if (val === null || val === undefined) throw new TypeError("Object.assign cannot be called with null or undefined");
-    return Object(val);
-}
-function shouldUseNative() {
-    try {
-        if (!Object.assign) return false;
-        // Detect buggy property enumeration order in older V8 versions.
-        // https://bugs.chromium.org/p/v8/issues/detail?id=4118
-        var test1 = new String("abc"); // eslint-disable-line no-new-wrappers
-        test1[5] = "de";
-        if (Object.getOwnPropertyNames(test1)[0] === "5") return false;
-        // https://bugs.chromium.org/p/v8/issues/detail?id=3056
-        var test2 = {};
-        for(var i = 0; i < 10; i++)test2["_" + String.fromCharCode(i)] = i;
-        var order2 = Object.getOwnPropertyNames(test2).map(function(n) {
-            return test2[n];
-        });
-        if (order2.join("") !== "0123456789") return false;
-        // https://bugs.chromium.org/p/v8/issues/detail?id=3056
-        var test3 = {};
-        "abcdefghijklmnopqrst".split("").forEach(function(letter) {
-            test3[letter] = letter;
-        });
-        if (Object.keys(Object.assign({}, test3)).join("") !== "abcdefghijklmnopqrst") return false;
-        return true;
-    } catch (err) {
-        // We don't expect any of the above to throw, but better to be safe.
-        return false;
-    }
-}
-module.exports = shouldUseNative() ? Object.assign : function(target, source) {
-    var from;
-    var to = toObject(target);
-    var symbols;
-    for(var s = 1; s < arguments.length; s++){
-        from = Object(arguments[s]);
-        for(var key in from)if (hasOwnProperty.call(from, key)) to[key] = from[key];
-        if (getOwnPropertySymbols) {
-            symbols = getOwnPropertySymbols(from);
-            for(var i = 0; i < symbols.length; i++)if (propIsEnumerable.call(from, symbols[i])) to[symbols[i]] = from[symbols[i]];
-        }
-    }
-    return to;
-};
-
-},{}],"jZTZJ":[function(require,module,exports) {
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ "use strict";
-var ReactPropTypesSecret = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
-module.exports = ReactPropTypesSecret;
-
-},{}],"fqKuf":[function(require,module,exports) {
-module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
-
-},{}],"5VwyJ":[function(require,module,exports) {
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ "use strict";
-var printWarning = function() {};
-var ReactPropTypesSecret = require("24ba1e58d167a82c");
-var loggedTypeFailures = {};
-var has = require("898bc82f39d83f7c");
-printWarning = function(text) {
-    var message = "Warning: " + text;
-    if (typeof console !== "undefined") console.error(message);
-    try {
-        // --- Welcome to debugging React ---
-        // This error was thrown as a convenience so that you can use this stack
-        // to find the callsite that caused this warning to fire.
-        throw new Error(message);
-    } catch (x) {}
-};
-/**
- * Assert that the values match with the type specs.
- * Error messages are memorized and will only be shown once.
- *
- * @param {object} typeSpecs Map of name to a ReactPropType
- * @param {object} values Runtime values that need to be type-checked
- * @param {string} location e.g. "prop", "context", "child context"
- * @param {string} componentName Name of the component for error messages.
- * @param {?Function} getStack Returns the component stack.
- * @private
- */ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
-    for(var typeSpecName in typeSpecs)if (has(typeSpecs, typeSpecName)) {
-        var error;
-        // Prop type validation may throw. In case they do, we don't want to
-        // fail the render phase where it didn't fail before. So we log it.
-        // After these have been cleaned up, we'll let them throw.
-        try {
-            // This is intentionally an invariant that gets caught. It's the same
-            // behavior as without this statement except with a better message.
-            if (typeof typeSpecs[typeSpecName] !== "function") {
-                var err = Error((componentName || "React class") + ": " + location + " type `" + typeSpecName + "` is invalid; " + "it must be a function, usually from the `prop-types` package, but received `" + typeof typeSpecs[typeSpecName] + "`." + "This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
-                err.name = "Invariant Violation";
-                throw err;
-            }
-            error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
-        } catch (ex) {
-            error = ex;
-        }
-        if (error && !(error instanceof Error)) printWarning((componentName || "React class") + ": type specification of " + location + " `" + typeSpecName + "` is invalid; the type checker " + "function must return `null` or an `Error` but returned a " + typeof error + ". " + "You may have forgotten to pass an argument to the type checker " + "creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and " + "shape all require an argument).");
-        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
-            // Only monitor this failure once because there tends to be a lot of the
-            // same error.
-            loggedTypeFailures[error.message] = true;
-            var stack = getStack ? getStack() : "";
-            printWarning("Failed " + location + " type: " + error.message + (stack != null ? stack : ""));
-        }
-    }
-}
-/**
- * Resets warning cache when testing.
- *
- * @private
- */ checkPropTypes.resetWarningCache = function() {
-    loggedTypeFailures = {};
-};
-module.exports = checkPropTypes;
-
-},{"24ba1e58d167a82c":"jZTZJ","898bc82f39d83f7c":"fqKuf"}],"5lkdy":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5lkdy":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "fas", ()=>icons);
