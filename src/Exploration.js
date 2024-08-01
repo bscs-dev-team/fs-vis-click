@@ -75,6 +75,7 @@ export default function Exploration({ fs, setFs }) {
   }
 
   function evt_ToggleFavorite(event) {
+    setFs(draft => {
       const e = draft.explorations.find(e => e.id === draft.selectedExploration)
       e.favorite = !e.favorite;
     });
@@ -196,7 +197,7 @@ export default function Exploration({ fs, setFs }) {
       <button className={fs.user.isLoggedIn ? "tertiary" : "primary"} onClick={evt_CopyLink}>
         {fs.user.isLoggedIn
           ? "Copy Link"
-          : "Save Copy LInk"
+          : "Save Exploration Link"
         }
       </button>
     </div>
