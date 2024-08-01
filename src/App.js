@@ -52,6 +52,7 @@ const initialFSState = {
         { id: 3, title: 'CA Species Histogram', description: 'A histogram showing CA frogs', filter: 3, type: 'map', image: threespecies_histo, showTable: false }
       ],
       filters: [{ id: 4, label: 'CA Frogs' }, ...DEFAULT_FILTERS],
+      featured: true,
       privacy: 'Public',
       isOwner: false
     },
@@ -64,6 +65,7 @@ const initialFSState = {
         { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', filter: 1, type: 'map', image: allspecies_map, showTable: false },
       ],
       filters: [...DEFAULT_FILTERS],
+      featured: true,
       privacy: 'Public',
       isOwner: false
     },
@@ -74,6 +76,7 @@ const initialFSState = {
       image: map_gray,
       visuals: [],
       filters: [...DEFAULT_FILTERS],
+      featured: true,
       privacy: 'Public',
       isOwner: false
     },
