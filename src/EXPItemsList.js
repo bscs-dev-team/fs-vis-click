@@ -104,10 +104,10 @@ export default function EXPItemsList({ fs, setFs }) {
       </div>
       <div className="controlbar">
         <button
-          className={`transparent-light ${!fs.user.isLoggedIn || !exploration.isOwner ? 'disabled' : ''}`}
+          className={`exploration-edit-btn transparent-light ${!fs.user.isLoggedIn || !exploration.isOwner ? 'disabled' : ''}`}
           onClick={evt_EditVisual}
           onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>EDIT</button>
-        <button className={`primary ${!fs.user.isLoggedIn || !exploration.isOwner ? 'disabled' : ''}`}
+        <button className={`exploration-new-btn primary ${!fs.user.isLoggedIn || !exploration.isOwner ? 'disabled' : ''}`}
           onClick={evt_NewVisual}
           onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>NEW MAP/GRAPH</button>
       </div>

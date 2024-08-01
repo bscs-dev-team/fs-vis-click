@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Joyride from "react-joyride";
 import './Exploration.css';
 import NotLoggedIn from "./NotLoggedIn";
 import EXPItemsList from './EXPItemsList';
@@ -10,6 +11,31 @@ import { faPencil } from '@fortawesome/free-solid-svg-icons';
 const IcnPencil = <FontAwesomeIcon icon={faPencil} />;
 
 export default function Exploration({ fs, setFs }) {
+  // Joyride
+  const STEPS = [
+    {
+      target: '.title-text',
+      content: 'This is name of the exploration.  Use a short descriptive name to help you distinguish it from other explorations. Click the pencil to edit.'
+    },
+    {
+      target: '.exploration-new-btn',
+      content: 'Create a "New Map/Graph" by clicking this button'
+    },
+    {
+      target: '.EXPItemsList',
+      content: 'Your maps and graphs will be saved here.'
+    },
+    {
+      target: '.exploration-edit-btn',
+      content: 'Select a map/graph and click "Edit" to edit the Map or Graph'
+    },
+    {
+      target: '.notes',
+      content: 'Use this space to describe the idea or question you would like to explore.  Add any ideas and questions as you make new maps and graphs. Click the pencil to edit.'
+    }
+  ]
+  const [run, setRun] = useState(true);
+
   const [titleIsEditable, setTitleIsEditable] = useState(false);
   const [descriptionIsEditable, setDescriptionIsEditable] = useState(false);
 
@@ -127,13 +153,13 @@ export default function Exploration({ fs, setFs }) {
       {titleIsEditable
         ? (
           <>
-            <input type="text" value={exploration.name} onChange={evt_OnTitleChange} />
+            <input className="title-text" type="text" value={exploration.name} onChange={evt_OnTitleChange} />
             <button className='transparent-light' onClick={evt_ToggleTitleEdit}>Save</button>
           </>
         )
         : (
           <>
-            {exploration.name}
+            <span className="title-text" >{exploration.name}</span>
             <button className={`transparent-light ${!fs.user.isLoggedIn || !exploration.isOwner ? 'disabled' : ''}`} onClick={evt_ToggleTitleEdit}
               onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>{IcnPencil}</button>
           </>
@@ -233,6 +259,16 @@ export default function Exploration({ fs, setFs }) {
   console.log('render logged in', fs.user.isLoggedIn, 'isOwner', exploration.isOwner)
   return (
     <div className={`Exploration ${fs.user.isLoggedIn && exploration.isOwner ? 'isOwner' : ''}`}>
+      <Joyride
+        run={run}
+        steps={STEPS}
+        continuous
+        scrollToFirstStep
+        showProgress
+        showSkipButton
+        styles={{
+          options: { zIndex: 10000 }
+        }} />
       {NAVBAR}
       <div className="border">
         {TITLE}
