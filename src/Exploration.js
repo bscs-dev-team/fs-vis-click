@@ -20,6 +20,12 @@ export default function Exploration({ fs, setFs }) {
     name: 'Untitled', description: '', modifed: new Date(), privacy: 'Private', visuals: []
   };
   const visuals = exploration && exploration.visuals ? exploration.visuals : [];
+  // if there isn't a selectedVisual, select the first one
+  if (!selectedVisual && exploration.visuals.length > 0) {
+    setFs(draft => {
+      draft.selectedVisual = exploration.visuals[0].id;
+    });
+  }
   const visual = visuals.find(v => v.id === selectedVisual) || {
     title: 'Untitled', description: '', image: null
   };
