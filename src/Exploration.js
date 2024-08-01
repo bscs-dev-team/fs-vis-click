@@ -206,21 +206,10 @@ export default function Exploration({ fs, setFs }) {
     <div className="dialog warning">
       <h2>Saving requires Login</h2>
       <p>You can add and edit maps and graphs, but you will not be able to save your explorations until you log in.</p>
-      <p>You have two options:</p>
-      <div className="twocolumns">
-        <div>
           <p>Log in to edit and save changes to an exploration to your account.</p>
           <button onClick={evt_Login}>Login</button>
           <p><i><a href="">Register for free</a> if you don't have an account.</i></p>
         </div>
-        <p style={{ textAlign: 'center' }}>or</p>
-        <div>
-          <p>You can still edit this exploration, but you can only save this as a link.</p>
-          <p>Copy the link to your own document (e.g. in Google Docs or Word) to save it.</p>
-          <p>Just click "Save and Copy Link" in the lower right when you want to save.</p>
-        </div>
-      </div>
-    </div>
   )
 
   // You're logged in, but you're not the owner of this exploration. You can edit it, but you can't save it. You can save a copy of it, though.
@@ -228,19 +217,8 @@ export default function Exploration({ fs, setFs }) {
     <div className="dialog">
       <h2>"Edit a Copy" to Make Changes</h2>
       <p>You are viewing an exploration that is not owned by you.</p>
-      <p>You have two options:</p>
-      <div className="twocolumns">
-        <div>
           <p>Click "Edit a Copy" to duplicate this exploration and make and save changes to it.</p>
-          <button onClick={evt_Login}>Edit a Copy</button>
-        </div>
-        <p style={{ textAlign: 'center' }}>or</p>
-        <div>
-          <p>You can still edit this exploration, but you can only save this as a link.</p>
-          <p>Copy the link to your own document (e.g. in Google Docs or Word) to save it.</p>
-          <p>Just click "Save and Copy Link" in the lower right when you want to save.</p>
-        </div>
-      </div>
+      <button className="primary" onClick={evt_Login}>Edit a Copy</button>
     </div>
   )
 
