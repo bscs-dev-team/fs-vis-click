@@ -127,7 +127,7 @@ const initialFSState = {
       visuals: [
         { id: 1, title: 'All 2021 Data', description: 'All data collected in 2021', filter: 1, type: 'map', image: allspecies_map, showTable: false },
         { id: 2, title: 'Species Histogram', description: 'A histogram showing all species observed', filter: 2, type: 'histo', image: allspecies_histo, showTable: false },
-        { id: 3, title: 'CA Species Histogram', description: 'A histogram showing CA frogs', filter: 3, type: 'map', image: threespecies_histo, showTable: false }
+        { id: 3, title: 'CA Species Histogram', description: 'A histogram showing CA frogs', filter: 3, type: 'histo', image: threespecies_histo, showTable: false }
       ],
       filters: [{ id: 4, label: 'CA Frogs' }, ...DEFAULT_FILTERS],
       privacy: 'Public',

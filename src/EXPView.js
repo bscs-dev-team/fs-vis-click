@@ -100,11 +100,68 @@ export default function EXPView({ id, fs, setFs }) {
   /// COMPONENT RENDER ////////////////////////////////////////////////////////
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+  const LAYERSDATA = [
+    {
+      title: 'Basemaps',
+      layers: [
+        'NatGeo w Wetlands',
+        'Topographic',
+        'Shaded Relief',
+        'Satellite',
+        'Gray',
+        'World Oceans',
+        'Street Map',
+        'National Geographic',
+      ]
+    },
+    {
+      title: 'Thematic Data',
+      layers: [
+        'Land Cover (2016)',
+        'Wetlands (Zoom in to Display)',
+        'Tree Canopy',
+        'Parks',
+        'Tribal Lands',
+        'County Boundaries',
+        'American Bullfrog Range'
+      ]
+    }
+  ]
+  const LAYERS = LAYERSDATA.map((layer, i) => (
+    <div key={i}>
+      <h4>{layer.title}</h4>
+      <ul>
+        {layer.layers.map((l, j) => (
+          <li key={j}>{l}</li>
+        ))}
+      </ul>
+    </div>
+  ));
+
+  const LEGENDDATA = [
+    1, 11, 21, 30, 40
+  ];
+  const LEGEND = (
+    <div>
+      <h4>Legend</h4>
+      <p>Station Observation Count</p>
+      <ul>
+        {LEGENDDATA.map((l, j) => (
+          <li key={j}>{l}</li>
+        ))}
+      </ul>
+    </div>
+  ));
+
   return (
     <div className="EXPView" key={visual.id} ref={myRef}>
       <div className="sidebar">
-        <h3>LAYERS</h3>
-        <h3>LEGEND</h3>
+        {visual.type === 'map'
+          ? (<>
+            <h3>{LAYERS}</h3>
+            <h3>{LEGEND}</h3>
+          </>)
+          : ''}
       </div>
 
       <div className="visualization">
