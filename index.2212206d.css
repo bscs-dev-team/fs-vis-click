@@ -73,7 +73,13 @@ button.primary {
 
 button.secondary {
   color: #fff;
-  background: #5a7201;
+  background: #5a720299;
+  border-color: #5a7201;
+}
+
+button.tertiary {
+  color: #fff;
+  background: #fff3;
   border-color: #5a7201;
 }
 
@@ -113,6 +119,11 @@ button.mini {
   padding: 2px 4px;
   font-size: 10px;
   line-height: 12px;
+}
+
+button.disabled {
+  opacity: .3;
+  cursor: not-allowed;
 }
 
 .tableOrMap {
@@ -214,6 +225,18 @@ button.mini {
   padding-right: 10px;
 }
 
+@property --colorOwner {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #5a7202;
+}
+
+@property --colorNotOwner {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #777;
+}
+
 .Exploration {
   background-color: #d0d7b6;
   flex-direction: column;
@@ -223,18 +246,24 @@ button.mini {
   top: 64px;
   bottom: 0;
   left: 0;
+  overflow: hidden;
 }
 
 .Exploration .border {
   box-sizing: border-box;
-  border-left: 20px solid #5a7202;
-  border-right: 20px solid #5a7202;
-  flex-direction: column;
-  height: 100%;
-  display: flex;
+  border-left: 20px solid var(--colorNotOwner);
+  border-right: 20px solid var(--colorNotOwner);
+  grid-template-rows: 36px auto 42px;
+  height: 95%;
+  display: grid;
+}
+
+.Exploration.isOwner .border {
+  border-color: var(--colorOwner);
 }
 
 .Exploration .navbar {
+  color: #0003;
   background-color: #f3f5ec;
   justify-content: space-between;
   align-items: center;
@@ -243,13 +272,25 @@ button.mini {
   display: flex;
 }
 
+.Exploration .navbar .url {
+  color: #5a7202;
+  cursor: pointer;
+}
+
+.Exploration .navbar .current {
+  color: #333;
+}
+
 .Exploration .title {
   color: #fff;
-  background-color: #5a7202;
+  background-color: var(--colorNotOwner);
   align-items: center;
-  height: 32px;
   padding-top: 5px;
   display: flex;
+}
+
+.Exploration.isOwner .title {
+  background-color: var(--colorOwner);
 }
 
 .Exploration .title input {
@@ -258,6 +299,18 @@ button.mini {
   border: none;
   width: 20rem;
   margin: 0 10px;
+}
+
+.Exploration .tableOrMap {
+  width: 150px;
+}
+
+.Exploration .tableOrMap input {
+  width: 30px;
+}
+
+.Exploration .tableOrMap label {
+  color: #fff;
 }
 
 .Exploration .content {
@@ -328,14 +381,41 @@ button.mini {
 
 .Exploration .footer {
   color: #fff;
-  background-color: #5a7202;
+  background-color: var(--colorNotOwner);
   justify-content: space-between;
   padding: 5px 20px;
   display: flex;
 }
 
+.Exploration.isOwner .footer {
+  background-color: var(--colorOwner);
+}
+
 .Exploration .footer button {
   color: #fff;
+}
+
+.Exploration > .dialog {
+  background-color: #ff0d;
+  flex-direction: column;
+  width: 30%;
+  margin: 20% 25%;
+  padding: 20px;
+  display: flex;
+  position: absolute;
+}
+
+.Exploration > .dialog.warning {
+  background-color: #f80d;
+}
+
+.Exploration > .dialog > .twocolumns {
+  grid-template-columns: 1fr 80px 1fr;
+  display: grid;
+}
+
+.Exploration > .dialog button {
+  align-self: flex-end;
 }
 
 .NotLoggedIn {
@@ -401,12 +481,6 @@ button.mini {
   justify-content: space-between;
   margin-top: .5rem;
   display: flex;
-}
-
-.screen {
-  background-color: #0000004d;
-  position: absolute;
-  inset: 0;
 }
 
 .EXPEdit {
@@ -478,7 +552,7 @@ button.mini {
 }
 
 .EXPEdit .minicontrolbar {
-  justify-content: space-between;
+  align-items: baseline;
   width: 100%;
   display: flex;
 }

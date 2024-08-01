@@ -27480,13 +27480,13 @@ const initialFSState = {
     editingVisual: null,
     editingFilter: null,
     editWithoutSaving: null,
+    showSaveToLinkDialog: true,
     explorations: [
         {
             id: 1,
             name: "All 2021 Data",
             description: "A histogram of frog and toad observations",
             modified: new Date(),
-            privacy: "Public",
             image: (0, _allspeciesMapPngDefault.default),
             visuals: [
                 {
@@ -27524,14 +27524,15 @@ const initialFSState = {
                 },
                 ...DEFAULT_FILTERS
             ],
-            locked: true
+            featured: true,
+            privacy: "Public",
+            isOwner: false
         },
         {
             id: 2,
             name: "Frog Watch - All Data Visualization + Filters",
             description: "A histogram of American Bullfrogs",
             modified: new Date(),
-            privacy: "Public",
             image: (0, _allspeciesMapPngDefault.default),
             visuals: [
                 {
@@ -27547,27 +27548,29 @@ const initialFSState = {
             filters: [
                 ...DEFAULT_FILTERS
             ],
-            locked: true
+            featured: true,
+            privacy: "Public",
+            isOwner: false
         },
         {
             id: 3,
             name: "Filter by Species",
             description: "A map of American Bullfrogs",
             modified: new Date(),
-            privacy: "Public",
             image: (0, _mapGrayPngDefault.default),
             visuals: [],
             filters: [
                 ...DEFAULT_FILTERS
             ],
-            locked: true
+            featured: true,
+            privacy: "Public",
+            isOwner: false
         },
         {
             id: 4,
             name: "Invitations To Inquiry: Frog Eat Frog World",
             description: "A histogram of frog and toad observations",
             modified: new Date(),
-            privacy: "Public",
             image: (0, _allspeciesMapPngDefault.default),
             visuals: [
                 {
@@ -27605,15 +27608,15 @@ const initialFSState = {
                 },
                 ...DEFAULT_FILTERS
             ],
-            locked: true,
-            shared: true
+            privacy: "Public",
+            isOwner: false,
+            favorite: true
         },
         {
             id: 5,
             name: "Invitations To Inquiry: Frog Symphony",
             description: "A histogram of American Bullfrogs",
             modified: new Date(),
-            privacy: "Public",
             image: (0, _allspeciesMapPngDefault.default),
             visuals: [
                 {
@@ -27629,29 +27632,29 @@ const initialFSState = {
             filters: [
                 ...DEFAULT_FILTERS
             ],
-            locked: true,
-            shared: true
+            privacy: "Public",
+            isOwner: false,
+            favorite: true
         },
         {
             id: 6,
             name: "Invitations To Inquiry: Frog Symphony Maps",
             description: "A map of American Bullfrogs",
             modified: new Date(),
-            privacy: "Public",
             image: (0, _mapGrayPngDefault.default),
             visuals: [],
             filters: [
                 ...DEFAULT_FILTERS
             ],
-            locked: true,
-            shared: true
+            privacy: "Public",
+            isOwner: false,
+            favorite: true
         },
         {
             id: 7,
             name: "Akron Maps",
             description: "A histogram of frog and toad observations",
             modified: new Date(),
-            privacy: "Public",
             image: (0, _allspeciesMapPngDefault.default),
             visuals: [
                 {
@@ -27677,7 +27680,7 @@ const initialFSState = {
                     title: "CA Species Histogram",
                     description: "A histogram showing CA frogs",
                     filter: 3,
-                    type: "map",
+                    type: "histo",
                     image: (0, _threespeciesHistoPngDefault.default),
                     showTable: false
                 }
@@ -27689,15 +27692,15 @@ const initialFSState = {
                 },
                 ...DEFAULT_FILTERS
             ],
-            locked: true,
-            shared: true
+            privacy: "Public",
+            isOwner: true,
+            favorite: true
         },
         {
             id: 8,
             name: "Histogram American Bullfrogs",
             description: "A histogram of American Bullfrogs",
             modified: new Date(),
-            privacy: "Public",
             image: (0, _allspeciesMapPngDefault.default),
             visuals: [
                 {
@@ -27712,31 +27715,35 @@ const initialFSState = {
             ],
             filters: [
                 ...DEFAULT_FILTERS
-            ]
+            ],
+            privacy: "Public",
+            isOwner: true
         },
         {
             id: 9,
             name: "Map American Bullfrogs",
             description: "A map of American Bullfrogs",
             modified: new Date(),
-            privacy: "Public",
             image: (0, _mapGrayPngDefault.default),
             visuals: [],
             filters: [
                 ...DEFAULT_FILTERS
-            ]
+            ],
+            privacy: "Public",
+            isOwner: true
         },
         {
             id: 10,
             name: "Copy of Histogram Frog vs Toad",
             description: "A histogram of frog and toad observations",
             modified: new Date(),
-            privacy: "Public",
             image: (0, _mapGrayPngDefault.default),
             visuals: [],
             filters: [
                 ...DEFAULT_FILTERS
-            ]
+            ],
+            privacy: "Public",
+            isOwner: true
         }
     ]
 };
@@ -27750,6 +27757,7 @@ function App() {
         data: []
     });
     function evt_SetRoute(route) {
+        if (!fs.user.isLoggedIn && fs.route === "explorations") alert("Unsaved changes.  Please login to save changes, or click 'Save to Link' to save your changes? [Back to Exploration] [Close and discard changes]");
         setFs((draft)=>{
             draft.route = route;
             // if clicking "Explorations" again, clear the selected exploration 
@@ -27764,7 +27772,7 @@ function App() {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 376,
+                lineNumber: 394,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27776,7 +27784,7 @@ function App() {
                         children: "Home"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 378,
+                        lineNumber: 396,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27785,7 +27793,7 @@ function App() {
                         children: "Data"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 381,
+                        lineNumber: 399,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27794,13 +27802,13 @@ function App() {
                         children: "Explorations"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 384,
+                        lineNumber: 402,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/App.js",
-                lineNumber: 377,
+                lineNumber: 395,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginDefault.default), {
@@ -27808,13 +27816,13 @@ function App() {
                 setFs: setFs
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 388,
+                lineNumber: 406,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 375,
+        lineNumber: 393,
         columnNumber: 5
     }, this);
     const HOME = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -27822,7 +27830,7 @@ function App() {
             NAVBAR,
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 394,
+                lineNumber: 412,
                 columnNumber: 5
             }, this)
         ]
@@ -27834,14 +27842,14 @@ function App() {
                 children: "Data"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 398,
+                lineNumber: 416,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 children: "+ Add Data"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 399,
+                lineNumber: 417,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27855,27 +27863,27 @@ function App() {
                         children: "My Observations"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 401,
+                        lineNumber: 419,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: "Recent Observations"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 402,
+                        lineNumber: 420,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: "All Observations"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 403,
+                        lineNumber: 421,
                         columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/App.js",
-                lineNumber: 400,
+                lineNumber: 418,
                 columnNumber: 5
             }, this)
         ]
@@ -27888,7 +27896,7 @@ function App() {
                 setFs: setFs
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 408,
+                lineNumber: 426,
                 columnNumber: 5
             }, this)
         ]
@@ -27904,12 +27912,12 @@ function App() {
             children: VIEW
         }, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 419,
+            lineNumber: 437,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 418,
+        lineNumber: 436,
         columnNumber: 5
     }, this);
 }
@@ -29372,14 +29380,9 @@ var _allspeciesHistoPngDefault = parcelHelpers.interopDefault(_allspeciesHistoPn
 var _threespeciesHistoPng = require("./img/threespecies_histo.png");
 var _threespeciesHistoPngDefault = parcelHelpers.interopDefault(_threespeciesHistoPng);
 function Explorations({ fs, setFs }) {
-    const FEATURED_DATA = [
-        fs.explorations[0],
-        fs.explorations[1],
-        fs.explorations[2]
-    ];
-    const EXPLORATIONS_DATA = fs.explorations.filter((e)=>!e.shared && !e.locked);
-    const SHARED_DATA = fs.explorations.filter((e)=>e.shared);
-    const NEXTINDEX = EXPLORATIONS_DATA.length + 2;
+    const FEATURED_DATA = fs.explorations.filter((e)=>e.featured);
+    const EXPLORATIONS_DATA = fs.explorations.filter((e)=>!e.featured);
+    const NEXTINDEX = fs.explorations.length + 2;
     /// UI HANDLERS /////////////////////////////////////////////////////////////
     /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     function evt_NewExploration(event) {
@@ -29394,7 +29397,9 @@ function Explorations({ fs, setFs }) {
                 visuals: [],
                 filters: [
                     ...fs.defaultFilters
-                ]
+                ],
+                favorite: false,
+                isOwner: fs.user.isLoggedIn
             });
             draft.selectedExploration = NEXTINDEX;
             draft.editWithoutSaving = null;
@@ -29424,7 +29429,7 @@ function Explorations({ fs, setFs }) {
                         alt: exploration.name
                     }, void 0, false, {
                         fileName: "src/Explorations.js",
-                        lineNumber: 55,
+                        lineNumber: 56,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29434,31 +29439,31 @@ function Explorations({ fs, setFs }) {
                                 children: exploration.name
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 57,
+                                lineNumber: 58,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 children: exploration.description
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 58,
+                                lineNumber: 59,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/Explorations.js",
-                        lineNumber: 56,
+                        lineNumber: 57,
                         columnNumber: 11
                     }, this)
                 ]
             }, i, true, {
                 fileName: "src/Explorations.js",
-                lineNumber: 54,
+                lineNumber: 55,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "src/Explorations.js",
-        lineNumber: 52,
+        lineNumber: 53,
         columnNumber: 5
     }, this);
     const BROWSER_TABLE = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
@@ -29467,42 +29472,56 @@ function Explorations({ fs, setFs }) {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                            children: "Name"
-                        }, void 0, false, {
-                            fileName: "src/Explorations.js",
-                            lineNumber: 69,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                            children: "Description"
+                            children: "\u2661"
                         }, void 0, false, {
                             fileName: "src/Explorations.js",
                             lineNumber: 70,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                            children: "Last modified"
+                            children: "Author"
                         }, void 0, false, {
                             fileName: "src/Explorations.js",
                             lineNumber: 71,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                            children: "Privacy"
+                            children: "Title \u2304"
                         }, void 0, false, {
                             fileName: "src/Explorations.js",
                             lineNumber: 72,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                            children: "Description"
+                        }, void 0, false, {
+                            fileName: "src/Explorations.js",
+                            lineNumber: 73,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                            children: "Last modified"
+                        }, void 0, false, {
+                            fileName: "src/Explorations.js",
+                            lineNumber: 74,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                            children: "Privacy"
+                        }, void 0, false, {
+                            fileName: "src/Explorations.js",
+                            lineNumber: 75,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/Explorations.js",
-                    lineNumber: 68,
+                    lineNumber: 69,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 67,
+                lineNumber: 68,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
@@ -29510,115 +29529,26 @@ function Explorations({ fs, setFs }) {
                         onClick: ()=>evt_SelectExploration(exploration.id),
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        src: exploration.image
-                                    }, void 0, false, {
-                                        fileName: "src/Explorations.js",
-                                        lineNumber: 79,
-                                        columnNumber: 15
-                                    }, this),
-                                    "\xa0",
-                                    exploration.name
-                                ]
-                            }, void 0, true, {
+                                children: exploration.favorite ? "\uD83E\uDE77" : ""
+                            }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 78,
+                                lineNumber: 81,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                children: exploration.description
+                                children: exploration.isOwner ? "Me" : "-"
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
                                 lineNumber: 82,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                children: exploration.modified.toDateString()
-                            }, void 0, false, {
-                                fileName: "src/Explorations.js",
-                                lineNumber: 83,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                children: exploration.privacy
-                            }, void 0, false, {
-                                fileName: "src/Explorations.js",
-                                lineNumber: 84,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, i, true, {
-                        fileName: "src/Explorations.js",
-                        lineNumber: 77,
-                        columnNumber: 11
-                    }, this))
-            }, void 0, false, {
-                fileName: "src/Explorations.js",
-                lineNumber: 75,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/Explorations.js",
-        lineNumber: 66,
-        columnNumber: 5
-    }, this);
-    const SHARED_TABLE = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                            children: "Name"
-                        }, void 0, false, {
-                            fileName: "src/Explorations.js",
-                            lineNumber: 95,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                            children: "Description"
-                        }, void 0, false, {
-                            fileName: "src/Explorations.js",
-                            lineNumber: 96,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                            children: "Last modified"
-                        }, void 0, false, {
-                            fileName: "src/Explorations.js",
-                            lineNumber: 97,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                            children: "Privacy"
-                        }, void 0, false, {
-                            fileName: "src/Explorations.js",
-                            lineNumber: 98,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Explorations.js",
-                    lineNumber: 94,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "src/Explorations.js",
-                lineNumber: 93,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
-                children: SHARED_DATA.map((exploration, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-                        onClick: ()=>evt_SelectExploration(exploration.id),
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                         src: exploration.image
                                     }, void 0, false, {
                                         fileName: "src/Explorations.js",
-                                        lineNumber: 105,
+                                        lineNumber: 84,
                                         columnNumber: 15
                                     }, this),
                                     "\xa0",
@@ -29626,45 +29556,45 @@ function Explorations({ fs, setFs }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 104,
+                                lineNumber: 83,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                 children: exploration.description
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 108,
+                                lineNumber: 87,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                 children: exploration.modified.toDateString()
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 109,
+                                lineNumber: 88,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                 children: exploration.privacy
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 110,
+                                lineNumber: 89,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, i, true, {
                         fileName: "src/Explorations.js",
-                        lineNumber: 103,
+                        lineNumber: 80,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 101,
+                lineNumber: 78,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Explorations.js",
-        lineNumber: 92,
+        lineNumber: 67,
         columnNumber: 5
     }, this);
     const BROWSER = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -29673,21 +29603,21 @@ function Explorations({ fs, setFs }) {
                 children: "Explorations"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 119,
+                lineNumber: 98,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "FrogWatch Volunteer Data. See observations from FrogWatch USA volunteers in maps and graphs, or create your own visualization of data."
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 120,
+                lineNumber: 99,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: "Featured Explorations"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 122,
+                lineNumber: 101,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29695,14 +29625,14 @@ function Explorations({ fs, setFs }) {
                 children: FEATURED
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 123,
+                lineNumber: 102,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: "My Data Explorations"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 126,
+                lineNumber: 105,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -29711,7 +29641,7 @@ function Explorations({ fs, setFs }) {
                 children: "+ Create New Exploration"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 127,
+                lineNumber: 106,
                 columnNumber: 7
             }, this),
             fs.user.isLoggedIn ? BROWSER_TABLE : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29719,17 +29649,9 @@ function Explorations({ fs, setFs }) {
                 children: "Login to save and share your explorations"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 130,
+                lineNumber: 109,
                 columnNumber: 11
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: "Shared Explorations"
-            }, void 0, false, {
-                fileName: "src/Explorations.js",
-                lineNumber: 132,
-                columnNumber: 7
-            }, this),
-            SHARED_TABLE
+            }, this)
         ]
     }, void 0, true);
     const EXPLORATION = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _explorationDefault.default), {
@@ -29737,7 +29659,7 @@ function Explorations({ fs, setFs }) {
         setFs: setFs
     }, void 0, false, {
         fileName: "src/Explorations.js",
-        lineNumber: 138,
+        lineNumber: 115,
         columnNumber: 5
     }, this);
     const VIEW = fs.selectedExploration === null ? BROWSER : EXPLORATION;
@@ -29746,7 +29668,7 @@ function Explorations({ fs, setFs }) {
         children: VIEW
     }, void 0, false, {
         fileName: "src/Explorations.js",
-        lineNumber: 143,
+        lineNumber: 120,
         columnNumber: 5
     }, this);
 }
@@ -29805,6 +29727,10 @@ function Exploration({ fs, setFs }) {
         visuals: []
     };
     const visuals = exploration && exploration.visuals ? exploration.visuals : [];
+    // if there isn't a selectedVisual, select the first one
+    if (!selectedVisual && exploration.visuals.length > 0) setFs((draft)=>{
+        draft.selectedVisual = exploration.visuals[0].id;
+    });
     const visual = visuals.find((v)=>v.id === selectedVisual) || {
         title: "Untitled",
         description: "",
@@ -29825,6 +29751,7 @@ function Exploration({ fs, setFs }) {
         alert('Show "Save As..." dialog');
     }
     function setRoute(route) {
+        if (!fs.user.isLoggedIn) alert("Unsaved changes.  Please login to save changes, or click 'Save to Link' to save your changes? [Back to Exploration] [Close and discard changes]");
         setFs((draft)=>{
             draft.selectedExploration = null;
             draft.selectedVisual = null;
@@ -29832,6 +29759,7 @@ function Exploration({ fs, setFs }) {
         });
     }
     function deselectExploration() {
+        if (!fs.user.isLoggedIn) alert("Unsaved changes.  Please login to save changes, or click 'Save to Link' to save your changes? [Back to Exploration] [Close and discard changes]");
         setFs((draft)=>{
             draft.selectedExploration = null;
         });
@@ -29852,6 +29780,34 @@ function Exploration({ fs, setFs }) {
             draft.explorations.find((e)=>e.id === draft.selectedExploration).description = event.target.value;
         });
     }
+    function evt_TogglePublic(event) {
+        setFs((draft)=>{
+            const vis = draft.explorations.find((e)=>e.id === draft.selectedExploration).privacy = event.target.value === "0" ? "Private" : "Public";
+        });
+    }
+    function evt_ToggleFavorite(event) {
+        setFs((draft)=>{
+            const e = draft.explorations.find((e)=>e.id === draft.selectedExploration);
+            e.favorite = !e.favorite;
+        });
+    }
+    function evt_Login() {
+        setFs((draft)=>{
+            const user = draft.user;
+            user.isLoggedIn = true;
+            user.userName = "bentbloh@gmail.com";
+        });
+    }
+    function evt_DialogShow(event) {
+        if (!fs.user.isLoggedIn || !exploration.isOwner) setFs((draft)=>{
+            draft.showSaveToLinkDialog = true;
+        });
+    }
+    function evt_DialogHide(event) {
+        setFs((draft)=>{
+            draft.showSaveToLinkDialog = false;
+        });
+    }
     /// COMPONENT RENDER ////////////////////////////////////////////////////////
     /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     const NAVBAR = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29859,46 +29815,56 @@ function Exploration({ fs, setFs }) {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    className: "url",
                     onClick: ()=>setRoute("home"),
                     children: "Home"
                 }, void 0, false, {
                     fileName: "src/Exploration.js",
-                    lineNumber: 77,
+                    lineNumber: 117,
                     columnNumber: 9
                 }, this),
                 " >",
                 " ",
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    className: "url",
                     onClick: deselectExploration,
                     children: "Explorations"
                 }, void 0, false, {
                     fileName: "src/Exploration.js",
-                    lineNumber: 78,
+                    lineNumber: 118,
                     columnNumber: 9
                 }, this),
                 " >",
                 " ",
-                selectedExploration,
-                ": ",
-                exploration.name
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    className: "current",
+                    children: [
+                        selectedExploration,
+                        ": ",
+                        exploration.name
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Exploration.js",
+                    lineNumber: 119,
+                    columnNumber: 9
+                }, this)
             ]
         }, void 0, true, {
             fileName: "src/Exploration.js",
-            lineNumber: 76,
+            lineNumber: 116,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/Exploration.js",
-        lineNumber: 75,
+        lineNumber: 115,
         columnNumber: 5
     }, this);
-    console.log("locked", exploration.locked);
     const TITLE = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "title",
         children: [
             "EXPLORATION:",
             " ",
-            (fs.user.isLoggedIn || fs.editWithoutSaving) && !exploration.locked ? titleIsEditable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+            titleIsEditable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "text",
@@ -29906,8 +29872,8 @@ function Exploration({ fs, setFs }) {
                         onChange: evt_OnTitleChange
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 92,
-                        columnNumber: 15
+                        lineNumber: 130,
+                        columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "transparent-light",
@@ -29915,30 +29881,85 @@ function Exploration({ fs, setFs }) {
                         children: "Save"
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 93,
-                        columnNumber: 15
+                        lineNumber: 131,
+                        columnNumber: 13
                     }, this)
                 ]
             }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                 children: [
                     exploration.name,
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "transparent-light",
+                        className: `transparent-light ${!fs.user.isLoggedIn || !exploration.isOwner ? "disabled" : ""}`,
                         onClick: evt_ToggleTitleEdit,
+                        onMouseEnter: evt_DialogShow,
+                        onMouseLeave: evt_DialogHide,
                         children: IcnPencil
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 99,
-                        columnNumber: 15
+                        lineNumber: 137,
+                        columnNumber: 13
                     }, this)
                 ]
-            }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                children: exploration.name
-            }, void 0, false)
+            }, void 0, true),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    flexGrow: 1
+                }
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 142,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "tableOrMap",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        children: "Private"
+                    }, void 0, false, {
+                        fileName: "src/Exploration.js",
+                        lineNumber: 144,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        value: exploration.privacy === "Public" ? "1" : "0",
+                        onClick: evt_TogglePublic,
+                        readOnly: true,
+                        type: "range",
+                        min: "0",
+                        max: "1",
+                        step: "1"
+                    }, void 0, false, {
+                        fileName: "src/Exploration.js",
+                        lineNumber: 145,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        children: "Public"
+                    }, void 0, false, {
+                        fileName: "src/Exploration.js",
+                        lineNumber: 146,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Exploration.js",
+                lineNumber: 143,
+                columnNumber: 7
+            }, this),
+            " ",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "secondary",
+                onClick: evt_ToggleFavorite,
+                children: exploration.favorite ? "\uD83E\uDE77" : "\u2661"
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 149,
+                columnNumber: 7
+            }, this)
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 86,
+        lineNumber: 125,
         columnNumber: 5
     }, this);
     const SIDEBAR = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29949,12 +29970,12 @@ function Exploration({ fs, setFs }) {
                 setFs: setFs
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 109,
+                lineNumber: 157,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "notes",
-                children: (fs.user.isLoggedIn || fs.editWithoutSaving) && !exploration.locked ? descriptionIsEditable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                children: descriptionIsEditable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                             children: [
@@ -29965,14 +29986,14 @@ function Exploration({ fs, setFs }) {
                                     children: "Save"
                                 }, void 0, false, {
                                     fileName: "src/Exploration.js",
-                                    lineNumber: 115,
-                                    columnNumber: 17
+                                    lineNumber: 162,
+                                    columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 114,
-                            columnNumber: 15
+                            lineNumber: 161,
+                            columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
                             value: exploration.description,
@@ -29980,8 +30001,8 @@ function Exploration({ fs, setFs }) {
                             onChange: evt_OnDescriptionChange
                         }, void 0, false, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 117,
-                            columnNumber: 15
+                            lineNumber: 165,
+                            columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -29990,36 +30011,20 @@ function Exploration({ fs, setFs }) {
                             children: [
                                 "YOUR IDEAS & QUESTIONS",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                    className: "transparent-light",
+                                    className: `transparent-light ${!fs.user.isLoggedIn || !exploration.isOwner ? "disabled" : ""}`,
                                     onClick: evt_ToggleDescriptionEdit,
+                                    onMouseEnter: evt_DialogShow,
+                                    onMouseLeave: evt_DialogHide,
                                     children: IcnPencil
                                 }, void 0, false, {
                                     fileName: "src/Exploration.js",
-                                    lineNumber: 126,
-                                    columnNumber: 17
+                                    lineNumber: 174,
+                                    columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 125,
-                            columnNumber: 15
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "description",
-                            children: exploration.description
-                        }, void 0, false, {
-                            fileName: "src/Exploration.js",
-                            lineNumber: 128,
-                            columnNumber: 15
-                        }, this)
-                    ]
-                }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                            children: "YOUR IDEAS & QUESTIONS"
-                        }, void 0, false, {
-                            fileName: "src/Exploration.js",
-                            lineNumber: 131,
+                            lineNumber: 173,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30027,20 +30032,20 @@ function Exploration({ fs, setFs }) {
                             children: exploration.description
                         }, void 0, false, {
                             fileName: "src/Exploration.js",
-                            lineNumber: 132,
+                            lineNumber: 177,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true)
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 110,
+                lineNumber: 158,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 108,
+        lineNumber: 156,
         columnNumber: 5
     }, this);
     const VISUALIZATION = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30053,36 +30058,45 @@ function Exploration({ fs, setFs }) {
                     setFs: setFs
                 }, v.id, false, {
                     fileName: "src/Exploration.js",
-                    lineNumber: 143,
+                    lineNumber: 188,
                     columnNumber: 29
                 }, this))
         }, void 0, false, {
             fileName: "src/Exploration.js",
-            lineNumber: 142,
+            lineNumber: 187,
             columnNumber: 11
         }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "help",
             children: 'To start, click "NEW MAP/GRAPH" to create a new way of looking at the data in a display (e.g., graph, map).'
         }, void 0, false, {
             fileName: "src/Exploration.js",
-            lineNumber: 145,
+            lineNumber: 190,
             columnNumber: 11
         }, this)
     }, void 0, false, {
         fileName: "src/Exploration.js",
-        lineNumber: 140,
+        lineNumber: 185,
         columnNumber: 5
     }, this);
     const FOOTER = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "footer",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                className: "transparent",
-                onClick: evt_CopyLink,
-                children: "Copy Link"
+                className: fs.user.isLoggedIn ? "primary" : "secondary",
+                onClick: evt_SaveAs,
+                children: "Edit a Copy"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 153,
+                lineNumber: 199,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    flexGrow: 1
+                }
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 200,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -30091,44 +30105,137 @@ function Exploration({ fs, setFs }) {
                 children: "Embed Exploration"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 154,
+                lineNumber: 201,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    flexGrow: 1
+                }
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 202,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                className: "transparent",
-                onClick: evt_SetPublic,
-                children: "PRIVATE: Only you can view this exploration"
+                className: fs.user.isLoggedIn ? "tertiary" : "primary",
+                onClick: evt_CopyLink,
+                children: fs.user.isLoggedIn ? "Copy Link" : "Save Exploration Link"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 155,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                className: "primary",
-                onClick: evt_SaveAs,
-                children: "Edit a Copy"
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 156,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                className: "secondary",
-                onClick: deselectExploration,
-                children: "Back to Explorations"
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 157,
+                lineNumber: 203,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 152,
+        lineNumber: 197,
         columnNumber: 5
     }, this);
+    const DIALOG_LOGIN = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "dialog warning",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Saving requires Login"
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 214,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "You can add and edit maps and graphs, but you will not be able to save your explorations until you log in."
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 215,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "Log in to edit and save changes to an exploration to your account."
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 216,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "",
+                            children: "Register for free"
+                        }, void 0, false, {
+                            fileName: "src/Exploration.js",
+                            lineNumber: 217,
+                            columnNumber: 13
+                        }, this),
+                        " if you don't have an account."
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Exploration.js",
+                    lineNumber: 217,
+                    columnNumber: 10
+                }, this)
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 217,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: evt_Login,
+                children: "Login"
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 218,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/Exploration.js",
+        lineNumber: 213,
+        columnNumber: 5
+    }, this);
+    // You're logged in, but you're not the owner of this exploration. You can edit it, but you can't save it. You can save a copy of it, though.
+    const DIALOG_COPY = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "dialog",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: '"Edit a Copy" to Make Changes'
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 225,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "You are viewing an exploration that is not owned by you."
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 226,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: 'Click "Edit a Copy" to duplicate this exploration and make and save changes to it.'
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 227,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "primary",
+                onClick: evt_Login,
+                children: "Edit a Copy"
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 229,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/Exploration.js",
+        lineNumber: 224,
+        columnNumber: 5
+    }, this);
+    console.log("render logged in", fs.user.isLoggedIn, "isOwner", exploration.isOwner);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "Exploration",
+        className: `Exploration ${fs.user.isLoggedIn && exploration.isOwner ? "isOwner" : ""}`,
         children: [
             NAVBAR,
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30143,28 +30250,22 @@ function Exploration({ fs, setFs }) {
                         ]
                     }, void 0, true, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 166,
+                        lineNumber: 239,
                         columnNumber: 9
                     }, this),
-                    FOOTER,
-                    !fs.user.isLoggedIn && !fs.editWithoutSaving && !exploration.locked && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notLoggedInDefault.default), {
-                        fs: fs,
-                        setFs: setFs
-                    }, void 0, false, {
-                        fileName: "src/Exploration.js",
-                        lineNumber: 171,
-                        columnNumber: 81
-                    }, this)
+                    FOOTER
                 ]
             }, void 0, true, {
                 fileName: "src/Exploration.js",
-                lineNumber: 164,
+                lineNumber: 237,
                 columnNumber: 7
-            }, this)
+            }, this),
+            fs.showSaveToLinkDialog && !fs.user.isLoggedIn && !exploration.isOwner && DIALOG_LOGIN,
+            fs.showSaveToLinkDialog && fs.user.isLoggedIn && !exploration.isOwner && DIALOG_COPY
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 162,
+        lineNumber: 235,
         columnNumber: 5
     }, this);
 }
@@ -30375,6 +30476,18 @@ function EXPItemsList({ fs, setFs }) {
             draft.editingVisual = null;
         });
     }
+    function evt_DialogShow(event) {
+        console.log("show dialog");
+        if (!fs.user.isLoggedIn || !exploration.isOwner) setFs((draft)=>{
+            draft.showSaveToLinkDialog = true;
+        });
+    }
+    function evt_DialogHide(event) {
+        console.log("hide dialog");
+        setFs((draft)=>{
+            draft.showSaveToLinkDialog = false;
+        });
+    }
     /// COMPONENT RENDER ////////////////////////////////////////////////////////
     /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     const ITEMS = visuals;
@@ -30384,7 +30497,7 @@ function EXPItemsList({ fs, setFs }) {
         onExit: evt_CloseEditor
     }, void 0, false, {
         fileName: "src/EXPItemsList.js",
-        lineNumber: 67,
+        lineNumber: 82,
         columnNumber: 5
     }, this);
     // console.log('selectedVisual', selectedVisual, 'editingVisual', editingVisual, 'visual', visual, 'ITEMS', ITEMS)
@@ -30395,7 +30508,7 @@ function EXPItemsList({ fs, setFs }) {
                 children: "SAVED MAPS/GRAPHS"
             }, void 0, false, {
                 fileName: "src/EXPItemsList.js",
-                lineNumber: 74,
+                lineNumber: 89,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30403,7 +30516,7 @@ function EXPItemsList({ fs, setFs }) {
                 children: "Drag to change the sort order"
             }, void 0, false, {
                 fileName: "src/EXPItemsList.js",
-                lineNumber: 75,
+                lineNumber: 90,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30413,7 +30526,7 @@ function EXPItemsList({ fs, setFs }) {
                     children: "Your saved maps/graphs will appear here"
                 }, void 0, false, {
                     fileName: "src/EXPItemsList.js",
-                    lineNumber: 78,
+                    lineNumber: 93,
                     columnNumber: 13
                 }, this) : ITEMS.map((item, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: `item ${selectedVisual === item.id ? "selected" : ""}`,
@@ -30424,7 +30537,7 @@ function EXPItemsList({ fs, setFs }) {
                                 alt: item.title
                             }, void 0, false, {
                                 fileName: "src/EXPItemsList.js",
-                                lineNumber: 81,
+                                lineNumber: 96,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30434,65 +30547,69 @@ function EXPItemsList({ fs, setFs }) {
                                         children: item.title
                                     }, void 0, false, {
                                         fileName: "src/EXPItemsList.js",
-                                        lineNumber: 83,
+                                        lineNumber: 98,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         children: item.description
                                     }, void 0, false, {
                                         fileName: "src/EXPItemsList.js",
-                                        lineNumber: 84,
+                                        lineNumber: 99,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/EXPItemsList.js",
-                                lineNumber: 82,
+                                lineNumber: 97,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, i, true, {
                         fileName: "src/EXPItemsList.js",
-                        lineNumber: 80,
+                        lineNumber: 95,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "src/EXPItemsList.js",
-                lineNumber: 76,
+                lineNumber: 91,
                 columnNumber: 7
             }, this),
-            (fs.user.isLoggedIn || fs.editWithoutSaving) && !exploration.locked && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "controlbar",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        disabled: !selectedVisual,
+                        className: `transparent-light ${!fs.user.isLoggedIn || !exploration.isOwner ? "disabled" : ""}`,
                         onClick: evt_EditVisual,
+                        onMouseEnter: evt_DialogShow,
+                        onMouseLeave: evt_DialogHide,
                         children: "EDIT"
                     }, void 0, false, {
                         fileName: "src/EXPItemsList.js",
-                        lineNumber: 91,
+                        lineNumber: 106,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "primary",
+                        className: `primary ${!fs.user.isLoggedIn || !exploration.isOwner ? "disabled" : ""}`,
                         onClick: evt_NewVisual,
+                        onMouseEnter: evt_DialogShow,
+                        onMouseLeave: evt_DialogHide,
                         children: "NEW MAP/GRAPH"
                     }, void 0, false, {
                         fileName: "src/EXPItemsList.js",
-                        lineNumber: 92,
+                        lineNumber: 110,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/EXPItemsList.js",
-                lineNumber: 90,
-                columnNumber: 79
+                lineNumber: 105,
+                columnNumber: 7
             }, this),
             editingVisual !== null && EDITOR
         ]
     }, void 0, true, {
         fileName: "src/EXPItemsList.js",
-        lineNumber: 73,
+        lineNumber: 88,
         columnNumber: 5
     }, this);
 }
@@ -31160,25 +31277,25 @@ function EXPEdit({ fs, setFs, onExit }) {
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                                                        value: visual.filter,
-                                                        onChange: evt_OnSelectFilter,
-                                                        children: exploration.filters.map((f)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                                                value: f.id,
-                                                                children: f.label
-                                                            }, f.id, false, {
-                                                                fileName: "src/EXPEdit.js",
-                                                                lineNumber: 192,
-                                                                columnNumber: 49
-                                                            }, this))
-                                                    }, void 0, false, {
-                                                        fileName: "src/EXPEdit.js",
-                                                        lineNumber: 191,
-                                                        columnNumber: 17
-                                                    }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "minicontrolbar",
                                                         children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                                                                value: visual.filter,
+                                                                onChange: evt_OnSelectFilter,
+                                                                children: exploration.filters.map((f)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                                                        value: f.id,
+                                                                        children: f.label
+                                                                    }, f.id, false, {
+                                                                        fileName: "src/EXPEdit.js",
+                                                                        lineNumber: 193,
+                                                                        columnNumber: 51
+                                                                    }, this))
+                                                            }, void 0, false, {
+                                                                fileName: "src/EXPEdit.js",
+                                                                lineNumber: 192,
+                                                                columnNumber: 19
+                                                            }, this),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                                                 className: "mini",
                                                                 onClick: evt_EditFilter,
@@ -31187,20 +31304,20 @@ function EXPEdit({ fs, setFs, onExit }) {
                                                                 fileName: "src/EXPEdit.js",
                                                                 lineNumber: 195,
                                                                 columnNumber: 19
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                                className: "mini",
-                                                                onClick: evt_NewFilter,
-                                                                children: "NEW DATA SELECTION"
-                                                            }, void 0, false, {
-                                                                fileName: "src/EXPEdit.js",
-                                                                lineNumber: 196,
-                                                                columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/EXPEdit.js",
-                                                        lineNumber: 194,
+                                                        lineNumber: 191,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        className: "mini",
+                                                        onClick: evt_NewFilter,
+                                                        children: "NEW DATA SELECTION"
+                                                    }, void 0, false, {
+                                                        fileName: "src/EXPEdit.js",
+                                                        lineNumber: 197,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
@@ -31407,7 +31524,6 @@ function FilterEdit({ fs, setFs }) {
     /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     const { selectedExploration, editingVisual } = fs;
     const exploration = fs.explorations.find((e)=>e.id === selectedExploration);
-    console.log("seelcted exploration", selectedExploration, "exploration", exploration);
     const visuals = exploration && exploration.visuals ? exploration.visuals : [];
     const visual = visuals.find((v)=>v.id === editingVisual) || {
         title: "Untitled",
@@ -31416,7 +31532,6 @@ function FilterEdit({ fs, setFs }) {
         filter: 1
     };
     const selectedFilter = exploration.filters.find((f)=>f.id === Number(visual.filter));
-    if (!selectedFilter) console.error("No filter found for visual", visual, visual.filter, "for exploration", exploration);
     /// UI HANDLERS /////////////////////////////////////////////////////////////
     /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     function evt_OnTitleChange(event) {
@@ -31447,7 +31562,7 @@ function FilterEdit({ fs, setFs }) {
                 className: "screen"
             }, void 0, false, {
                 fileName: "src/FilterEdit.js",
-                lineNumber: 51,
+                lineNumber: 49,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31457,7 +31572,7 @@ function FilterEdit({ fs, setFs }) {
                         children: "SELECT YOUR DATA"
                     }, void 0, false, {
                         fileName: "src/FilterEdit.js",
-                        lineNumber: 53,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31472,7 +31587,7 @@ function FilterEdit({ fs, setFs }) {
                                                 children: "SELECTED DATA NAME: "
                                             }, void 0, false, {
                                                 fileName: "src/FilterEdit.js",
-                                                lineNumber: 58,
+                                                lineNumber: 56,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -31482,13 +31597,13 @@ function FilterEdit({ fs, setFs }) {
                                                 onChange: evt_OnTitleChange
                                             }, void 0, false, {
                                                 fileName: "src/FilterEdit.js",
-                                                lineNumber: 59,
+                                                lineNumber: 57,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/FilterEdit.js",
-                                        lineNumber: 57,
+                                        lineNumber: 55,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31501,7 +31616,7 @@ function FilterEdit({ fs, setFs }) {
                                                         children: "1. Source of Selected Data"
                                                     }, void 0, false, {
                                                         fileName: "src/FilterEdit.js",
-                                                        lineNumber: 63,
+                                                        lineNumber: 61,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31511,7 +31626,7 @@ function FilterEdit({ fs, setFs }) {
                                                                 children: "Select the source from which to fetch data."
                                                             }, void 0, false, {
                                                                 fileName: "src/FilterEdit.js",
-                                                                lineNumber: 65,
+                                                                lineNumber: 63,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -31521,7 +31636,7 @@ function FilterEdit({ fs, setFs }) {
                                                                         children: "FrogWatch USA"
                                                                     }, void 0, false, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 67,
+                                                                        lineNumber: 65,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -31529,13 +31644,13 @@ function FilterEdit({ fs, setFs }) {
                                                                         children: "Chesapeake"
                                                                     }, void 0, false, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 68,
+                                                                        lineNumber: 66,
                                                                         columnNumber: 21
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "src/FilterEdit.js",
-                                                                lineNumber: 66,
+                                                                lineNumber: 64,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31544,26 +31659,26 @@ function FilterEdit({ fs, setFs }) {
                                                                         type: "checkbox"
                                                                     }, void 0, false, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 71,
+                                                                        lineNumber: 69,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     " Limit to 5,000 results"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "src/FilterEdit.js",
-                                                                lineNumber: 70,
+                                                                lineNumber: 68,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/FilterEdit.js",
-                                                        lineNumber: 64,
+                                                        lineNumber: 62,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/FilterEdit.js",
-                                                lineNumber: 62,
+                                                lineNumber: 60,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31573,7 +31688,7 @@ function FilterEdit({ fs, setFs }) {
                                                         children: "2. Filters"
                                                     }, void 0, false, {
                                                         fileName: "src/FilterEdit.js",
-                                                        lineNumber: 76,
+                                                        lineNumber: 74,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31583,7 +31698,7 @@ function FilterEdit({ fs, setFs }) {
                                                                 children: "Add filters to show only items that match your criteria."
                                                             }, void 0, false, {
                                                                 fileName: "src/FilterEdit.js",
-                                                                lineNumber: 78,
+                                                                lineNumber: 76,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31592,26 +31707,26 @@ function FilterEdit({ fs, setFs }) {
                                                                         children: "+ Add filter"
                                                                     }, void 0, false, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 80,
+                                                                        lineNumber: 78,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     " 1 filter"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "src/FilterEdit.js",
-                                                                lineNumber: 79,
+                                                                lineNumber: 77,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                                                 fileName: "src/FilterEdit.js",
-                                                                lineNumber: 83,
+                                                                lineNumber: 81,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                                                 children: "Value"
                                                             }, void 0, false, {
                                                                 fileName: "src/FilterEdit.js",
-                                                                lineNumber: 85,
+                                                                lineNumber: 83,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31619,7 +31734,7 @@ function FilterEdit({ fs, setFs }) {
                                                                 children: "Add filters to show only items that match your criteria."
                                                             }, void 0, false, {
                                                                 fileName: "src/FilterEdit.js",
-                                                                lineNumber: 86,
+                                                                lineNumber: 84,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31629,7 +31744,7 @@ function FilterEdit({ fs, setFs }) {
                                                                         children: "Field:"
                                                                     }, void 0, false, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 89,
+                                                                        lineNumber: 87,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -31638,27 +31753,27 @@ function FilterEdit({ fs, setFs }) {
                                                                                 children: "Wind"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/FilterEdit.js",
-                                                                                lineNumber: 91,
+                                                                                lineNumber: 89,
                                                                                 columnNumber: 23
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
                                                                                 children: "Species"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/FilterEdit.js",
-                                                                                lineNumber: 92,
+                                                                                lineNumber: 90,
                                                                                 columnNumber: 23
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 90,
+                                                                        lineNumber: 88,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                                                         children: "Match:"
                                                                     }, void 0, false, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 94,
+                                                                        lineNumber: 92,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -31667,52 +31782,52 @@ function FilterEdit({ fs, setFs }) {
                                                                                 children: "Any of these values"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/FilterEdit.js",
-                                                                                lineNumber: 96,
+                                                                                lineNumber: 94,
                                                                                 columnNumber: 23
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
                                                                                 children: "Any value except"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/FilterEdit.js",
-                                                                                lineNumber: 97,
+                                                                                lineNumber: 95,
                                                                                 columnNumber: 23
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 95,
+                                                                        lineNumber: 93,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                                                         children: "Values:"
                                                                     }, void 0, false, {
+                                                                        fileName: "src/FilterEdit.js",
+                                                                        lineNumber: 97,
+                                                                        columnNumber: 21
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                                        type: "text",
+                                                                        value: visual.filterSource
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/FilterEdit.js",
+                                                                        lineNumber: 98,
+                                                                        columnNumber: 21
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                                                                         fileName: "src/FilterEdit.js",
                                                                         lineNumber: 99,
                                                                         columnNumber: 21
                                                                     }, this),
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                                                        type: "text",
-                                                                        value: visual.filterSource
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 100,
-                                                                        columnNumber: 21
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
-                                                                        fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 101,
-                                                                        columnNumber: 21
-                                                                    }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 101,
+                                                                        lineNumber: 99,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                                                         children: "Field:"
                                                                     }, void 0, false, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 103,
+                                                                        lineNumber: 101,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -31721,27 +31836,27 @@ function FilterEdit({ fs, setFs }) {
                                                                                 children: "Wind"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/FilterEdit.js",
-                                                                                lineNumber: 105,
+                                                                                lineNumber: 103,
                                                                                 columnNumber: 23
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
                                                                                 children: "Species"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/FilterEdit.js",
-                                                                                lineNumber: 106,
+                                                                                lineNumber: 104,
                                                                                 columnNumber: 23
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 104,
+                                                                        lineNumber: 102,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                                                         children: "Match:"
                                                                     }, void 0, false, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 108,
+                                                                        lineNumber: 106,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -31750,52 +31865,52 @@ function FilterEdit({ fs, setFs }) {
                                                                                 children: "Any of these values"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/FilterEdit.js",
-                                                                                lineNumber: 110,
+                                                                                lineNumber: 108,
                                                                                 columnNumber: 23
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
                                                                                 children: "Any value except"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/FilterEdit.js",
-                                                                                lineNumber: 111,
+                                                                                lineNumber: 109,
                                                                                 columnNumber: 23
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 109,
+                                                                        lineNumber: 107,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                                                         children: "Values:"
                                                                     }, void 0, false, {
+                                                                        fileName: "src/FilterEdit.js",
+                                                                        lineNumber: 111,
+                                                                        columnNumber: 21
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                                        type: "text",
+                                                                        value: visual.filterSource
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/FilterEdit.js",
+                                                                        lineNumber: 112,
+                                                                        columnNumber: 21
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                                                                         fileName: "src/FilterEdit.js",
                                                                         lineNumber: 113,
                                                                         columnNumber: 21
                                                                     }, this),
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                                                        type: "text",
-                                                                        value: visual.filterSource
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 114,
-                                                                        columnNumber: 21
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
-                                                                        fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 115,
-                                                                        columnNumber: 21
-                                                                    }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 115,
+                                                                        lineNumber: 113,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                                                         children: "Field:"
                                                                     }, void 0, false, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 117,
+                                                                        lineNumber: 115,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -31804,27 +31919,27 @@ function FilterEdit({ fs, setFs }) {
                                                                                 children: "Wind"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/FilterEdit.js",
-                                                                                lineNumber: 119,
+                                                                                lineNumber: 117,
                                                                                 columnNumber: 23
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
                                                                                 children: "Species"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/FilterEdit.js",
-                                                                                lineNumber: 120,
+                                                                                lineNumber: 118,
                                                                                 columnNumber: 23
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 118,
+                                                                        lineNumber: 116,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                                                         children: "Match:"
                                                                     }, void 0, false, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 122,
+                                                                        lineNumber: 120,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -31833,27 +31948,27 @@ function FilterEdit({ fs, setFs }) {
                                                                                 children: "Any of these values"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/FilterEdit.js",
-                                                                                lineNumber: 124,
+                                                                                lineNumber: 122,
                                                                                 columnNumber: 23
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
                                                                                 children: "Any value except"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/FilterEdit.js",
-                                                                                lineNumber: 125,
+                                                                                lineNumber: 123,
                                                                                 columnNumber: 23
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 123,
+                                                                        lineNumber: 121,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                                                         children: "Values:"
                                                                     }, void 0, false, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 127,
+                                                                        lineNumber: 125,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -31861,36 +31976,36 @@ function FilterEdit({ fs, setFs }) {
                                                                         value: visual.filterSource
                                                                     }, void 0, false, {
                                                                         fileName: "src/FilterEdit.js",
-                                                                        lineNumber: 128,
+                                                                        lineNumber: 126,
                                                                         columnNumber: 21
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "src/FilterEdit.js",
-                                                                lineNumber: 87,
+                                                                lineNumber: 85,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/FilterEdit.js",
-                                                        lineNumber: 77,
+                                                        lineNumber: 75,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/FilterEdit.js",
-                                                lineNumber: 75,
+                                                lineNumber: 73,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                                 fileName: "src/FilterEdit.js",
-                                                lineNumber: 133,
+                                                lineNumber: 131,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/FilterEdit.js",
-                                        lineNumber: 61,
+                                        lineNumber: 59,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31901,7 +32016,7 @@ function FilterEdit({ fs, setFs }) {
                                                 children: "Edit a Copy"
                                             }, void 0, false, {
                                                 fileName: "src/FilterEdit.js",
-                                                lineNumber: 136,
+                                                lineNumber: 134,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31910,7 +32025,7 @@ function FilterEdit({ fs, setFs }) {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "src/FilterEdit.js",
-                                                lineNumber: 137,
+                                                lineNumber: 135,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -31918,7 +32033,7 @@ function FilterEdit({ fs, setFs }) {
                                                 children: "Cancel"
                                             }, void 0, false, {
                                                 fileName: "src/FilterEdit.js",
-                                                lineNumber: 138,
+                                                lineNumber: 136,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -31927,19 +32042,19 @@ function FilterEdit({ fs, setFs }) {
                                                 children: "Save"
                                             }, void 0, false, {
                                                 fileName: "src/FilterEdit.js",
-                                                lineNumber: 139,
+                                                lineNumber: 137,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/FilterEdit.js",
-                                        lineNumber: 135,
+                                        lineNumber: 133,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/FilterEdit.js",
-                                lineNumber: 56,
+                                lineNumber: 54,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31955,7 +32070,7 @@ function FilterEdit({ fs, setFs }) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/FilterEdit.js",
-                                                lineNumber: 146,
+                                                lineNumber: 144,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31965,7 +32080,7 @@ function FilterEdit({ fs, setFs }) {
                                                         children: "Table"
                                                     }, void 0, false, {
                                                         fileName: "src/FilterEdit.js",
-                                                        lineNumber: 148,
+                                                        lineNumber: 146,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -31978,64 +32093,64 @@ function FilterEdit({ fs, setFs }) {
                                                         step: "1"
                                                     }, void 0, false, {
                                                         fileName: "src/FilterEdit.js",
-                                                        lineNumber: 149,
+                                                        lineNumber: 147,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                                         children: "Map"
                                                     }, void 0, false, {
                                                         fileName: "src/FilterEdit.js",
-                                                        lineNumber: 150,
+                                                        lineNumber: 148,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/FilterEdit.js",
-                                                lineNumber: 147,
+                                                lineNumber: 145,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/FilterEdit.js",
-                                        lineNumber: 145,
+                                        lineNumber: 143,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                         src: showTable ? (0, _tablePngDefault.default) : (0, _mapGrayPngDefault.default)
                                     }, void 0, false, {
                                         fileName: "src/FilterEdit.js",
-                                        lineNumber: 153,
+                                        lineNumber: 151,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/FilterEdit.js",
-                                lineNumber: 144,
+                                lineNumber: 142,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "table"
                             }, void 0, false, {
                                 fileName: "src/FilterEdit.js",
-                                lineNumber: 156,
+                                lineNumber: 154,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/FilterEdit.js",
-                        lineNumber: 54,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/FilterEdit.js",
-                lineNumber: 52,
+                lineNumber: 50,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/FilterEdit.js",
-        lineNumber: 50,
+        lineNumber: 48,
         columnNumber: 5
     }, this);
 }
@@ -32411,31 +32526,130 @@ function EXPView({ id, fs, setFs }) {
     }
     /// COMPONENT RENDER ////////////////////////////////////////////////////////
     /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    const LAYERSDATA = [
+        {
+            title: "Basemaps",
+            layers: [
+                "NatGeo w Wetlands",
+                "Topographic",
+                "Shaded Relief",
+                "Satellite",
+                "Gray",
+                "World Oceans",
+                "Street Map",
+                "National Geographic"
+            ]
+        },
+        {
+            title: "Thematic Data",
+            layers: [
+                "Land Cover (2016)",
+                "Wetlands (Zoom in to Display)",
+                "Tree Canopy",
+                "Parks",
+                "Tribal Lands",
+                "County Boundaries",
+                "American Bullfrog Range"
+            ]
+        }
+    ];
+    const LAYERS = LAYERSDATA.map((layer, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                    children: layer.title
+                }, void 0, false, {
+                    fileName: "src/EXPView.js",
+                    lineNumber: 132,
+                    columnNumber: 7
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: layer.layers.map((l, j)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: l
+                        }, j, false, {
+                            fileName: "src/EXPView.js",
+                            lineNumber: 135,
+                            columnNumber: 11
+                        }, this))
+                }, void 0, false, {
+                    fileName: "src/EXPView.js",
+                    lineNumber: 133,
+                    columnNumber: 7
+                }, this)
+            ]
+        }, i, true, {
+            fileName: "src/EXPView.js",
+            lineNumber: 131,
+            columnNumber: 5
+        }, this));
+    const LEGENDDATA = [
+        1,
+        11,
+        21,
+        30,
+        40
+    ];
+    const LEGEND = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: "Legend"
+            }, void 0, false, {
+                fileName: "src/EXPView.js",
+                lineNumber: 146,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "Station Observation Count"
+            }, void 0, false, {
+                fileName: "src/EXPView.js",
+                lineNumber: 147,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                children: LEGENDDATA.map((l, j)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: l
+                    }, j, false, {
+                        fileName: "src/EXPView.js",
+                        lineNumber: 150,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "src/EXPView.js",
+                lineNumber: 148,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/EXPView.js",
+        lineNumber: 145,
+        columnNumber: 5
+    }, this);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "EXPView",
         ref: myRef,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "sidebar",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        children: "LAYERS"
-                    }, void 0, false, {
-                        fileName: "src/EXPView.js",
-                        lineNumber: 106,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        children: "LEGEND"
-                    }, void 0, false, {
-                        fileName: "src/EXPView.js",
-                        lineNumber: 107,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
+                children: visual.type === "map" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                            children: LAYERS
+                        }, void 0, false, {
+                            fileName: "src/EXPView.js",
+                            lineNumber: 161,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                            children: LEGEND
+                        }, void 0, false, {
+                            fileName: "src/EXPView.js",
+                            lineNumber: 162,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true) : ""
+            }, void 0, false, {
                 fileName: "src/EXPView.js",
-                lineNumber: 105,
+                lineNumber: 158,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -32450,7 +32664,7 @@ function EXPView({ id, fs, setFs }) {
                                         children: visual.title
                                     }, void 0, false, {
                                         fileName: "src/EXPView.js",
-                                        lineNumber: 112,
+                                        lineNumber: 169,
                                         columnNumber: 16
                                     }, this),
                                     ": ",
@@ -32458,7 +32672,7 @@ function EXPView({ id, fs, setFs }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "src/EXPView.js",
-                                lineNumber: 112,
+                                lineNumber: 169,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -32468,7 +32682,7 @@ function EXPView({ id, fs, setFs }) {
                                         children: "Table"
                                     }, void 0, false, {
                                         fileName: "src/EXPView.js",
-                                        lineNumber: 114,
+                                        lineNumber: 171,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -32481,52 +32695,52 @@ function EXPView({ id, fs, setFs }) {
                                         step: "1"
                                     }, void 0, false, {
                                         fileName: "src/EXPView.js",
-                                        lineNumber: 115,
+                                        lineNumber: 172,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                         children: "Map"
                                     }, void 0, false, {
                                         fileName: "src/EXPView.js",
-                                        lineNumber: 116,
+                                        lineNumber: 173,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/EXPView.js",
-                                lineNumber: 113,
+                                lineNumber: 170,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/EXPView.js",
-                        lineNumber: 111,
+                        lineNumber: 168,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         src: visual.showTable ? (0, _tablePngDefault.default) : visual.image
                     }, void 0, false, {
                         fileName: "src/EXPView.js",
-                        lineNumber: 119,
+                        lineNumber: 176,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/EXPView.js",
-                lineNumber: 110,
+                lineNumber: 167,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "table"
             }, void 0, false, {
                 fileName: "src/EXPView.js",
-                lineNumber: 122,
+                lineNumber: 179,
                 columnNumber: 7
             }, this)
         ]
     }, visual.id, true, {
         fileName: "src/EXPView.js",
-        lineNumber: 104,
+        lineNumber: 157,
         columnNumber: 5
     }, this);
 }
