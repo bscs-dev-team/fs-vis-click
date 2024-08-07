@@ -29370,8 +29370,6 @@ parcelHelpers.export(exports, "default", ()=>Explorations);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactJoyride = require("react-joyride");
-var _reactJoyrideDefault = parcelHelpers.interopDefault(_reactJoyride);
 var _explorationsCss = require("./Explorations.css");
 var _exploration = require("./Exploration");
 var _explorationDefault = parcelHelpers.interopDefault(_exploration);
@@ -29431,7 +29429,7 @@ function Explorations({ fs, setFs }) {
                         alt: exploration.name
                     }, void 0, false, {
                         fileName: "src/Explorations.js",
-                        lineNumber: 57,
+                        lineNumber: 56,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29441,31 +29439,31 @@ function Explorations({ fs, setFs }) {
                                 children: exploration.name
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 59,
+                                lineNumber: 58,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 children: exploration.description
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 60,
+                                lineNumber: 59,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/Explorations.js",
-                        lineNumber: 58,
+                        lineNumber: 57,
                         columnNumber: 11
                     }, this)
                 ]
             }, i, true, {
                 fileName: "src/Explorations.js",
-                lineNumber: 56,
+                lineNumber: 55,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "src/Explorations.js",
-        lineNumber: 54,
+        lineNumber: 53,
         columnNumber: 5
     }, this);
     const BROWSER_TABLE = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
@@ -29477,53 +29475,53 @@ function Explorations({ fs, setFs }) {
                             children: "\u2661"
                         }, void 0, false, {
                             fileName: "src/Explorations.js",
-                            lineNumber: 71,
+                            lineNumber: 70,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                             children: "Author"
                         }, void 0, false, {
                             fileName: "src/Explorations.js",
-                            lineNumber: 72,
+                            lineNumber: 71,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                             children: "Title \u2304"
                         }, void 0, false, {
                             fileName: "src/Explorations.js",
-                            lineNumber: 73,
+                            lineNumber: 72,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                             children: "Description"
                         }, void 0, false, {
                             fileName: "src/Explorations.js",
-                            lineNumber: 74,
+                            lineNumber: 73,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                             children: "Last modified"
                         }, void 0, false, {
                             fileName: "src/Explorations.js",
-                            lineNumber: 75,
+                            lineNumber: 74,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                             children: "Privacy"
                         }, void 0, false, {
                             fileName: "src/Explorations.js",
-                            lineNumber: 76,
+                            lineNumber: 75,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/Explorations.js",
-                    lineNumber: 70,
+                    lineNumber: 69,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 69,
+                lineNumber: 68,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
@@ -29534,14 +29532,14 @@ function Explorations({ fs, setFs }) {
                                 children: exploration.favorite ? "\uD83E\uDE77" : ""
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 82,
+                                lineNumber: 81,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                 children: exploration.isOwner ? "Me" : "-"
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 83,
+                                lineNumber: 82,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -29550,7 +29548,7 @@ function Explorations({ fs, setFs }) {
                                         src: exploration.image
                                     }, void 0, false, {
                                         fileName: "src/Explorations.js",
-                                        lineNumber: 85,
+                                        lineNumber: 84,
                                         columnNumber: 15
                                     }, this),
                                     "\xa0",
@@ -29558,45 +29556,45 @@ function Explorations({ fs, setFs }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 84,
+                                lineNumber: 83,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                 children: exploration.description
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 88,
+                                lineNumber: 87,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                 children: exploration.modified.toDateString()
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 89,
+                                lineNumber: 88,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                 children: exploration.privacy
                             }, void 0, false, {
                                 fileName: "src/Explorations.js",
-                                lineNumber: 90,
+                                lineNumber: 89,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, i, true, {
                         fileName: "src/Explorations.js",
-                        lineNumber: 81,
+                        lineNumber: 80,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 79,
+                lineNumber: 78,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Explorations.js",
-        lineNumber: 68,
+        lineNumber: 67,
         columnNumber: 5
     }, this);
     const BROWSER = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -29605,21 +29603,21 @@ function Explorations({ fs, setFs }) {
                 children: "Explorations"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 99,
+                lineNumber: 98,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "FrogWatch Volunteer Data. See observations from FrogWatch USA volunteers in maps and graphs, or create your own visualization of data."
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 100,
+                lineNumber: 99,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: "Featured Explorations"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 102,
+                lineNumber: 101,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29627,14 +29625,14 @@ function Explorations({ fs, setFs }) {
                 children: FEATURED
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 103,
+                lineNumber: 102,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: "My Data Explorations"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 106,
+                lineNumber: 105,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -29643,7 +29641,7 @@ function Explorations({ fs, setFs }) {
                 children: "+ Create New Exploration"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 107,
+                lineNumber: 106,
                 columnNumber: 7
             }, this),
             fs.user.isLoggedIn ? BROWSER_TABLE : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29651,7 +29649,7 @@ function Explorations({ fs, setFs }) {
                 children: "Login to save and share your explorations"
             }, void 0, false, {
                 fileName: "src/Explorations.js",
-                lineNumber: 110,
+                lineNumber: 109,
                 columnNumber: 11
             }, this)
         ]
@@ -29661,7 +29659,7 @@ function Explorations({ fs, setFs }) {
         setFs: setFs
     }, void 0, false, {
         fileName: "src/Explorations.js",
-        lineNumber: 116,
+        lineNumber: 115,
         columnNumber: 5
     }, this);
     const VIEW = fs.selectedExploration === null ? BROWSER : EXPLORATION;
@@ -29670,7 +29668,7 @@ function Explorations({ fs, setFs }) {
         children: VIEW
     }, void 0, false, {
         fileName: "src/Explorations.js",
-        lineNumber: 121,
+        lineNumber: 120,
         columnNumber: 5
     }, this);
 }
@@ -29683,7 +29681,655 @@ $RefreshReg$(_c, "Explorations");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-joyride":"cxpxM","./Explorations.css":"9jFiD","./Exploration":"dDc1i","./img/allspecies_map.png":"3fEu8","./img/allspecies_histo.png":"iWrM3","./img/threespecies_histo.png":"5cwM8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cxpxM":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Explorations.css":"9jFiD","./Exploration":"dDc1i","./img/allspecies_map.png":"3fEu8","./img/allspecies_histo.png":"iWrM3","./img/threespecies_histo.png":"5cwM8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9jFiD":[function() {},{}],"dDc1i":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a575 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a575.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Exploration);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactJoyride = require("react-joyride");
+var _reactJoyrideDefault = parcelHelpers.interopDefault(_reactJoyride);
+var _explorationCss = require("./Exploration.css");
+var _notLoggedIn = require("./NotLoggedIn");
+var _notLoggedInDefault = parcelHelpers.interopDefault(_notLoggedIn);
+var _expitemsList = require("./EXPItemsList");
+var _expitemsListDefault = parcelHelpers.interopDefault(_expitemsList);
+var _expview = require("./EXPView");
+var _expviewDefault = parcelHelpers.interopDefault(_expview);
+var _process = require("process");
+var _reactFontawesome = require("@fortawesome/react-fontawesome");
+var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
+var _s = $RefreshSig$();
+const IcnPencil = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
+    icon: (0, _freeSolidSvgIcons.faPencil)
+}, void 0, false, {
+    fileName: "src/Exploration.js",
+    lineNumber: 11,
+    columnNumber: 19
+}, undefined);
+function Exploration({ fs, setFs }) {
+    _s();
+    // Joyride
+    const STEPS = [
+        {
+            target: ".title-text",
+            content: "This is name of the exploration.  Use a short descriptive name to help you distinguish it from other explorations. Click the pencil to edit."
+        },
+        {
+            target: ".exploration-new-btn",
+            content: 'Create a "New Map/Graph" by clicking this button'
+        },
+        {
+            target: ".EXPItemsList",
+            content: "Your maps and graphs will be saved here."
+        },
+        {
+            target: ".exploration-edit-btn",
+            content: 'Select a map/graph and click "Edit" to edit the Map or Graph'
+        },
+        {
+            target: ".notes",
+            content: "Use this space to describe the idea or question you would like to explore.  Add any ideas and questions as you make new maps and graphs. Click the pencil to edit."
+        }
+    ];
+    const [run, setRun] = (0, _react.useState)(true);
+    const [titleIsEditable, setTitleIsEditable] = (0, _react.useState)(false);
+    const [descriptionIsEditable, setDescriptionIsEditable] = (0, _react.useState)(false);
+    /// LOAD DATA ///////////////////////////////////////////////////////////////
+    /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    const { selectedExploration, selectedVisual, explorations } = fs;
+    const exploration = explorations.find((e)=>e.id === selectedExploration) || {
+        name: "Untitled",
+        description: "",
+        modifed: new Date(),
+        privacy: "Private",
+        visuals: []
+    };
+    const visuals = exploration && exploration.visuals ? exploration.visuals : [];
+    // if there isn't a selectedVisual, select the first one
+    if (!selectedVisual && exploration.visuals.length > 0) setFs((draft)=>{
+        draft.selectedVisual = exploration.visuals[0].id;
+    });
+    const visual = visuals.find((v)=>v.id === selectedVisual) || {
+        title: "Untitled",
+        description: "",
+        image: null
+    };
+    /// UI HANDLERS /////////////////////////////////////////////////////////////
+    /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    function evt_SetPublic(event) {
+        alert("set privacy to public");
+    }
+    function evt_CopyLink(event) {
+        alert("Copy URL to clipboard");
+    }
+    function evt_Embed(event) {
+        alert("Show and copy Embed URL");
+    }
+    function evt_SaveAs(event) {
+        alert('Show "Save As..." dialog');
+    }
+    function setRoute(route) {
+        if (!fs.user.isLoggedIn) alert("Unsaved changes.  Please login to save changes, or click 'Save to Link' to save your changes? [Back to Exploration] [Close and discard changes]");
+        setFs((draft)=>{
+            draft.selectedExploration = null;
+            draft.selectedVisual = null;
+            draft.route = route;
+        });
+    }
+    function deselectExploration() {
+        if (!fs.user.isLoggedIn) alert("Unsaved changes.  Please login to save changes, or click 'Save to Link' to save your changes? [Back to Exploration] [Close and discard changes]");
+        setFs((draft)=>{
+            draft.selectedExploration = null;
+        });
+    }
+    function evt_ToggleTitleEdit(event) {
+        setTitleIsEditable(!titleIsEditable);
+    }
+    function evt_ToggleDescriptionEdit(event) {
+        setDescriptionIsEditable(!descriptionIsEditable);
+    }
+    function evt_OnTitleChange(event) {
+        setFs((draft)=>{
+            draft.explorations.find((e)=>e.id === draft.selectedExploration).name = event.target.value;
+        });
+    }
+    function evt_OnDescriptionChange(event) {
+        setFs((draft)=>{
+            draft.explorations.find((e)=>e.id === draft.selectedExploration).description = event.target.value;
+        });
+    }
+    function evt_TogglePublic(event) {
+        setFs((draft)=>{
+            const vis = draft.explorations.find((e)=>e.id === draft.selectedExploration).privacy = event.target.value === "0" ? "Private" : "Public";
+        });
+    }
+    function evt_ToggleFavorite(event) {
+        setFs((draft)=>{
+            const e = draft.explorations.find((e)=>e.id === draft.selectedExploration);
+            e.favorite = !e.favorite;
+        });
+    }
+    function evt_Login() {
+        setFs((draft)=>{
+            const user = draft.user;
+            user.isLoggedIn = true;
+            user.userName = "bentbloh@gmail.com";
+        });
+    }
+    function evt_DialogShow(event) {
+        if (!fs.user.isLoggedIn || !exploration.isOwner) setFs((draft)=>{
+            draft.showSaveToLinkDialog = true;
+        });
+    }
+    function evt_DialogHide(event) {
+        setFs((draft)=>{
+            draft.showSaveToLinkDialog = false;
+        });
+    }
+    /// COMPONENT RENDER ////////////////////////////////////////////////////////
+    /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    const NAVBAR = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "navbar",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    className: "url",
+                    onClick: ()=>setRoute("home"),
+                    children: "Home"
+                }, void 0, false, {
+                    fileName: "src/Exploration.js",
+                    lineNumber: 143,
+                    columnNumber: 9
+                }, this),
+                " >",
+                " ",
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    className: "url",
+                    onClick: deselectExploration,
+                    children: "Explorations"
+                }, void 0, false, {
+                    fileName: "src/Exploration.js",
+                    lineNumber: 144,
+                    columnNumber: 9
+                }, this),
+                " >",
+                " ",
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    className: "current",
+                    children: [
+                        selectedExploration,
+                        ": ",
+                        exploration.name
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Exploration.js",
+                    lineNumber: 145,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/Exploration.js",
+            lineNumber: 142,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "src/Exploration.js",
+        lineNumber: 141,
+        columnNumber: 5
+    }, this);
+    const TITLE = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "title",
+        children: [
+            "EXPLORATION:\xa0",
+            titleIsEditable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        className: "title-text",
+                        type: "text",
+                        value: exploration.name,
+                        onChange: evt_OnTitleChange
+                    }, void 0, false, {
+                        fileName: "src/Exploration.js",
+                        lineNumber: 156,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "transparent-light",
+                        onClick: evt_ToggleTitleEdit,
+                        children: "Save"
+                    }, void 0, false, {
+                        fileName: "src/Exploration.js",
+                        lineNumber: 157,
+                        columnNumber: 13
+                    }, this)
+                ]
+            }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "title-text",
+                        children: exploration.name
+                    }, void 0, false, {
+                        fileName: "src/Exploration.js",
+                        lineNumber: 162,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: `transparent-light ${!fs.user.isLoggedIn || !exploration.isOwner ? "disabled" : ""}`,
+                        onClick: evt_ToggleTitleEdit,
+                        onMouseEnter: evt_DialogShow,
+                        onMouseLeave: evt_DialogHide,
+                        children: IcnPencil
+                    }, void 0, false, {
+                        fileName: "src/Exploration.js",
+                        lineNumber: 163,
+                        columnNumber: 13
+                    }, this)
+                ]
+            }, void 0, true),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    flexGrow: 1
+                }
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 168,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "tableOrMap",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        children: "Private"
+                    }, void 0, false, {
+                        fileName: "src/Exploration.js",
+                        lineNumber: 170,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        value: exploration.privacy === "Public" ? "1" : "0",
+                        onClick: evt_TogglePublic,
+                        readOnly: true,
+                        type: "range",
+                        min: "0",
+                        max: "1",
+                        step: "1"
+                    }, void 0, false, {
+                        fileName: "src/Exploration.js",
+                        lineNumber: 171,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        children: "Public"
+                    }, void 0, false, {
+                        fileName: "src/Exploration.js",
+                        lineNumber: 172,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Exploration.js",
+                lineNumber: 169,
+                columnNumber: 7
+            }, this),
+            " ",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "secondary",
+                onClick: evt_ToggleFavorite,
+                children: exploration.favorite ? "\uD83E\uDE77" : "\u2661"
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 175,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/Exploration.js",
+        lineNumber: 151,
+        columnNumber: 5
+    }, this);
+    const SIDEBAR = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "sidebar",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _expitemsListDefault.default), {
+                fs: fs,
+                setFs: setFs
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 183,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "notes",
+                children: descriptionIsEditable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                            children: [
+                                "YOUR IDEAS & QUESTIONS",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    className: "transparent-light",
+                                    onClick: evt_ToggleDescriptionEdit,
+                                    children: "Save"
+                                }, void 0, false, {
+                                    fileName: "src/Exploration.js",
+                                    lineNumber: 188,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Exploration.js",
+                            lineNumber: 187,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                            value: exploration.description,
+                            placeholder: "You can use this space to describe the idea or question you would like to explore.  Add any ideas and questions as you make new maps and graphs",
+                            onChange: evt_OnDescriptionChange
+                        }, void 0, false, {
+                            fileName: "src/Exploration.js",
+                            lineNumber: 191,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                            children: [
+                                "YOUR IDEAS & QUESTIONS",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    className: `transparent-light ${!fs.user.isLoggedIn || !exploration.isOwner ? "disabled" : ""}`,
+                                    onClick: evt_ToggleDescriptionEdit,
+                                    onMouseEnter: evt_DialogShow,
+                                    onMouseLeave: evt_DialogHide,
+                                    children: IcnPencil
+                                }, void 0, false, {
+                                    fileName: "src/Exploration.js",
+                                    lineNumber: 200,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Exploration.js",
+                            lineNumber: 199,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "description",
+                            children: exploration.description
+                        }, void 0, false, {
+                            fileName: "src/Exploration.js",
+                            lineNumber: 203,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true)
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 184,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/Exploration.js",
+        lineNumber: 182,
+        columnNumber: 5
+    }, this);
+    const VISUALIZATION = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "visualization",
+        children: selectedVisual ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "vis-list",
+            children: visuals.map((v)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _expviewDefault.default), {
+                    id: v.id,
+                    fs: fs,
+                    setFs: setFs
+                }, v.id, false, {
+                    fileName: "src/Exploration.js",
+                    lineNumber: 214,
+                    columnNumber: 29
+                }, this))
+        }, void 0, false, {
+            fileName: "src/Exploration.js",
+            lineNumber: 213,
+            columnNumber: 11
+        }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "help",
+            children: 'To start, click "NEW MAP/GRAPH" to create a new way of looking at the data in a display (e.g., graph, map).'
+        }, void 0, false, {
+            fileName: "src/Exploration.js",
+            lineNumber: 216,
+            columnNumber: 11
+        }, this)
+    }, void 0, false, {
+        fileName: "src/Exploration.js",
+        lineNumber: 211,
+        columnNumber: 5
+    }, this);
+    const FOOTER = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "footer",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: fs.user.isLoggedIn ? "primary" : "secondary",
+                onClick: evt_SaveAs,
+                children: "Edit a Copy"
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 225,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    flexGrow: 1
+                }
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 226,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "transparent",
+                onClick: evt_Embed,
+                children: "Embed Exploration"
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 227,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    flexGrow: 1
+                }
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 228,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: fs.user.isLoggedIn ? "tertiary" : "primary",
+                onClick: evt_CopyLink,
+                children: fs.user.isLoggedIn ? "Copy Link" : "Save Exploration Link"
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 229,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/Exploration.js",
+        lineNumber: 223,
+        columnNumber: 5
+    }, this);
+    const DIALOG_LOGIN = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "dialog warning",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Saving requires Login"
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 240,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "You can add and edit maps and graphs, but you will not be able to save your explorations until you log in."
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 241,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "Log in to edit and save changes to an exploration to your account."
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 242,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "",
+                            children: "Register for free"
+                        }, void 0, false, {
+                            fileName: "src/Exploration.js",
+                            lineNumber: 243,
+                            columnNumber: 13
+                        }, this),
+                        " if you don't have an account."
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Exploration.js",
+                    lineNumber: 243,
+                    columnNumber: 10
+                }, this)
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 243,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: evt_Login,
+                children: "Login"
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 244,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/Exploration.js",
+        lineNumber: 239,
+        columnNumber: 5
+    }, this);
+    // You're logged in, but you're not the owner of this exploration. You can edit it, but you can't save it. You can save a copy of it, though.
+    const DIALOG_COPY = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "dialog",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: '"Edit a Copy" to Make Changes'
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 251,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "You are viewing an exploration that is not owned by you."
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 252,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: 'Click "Edit a Copy" to duplicate this exploration and make and save changes to it.'
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 253,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "primary",
+                onClick: evt_Login,
+                children: "Edit a Copy"
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 255,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/Exploration.js",
+        lineNumber: 250,
+        columnNumber: 5
+    }, this);
+    console.log("render logged in", fs.user.isLoggedIn, "isOwner", exploration.isOwner);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: `Exploration ${fs.user.isLoggedIn && exploration.isOwner ? "isOwner" : ""}`,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactJoyrideDefault.default), {
+                run: run,
+                steps: STEPS,
+                continuous: true,
+                scrollToFirstStep: true,
+                showProgress: true,
+                showSkipButton: true,
+                styles: {
+                    options: {
+                        zIndex: 10000
+                    }
+                }
+            }, void 0, false, {
+                fileName: "src/Exploration.js",
+                lineNumber: 262,
+                columnNumber: 7
+            }, this),
+            NAVBAR,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "border",
+                children: [
+                    TITLE,
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "content",
+                        children: [
+                            SIDEBAR,
+                            VISUALIZATION
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Exploration.js",
+                        lineNumber: 275,
+                        columnNumber: 9
+                    }, this),
+                    FOOTER
+                ]
+            }, void 0, true, {
+                fileName: "src/Exploration.js",
+                lineNumber: 273,
+                columnNumber: 7
+            }, this),
+            fs.showSaveToLinkDialog && !fs.user.isLoggedIn && !exploration.isOwner && DIALOG_LOGIN,
+            fs.showSaveToLinkDialog && fs.user.isLoggedIn && !exploration.isOwner && DIALOG_COPY
+        ]
+    }, void 0, true, {
+        fileName: "src/Exploration.js",
+        lineNumber: 261,
+        columnNumber: 5
+    }, this);
+}
+_s(Exploration, "y3cyEg/+hDfjTtD8FrvIEwqjR3g=");
+_c = Exploration;
+var _c;
+$RefreshReg$(_c, "Exploration");
+
+  $parcel$ReactRefreshHelpers$a575.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-joyride":"cxpxM","./Exploration.css":"99opG","./NotLoggedIn":"5ocTP","./EXPItemsList":"lXWbC","./EXPView":"fqACg","process":"d5jf4","@fortawesome/react-fontawesome":"clIT3","@fortawesome/free-solid-svg-icons":"5lkdy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cxpxM":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ACTIONS", ()=>ACTIONS);
@@ -36929,656 +37575,7 @@ var innerText = function(jsx) {
 innerText.default = innerText;
 module.exports = innerText;
 
-},{}],"9jFiD":[function() {},{}],"dDc1i":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$a575 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$a575.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Exploration);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactJoyride = require("react-joyride");
-var _reactJoyrideDefault = parcelHelpers.interopDefault(_reactJoyride);
-var _explorationCss = require("./Exploration.css");
-var _notLoggedIn = require("./NotLoggedIn");
-var _notLoggedInDefault = parcelHelpers.interopDefault(_notLoggedIn);
-var _expitemsList = require("./EXPItemsList");
-var _expitemsListDefault = parcelHelpers.interopDefault(_expitemsList);
-var _expview = require("./EXPView");
-var _expviewDefault = parcelHelpers.interopDefault(_expview);
-var _process = require("process");
-var _reactFontawesome = require("@fortawesome/react-fontawesome");
-var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
-var _s = $RefreshSig$();
-const IcnPencil = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
-    icon: (0, _freeSolidSvgIcons.faPencil)
-}, void 0, false, {
-    fileName: "src/Exploration.js",
-    lineNumber: 11,
-    columnNumber: 19
-}, undefined);
-function Exploration({ fs, setFs }) {
-    _s();
-    // Joyride
-    const STEPS = [
-        {
-            target: ".title-text",
-            content: "This is name of the exploration.  Use a short descriptive name to help you distinguish it from other explorations. Click the pencil to edit."
-        },
-        {
-            target: ".exploration-new-btn",
-            content: 'Create a "New Map/Graph" by clicking this button'
-        },
-        {
-            target: ".EXPItemsList",
-            content: "Your maps and graphs will be saved here."
-        },
-        {
-            target: ".exploration-edit-btn",
-            content: 'Select a map/graph and click "Edit" to edit the Map or Graph'
-        },
-        {
-            target: ".notes",
-            content: "Use this space to describe the idea or question you would like to explore.  Add any ideas and questions as you make new maps and graphs. Click the pencil to edit."
-        }
-    ];
-    const [run, setRun] = (0, _react.useState)(true);
-    const [titleIsEditable, setTitleIsEditable] = (0, _react.useState)(false);
-    const [descriptionIsEditable, setDescriptionIsEditable] = (0, _react.useState)(false);
-    /// LOAD DATA ///////////////////////////////////////////////////////////////
-    /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    const { selectedExploration, selectedVisual, explorations } = fs;
-    const exploration = explorations.find((e)=>e.id === selectedExploration) || {
-        name: "Untitled",
-        description: "",
-        modifed: new Date(),
-        privacy: "Private",
-        visuals: []
-    };
-    const visuals = exploration && exploration.visuals ? exploration.visuals : [];
-    // if there isn't a selectedVisual, select the first one
-    if (!selectedVisual && exploration.visuals.length > 0) setFs((draft)=>{
-        draft.selectedVisual = exploration.visuals[0].id;
-    });
-    const visual = visuals.find((v)=>v.id === selectedVisual) || {
-        title: "Untitled",
-        description: "",
-        image: null
-    };
-    /// UI HANDLERS /////////////////////////////////////////////////////////////
-    /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    function evt_SetPublic(event) {
-        alert("set privacy to public");
-    }
-    function evt_CopyLink(event) {
-        alert("Copy URL to clipboard");
-    }
-    function evt_Embed(event) {
-        alert("Show and copy Embed URL");
-    }
-    function evt_SaveAs(event) {
-        alert('Show "Save As..." dialog');
-    }
-    function setRoute(route) {
-        if (!fs.user.isLoggedIn) alert("Unsaved changes.  Please login to save changes, or click 'Save to Link' to save your changes? [Back to Exploration] [Close and discard changes]");
-        setFs((draft)=>{
-            draft.selectedExploration = null;
-            draft.selectedVisual = null;
-            draft.route = route;
-        });
-    }
-    function deselectExploration() {
-        if (!fs.user.isLoggedIn) alert("Unsaved changes.  Please login to save changes, or click 'Save to Link' to save your changes? [Back to Exploration] [Close and discard changes]");
-        setFs((draft)=>{
-            draft.selectedExploration = null;
-        });
-    }
-    function evt_ToggleTitleEdit(event) {
-        setTitleIsEditable(!titleIsEditable);
-    }
-    function evt_ToggleDescriptionEdit(event) {
-        setDescriptionIsEditable(!descriptionIsEditable);
-    }
-    function evt_OnTitleChange(event) {
-        setFs((draft)=>{
-            draft.explorations.find((e)=>e.id === draft.selectedExploration).name = event.target.value;
-        });
-    }
-    function evt_OnDescriptionChange(event) {
-        setFs((draft)=>{
-            draft.explorations.find((e)=>e.id === draft.selectedExploration).description = event.target.value;
-        });
-    }
-    function evt_TogglePublic(event) {
-        setFs((draft)=>{
-            const vis = draft.explorations.find((e)=>e.id === draft.selectedExploration).privacy = event.target.value === "0" ? "Private" : "Public";
-        });
-    }
-    function evt_ToggleFavorite(event) {
-        setFs((draft)=>{
-            const e = draft.explorations.find((e)=>e.id === draft.selectedExploration);
-            e.favorite = !e.favorite;
-        });
-    }
-    function evt_Login() {
-        setFs((draft)=>{
-            const user = draft.user;
-            user.isLoggedIn = true;
-            user.userName = "bentbloh@gmail.com";
-        });
-    }
-    function evt_DialogShow(event) {
-        if (!fs.user.isLoggedIn || !exploration.isOwner) setFs((draft)=>{
-            draft.showSaveToLinkDialog = true;
-        });
-    }
-    function evt_DialogHide(event) {
-        setFs((draft)=>{
-            draft.showSaveToLinkDialog = false;
-        });
-    }
-    /// COMPONENT RENDER ////////////////////////////////////////////////////////
-    /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    const NAVBAR = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "navbar",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                    className: "url",
-                    onClick: ()=>setRoute("home"),
-                    children: "Home"
-                }, void 0, false, {
-                    fileName: "src/Exploration.js",
-                    lineNumber: 143,
-                    columnNumber: 9
-                }, this),
-                " >",
-                " ",
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                    className: "url",
-                    onClick: deselectExploration,
-                    children: "Explorations"
-                }, void 0, false, {
-                    fileName: "src/Exploration.js",
-                    lineNumber: 144,
-                    columnNumber: 9
-                }, this),
-                " >",
-                " ",
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                    className: "current",
-                    children: [
-                        selectedExploration,
-                        ": ",
-                        exploration.name
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Exploration.js",
-                    lineNumber: 145,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/Exploration.js",
-            lineNumber: 142,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "src/Exploration.js",
-        lineNumber: 141,
-        columnNumber: 5
-    }, this);
-    const TITLE = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "title",
-        children: [
-            "EXPLORATION:",
-            " ",
-            titleIsEditable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        className: "title-text",
-                        type: "text",
-                        value: exploration.name,
-                        onChange: evt_OnTitleChange
-                    }, void 0, false, {
-                        fileName: "src/Exploration.js",
-                        lineNumber: 156,
-                        columnNumber: 13
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "transparent-light",
-                        onClick: evt_ToggleTitleEdit,
-                        children: "Save"
-                    }, void 0, false, {
-                        fileName: "src/Exploration.js",
-                        lineNumber: 157,
-                        columnNumber: 13
-                    }, this)
-                ]
-            }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "title-text",
-                        children: exploration.name
-                    }, void 0, false, {
-                        fileName: "src/Exploration.js",
-                        lineNumber: 162,
-                        columnNumber: 13
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: `transparent-light ${!fs.user.isLoggedIn || !exploration.isOwner ? "disabled" : ""}`,
-                        onClick: evt_ToggleTitleEdit,
-                        onMouseEnter: evt_DialogShow,
-                        onMouseLeave: evt_DialogHide,
-                        children: IcnPencil
-                    }, void 0, false, {
-                        fileName: "src/Exploration.js",
-                        lineNumber: 163,
-                        columnNumber: 13
-                    }, this)
-                ]
-            }, void 0, true),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    flexGrow: 1
-                }
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 168,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "tableOrMap",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        children: "Private"
-                    }, void 0, false, {
-                        fileName: "src/Exploration.js",
-                        lineNumber: 170,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        value: exploration.privacy === "Public" ? "1" : "0",
-                        onClick: evt_TogglePublic,
-                        readOnly: true,
-                        type: "range",
-                        min: "0",
-                        max: "1",
-                        step: "1"
-                    }, void 0, false, {
-                        fileName: "src/Exploration.js",
-                        lineNumber: 171,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        children: "Public"
-                    }, void 0, false, {
-                        fileName: "src/Exploration.js",
-                        lineNumber: 172,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Exploration.js",
-                lineNumber: 169,
-                columnNumber: 7
-            }, this),
-            " ",
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                className: "secondary",
-                onClick: evt_ToggleFavorite,
-                children: exploration.favorite ? "\uD83E\uDE77" : "\u2661"
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 175,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/Exploration.js",
-        lineNumber: 151,
-        columnNumber: 5
-    }, this);
-    const SIDEBAR = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "sidebar",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _expitemsListDefault.default), {
-                fs: fs,
-                setFs: setFs
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 183,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "notes",
-                children: descriptionIsEditable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                            children: [
-                                "YOUR IDEAS & QUESTIONS",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                    className: "transparent-light",
-                                    onClick: evt_ToggleDescriptionEdit,
-                                    children: "Save"
-                                }, void 0, false, {
-                                    fileName: "src/Exploration.js",
-                                    lineNumber: 188,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Exploration.js",
-                            lineNumber: 187,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                            value: exploration.description,
-                            placeholder: "You can use this space to describe the idea or question you would like to explore.  Add any ideas and questions as you make new maps and graphs",
-                            onChange: evt_OnDescriptionChange
-                        }, void 0, false, {
-                            fileName: "src/Exploration.js",
-                            lineNumber: 191,
-                            columnNumber: 13
-                        }, this)
-                    ]
-                }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                            children: [
-                                "YOUR IDEAS & QUESTIONS",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                    className: `transparent-light ${!fs.user.isLoggedIn || !exploration.isOwner ? "disabled" : ""}`,
-                                    onClick: evt_ToggleDescriptionEdit,
-                                    onMouseEnter: evt_DialogShow,
-                                    onMouseLeave: evt_DialogHide,
-                                    children: IcnPencil
-                                }, void 0, false, {
-                                    fileName: "src/Exploration.js",
-                                    lineNumber: 200,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Exploration.js",
-                            lineNumber: 199,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "description",
-                            children: exploration.description
-                        }, void 0, false, {
-                            fileName: "src/Exploration.js",
-                            lineNumber: 203,
-                            columnNumber: 13
-                        }, this)
-                    ]
-                }, void 0, true)
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 184,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/Exploration.js",
-        lineNumber: 182,
-        columnNumber: 5
-    }, this);
-    const VISUALIZATION = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "visualization",
-        children: selectedVisual ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "vis-list",
-            children: visuals.map((v)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _expviewDefault.default), {
-                    id: v.id,
-                    fs: fs,
-                    setFs: setFs
-                }, v.id, false, {
-                    fileName: "src/Exploration.js",
-                    lineNumber: 214,
-                    columnNumber: 29
-                }, this))
-        }, void 0, false, {
-            fileName: "src/Exploration.js",
-            lineNumber: 213,
-            columnNumber: 11
-        }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "help",
-            children: 'To start, click "NEW MAP/GRAPH" to create a new way of looking at the data in a display (e.g., graph, map).'
-        }, void 0, false, {
-            fileName: "src/Exploration.js",
-            lineNumber: 216,
-            columnNumber: 11
-        }, this)
-    }, void 0, false, {
-        fileName: "src/Exploration.js",
-        lineNumber: 211,
-        columnNumber: 5
-    }, this);
-    const FOOTER = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "footer",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                className: fs.user.isLoggedIn ? "primary" : "secondary",
-                onClick: evt_SaveAs,
-                children: "Edit a Copy"
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 225,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    flexGrow: 1
-                }
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 226,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                className: "transparent",
-                onClick: evt_Embed,
-                children: "Embed Exploration"
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 227,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    flexGrow: 1
-                }
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 228,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                className: fs.user.isLoggedIn ? "tertiary" : "primary",
-                onClick: evt_CopyLink,
-                children: fs.user.isLoggedIn ? "Copy Link" : "Save Exploration Link"
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 229,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/Exploration.js",
-        lineNumber: 223,
-        columnNumber: 5
-    }, this);
-    const DIALOG_LOGIN = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "dialog warning",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "Saving requires Login"
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 240,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "You can add and edit maps and graphs, but you will not be able to save your explorations until you log in."
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 241,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "Log in to edit and save changes to an exploration to your account."
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 242,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            href: "",
-                            children: "Register for free"
-                        }, void 0, false, {
-                            fileName: "src/Exploration.js",
-                            lineNumber: 243,
-                            columnNumber: 13
-                        }, this),
-                        " if you don't have an account."
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Exploration.js",
-                    lineNumber: 243,
-                    columnNumber: 10
-                }, this)
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 243,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                onClick: evt_Login,
-                children: "Login"
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 244,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/Exploration.js",
-        lineNumber: 239,
-        columnNumber: 5
-    }, this);
-    // You're logged in, but you're not the owner of this exploration. You can edit it, but you can't save it. You can save a copy of it, though.
-    const DIALOG_COPY = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "dialog",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: '"Edit a Copy" to Make Changes'
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 251,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "You are viewing an exploration that is not owned by you."
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 252,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: 'Click "Edit a Copy" to duplicate this exploration and make and save changes to it.'
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 253,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                className: "primary",
-                onClick: evt_Login,
-                children: "Edit a Copy"
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 255,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/Exploration.js",
-        lineNumber: 250,
-        columnNumber: 5
-    }, this);
-    console.log("render logged in", fs.user.isLoggedIn, "isOwner", exploration.isOwner);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: `Exploration ${fs.user.isLoggedIn && exploration.isOwner ? "isOwner" : ""}`,
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactJoyrideDefault.default), {
-                run: run,
-                steps: STEPS,
-                continuous: true,
-                scrollToFirstStep: true,
-                showProgress: true,
-                showSkipButton: true,
-                styles: {
-                    options: {
-                        zIndex: 10000
-                    }
-                }
-            }, void 0, false, {
-                fileName: "src/Exploration.js",
-                lineNumber: 262,
-                columnNumber: 7
-            }, this),
-            NAVBAR,
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "border",
-                children: [
-                    TITLE,
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "content",
-                        children: [
-                            SIDEBAR,
-                            VISUALIZATION
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Exploration.js",
-                        lineNumber: 275,
-                        columnNumber: 9
-                    }, this),
-                    FOOTER
-                ]
-            }, void 0, true, {
-                fileName: "src/Exploration.js",
-                lineNumber: 273,
-                columnNumber: 7
-            }, this),
-            fs.showSaveToLinkDialog && !fs.user.isLoggedIn && !exploration.isOwner && DIALOG_LOGIN,
-            fs.showSaveToLinkDialog && fs.user.isLoggedIn && !exploration.isOwner && DIALOG_COPY
-        ]
-    }, void 0, true, {
-        fileName: "src/Exploration.js",
-        lineNumber: 261,
-        columnNumber: 5
-    }, this);
-}
-_s(Exploration, "y3cyEg/+hDfjTtD8FrvIEwqjR3g=");
-_c = Exploration;
-var _c;
-$RefreshReg$(_c, "Exploration");
-
-  $parcel$ReactRefreshHelpers$a575.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-joyride":"cxpxM","./Exploration.css":"99opG","./NotLoggedIn":"5ocTP","./EXPItemsList":"lXWbC","./EXPView":"fqACg","process":"d5jf4","@fortawesome/react-fontawesome":"clIT3","@fortawesome/free-solid-svg-icons":"5lkdy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"99opG":[function() {},{}],"5ocTP":[function(require,module,exports) {
+},{}],"99opG":[function() {},{}],"5ocTP":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$51aa = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
