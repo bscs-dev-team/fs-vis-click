@@ -46,6 +46,16 @@ export default function Explorations({ fs, setFs }) {
     });
   }
 
+  function evt_ToggleFavorite(event, id) {
+    event.preventDefault();
+    event.stopPropagation();
+    setFs(draft => {
+      const e = draft.explorations.find(e => e.id === id)
+      e.favorite = !e.favorite;
+    });
+  }
+
+
   /// COMPONENT RENDER ////////////////////////////////////////////////////////
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -78,7 +88,7 @@ export default function Explorations({ fs, setFs }) {
       <tbody>
         {EXPLORATIONS_DATA.map((exploration, i) => (
           <tr key={i} onClick={() => evt_SelectExploration(exploration.id)}>
-            <td>{exploration.favorite ? '🩷' : ''}</td>
+            <td><button className="transparent" onClick={e => evt_ToggleFavorite(e, exploration.id)}>{exploration.favorite ? '🩷' : "♡"}</button></td>
             <td>{exploration.isOwner ? 'Me' : '-'}</td>
             <td>
               <img src={exploration.image} />&nbsp;
