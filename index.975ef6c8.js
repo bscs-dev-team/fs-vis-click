@@ -27811,12 +27811,13 @@ function App() {
                 lineNumber: 395,
                 columnNumber: 7
             }, this),
+            "help Tour",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginDefault.default), {
                 fs: fs,
                 setFs: setFs
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 406,
+                lineNumber: 408,
                 columnNumber: 7
             }, this)
         ]
@@ -27830,7 +27831,7 @@ function App() {
             NAVBAR,
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 412,
+                lineNumber: 414,
                 columnNumber: 5
             }, this)
         ]
@@ -27842,14 +27843,14 @@ function App() {
                 children: "Data"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 416,
+                lineNumber: 418,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 children: "+ Add Data"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 417,
+                lineNumber: 419,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27863,27 +27864,27 @@ function App() {
                         children: "My Observations"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 419,
+                        lineNumber: 421,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: "Recent Observations"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 420,
+                        lineNumber: 422,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: "All Observations"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 421,
+                        lineNumber: 423,
                         columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/App.js",
-                lineNumber: 418,
+                lineNumber: 420,
                 columnNumber: 5
             }, this)
         ]
@@ -27896,7 +27897,7 @@ function App() {
                 setFs: setFs
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 426,
+                lineNumber: 428,
                 columnNumber: 5
             }, this)
         ]
@@ -27912,12 +27913,12 @@ function App() {
             children: VIEW
         }, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 437,
+            lineNumber: 439,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 436,
+        lineNumber: 438,
         columnNumber: 5
     }, this);
 }
