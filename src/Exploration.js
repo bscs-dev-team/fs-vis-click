@@ -166,6 +166,11 @@ export default function Exploration({ fs, setFs }) {
         )
       }
       <div style={{ flexGrow: 1 }}></div>
+      {exploration.isOwner
+        ? 'EDITABLE'
+        : 'VIEW-ONLY'
+      }
+      <div style={{ flexGrow: 1 }}></div>
       <div className="tableOrMap">
         <label>Private</label>
         <input value={exploration.privacy === 'Public' ? "1" : "0"} onClick={evt_TogglePublic} readOnly type="range" min="0" max="1" step="1" />

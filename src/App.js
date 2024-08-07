@@ -205,8 +205,8 @@ export function App() {
           onClick={() => evt_SetRoute('explorations')}>Explorations</button>
       </div>
       <div className="navbar">
-        <a href="https://fieldscope.zendesk.com/hc/en-us">Knowledge Base</a>&nbsp;&nbsp;
-        <a href="">Quick Tour</a>&nbsp;&nbsp;
+        <button className="transparent">Knowledge Base</button>
+        <button className="transparent">Quick Tour</button>
       <Login fs={fs} setFs={setFs} />
     </div>
     </div>

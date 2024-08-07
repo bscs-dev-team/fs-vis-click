@@ -131,7 +131,7 @@ export default function EXPView({ id, fs, setFs }) {
     <div className="layers" key={i}>
       <h4>{layer.title}</h4>
       {layer.layers.map((l, j) => (
-        <label><input type="checkbox" key={j} checked={j === 1} />{l}</label>
+        <label><input type="checkbox" key={j} defaultChecked={j === 1} />{l}</label>
       ))}
     </div>
   ));
