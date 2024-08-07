@@ -128,13 +128,11 @@ export default function EXPView({ id, fs, setFs }) {
     }
   ]
   const LAYERS = LAYERSDATA.map((layer, i) => (
-    <div key={i}>
+    <div className="layers" key={i}>
       <h4>{layer.title}</h4>
-      <ul>
-        {layer.layers.map((l, j) => (
-          <li key={j}>{l}</li>
-        ))}
-      </ul>
+      {layer.layers.map((l, j) => (
+        <label><input type="checkbox" key={j} checked={j === 1} />{l}</label>
+      ))}
     </div>
   ));
 
@@ -158,8 +156,8 @@ export default function EXPView({ id, fs, setFs }) {
       <div className="sidebar">
         {visual.type === 'map'
           ? (<>
-            <h3>{LAYERS}</h3>
             <h3>{LEGEND}</h3>
+            <h3>{LAYERS}</h3>
           </>)
           : ''}
       </div>
