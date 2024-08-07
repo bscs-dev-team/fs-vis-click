@@ -149,7 +149,7 @@ export default function Exploration({ fs, setFs }) {
 
   const TITLE = (
     <div className="title">
-      EXPLORATION:{' '}
+      EXPLORATION:&nbsp;
       {titleIsEditable
         ? (
           <>
