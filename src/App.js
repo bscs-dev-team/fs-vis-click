@@ -204,7 +204,11 @@ export function App() {
           className={fs.route === 'explorations' ? 'outline' : 'transparent'}
           onClick={() => evt_SetRoute('explorations')}>Explorations</button>
       </div>
+      <div className="navbar">
+        <a href="https://fieldscope.zendesk.com/hc/en-us">Knowledge Base</a>&nbsp;&nbsp;
+        <a href="">Quick Tour</a>&nbsp;&nbsp;
       <Login fs={fs} setFs={setFs} />
+    </div>
     </div>
   );
 
