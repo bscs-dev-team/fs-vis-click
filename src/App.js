@@ -39,7 +39,9 @@ const initialFSState = {
   editingVisual: null,
   editingFilter: null,
   editWithoutSaving: null, // Allow non-logged in user to edit visualizations
-  showSaveToLinkDialog: true,
+  showEditModeDialog: true,
+  showTour: false,
+  tourStep: 0,
   explorations: [
     {
       id: 1,
@@ -187,6 +189,13 @@ export function App() {
     });
   }
 
+  function evt_StartTour() {
+    setFs(draft => {
+      draft.showTour = true;
+      draft.tourStep = 0;
+    });
+  }
+
   /// COMPONENT RENDER ////////////////////////////////////////////////////////
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -206,7 +215,7 @@ export function App() {
       </div>
       <div className="navbar">
         <button className="transparent">Help</button>
-        <button className="transparent">Quick Tour</button>
+        {fs.selectedExploration && <button className="transparent" onClick={evt_StartTour}>Quick Tour</button>}
       <Login fs={fs} setFs={setFs} />
     </div>
     </div>
