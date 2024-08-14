@@ -3,6 +3,11 @@ import './EXPItemsList.css';
 import EXPEdit from './EXPEdit';
 import map_gray from './img/map_gray.png';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
+const IcnTrash = <FontAwesomeIcon icon={faTrashCan} />;
+
+
 export default function EXPItemsList({ fs, setFs }) {
 
 
@@ -108,6 +113,9 @@ export default function EXPItemsList({ fs, setFs }) {
           onClick={evt_EditVisual}
           onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>EDIT</button>
         <button className={`exploration-new-btn primary ${!fs.user.isLoggedIn || !exploration.isOwner ? 'disabled' : ''}`}
+        <button
+          className={`exploration-edit-btn ${!exploration.isOwner ? 'disabled' : ''}`}
+          onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>{IcnTrash}</button>
           onClick={evt_NewVisual}
           onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>NEW MAP/GRAPH</button>
       </div>
