@@ -26,7 +26,8 @@ export default function Explorations({ fs, setFs }) {
         visuals: [],
         filters: [...fs.defaultFilters],
         favorite: false,
-        isOwner: fs.user.isLoggedIn
+        isOwner: true, // you own anything you create even if you're not yet logged in
+        notSaved: !fs.user.isLoggedIn
       });
       draft.selectedExploration = NEXTINDEX;
       draft.editWithoutSaving = null;

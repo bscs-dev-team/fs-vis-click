@@ -146,6 +146,11 @@
   text-align: center;
 }
 
+.Exploration .controlbar {
+  display: flex;
+  justify-content: space-between;
+}
+
 .Exploration .footer {
   display: flex;
   justify-content: space-between;

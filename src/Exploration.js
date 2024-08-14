@@ -4,7 +4,6 @@ import './Exploration.css';
 import NotLoggedIn from "./NotLoggedIn";
 import EXPItemsList from './EXPItemsList';
 import EXPView from './EXPView';
-import { title } from 'process';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencil } from '@fortawesome/free-solid-svg-icons';
@@ -177,8 +176,8 @@ export default function Exploration({ fs, setFs }) {
         <label>Public</label>
       </div>
       {' '}
-      <button className="secondary" onClick={evt_ToggleFavorite}>
-        {exploration.favorite ? "🩷" : "♡"}
+      <button className={`secondary ${!fs.user.isLoggedIn ? 'disabled' : ''}`} onClick={evt_ToggleFavorite}>
+        {fs.user.isLoggedIn && exploration.favorite ? "🩷" : "♡"}
       </button>
     </div>
   );
