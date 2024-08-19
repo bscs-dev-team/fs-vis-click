@@ -57,6 +57,10 @@ button {
   line-height: 25px;
 }
 
+button:disabled {
+  color: #fff8 !important;
+}
+
 button:hover, button.outline:hover, button.outline-reverse:hover, button.transparent:hover, button.transparent-light:hover {
   background-color: #0003;
 }
@@ -310,6 +314,10 @@ button.disabled {
 }
 
 .Exploration .tableOrMap label {
+  color: var(--clr-txt);
+}
+
+.Exploration .title .tableOrMap label {
   color: #fff;
 }
 
@@ -377,6 +385,11 @@ button.disabled {
 .Exploration .visualization .help {
   text-align: center;
   width: 100%;
+}
+
+.Exploration .controlbar {
+  justify-content: space-between;
+  display: flex;
 }
 
 .Exploration .footer {
@@ -709,5 +722,9 @@ button.disabled {
   justify-content: space-between;
   width: 100%;
   display: flex;
+}
+
+.EXPView .layers label {
+  display: block;
 }
 /*# sourceMappingURL=index.2212206d.css.map */
