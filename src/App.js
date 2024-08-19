@@ -216,8 +216,8 @@ export function App() {
       <div className="navbar">
         <button className="transparent">Help</button>
         {fs.selectedExploration && <button className="transparent" onClick={evt_StartTour}>Quick Tour</button>}
-      <Login fs={fs} setFs={setFs} />
-    </div>
+        <Login fs={fs} setFs={setFs} />
+      </div>
     </div>
   );
 

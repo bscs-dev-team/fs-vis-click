@@ -31,12 +31,28 @@ export default function Exploration({ fs, setFs }) {
     {
       target: '.notes',
       content: 'Use this space to describe the idea or question you would like to explore.  Add any ideas and questions as you make new maps and graphs. Click the pencil to edit.'
+    },
+    {
+      target: '.lognsave',
+      content: 'Log in to save your work!'
     }
   ]
-  const [run, setRun] = useState(true);
-
   const [titleIsEditable, setTitleIsEditable] = useState(false);
   const [descriptionIsEditable, setDescriptionIsEditable] = useState(false);
+  const [copiedDialogIsOpen, setCopiedDialogIsOpen] = useState(false);
+  const [needsSaving, setNeedsSaving] = useState(false);
+
+
+  useEffect(() => {
+    console.log('user logged in, save changes')
+    setFs(draft => {
+      const exp = draft.explorations.find(e => e.id === draft.selectedExploration);
+      // if the exploration was not previously saved and the user JUST logged in, mark it as saved
+      if (exp.notSaved && draft.user.isLoggedIn) { exp.notSaved = false; }
+    });
+
+  }, [fs.user.isLoggedIn]);
+
 
   /// LOAD DATA ///////////////////////////////////////////////////////////////
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -55,17 +71,62 @@ export default function Exploration({ fs, setFs }) {
     title: 'Untitled', description: '', image: null
   };
 
+  /// METHODS /////////////////////////////////////////////////////////////////
+  /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  const MODE = {
+    VIEW: 'view',
+    EDIT: 'edit',
+    EDIT_COPY: 'edit-copy'
+  };
+  function getViewMode() {
+    // console.log('isOwner:', exploration.isOwner, 'notSaved:', exploration.notSaved, 'isLoggedIn:', fs.user.isLoggedIn)
+    if (exploration.notSaved) {
+      // console.log('ViewMode', MODE.EDIT_COPY)
+      return MODE.EDIT_COPY;
+    } else if (fs.user.isLoggedIn && exploration.isOwner) {
+      // console.log('ViewMode', MODE.EDIT)
+      return MODE.EDIT;
+    } else { // !exploration.isOwner
+      // console.log('ViewMode', MODE.VIEW)
+      return MODE.VIEW;
+    }
+  }
+
   /// UI HANDLERS /////////////////////////////////////////////////////////////
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  function evt_SetPublic(event) { alert('set privacy to public') }
   function evt_CopyLink(event) { alert('Copy URL to clipboard') }
   function evt_Embed(event) { alert('Show and copy Embed URL') }
-  function evt_SaveAs(event) { alert('Show "Save As..." dialog') }
+  function evt_Download(event) { alert('Download file to disk') }
+  function evt_EditACopy(event) {
+    console.error('Edit a Copy')
+    const NEXTINDEX = fs.explorations.length + 2;
+    setFs(draft => {
+      draft.explorations.push({
+        id: NEXTINDEX,
+        name: 'COPY of ' + exploration.name,
+        description: exploration.description,
+        modified: new Date(),
+        privacy: exploration.privacy,
+        visuals: [...exploration.visuals],
+        filters: [...exploration.filters],
+        favorite: false,
+        isOwner: true,
+        notSaved: !fs.user.isLoggedIn
+      });
+      draft.selectedExploration = NEXTINDEX;
+      draft.editWithoutSaving = null;
+      draft.showTour = true;
+      draft.tourStep = 5;
+    });
+    setCopiedDialogIsOpen(true);
+  }
 
   function setRoute(route) {
-    if (!fs.user.isLoggedIn) alert("Unsaved changes.  Please login to save changes, or click 'Save to Link' to save your changes? [Back to Exploration] [Close and discard changes]");
-    setFs(draft => {
+    //if (!fs.user.isLoggedIn) alert("Unsaved changes.  Please login to save changes, or click 'Save to Link' to save your changes? [Back to Exploration] [Close and discard changes]");
+    if (!fs.user.isLoggedIn) setNeedsSaving(true);
+    else setFs(draft => {
       draft.selectedExploration = null;
       draft.selectedVisual = null;
       draft.route = route;
@@ -73,8 +134,9 @@ export default function Exploration({ fs, setFs }) {
   }
 
   function deselectExploration() {
-    if (!fs.user.isLoggedIn) alert("Unsaved changes.  Please login to save changes, or click 'Save to Link' to save your changes? [Back to Exploration] [Close and discard changes]");
-    setFs(draft => {
+    //if (!fs.user.isLoggedIn) alert("Unsaved changes.  Please login to save changes, or click 'Save to Link' to save your changes? [Back to Exploration] [Close and discard changes]");
+    if (!fs.user.isLoggedIn) setNeedsSaving(true);
+    else setFs(draft => {
       draft.selectedExploration = null;
     });
   }
@@ -119,16 +181,39 @@ export default function Exploration({ fs, setFs }) {
       user.userName = 'bentbloh@gmail.com';
     });
   };
+  function evt_LoginNSave() {
+    setFs(draft => {
+      const user = draft.user;
+      user.isLoggedIn = true;
+      user.userName = 'bentbloh@gmail.com';
+      const e = draft.explorations.find(e => e.id === draft.selectedExploration)
+      e.notSaved = false;
+    });
+  }
 
   function evt_DialogShow(event) {
-    if (!fs.user.isLoggedIn || !exploration.isOwner)
-      setFs(draft => {
-        draft.showSaveToLinkDialog = true;
-      })
+    setFs(draft => {
+      draft.showEditModeDialog = true;
+    })
   }
   function evt_DialogHide(event) {
     setFs(draft => {
-      draft.showSaveToLinkDialog = false;
+      draft.showEditModeDialog = false;
+    })
+  }
+
+  function evt_ClearCopiedDialog(event) {
+    setCopiedDialogIsOpen(false);
+  }
+
+  function evt_JoybackCallback(data) {
+    console.log('Joyback', data)
+    setFs(draft => {
+      if (data.action === 'next') {
+        console.log('enext step', data.index + 1)
+        draft.showTour = true;
+        draft.tourStep = data.index + 1;
+      }
     })
   }
 
@@ -226,37 +311,86 @@ export default function Exploration({ fs, setFs }) {
   const FOOTER = (
     <div className="footer">
       {/* <button className="secondary" onClick={deselectExploration}>Back to Explorations</button> */}
-      <button className={fs.user.isLoggedIn ? "primary" : "secondary"} onClick={evt_SaveAs}>Edit a Copy</button>
+      <button className={`${getViewMode() === MODE.EDIT_COPY
+        ? 'transparent-light disabled'
+        : getViewMode() === MODE.VIEW ? "primary" : "transparent"}`} onClick={evt_EditACopy}>Edit a Copy</button>
       <div style={{ flexGrow: 1 }}></div>
-      <button className="transparent" onClick={evt_Embed}>Embed Exploration</button>
+      <button
+        className={`transparent-light ${getViewMode() === MODE.EDIT_COPY ? 'disabled' : ''}`}
+        onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}
+        onClick={evt_Embed}>Embed Exploration</button>
+      <button
+        className={`transparent-light ${getViewMode() === MODE.EDIT_COPY ? 'disabled' : ''}`}
+        onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}
+        onClick={evt_CopyLink}>Copy Link</button>
       <div style={{ flexGrow: 1 }}></div>
-      <button className={fs.user.isLoggedIn ? "tertiary" : "primary"} onClick={evt_CopyLink}>
-        {fs.user.isLoggedIn
-          ? "Copy Link"
-          : "Save Exploration Link"
-        }
-      </button>
+      <button
+        className={`transparent-light ${getViewMode() === MODE.EDIT_COPY ? 'disabled' : ''}`}
+        onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}
+        onClick={evt_Download}>Download Exploration</button>
+      <div style={{ flexGrow: 1 }}></div>
+      {getViewMode() === MODE.EDIT_COPY && <button className="lognsave primary" onClick={evt_LoginNSave}>Login and Save</button>}
     </div>
   );
 
+
+  // Call to Action: Copy Link
+  // View mode: Edit-Only
+  // NOT isLoggedIn
+  // NOT isOwner
+  // 
   const DIALOG_LOGIN = (
     <div className="dialog warning">
       <h2>Saving requires Login</h2>
-      <p>You can add and edit maps and graphs, but you will not be able to save your explorations until you log in.</p>
-      <p>Log in to edit and save changes to an exploration to your account.</p>
-      <p><i><a href="">Register for free</a> if you don't have an account.</i></p>
-      <button onClick={evt_Login}>Login</button>
+      <p>You can add and edit maps and graphs, but you will not be able to save your
+        explorations until you log in.</p>
+      <p>1. To save your work without logging in,
+        "Close" the window and use the "Copy Link" button.  You can then paste
+        that link to your own document and re-open this saved exploration at an time without
+        having to log in.</p>
+      <p>--or--</p>
+      <p>2. Log in to edit and save changes to an exploration to your account. Once you're logged in, your changes are saved automatically.<i><a href="">Register for free</a> if you don't have an account.</i></p>
+      <div className="controlbar">
+        <button onClick={evt_Login}>Login</button>
+        <button onClick={evt_DialogHide}>Close</button>
+      </div>
     </div>
   )
 
-  // You're logged in, but you're not the owner of this exploration. You can edit it, but you can't save it. You can save a copy of it, though.
-  const DIALOG_COPY = (
+  // Call to Action: Edit a Copy
+  // View mode: View-Only
+  // NOT isOwner
+  // You're logged in, but you're not the owner of this exploration. You can edit it, but you can't save it. 
+  // You can save a copy of it, though.
+  const DIALOG_EDITCOPY = (
     <div className="dialog">
       <h2>"Edit a Copy" to Make Changes</h2>
       <p>You are viewing an exploration that is not owned by you.</p>
-      <p>Click "Edit a Copy" to duplicate this exploration and make and save changes to it.</p>
+      <p>If you would like to make and save changes, click "Edit a Copy" to duplicate and make changes to your own exploration.</p>
+      <button className="primary" onClick={evt_DialogHide}>Close</button>
+    </div>
+  )
 
-      <button className="primary" onClick={evt_Login}>Edit a Copy</button>
+  // Dialog shown right after you've copied an exploration
+  const DIALOG_COPIED = (
+    <div className="dialog">
+      <h2>COPIED</h2>
+      <p>Your exploration has been copied.</p>
+      <p>To save your work, please log in.</p>
+      <button className="primary" onClick={evt_ClearCopiedDialog}>OK</button>
+    </div>
+  )
+
+  // Dialog shown right after you've copied an exploration
+  const DIALOG_BEFOREUNLOAD = (
+    <div className="dialog">
+      <h2>Save Changes?</h2>
+      <p>You've made changes to your exploration.</p>
+      <p>To save your work, please log in.</p>
+      <div className="controlbar">
+        <button onClick={evt_Login}>Login</button>
+        <button onClick={evt_DialogHide}>Close without Saving</button>
+      </div>
     </div>
   )
 
@@ -264,8 +398,10 @@ export default function Exploration({ fs, setFs }) {
   return (
     <div className={`Exploration ${fs.user.isLoggedIn && exploration.isOwner ? 'isOwner' : ''}`}>
       <Joyride
-        run={run}
+        run={fs.showTour}
+        stepIndex={fs.tourStep}
         steps={STEPS}
+        callback={evt_JoybackCallback}
         continuous
         scrollToFirstStep
         showProgress
@@ -282,8 +418,10 @@ export default function Exploration({ fs, setFs }) {
         </div>
         {FOOTER}
       </div>
-      {fs.showSaveToLinkDialog && !fs.user.isLoggedIn && !exploration.isOwner && DIALOG_LOGIN}
-      {fs.showSaveToLinkDialog && fs.user.isLoggedIn && !exploration.isOwner && DIALOG_COPY}
+      {fs.showEditModeDialog && getViewMode() === MODE.EDIT_COPY && DIALOG_LOGIN}
+      {fs.showEditModeDialog && getViewMode() === MODE.VIEW && DIALOG_EDITCOPY}
+      {copiedDialogIsOpen && DIALOG_COPIED}
+      {needsSaving && DIALOG_BEFOREUNLOAD}
     </div>
   )
 }
