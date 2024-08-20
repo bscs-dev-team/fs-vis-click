@@ -325,8 +325,7 @@ export default function Exploration({ fs, setFs }) {
         onClick={evt_CopyLink}>Copy Link</button>
       <div style={{ flexGrow: 1 }}></div>
       <button
-        className={`transparent-light ${getViewMode() === MODE.EDIT_COPY ? 'disabled' : ''}`}
-        onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}
+        className={`transparent-light`}
         onClick={evt_Download}>Download Exploration</button>
       <div style={{ flexGrow: 1 }}></div>
       {getViewMode() === MODE.EDIT_COPY && <button className="lognsave primary" onClick={evt_LoginNSave}>Login and Save</button>}
