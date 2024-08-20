@@ -30303,9 +30303,7 @@ function Exploration({ fs, setFs }) {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                className: `transparent-light ${getViewMode() === MODE.EDIT_COPY ? "disabled" : ""}`,
-                onMouseEnter: evt_DialogShow,
-                onMouseLeave: evt_DialogHide,
+                className: `transparent-light`,
                 onClick: evt_Download,
                 children: "Download Exploration"
             }, void 0, false, {
@@ -30319,7 +30317,7 @@ function Exploration({ fs, setFs }) {
                 }
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 331,
+                lineNumber: 330,
                 columnNumber: 7
             }, this),
             getViewMode() === MODE.EDIT_COPY && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -30328,7 +30326,7 @@ function Exploration({ fs, setFs }) {
                 children: "Login and Save"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 332,
+                lineNumber: 331,
                 columnNumber: 44
             }, this)
         ]
@@ -30349,28 +30347,28 @@ function Exploration({ fs, setFs }) {
                 children: "Saving requires Login"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 344,
+                lineNumber: 343,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "You can add and edit maps and graphs, but you will not be able to save your explorations until you log in."
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 345,
+                lineNumber: 344,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: '1. To save your work without logging in, "Close" the window and use the "Copy Link" button.  You can then paste that link to your own document and re-open this saved exploration at an time without having to log in.'
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 347,
+                lineNumber: 346,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "--or--"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 351,
+                lineNumber: 350,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -30383,20 +30381,20 @@ function Exploration({ fs, setFs }) {
                                 children: "Register for free"
                             }, void 0, false, {
                                 fileName: "src/Exploration.js",
-                                lineNumber: 352,
+                                lineNumber: 351,
                                 columnNumber: 143
                             }, this),
                             " if you don't have an account."
                         ]
                     }, void 0, true, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 352,
+                        lineNumber: 351,
                         columnNumber: 140
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Exploration.js",
-                lineNumber: 352,
+                lineNumber: 351,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30407,7 +30405,7 @@ function Exploration({ fs, setFs }) {
                         children: "Login"
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 354,
+                        lineNumber: 353,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -30415,19 +30413,19 @@ function Exploration({ fs, setFs }) {
                         children: "Close"
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 355,
+                        lineNumber: 354,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Exploration.js",
-                lineNumber: 353,
+                lineNumber: 352,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 343,
+        lineNumber: 342,
         columnNumber: 5
     }, this);
     // Call to Action: Edit a Copy
@@ -30442,21 +30440,21 @@ function Exploration({ fs, setFs }) {
                 children: '"Edit a Copy" to Make Changes'
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 367,
+                lineNumber: 366,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "You are viewing an exploration that is not owned by you."
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 368,
+                lineNumber: 367,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: 'If you would like to make and save changes, click "Edit a Copy" to duplicate and make changes to your own exploration.'
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 369,
+                lineNumber: 368,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -30465,13 +30463,13 @@ function Exploration({ fs, setFs }) {
                 children: "Close"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 370,
+                lineNumber: 369,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 366,
+        lineNumber: 365,
         columnNumber: 5
     }, this);
     // Dialog shown right after you've copied an exploration
@@ -30482,21 +30480,21 @@ function Exploration({ fs, setFs }) {
                 children: "COPIED"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 377,
+                lineNumber: 376,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Your exploration has been copied."
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 378,
+                lineNumber: 377,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "To save your work, please log in."
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 379,
+                lineNumber: 378,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -30505,13 +30503,13 @@ function Exploration({ fs, setFs }) {
                 children: "OK"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 380,
+                lineNumber: 379,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 376,
+        lineNumber: 375,
         columnNumber: 5
     }, this);
     // Dialog shown right after you've copied an exploration
@@ -30522,21 +30520,21 @@ function Exploration({ fs, setFs }) {
                 children: "Save Changes?"
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 387,
+                lineNumber: 386,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "You've made changes to your exploration."
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 388,
+                lineNumber: 387,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "To save your work, please log in."
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 389,
+                lineNumber: 388,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30547,7 +30545,7 @@ function Exploration({ fs, setFs }) {
                         children: "Login"
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 391,
+                        lineNumber: 390,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -30555,19 +30553,19 @@ function Exploration({ fs, setFs }) {
                         children: "Close without Saving"
                     }, void 0, false, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 392,
+                        lineNumber: 391,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Exploration.js",
-                lineNumber: 390,
+                lineNumber: 389,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 386,
+        lineNumber: 385,
         columnNumber: 5
     }, this);
     console.log("render logged in", fs.user.isLoggedIn, "isOwner", exploration.isOwner);
@@ -30590,7 +30588,7 @@ function Exploration({ fs, setFs }) {
                 }
             }, void 0, false, {
                 fileName: "src/Exploration.js",
-                lineNumber: 400,
+                lineNumber: 399,
                 columnNumber: 7
             }, this),
             NAVBAR,
@@ -30606,14 +30604,14 @@ function Exploration({ fs, setFs }) {
                         ]
                     }, void 0, true, {
                         fileName: "src/Exploration.js",
-                        lineNumber: 415,
+                        lineNumber: 414,
                         columnNumber: 9
                     }, this),
                     FOOTER
                 ]
             }, void 0, true, {
                 fileName: "src/Exploration.js",
-                lineNumber: 413,
+                lineNumber: 412,
                 columnNumber: 7
             }, this),
             fs.showEditModeDialog && getViewMode() === MODE.EDIT_COPY && DIALOG_LOGIN,
@@ -30623,7 +30621,7 @@ function Exploration({ fs, setFs }) {
         ]
     }, void 0, true, {
         fileName: "src/Exploration.js",
-        lineNumber: 399,
+        lineNumber: 398,
         columnNumber: 5
     }, this);
 }
@@ -38245,7 +38243,7 @@ $RefreshReg$(_c, "EXPItemsList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./EXPItemsList.css":"2ij2V","./EXPEdit":"6xcRD","./img/map_gray.png":"i56RY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@fortawesome/react-fontawesome":"clIT3","@fortawesome/free-solid-svg-icons":"5lkdy"}],"2ij2V":[function() {},{}],"6xcRD":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./EXPItemsList.css":"2ij2V","./EXPEdit":"6xcRD","./img/map_gray.png":"i56RY","@fortawesome/react-fontawesome":"clIT3","@fortawesome/free-solid-svg-icons":"5lkdy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2ij2V":[function() {},{}],"6xcRD":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$e7ee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
