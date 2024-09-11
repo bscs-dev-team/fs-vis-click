@@ -41,6 +41,7 @@ export default function Exploration({ fs, setFs }) {
   const [descriptionIsEditable, setDescriptionIsEditable] = useState(false);
   const [copiedDialogIsOpen, setCopiedDialogIsOpen] = useState(false);
   const [needsSaving, setNeedsSaving] = useState(false);
+  const [hintText, setHintText] = useState('');
 
 
   useEffect(() => {
@@ -191,6 +192,18 @@ export default function Exploration({ fs, setFs }) {
     });
   }
 
+  function evt_LoginHintShow(text) {
+    setHintText(text);
+    setFs(draft => {
+      draft.showLoginHint = true;
+    })
+  }
+  function evt_LoginHintHide(event) {
+    setFs(draft => {
+      draft.showLoginHint = false;
+    })
+  }
+
   function evt_DialogShow(event) {
     setFs(draft => {
       draft.showEditModeDialog = true;
@@ -231,6 +244,7 @@ export default function Exploration({ fs, setFs }) {
     </div>
   );
 
+  /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   const TITLE = (
     <div className="title">
       EXPLORATION:&nbsp;
@@ -244,8 +258,13 @@ export default function Exploration({ fs, setFs }) {
         : (
           <>
             <span className="title-text" >{exploration.name}</span>
-            <button className={`transparent-light ${!fs.user.isLoggedIn || !exploration.isOwner ? 'disabled' : ''}`} onClick={evt_ToggleTitleEdit}
-              onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>{IcnPencil}</button>
+            <button className={`transparent-light ${!exploration.isOwner ? 'disabled' : ''}`}
+              onMouseEnter={() => {
+                if (!exploration.isOwner) evt_LoginHintShow('You do not own this exploration, so you cannot edit its title.')
+              }}
+              onMouseLeave={evt_LoginHintHide}
+              onClick={evt_ToggleTitleEdit}
+            >{IcnPencil}</button>
           </>
         )
       }
@@ -267,6 +286,7 @@ export default function Exploration({ fs, setFs }) {
     </div>
   );
 
+  /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   const SIDEBAR = (
     <div className="sidebar">
       <EXPItemsList fs={fs} setFs={setFs} />
@@ -286,8 +306,13 @@ export default function Exploration({ fs, setFs }) {
           </>
           : <>
             <h4>YOUR IDEAS & QUESTIONS
-              <button className={`transparent-light ${!fs.user.isLoggedIn || !exploration.isOwner ? 'disabled' : ''}`} onClick={evt_ToggleDescriptionEdit}
-                onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>{IcnPencil}</button>
+              <button className={`transparent-light ${!exploration.isOwner ? 'disabled' : ''}`}
+                onClick={evt_ToggleDescriptionEdit}
+                onMouseEnter={() => {
+                  if (!exploration.isOwner) evt_LoginHintShow('You do not own this exploration, so you cannot edit its description.')
+                }}
+                onMouseLeave={evt_LoginHintHide}
+              >{IcnPencil}</button>
             </h4>
             <div className="description">{exploration.description}</div>
           </>
@@ -296,6 +321,7 @@ export default function Exploration({ fs, setFs }) {
     </div>
   );
 
+  /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   const VISUALIZATION = (
     <div className="visualization">
       {selectedVisual
@@ -308,20 +334,32 @@ export default function Exploration({ fs, setFs }) {
     </div>
   );
 
+  /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   const FOOTER = (
     <div className="footer">
       {/* <button className="secondary" onClick={deselectExploration}>Back to Explorations</button> */}
       <button className={`${getViewMode() === MODE.EDIT_COPY
         ? 'transparent-light disabled'
-        : getViewMode() === MODE.VIEW ? "primary" : "transparent"}`} onClick={evt_EditACopy}>Edit a Copy</button>
+        : getViewMode() === MODE.VIEW ? "primary" : "transparent"}`}
+        onMouseEnter={() => {
+          if (getViewMode() === MODE.EDIT_COPY) evt_LoginHintShow('Unsaved exploration.  Nothing to copy.')
+        }}
+        onMouseLeave={evt_LoginHintHide}
+        onClick={evt_EditACopy}>Edit a Copy</button>
       <div style={{ flexGrow: 1 }}></div>
       <button
         className={`transparent-light ${getViewMode() === MODE.EDIT_COPY ? 'disabled' : ''}`}
-        onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}
+        onMouseEnter={() => {
+          if (getViewMode() === MODE.EDIT_COPY) evt_LoginHintShow('You can embed an exploration after you\'ve saved it.')
+        }}
+        onMouseLeave={evt_LoginHintHide}
         onClick={evt_Embed}>Embed Exploration</button>
       <button
         className={`transparent-light ${getViewMode() === MODE.EDIT_COPY ? 'disabled' : ''}`}
-        onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}
+        onMouseEnter={() => {
+          if (getViewMode() === MODE.EDIT_COPY) evt_LoginHintShow('You can copy a link to the exploration after you\'ve saved it.')
+        }}
+        onMouseLeave={evt_LoginHintHide}
         onClick={evt_CopyLink}>Copy Link</button>
       <div style={{ flexGrow: 1 }}></div>
       <button
@@ -334,6 +372,19 @@ export default function Exploration({ fs, setFs }) {
   );
 
 
+  /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  // Call to Action: Copy Link
+  // View mode: Edit-Only
+  // NOT isLoggedIn
+  // NOT isOwner
+  // 
+  const HINT = (
+    <div className="hint">
+      <p>{hintText}</p>
+    </div>
+  )
+
+  /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   // Call to Action: Copy Link
   // View mode: Edit-Only
   // NOT isLoggedIn
@@ -357,6 +408,7 @@ export default function Exploration({ fs, setFs }) {
     </div>
   )
 
+  /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   // Call to Action: Edit a Copy
   // View mode: View-Only
   // NOT isOwner
@@ -371,6 +423,7 @@ export default function Exploration({ fs, setFs }) {
     </div>
   )
 
+  /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   // Dialog shown right after you've copied an exploration
   const DIALOG_COPIED = (
     <div className="dialog">
@@ -381,6 +434,7 @@ export default function Exploration({ fs, setFs }) {
     </div>
   )
 
+  /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   // Dialog shown right after you've copied an exploration
   const DIALOG_BEFOREUNLOAD = (
     <div className="dialog">
@@ -418,6 +472,7 @@ export default function Exploration({ fs, setFs }) {
         </div>
         {FOOTER}
       </div>
+      {fs.showLoginHint && HINT}
       {fs.showEditModeDialog && getViewMode() === MODE.EDIT_COPY && DIALOG_LOGIN}
       {fs.showEditModeDialog && getViewMode() === MODE.VIEW && DIALOG_EDITCOPY}
       {copiedDialogIsOpen && DIALOG_COPIED}

@@ -40,6 +40,7 @@ const initialFSState = {
   editingFilter: null,
   editWithoutSaving: null, // Allow non-logged in user to edit visualizations
   showEditModeDialog: true,
+  showLoginHint: false,
   showTour: false,
   tourStep: 0,
   explorations: [
