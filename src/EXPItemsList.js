@@ -107,6 +107,9 @@ export default function EXPItemsList({ fs, setFs }) {
         }
       </div>
       <div className="controlbar">
+        <button className={`exploration-new-btn primary ${!exploration.isOwner ? 'disabled' : ''}`}
+          onClick={evt_NewVisual}
+          onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>NEW MAP/GRAPH</button>
         <button
           className={`exploration-edit-btn ${!exploration.isOwner ? 'disabled' : ''}`}
           onClick={evt_EditVisual}
@@ -114,9 +117,6 @@ export default function EXPItemsList({ fs, setFs }) {
         <button
           className={`exploration-edit-btn ${!exploration.isOwner ? 'disabled' : ''}`}
           onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>{IcnTrash}</button>
-        <button className={`exploration-new-btn primary ${!exploration.isOwner ? 'disabled' : ''}`}
-          onClick={evt_NewVisual}
-          onMouseEnter={evt_DialogShow} onMouseLeave={evt_DialogHide}>NEW MAP/GRAPH</button>
       </div>
       {editingVisual !== null && EDITOR}
     </div>
