@@ -135,11 +135,12 @@ export default function Exploration({ fs, setFs }) {
   }
 
   function deselectExploration() {
-    //if (!fs.user.isLoggedIn) alert("Unsaved changes.  Please login to save changes, or click 'Save to Link' to save your changes? [Back to Exploration] [Close and discard changes]");
+    setFs(draft => { draft.selectedExploration = null });
+  }
+
+  function safeDeselectExploration() {
     if (!fs.user.isLoggedIn) setNeedsSaving(true);
-    else setFs(draft => {
-      draft.selectedExploration = null;
-    });
+    else deselectExploration;
   }
 
   function evt_ToggleTitleEdit(event) {
@@ -238,7 +239,7 @@ export default function Exploration({ fs, setFs }) {
     <div className="navbar">
       <div>
         <span className="url" onClick={() => setRoute('home')}>Home</span> &gt;{' '}
-        <span className="url" onClick={deselectExploration}>Explorations</span> &gt;{' '}
+        <span className="url" onClick={safeDeselectExploration}>Explorations</span> &gt;{' '}
         <span className="current">{selectedExploration}: {exploration.name}</span>
       </div>
     </div>
@@ -442,12 +443,14 @@ export default function Exploration({ fs, setFs }) {
       <p>You've made changes to your exploration.</p>
       <p>To save your work, please log in.</p>
       <div className="controlbar">
+        <button onClick={() => setNeedsSaving(false)}>Back to Editing</button>
         <button onClick={evt_Login}>Login</button>
-        <button onClick={evt_DialogHide}>Close without Saving</button>
+        <button onClick={deselectExploration}>Close without Saving</button>
       </div>
     </div>
   )
 
+  /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   console.log('render logged in', fs.user.isLoggedIn, 'isOwner', exploration.isOwner)
   return (
     <div className={`Exploration ${fs.user.isLoggedIn && exploration.isOwner ? 'isOwner' : ''}`}>
