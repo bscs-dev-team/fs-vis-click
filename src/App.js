@@ -180,7 +180,6 @@ export function App() {
   const [tableData, updateTableData] = useImmer({ count: 0, headers: [], data: [] });
 
   function evt_SetRoute(route) {
-    if (!fs.user.isLoggedIn && fs.route === 'explorations') alert("Unsaved changes.  Please login to save changes, or click 'Save to Link' to save your changes? [Back to Exploration] [Close and discard changes]");
     setFs(draft => {
       draft.route = route;
       // if clicking "Explorations" again, clear the selected exploration 
