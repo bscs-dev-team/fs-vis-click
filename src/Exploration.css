@@ -187,8 +187,6 @@
 
 .Exploration > .hint {
   position: absolute;
-  margin: 20% 25%;
-  width: 30%;
   padding: 20px;
   background-color: #ff0d;
   display: flex;

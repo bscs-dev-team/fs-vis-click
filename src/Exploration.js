@@ -42,6 +42,7 @@ export default function Exploration({ fs, setFs }) {
   const [copiedDialogIsOpen, setCopiedDialogIsOpen] = useState(false);
   const [needsSaving, setNeedsSaving] = useState(false);
   const [hintText, setHintText] = useState('');
+  const [hintPosition, setHintPosition] = useState({ x: '0px', y: '0px' });
 
 
   useEffect(() => {
@@ -193,8 +194,11 @@ export default function Exploration({ fs, setFs }) {
     });
   }
 
-  function evt_LoginHintShow(text) {
+  function evt_LoginHintShow(event, text) {
     setHintText(text);
+    const left = `${event.target.offsetLeft}px`;
+    const top = `${Number(event.target.offsetTop) - 100}px`;
+    setHintPosition({ x: left, y: top });
     setFs(draft => {
       draft.showLoginHint = true;
     })
@@ -260,8 +264,8 @@ export default function Exploration({ fs, setFs }) {
           <>
             <span className="title-text" >{exploration.name}</span>
             <button className={`transparent-light ${!exploration.isOwner ? 'disabled' : ''}`}
-              onMouseEnter={() => {
-                if (!exploration.isOwner) evt_LoginHintShow('You do not own this exploration, so you cannot edit its title.')
+              onMouseEnter={e => {
+                if (!exploration.isOwner) evt_LoginHintShow(e, 'You do not own this exploration, so you cannot edit its title.')
               }}
               onMouseLeave={evt_LoginHintHide}
               onClick={evt_ToggleTitleEdit}
@@ -309,8 +313,8 @@ export default function Exploration({ fs, setFs }) {
             <h4>YOUR IDEAS & QUESTIONS
               <button className={`transparent-light ${!exploration.isOwner ? 'disabled' : ''}`}
                 onClick={evt_ToggleDescriptionEdit}
-                onMouseEnter={() => {
-                  if (!exploration.isOwner) evt_LoginHintShow('You do not own this exploration, so you cannot edit its description.')
+                onMouseEnter={e => {
+                  if (!exploration.isOwner) evt_LoginHintShow(e, 'You do not own this exploration, so you cannot edit its description.')
                 }}
                 onMouseLeave={evt_LoginHintHide}
               >{IcnPencil}</button>
@@ -342,23 +346,23 @@ export default function Exploration({ fs, setFs }) {
       <button className={`${getViewMode() === MODE.EDIT_COPY
         ? 'transparent-light disabled'
         : getViewMode() === MODE.VIEW ? "primary" : "transparent"}`}
-        onMouseEnter={() => {
-          if (getViewMode() === MODE.EDIT_COPY) evt_LoginHintShow('Unsaved exploration.  Nothing to copy.')
+        onMouseEnter={e => {
+          if (getViewMode() === MODE.EDIT_COPY) evt_LoginHintShow(e, 'Unsaved exploration.  Nothing to copy.')
         }}
         onMouseLeave={evt_LoginHintHide}
         onClick={evt_EditACopy}>Edit a Copy</button>
       <div style={{ flexGrow: 1 }}></div>
       <button
         className={`transparent-light ${getViewMode() === MODE.EDIT_COPY ? 'disabled' : ''}`}
-        onMouseEnter={() => {
-          if (getViewMode() === MODE.EDIT_COPY) evt_LoginHintShow('You can embed an exploration after you\'ve saved it.')
+        onMouseEnter={e => {
+          if (getViewMode() === MODE.EDIT_COPY) evt_LoginHintShow(e, 'You can embed an exploration after you\'ve saved it.')
         }}
         onMouseLeave={evt_LoginHintHide}
         onClick={evt_Embed}>Embed Exploration</button>
       <button
         className={`transparent-light ${getViewMode() === MODE.EDIT_COPY ? 'disabled' : ''}`}
-        onMouseEnter={() => {
-          if (getViewMode() === MODE.EDIT_COPY) evt_LoginHintShow('You can copy a link to the exploration after you\'ve saved it.')
+        onMouseEnter={e => {
+          if (getViewMode() === MODE.EDIT_COPY) evt_LoginHintShow(e, 'You can copy a link to the exploration after you\'ve saved it.')
         }}
         onMouseLeave={evt_LoginHintHide}
         onClick={evt_CopyLink}>Copy Link</button>
@@ -374,13 +378,8 @@ export default function Exploration({ fs, setFs }) {
 
 
   /// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  // Call to Action: Copy Link
-  // View mode: Edit-Only
-  // NOT isLoggedIn
-  // NOT isOwner
-  // 
   const HINT = (
-    <div className="hint">
+    <div className="hint" style={{ left: hintPosition.x, top: hintPosition.y }}>
       <p>{hintText}</p>
     </div>
   )
