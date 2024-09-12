@@ -353,9 +353,10 @@ export default function Exploration({ fs, setFs }) {
         onClick={evt_EditACopy}>Edit a Copy</button>
       <div style={{ flexGrow: 1 }}></div>
       <button
-        className={`transparent-light ${getViewMode() === MODE.EDIT_COPY ? 'disabled' : ''}`}
+        className={`transparent-light ${getViewMode() === MODE.EDIT_COPY || !exploration.isOwner ? 'disabled' : ''}`}
         onMouseEnter={e => {
           if (getViewMode() === MODE.EDIT_COPY) evt_LoginHintShow(e, 'You can embed an exploration after you\'ve saved it.')
+          else if (!exploration.isOwner) evt_LoginHintShow(e, 'You can only embed an exploration that you own.')
         }}
         onMouseLeave={evt_LoginHintHide}
         onClick={evt_Embed}>Embed Exploration</button>
