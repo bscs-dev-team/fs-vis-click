@@ -222,7 +222,7 @@ export default function EXPEdit({ fs, setFs, onExit }) {
           <button disabled>Edit a Copy</button>
           <div style={{ flexGrow: 1 }}></div>
           <button onClick={onExit}>Cancel</button>
-          <button className="primary" onClick={onExit}>Save</button>
+          <button className="primary" onClick={onExit}>Add to Exploration</button>
         </div>
         {editingFilter && <FilterEdit fs={fs} setFs={setFs} />}
       </div>
