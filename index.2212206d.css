@@ -431,6 +431,14 @@ button.disabled {
   align-self: flex-end;
 }
 
+.Exploration > .hint {
+  background-color: #ff0d;
+  flex-direction: column;
+  padding: 20px;
+  display: flex;
+  position: absolute;
+}
+
 .NotLoggedIn {
   background-color: #fff;
   flex-direction: column;
